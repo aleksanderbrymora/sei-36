@@ -75,11 +75,7 @@ console.log(fixStart("google"));
 
 //verbing
 const verbing = function(word){
-    if( word.length < 3){
-        return word;
-    }else{
-        return word.endsWith("ing") ? word += "ly" : word += "ing";
-    };
+    return word.length < 3 ? word : ((word.endsWith("ing")) ? word += "ly" : word += "ing");
 };
 
 console.log(verbing("swim"));

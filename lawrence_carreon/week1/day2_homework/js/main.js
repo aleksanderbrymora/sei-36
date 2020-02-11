@@ -68,18 +68,14 @@ const fixStart = function(string){
         string[i] === firstChar ? output += "*" : output += string[i]; 
     };
     return output;
-}
+};
 
 console.log(fixStart("babble"));
 console.log(fixStart("google"));
 
 //verbing
 const verbing = function(word){
-    if( word.length < 3){
-        return word;
-    }else{
-        return word.endsWith("ing") ? word += "ly" : word += "ing";
-    };
+    return word.length < 3 ? word : ((word.endsWith("ing")) ? word += "ly" : word += "ing");
 };
 
 console.log(verbing("swim"));
@@ -92,7 +88,9 @@ const notBad = function(phrase){
     const indexOfNot = phrase.toLowerCase().indexOf("not");
     const output = indexOfNot < indexOfBad ? phrase.replace(/not.*bad/,"good") : phrase;
     return output;
-}
+    // one-liner 
+    //return (phrase.toLowerCase().indexOf("not")) < (phrase.toLowerCase().indexOf("bad")) ? phrase.replace(/not.*bad/,"good") : phrase;
+};
 
 console.log(notBad('This dinner is not that bad!'));
 console.log(notBad('This movie is not so bad!'));

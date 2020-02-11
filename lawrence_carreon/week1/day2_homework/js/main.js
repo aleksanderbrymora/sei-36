@@ -68,7 +68,7 @@ const fixStart = function(string){
         string[i] === firstChar ? output += "*" : output += string[i]; 
     };
     return output;
-}
+};
 
 console.log(fixStart("babble"));
 console.log(fixStart("google"));
@@ -88,7 +88,9 @@ const notBad = function(phrase){
     const indexOfNot = phrase.toLowerCase().indexOf("not");
     const output = indexOfNot < indexOfBad ? phrase.replace(/not.*bad/,"good") : phrase;
     return output;
-}
+    // one-liner 
+    //return (phrase.toLowerCase().indexOf("not")) < (phrase.toLowerCase().indexOf("bad")) ? phrase.replace(/not.*bad/,"good") : phrase;
+};
 
 console.log(notBad('This dinner is not that bad!'));
 console.log(notBad('This movie is not so bad!'));

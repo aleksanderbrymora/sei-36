@@ -1,17 +1,26 @@
-## Warmup - Raindrops
+# Centuries
 
-Write a Javascript program that will take a number (eg 28 or 1755 or 9, etc) and output the following:
+## Introduction
 
-- If the number contains 3 as a factor, output 'Pling'.
-- If the number contains 5 as a factor, output 'Plang'.
-- If the number contains 7 as a factor, output 'Plong'.
-- If the number does not contain 3, 5, or 7 as a factor, output the number as a string.
+The first century spans from the year 1 up to and including the year 100, The second - from the year 101 up to and including the year 200, etc.
 
-### Examples
+## Task
 
-- 28 has 7 as a factor.
-  - In raindrop-speak, this would be a simple "Plong".
-- 1755 has 3 and 5 as factors.
-  - In raindrop-speak, this would be a "PlingPlang".
-- 34 has neither 3, 5 nor 7 as a factor.
-  - Raindrop-speak doesn't know what to make of that, so it just goes with the straightforward "34".
+Given a year, return the century it is in.
+
+## Examples
+
+centuryFromYear(1705) returns (18)
+centuryFromYear(1900) returns (19)
+centuryFromYear(1601) returns (17)
+centuryFromYear(2000) returns (20)
+centuryFromYear(86) returns (1)
+
+## Bonus
+
+Add support for BC and AD (before year 0 and after). Follow examples for explanation
+centuryFromYear(1705) returns "AD 18"
+centuryFromYear(86) returns "AD 1"
+centuryFromYear(-1) returns "1 BC" - One year BC
+centuryFromYear(-100) returns "1 BC"
+centuryFromYear(-5634) returns "57 BC"

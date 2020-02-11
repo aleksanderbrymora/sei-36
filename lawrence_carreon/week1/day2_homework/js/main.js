@@ -64,7 +64,7 @@ console.log(mixUp(`dog`, `dinner`));
 const fixStart = function(string){
     const firstChar = string[0];
     let output = firstChar;
-    for( let i = 1; i < string.length; i++){
+    for( let i = 1; i < string.length; i++ ){
         string[i] === firstChar ? output += "*" : output += string[i]; 
     };
     return output;

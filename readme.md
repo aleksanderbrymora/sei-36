@@ -22,7 +22,7 @@ You only need to do this once, not every time you're submitting homework!
 - **Add an upstream remote repository**
   - _Adding an upstream repository links the local repository on your computer to the original repository on Github (i.e. mine, the one from which you created the fork)_
   - `cd sei34-homework`
-  - `git remote add upstream https://github.com/aleksanderbrymora/sei36.git`
+  - `git remote add upstream https://github.com/aleksanderbrymora/sei-36.git`
   - `git pull upstream master`
 
 ### Do your Homework

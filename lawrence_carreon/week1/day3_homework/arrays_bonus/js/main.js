@@ -19,7 +19,8 @@ const reverseString = function(string){
 };
 
 const findLongestWord = function(wordArray){
-    return wordArray.sort(function(a,b){return a.length - b.length}).pop();
+    const sortedArray = wordArray.sort(function(a,b){return a.length - b.length});
+    return sortedArray[sortedArray.length - 1];
 };
 
 const filterLongWord = function(wordArray, lengthCap){

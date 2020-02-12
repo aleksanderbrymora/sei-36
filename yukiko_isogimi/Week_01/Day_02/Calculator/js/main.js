@@ -49,21 +49,12 @@ const areaOfCircle = function(radius){
 
 
 // #Part2
-const cal = function(number){
-  const result1 = number / 2;
-  console.log(`The half of ${number} is ${result1}`);
-
-  const result2 = result1 * result1;
-  console.log(`The squaring of ${result1} is ${result2}`);
-
-  const area = Math.PI * result2 * result2;
-  console.log(`The area of circle is ${area}`);
-
-  const percent = Math.floor((area / 100) * 100);
-  console.log(`The percentage is ${percent} %`);
-}
-
-cal(7);
+const takeNum = function(number){
+  const halfNum = halfNumber(number);
+  const squareNum = squareNumber(halfNum);
+  const areaNum = areaOfCircle(squareNum);
+  const percentNum = percentOf(squareNum,areaNum)
+};
 
 
 

@@ -126,7 +126,7 @@ console.log( assignGrade(40) );
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 //
 
-///Joe version
+///Joe version///
 
 const pluralize = function(noun, number){
   if (number === 1) {
@@ -139,7 +139,7 @@ const pluralize = function(noun, number){
 
 
 console.log( pluralize('cat',5) );
-console.log( pluralize('dog',0) );
+console.log( pluralize('dog',10) );
 console.log( pluralize('turtle',1) );
 //
 //

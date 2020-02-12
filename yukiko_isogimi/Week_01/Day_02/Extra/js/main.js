@@ -14,7 +14,7 @@
 // ```
 
 const DrEvil = function(money){
-  if(money >= 1000000){
+  if(money === 1000000){
     console.log(`${money} dollars(pinky)`);
   } else {
     console.log(`${money} dollars`);
@@ -44,6 +44,7 @@ const mixUp = function(string1, string2) {
 };
 
 mixUp("Step", "Hop");
+mixUp("dog","dinner");
 
 // ## FixStart
 //
@@ -52,8 +53,7 @@ mixUp("Step", "Hop");
 // fixStart('babble'): 'ba**le'
 
 const fixStart = function(word){
-  if()
-  const result = string.substring(0,2) + "**" + string.slice(4);
+  const firstCharacter = string.substring(0,2) + "**" + string.slice(4);
   console.log(result);
 };
 
@@ -92,8 +92,13 @@ verbing("swim");
 // - If it doesn't find 'not' and 'bad' in the right sequence (or at all), just return the original sentence.
 //
 
-const notBad = function(string) {
-  if()
+const notBad = function(phrase) {
+  if(phrase.include("not") && phrase.include("bad") === true){
+    for(let i = 0; i < 0; i++){
+      if()
+      console.log("")
+    }
+  }
 
 
 };

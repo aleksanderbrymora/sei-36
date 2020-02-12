@@ -13,22 +13,21 @@
 
 // #Part1
 const squareNumber = function(number) {
-  const result = Math.sqrt(number);
-
-  console.log("The result of squaring the number " + result);
+  const result = number * number; //number^2 ///number *2
+  console.log(`The result of squaring the number of ${number} is ${result}`);
   return result;
 }
 
-console.log(squareNumber(4));
+squareNumber(3);
 
+//
 const halfNumber = function(number) {
   const result = number / 2;
-
-  console.log("The half of" + number + "is " + result);
+  console.log(`The half of ${number} is ${result}`);
   return result;
 
 };
-
+//
 halfNumber(8);
 
 const percentOf = function(firstNum, secondNum){
@@ -42,11 +41,11 @@ const percentOf = function(firstNum, secondNum){
 percentOf(2,4);
 
 const areaOfCircle = function(radius){
-  const result = Math.PI * radius * radius;
+  const result = Math.PI * radius * radius; //OI * r^2
   console.log(`The area for a circle with ${radius} is ${result}`);
 };
 
-Math.ceil(areaOfCircle(8));
+(Math.ceil(areaOfCircle(8));
 
 
 // #Part2
@@ -54,17 +53,17 @@ const cal = function(number){
   const result1 = number / 2;
   console.log(`The half of ${number} is ${result1}`);
 
-  const result2 = Math.sqrt(result1);
-  console.log(`The squaring of ${number} is ${result2}`);
+  const result2 = result1 * result1;
+  console.log(`The squaring of ${result1} is ${result2}`);
 
   const area = Math.PI * result2 * result2;
   console.log(`The area of circle is ${area}`);
 
-  const percent = (area / result2) * 100;
+  const percent = Math.floor((area / 100) * 100);
   console.log(`The percentage is ${percent} %`);
 }
 
-cal(4);
+cal(7);
 
 
 

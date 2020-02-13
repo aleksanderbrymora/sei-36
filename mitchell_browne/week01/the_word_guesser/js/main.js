@@ -32,14 +32,21 @@ const guessLetter = function(letterGuessed) {
   arrayGuessed.push(letter);
 
   if (word.indexOf(letter) >= 0) {
+    for (let i = word.indexOf(letter)+1; i < word.length; i++) {
+      if (word[i] === letter) {
+        array[i] = letter;
+        correctGuess += 1;
+      }
+    }
     array[word.indexOf(letter)] = letter;
     correctGuess += 1;
     console.log(`You found the letter ${letter}! Add $${rewarded()} to your reward.`)
     console.log(array.join());
     console.log(message());
   } else {
-    console.log(`${letter} is incorrect.`);
-    if ((turn - correctGuess) >= 6) {
+    incorrectGuess += 1;
+    console.log(`${letter} is incorrect. Hangman has ${limbCheck()} more limbs left.`);
+    if (limbs == 0) {
       gameOver();
     }
   }
@@ -58,14 +65,19 @@ const message = function() {
   const remaining = word.length - correctGuess;
   let message;
   if (remaining > 1) {
-    return message = `You have ${remaining} letters remaining.`;
+    return message = `You have ${remaining} letters remaining and man has ${limbs} more limbs left.`;
   } else if (remaining === 1) {
-    return message = `You have ${remaining} letter remaining.`;
+    return message = `You have ${remaining} letter remaining and man ${limbs} more limbs left.`;
   } else {
     state = false;
     return message = `Congratulations! You completed the hangman! You get to take home your $${reward} reward!`;
   }
 };
+
+const limbCheck = function() {
+  limbs = 6 - incorrectGuess;
+  return limbs;
+}
 
 // Function when player has too many tries, end game
 const gameOver = function() {
@@ -83,14 +95,17 @@ const gameOver = function() {
 // --- GLOBAL VARIABLES ---
 const word = wordInput();
 const array = [];
+// for strings only: let string = "_".repeat(word.length);
 for (i = 0; i < word.length; i++) {
   array.push('_');
 }
 const arrayGuessed = [];
 let correctGuess = 0;
+let incorrectGuess = 0;
 let turn = 0;
 let state = true;
 let reward = 0;
+let limbs = 6;
 
 // --- TEST ---
 game();

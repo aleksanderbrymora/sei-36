@@ -54,14 +54,14 @@ let bank =
             return `MoneyGrubbers doesn't have one of the clients in this transfer!`;
         };
         if( this.account[giver] - amount < 0){
-            return `You broke bruh! You can only transfer $${this.account[name]} or less`
+            return `You broke bruh! You can only transfer $${this.account[giver]} or less`
         };
         this.account[giver] -= amount;
         this.account[receiver] += amount;
         return `Your transaction was completed!
         Transferred amount: $${amount}
-        ${giver}'s new balance: ${this.account[giver]}
-        ${receiver}'s new balance: ${this.account[receiver]}`;
+        ${giver}'s new balance: $${this.account[giver]}
+        ${receiver}'s new balance: $${this.account[receiver]}`;
     }
 }
 

@@ -1,9 +1,22 @@
-// accounts array
-const accounts = [
-  { accountNumber: 1, name: "Tim Smith", balance: 30.0 },
-  { accountNumber: 2, name: "Jenny Cho", balance: 10000.0 },
-  { accountNumber: 3, name: "Ali Alavi", balance: 60.0 }
-];
+const bank = {
+  // accounts array
+  accounts: [
+    { accountNumber: 1, name: "Tim Smith", balance: 30.0 },
+    { accountNumber: 2, name: "Jenny Cho", balance: 10000.0 },
+    { accountNumber: 3, name: "Ali Alavi", balance: 60.0 }
+  ],
+
+  addAccount: function(name, balance) {
+    this.accounts.push({
+      accountNumber: this.accounts.length + 1,
+      name,
+      balance
+    });
+  }
+};
+
+// Add an account
+bank.addAccount("Sharon Holt", 100);
 
 /**
  *  Deposit - increase in balance
@@ -54,7 +67,7 @@ const transfer = function(account1, account2, amount) {
 //let x = withdraw(accounts[0], 900);
 
 //test transfer
-let tran = transfer(accounts[0], accounts[1], 30);
+let tran = transfer(bank.accounts[0], bank.accounts[1], 30);
 tran;
 
 //accounts;

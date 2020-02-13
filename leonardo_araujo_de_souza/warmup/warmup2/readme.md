@@ -1,27 +1,18 @@
-# Centuries
+<!-- # Filter
 
-## Introduction
+1. Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
 
-The first century spans from the year 1 up to and including the year 100, The second - from the year 101 up to and including the year 200, etc.
+## Example:
 
-## Task
+Input:
 
-Given a year, return the century it is in.
+'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
 
-## Examples
+Output:
 
-- centuryFromYear(1705) returns (18)
-- centuryFromYear(1900) returns (19)
-- centuryFromYear(1601) returns (17)
-- centuryFromYear(2000) returns (20)
-- centuryFromYear(86) returns (1)
+'alpha beta gamma delta'
 
-## Bonus
+# Bonus question
 
-Add support for BC and AD (before year 0 and after). Follow examples for explanation
-
-- centuryFromYear(1705) returns "AD 18"
-- centuryFromYear(86) returns "AD 1"
-- centuryFromYear(-1) returns "1 BC" - One year BC
-- centuryFromYear(-100) returns "1 BC"
-- centuryFromYear(-5634) returns "57 BC"
+Create a function that returns a string 'banana'. The catch is you can only use letters 'a' and 'b'.
+Super extra bonus points for proving "how well engineered Javascript really is". -->

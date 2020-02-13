@@ -59,8 +59,8 @@ console.log( isEquilateral(triangleA));
 
 // * isIsosceles - Returns whether the triangle is isosceles or not
 
-const isObtuse = function(result){
-  if (result.sideB === result.sideC) {
+const isIsosceles = function(result){
+  if (result.sideB === result.sideC || result.sideA === result.sideC || result.sideA === result.sideB ) {
       return `It's isosceles `;
   } else {
       return `It's not isosceles`;
@@ -68,7 +68,7 @@ const isObtuse = function(result){
 
 };
 
-console.log( isObtuse(triangleA));
+console.log( isIsosceles(triangleA));
 
 
 // * area - Returns the area of the Triangle
@@ -209,11 +209,14 @@ const totalAmount = function(money){
 console.log( `The total amout of bank is ${totalAmount( bank)} !! `);
 
 const addAccount = function(newAccount){
-  bank.push(newAccount)
+  const container = newAccount;
+  bank.push(container);
+  const message = `${bank[bank.length-1].name}, Balance: ${bank[bank.length-1].balance}`;
+  return message;
 };
 
 
-console.log(`The added account name is: ${addAccount({name:"Honey", balance:200})}`);
+console.log(`The added account name is:`, addAccount({name:"Honey", balance:200}));
 // console.log( `The new total amout of bank is ${totalAmount( bank)} !! `);
 
 //

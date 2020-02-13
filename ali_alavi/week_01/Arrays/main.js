@@ -51,7 +51,3 @@ const multiplyArray = function(a) {
   }
   return total;
 };
-
-const reverseString = function(str) {
-  return str;
-};

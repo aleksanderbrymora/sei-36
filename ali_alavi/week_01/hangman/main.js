@@ -1,3 +1,8 @@
+/**
+ * Reverse a string
+ * @param {string} s
+ */
+
 const reverseStr = function(s) {
   return s
     .split("")

@@ -8,3 +8,9 @@ function removeDuplicate(str) {
   }
   return newStr.join(' ');
 }
+
+const banana = function () {
+  const out = 'b' + 'a' + + 'a' + 'a';
+  console.log(out.toLowerCase());
+}
+banana();

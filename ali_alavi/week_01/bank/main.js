@@ -70,4 +70,81 @@ const transfer = function(account1, account2, amount) {
 let tran = transfer(bank.accounts[0], bank.accounts[1], 30);
 tran;
 
-//accounts;
+//CC validate with Luhn
+// Luhn algo
+
+const luhn = function(n) {
+  let arrFrom_n = n + "";
+  arrFrom_n = arrFrom_n.split("").reverse();
+
+  //set accumulator to start as first digit
+  let total = Number(arrFrom_n[0]);
+  //let sum; //
+
+  //start from 2nd number
+  for (let i = 1; i < arrFrom_n.length; i++) {
+    let sum; // to hold temp sum
+
+    //check index is even and double
+    if (i % 2) {
+      // double value
+      sum = Number(arrFrom_n[i]) * 2;
+      // if over 9 add the digits of the product
+      if (sum > 9) {
+        sum = sum - 10 + 1;
+        total += sum;
+      } else {
+        // add to to total
+        total += sum;
+      }
+    } else {
+      // add odd values on to total
+      total += Number(arrFrom_n[i]);
+    }
+  }
+
+  // Check for multiple of 10
+  if (total % 10 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+
+  //Do it with reduce(wip)
+};
+
+const validateCard = function(str) {
+  // filter number
+  let ccArray = str.match(/[0-9]/g);
+  // store the length of number
+  const length = ccArray.length;
+  // convert to number from array
+  ccArray = ccArray.join("");
+  // check card number length
+  if (length === 16) {
+    if (luhn(ccArray)) {
+      return true; // valid number
+    }
+  } else {
+    return false; // Invalid;
+  }
+};
+
+const isMyCardValid = function(n) {
+  let outputObj = {
+    valid: null,
+    number: n,
+    message: null
+  };
+
+  outputObj.valid = validateCard(outputObj.number);
+
+  outputObj.valid
+    ? (outputObj.message = `Valid Credit Card provided.`)
+    : (outputObj.message = `Invalid Card number, please check the digits.`);
+
+  outputObj;
+  return outputObj;
+};
+
+isMyCardValid("4578-4230-1376-9219");

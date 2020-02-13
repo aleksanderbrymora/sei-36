@@ -20,30 +20,27 @@ const guessLetter = function(guessedLetter) {
   let goodGuess = false;
   let badGuess = false;
   let noOfGuesses = 0;
-  let message;
   for (let i = 0; i < letters.length; i++) {
     if (guessedLetter === letters[i]){
       guessedWord[i] = guessedLetter;
       goodGuess = true;
-      message = "You found a letter!:";
     }
     if (guessedWord[i] === '_')
     {
       badGuess = true;
       noOfGuesses = noOfGuesses + 1;
-      message = "Make another guess!:"
     }
   }
   let joinGuessedWord = guessedWord.join('');
   let noOfGuessesMessage = `There's ${noOfGuesses} letters left!`;
   if (goodGuess){
     if (noOfGuesses === 0) {
-      return `${message} ${joinGuessedWord} Congratulations! You guessed the word!`;
+      return `You found a letter: ${joinGuessedWord} Congratulations! You guessed the word!`;
     } else {
-      return `${message} ${joinGuessedWord} ${noOfGuessesMessage}`;
+      return `You found a letter: ${joinGuessedWord} ${noOfGuessesMessage}`;
     }
   } else {
-    return `${message} ${joinGuessedWord} ${noOfGuessesMessage}`;
+    return `Make another guess: ${joinGuessedWord} ${noOfGuessesMessage}`;
   }
 }
 

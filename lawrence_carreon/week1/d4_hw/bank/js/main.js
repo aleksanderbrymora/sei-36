@@ -28,7 +28,7 @@ let bank =
         //makes sure that the amount being entered is a number
         if( isNaN(amount) ){
             return `MoneyGrubbers can't make this transaction, please try again.`
-        }
+        };
         this.account[name] -= amount;
         return `Thanks for sticking with MoneyGrubbers!
 
@@ -42,7 +42,7 @@ let bank =
         };
         if( isNaN(amount) ){
             return `MoneyGrubbers can't make this transaction, please try again.`
-        }
+        };
         this.account[name] += amount;
         return `Your deposit of $${amount} has been made!
         Your current balance is: $${this.account[bank]}
@@ -55,6 +55,9 @@ let bank =
         };
         if( this.account[giver] - amount < 0){
             return `You broke bruh! You can only transfer $${this.account[giver]} or less`
+        };
+        if( isNaN(amount) ){
+            return `MoneyGrubbers can't make this transaction, please try again.`
         };
         this.account[giver] -= amount;
         this.account[receiver] += amount;

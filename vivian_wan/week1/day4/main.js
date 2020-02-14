@@ -41,7 +41,9 @@ const myTriangle = function (anyTriangle) {
         console.log (`This triangle is not equilateral.`)
         }
 }
-    
+myTriangle(triangleAB);
+
+
     // if (anyTriangle.sideA === anyTriangle.sideB || anyTriangle.sideB || anyTriangle.sideC) {
     //     console.log (`This triangle is isosceles.`); 
     //     } else { 
@@ -52,7 +54,7 @@ const myTriangle = function (anyTriangle) {
 
 
 
-myTriangle(triangleAB);
+
 
 // The Cash Register
 
@@ -69,13 +71,13 @@ const values = function(obj) {
     const prices = Object.values(obj);
     console.log(prices);  
     
-    for (let i = 0; i < prices.length; ++i) {
-        var j = 1;
-        var j =+ prices[i]
+    var j = 0;
+    for (let i = 0; i < prices.length; ++i) { //prices.length 
+        j += prices[i]
     }
     console.log(j)
 }
-values(cartForParty)
+values(cartForParty)  
 
 //Credit card validation
 
@@ -85,11 +87,8 @@ values(cartForParty)
 //     numberOfDigit: 16
 // }
 
-// understand the valid cc only:
- has 16 number
- 
-// var str = "How are you doing today?";
-// var res = str.split(" "); 
+
+// bank 
 
 
 

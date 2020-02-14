@@ -29,21 +29,24 @@ const planTrip = function(line1, startStop, line2, endStop) {
         }
     // multiple lines situation
     } else {
+        console.log('line1 != line2');
+        
         // line1 passing stop list
         if (indexLine1UnionSquare > indexStartStop) {
             passingStops = lines[line1].slice(indexStartStop, indexLine1UnionSquare + 1);
         } else {
             passingStops = lines[line1].slice(indexLine1UnionSquare, indexStartStop + 1).reverse();
         }
+        console.log(`passingStops for line1 is ==== ${ passingStops }`);
+        
         // line2 passingStops
         if (indexLine2UnionSquare > indexEndStop) {
-            passingStops = passingStops.concat(lines[line1].slice(indexEndStop, indexLine2UnionSquare).reverse());
+            passingStops = passingStops.concat(lines[line2].slice(indexEndStop, indexLine2UnionSquare).reverse());
         } else {
-            passingStops = passingStops.concat(lines[line1].slice(indexLine2UnionSquare + 1, indexEndStop + 1));
+            passingStops = passingStops.concat(lines[line2].slice(indexLine2UnionSquare + 1, indexEndStop + 1));
         }
     }
     console.log(passingStops);
-    
 
     // get total stops
     if (line1 === line2) {
@@ -56,5 +59,6 @@ const planTrip = function(line1, startStop, line2, endStop) {
 
 // planTrip('N', '34th', 'N', '8th');
 // planTrip('N', '8th', 'N', '34th');
-planTrip('N', '34th', 'L', '6th')
+planTrip('N', '34th', 'L', '6th');
+planTrip('N', '34th', '6', 'Astor Place');
 

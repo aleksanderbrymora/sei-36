@@ -17,11 +17,15 @@ const areaRectangle = function (obj) {
 };
 
 const perimeterRectangle = function (obj) {
-  return (2 * obj.length) + (2 * obj.width);
+  if (isSquare(obj)) {
+      return (4 * obj.length);
+  }
+  return(-1);
 };
 
-console.log(isSquare(rectangleA));
-console.log(areaRectangle(rectangleA));
+console.log(`Is rectangleA a square ? ${isSquare(rectangleA)?'yes':'no'}`);
+console.log(`Rectangle area: ${areaRectangle(rectangleA)}`);
+console.log(`Rectangle perimeter: ${perimeterRectangle(rectangleA)}`);
 
 
 // Part 2, Triangle
@@ -65,6 +69,14 @@ const areaTriangle = function (obj) {
   return((obj.sideB*obj.sideC)/2);
 }
 
+
+console.log(`Is triangleA an equilateral triangle ? ${isEquilateral(triangleA)?'yes':'no'}` );
+console.log(`Is triangleA an Isosceles triangle ? ${isIsosceles(triangleA)?'yes':'no'}` );
+console.log(`Is triangleA an obtuse triangle ? ${isObtuse(triangleA)?'yes':'no'}` );
+console.log(`Area of triangleA : ${areaTriangle(triangleA)}`);
+
+
+
 // The Cash Register
 // Input
 const cartForParty = {
@@ -86,15 +98,15 @@ const cashRegister = function (o) {
 }
 
 // Output
-console.log(`Total: ${cashRegister(cartForParty)}`);
+console.log(`Cart for party Total: ${cashRegister(cartForParty)}`);
 
 
 // JavaScript Bank
-const jsBanks = {
+const jsBank = {
   accounts: [
-    { acctId: 0, name: "Mary",  balance: 100.00 },
-    { acctId: 1, name: "Peter", balance: 199.00 },
-    { acctId: 2, name: "John",  balance: 1200.00 }
+    { acctId: 0, name: "Mary Palmher",  balance: 100.00 },
+    { acctId: 1, name: "Peter Pehn", balance: 199.00 },
+    { acctId: 2, name: "John Dhoe",  balance: 1200.00 }
   ],
   getBalance: function (oAcct) {
     return (oAcct.balance);
@@ -104,15 +116,15 @@ const jsBanks = {
   },
   withdraw: function (oAcct, amount) {
     let success = false;
-    if( amount <= oAcct.balacne) {
+    if( amount <= oAcct.balance) {
       oAcct.balance -= amount
       success = true;
     }
     return success;
   },
-  transfer: (oSource, oTarget, amount){
+  transfer: function (oSource, oTarget, amount){
     let success = false;
-    if(this.withdraw(oSource,amount) {
+    if(this.withdraw(oSource,amount)) {
         this.deposit(oTarget,amount);
         success = true;
     }
@@ -126,3 +138,8 @@ const jsBanks = {
     return total;
   }
 }
+
+console.log(`JsBank's total account balance is: $ ${jsBank.totalBankBalance().toFixed(2)}`);
+console.log(`John Doe's current balance: $ ${jsBank.getBalance(jsBank.accounts[2]).toFixed(2)}`);
+console.log(`Deposit $340 into John Dhoe's account: $ ${jsBank.deposit(jsBank.accounts[2],340).toFixed(2)}`);
+console.log(`Wihdraw $99.95 from John Doe's account: $ ${jsBank.withdraw(jsBank.accounts[2],99.95)?'Balance left:':'Insufficient fund'} ${jsBank.accounts[2].balance}`);

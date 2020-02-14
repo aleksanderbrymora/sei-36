@@ -7,7 +7,7 @@ const creditCard = {
 
     // I designed my validation function to pass to other "helper" functions so I could log every possible error that was made with the card entry before returning the card object
     // It makes the code a lot easier to read, sorry about the excessive "this" though -> "this" refers to the object the function or key is stored in. (in this case this.card === creditCard.card) 
-    // I am also assumming that the card is not going to have white spaces or other characters on its edges
+    // I am also assumming that the card is not going to have other characters on its edges
     // the expiry date format must be MM-DD-YYYY
     validateCreditCard: function(cardNumber, expiry){
         this.card.error = ``; // empties the errors field before starting again.

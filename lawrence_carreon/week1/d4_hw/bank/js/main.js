@@ -45,7 +45,7 @@ let bank =
         };
         this.account[name] += amount;
         return `Your deposit of $${amount} has been made!
-        Your current balance is: $${this.account[bank]}
+        Your current balance is: $${this.account[name]}
         Thanks for using MoneyGrubbers!`
     },
 
@@ -65,6 +65,9 @@ let bank =
         Transferred amount: $${amount}
         ${giver}'s new balance: $${this.account[giver]}
         ${receiver}'s new balance: $${this.account[receiver]}`;
+        console.log(this.withdraw(giver, amount));
+        console.log(this.deposit(receiver, amount));
+        return `The transfer from ${giver} to ${receiver} of $${amount} was completed!`;
     }
 }
 

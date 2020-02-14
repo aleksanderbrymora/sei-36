@@ -27,26 +27,27 @@ const planTrip = function(line1, startStop, line2, endStop) {
         } else {
             passingStops = lines[line1].slice(indexEndStop, indexStartStop + 1).reverse();
         }
-    // multiple lines situation
-    } else {
-        console.log('line1 != line2');
         
+    // multiple lines situation
+    } else {        
         // line1 passing stop list
         if (indexLine1UnionSquare > indexStartStop) {
             passingStops = lines[line1].slice(indexStartStop, indexLine1UnionSquare + 1);
         } else {
             passingStops = lines[line1].slice(indexLine1UnionSquare, indexStartStop + 1).reverse();
         }
-        console.log(`passingStops for line1 is ==== ${ passingStops }`);
+        console.log(`You must travel through the following stops on the ${ line1 } line: ${ passingStops.join(', ')}.`);
+        console.log('Change at Union Square');
         
         // line2 passingStops
         if (indexLine2UnionSquare > indexEndStop) {
-            passingStops = passingStops.concat(lines[line2].slice(indexEndStop, indexLine2UnionSquare).reverse());
+            passingStops = lines[line2].slice(indexEndStop, indexLine2UnionSquare).reverse();
         } else {
-            passingStops = passingStops.concat(lines[line2].slice(indexLine2UnionSquare + 1, indexEndStop + 1));
+            passingStops = lines[line2].slice(indexLine2UnionSquare + 1, indexEndStop + 1);
         }
+        console.log('Your journey continues through the following stops: ' + passingStops.join(', '));
+        
     }
-    console.log(passingStops);
 
     // get total stops
     if (line1 === line2) {
@@ -54,11 +55,8 @@ const planTrip = function(line1, startStop, line2, endStop) {
     } else {
         totalStops = Math.abs(indexStartStop - indexLine1UnionSquare) + Math.abs(indexEndStop - indexLine2UnionSquare);
     }
-    console.log(totalStops);
+    console.log(`${ totalStops } stops in total.`);
 }
 
-// planTrip('N', '34th', 'N', '8th');
-// planTrip('N', '8th', 'N', '34th');
-planTrip('N', '34th', 'L', '6th');
-planTrip('N', '34th', '6', 'Astor Place');
+planTrip('N', '34th', '6', 'Grand Central');
 

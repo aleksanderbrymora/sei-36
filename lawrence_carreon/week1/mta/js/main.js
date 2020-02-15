@@ -11,13 +11,9 @@ const mta = {
         if(!(goingRight)){ stopsForLine = stopsForLine.reverse() }; //turns the above array around if required
         const lineStops =  goingRight ? this[line][exitStation] - this[line][startStation] : this[line][startStation] - this[line][exitStation]; //calculates how many stops are going to be visited on the line being travelled on
         this.totalStops += lineStops;
-        let stops;
-        if( goingRight ){
-            stops = stopsForLine.slice(this[line][startStation],this[line][exitStation]).join(", ");
-        }else{
-            stops = stopsForLine.slice(this[line][exitStation],this[line][startStation]).join(", ");
-        };//the above conditional fills variable "stops" with the stops visited delimited by the object values associated with the station names and the direction of the trip
-        console.log(`Travel on the ${line}, for ${lineStops} stops, through: ${stops}`);
+        const stops = goingRight ? stopsForLine.slice(this[line][startStation],this[line][exitStation]).join(", ") : stopsForLine.slice(this[line][exitStation],this[line][startStation]).join(", ");
+        //the above conditional fills variable "stops" with the stops visited delimited by the object values associated with the station names and the direction of the trip
+        console.log(`Travel on the "${line}" line, for ${lineStops} stops, through: ${stops}`);
         //the conditional helps toggle between whether or not a "change" or "arrival" message is logged, it also stops the code from logging "change" if you wanted to end the trip at Union Square
         exitStation === "Union Square" && destination !== "Union Square" ? console.log(`Change at Union Square`) : console.log(`Arrive at ${exitStation} on the ${line} line`);
     },
@@ -41,6 +37,6 @@ const mta = {
     }
 };
 
-mta.planTrip('N', 'Times Square', 'N', 'Union Square'); //single line trip
+// mta.planTrip('N', '8th', 'N', 'Times Square'); //single line trip
 // mta.planTrip('N', 'Times Square', '6', '33rd'); //HW task test case
-// mta.planTrip('6', '33rd', 'N', 'Times Square'); //Reverse of the HW task test case
+mta.planTrip('6', '33rd', 'N', 'Times Square'); //Reverse of the HW task test case

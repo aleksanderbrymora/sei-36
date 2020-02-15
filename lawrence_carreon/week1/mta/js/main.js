@@ -11,7 +11,7 @@ const mta = {
         if(!(goingRight)){ stopsForLine = stopsForLine.reverse() }; //turns the above array around if required
         const lineStops =  goingRight ? this[line][exitStation] - this[line][startStation] : this[line][startStation] - this[line][exitStation]; //calculates how many stops are going to be visited on the line being travelled on
         this.totalStops += lineStops;
-        const stops = goingRight ? stopsForLine.slice(this[line][startStation],this[line][exitStation]).join(", ") : stopsForLine.slice(this[line][exitStation],this[line][startStation]).join(", ");
+        const stops = goingRight ? (stopsForLine.slice(this[line][startStation],this[line][exitStation]).join(", ")) : (stopsForLine.slice(this[line][exitStation],this[line][startStation]).join(", "));
         //the above conditional fills variable "stops" with the stops visited delimited by the object values associated with the station names and the direction of the trip
         console.log(`Travel on the "${line}" line, for ${lineStops} stops, through: ${stops}`);
         //the conditional helps toggle between whether or not a "change" or "arrival" message is logged, it also stops the code from logging "change" if you wanted to end the trip at Union Square
@@ -19,10 +19,11 @@ const mta = {
     },
 
     planTrip: function(entryLine, entryStop, exitLine, exitStop){
-        this.totalStops = 0; //resets totalStops in the MTA object at whenever planTrip is called!
+        this.totalStops = 0; //resets totalStops in the MTA object whenever planTrip is called!
         // validates that all inputs are correct by checking against keys in the MTA object and then the train lines objects in the MTA object
         if( Object.keys(mta).includes(entryLine) && Object.keys(mta).includes(exitLine) && Object.keys(mta[entryLine]).includes(entryStop) && Object.keys(mta[exitLine]).includes(exitStop)){
             if( entryLine === exitLine ){
+                if( entryStop === exitStop ){return console.log(`You are already at ${entryStop}!`)}; //validation for "trying to go" to the stop you're already on
                 this.travelMessage(entryStop, exitStop, entryLine, exitStop); //single line trip
             }else{
                 //since i am given a specific intersection point, 
@@ -40,3 +41,4 @@ const mta = {
 // mta.planTrip('N', '8th', 'N', 'Times Square'); //single line trip
 // mta.planTrip('N', 'Times Square', '6', '33rd'); //HW task test case
 mta.planTrip('6', '33rd', 'N', 'Times Square'); //Reverse of the HW task test case
+mta.planTrip('N', 'Times Square', 'N', 'Times Square');

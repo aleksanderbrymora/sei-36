@@ -13,9 +13,9 @@ const mta = {
         this.totalStops += lineStops;
         const stops = goingRight ? (stopsForLine.slice(this[line][startStation],this[line][exitStation]).join(", ")) : (stopsForLine.slice(this[line][exitStation],this[line][startStation]).join(", "));
         //the above conditional fills variable "stops" with the stops visited delimited by the object values associated with the station names and the direction of the trip
-        console.log(`Travel on the "${line}" line, for ${lineStops} stops, through: ${stops}`);
+        if( lineStops !== 0 ){console.log(`Travel on the "${line}" line, for ${lineStops} stops, through: ${stops}`)};
         //the conditional helps toggle between whether or not a "change" or "arrival" message is logged, it also stops the code from logging "change" if you wanted to end the trip at Union Square
-        exitStation === "Union Square" && destination !== "Union Square" ? console.log(`Change at Union Square`) : console.log(`Arrive at ${exitStation} on the ${line} line`);
+        exitStation === "Union Square" && destination !== mta[line]["Union Square"] ? console.log(`Change at Union Square`) : console.log(`Arrive at ${exitStation} on the ${line} line`);
     },
 
     planTrip: function(entryLine, entryStop, exitLine, exitStop){
@@ -24,11 +24,11 @@ const mta = {
         if( Object.keys(mta).includes(entryLine) && Object.keys(mta).includes(exitLine) && Object.keys(mta[entryLine]).includes(entryStop) && Object.keys(mta[exitLine]).includes(exitStop)){
             if( entryLine === exitLine ){
                 if( entryStop === exitStop ){return console.log(`You are already at ${entryStop}!`)}; //validation for "trying to go" to the stop you're already on
-                this.travelMessage(entryStop, exitStop, entryLine, exitStop); //single line trip
+                this.travelMessage(entryStop, exitStop, entryLine, mta[exitLine][exitStop]); //single line trip
             }else{
                 //since i am given a specific intersection point, 
-                this.travelMessage(entryStop, "Union Square", entryLine, exitStop);
-                this.travelMessage("Union Square", exitStop, exitLine, exitStop);
+                this.travelMessage(entryStop, "Union Square", entryLine, mta[exitLine][exitStop]);
+                this.travelMessage("Union Square", exitStop, exitLine, mta[exitLine][exitStop]);
             };
             console.log(`Total Number of stops: ${this.totalStops}`);
         }else{
@@ -38,7 +38,7 @@ const mta = {
     }
 };
 
-// mta.planTrip('N', '8th', 'N', 'Times Square'); //single line trip
+mta.planTrip('N', '8th', 'N', 'Union Square'); //single line trip
 // mta.planTrip('N', 'Times Square', '6', '33rd'); //HW task test case
 mta.planTrip('6', '33rd', 'N', 'Times Square'); //Reverse of the HW task test case
-mta.planTrip('N', 'Times Square', 'N', 'Times Square');
+mta.planTrip('N', 'Times Square', 'L', 'Union Square');

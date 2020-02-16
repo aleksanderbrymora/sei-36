@@ -31,6 +31,7 @@ const planTrip = function(startLine, startingStation, endLine, destinationStatio
 	 } else {
 		 console.log(`This is a multi line trip`);
 	 }
+
 	 let directions;
 	 // 1) loop throught nline, to find the start location
       startingStation = allStations[startLine].indexOf(startingStation);

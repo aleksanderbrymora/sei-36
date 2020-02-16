@@ -49,14 +49,53 @@ const getSubwayLines = function (subwayLine){
   return 'Unknown Line';
 }
 
-const planTrip = function(startLine, startStop, endLine, endStop) {
+//count stops in forward direction
+const forwardDirection = function (startStopIndex, endStopIndex, lineArray){
+const subwayStops = {};
+let listStops = [];
+let countStops = 0;
+for (let i = startStopIndex + 1; i <= endStopIndex; i++){
+  countStops += 1;
+  listStops.push(lineArray[i]);
+  }
+  subwayStops.count = countStops;
+  subwayStops.list = listStops;
+  return subwayStops;
+}
+
+//count stops in reverse direction
+const reverseDirection = function (startStopIndex, endStopIndex, lineArray){
+  const subwayStops = {};
+  let listStops = [];
+  let countStops = 0;
+  for (let i = startStopIndex - 1; i >= endStopIndex; i--) {
+    countStops += 1;
+    listStops.push(lineArray[i]);
+  }
+  subwayStops.count = countStops;
+  subwayStops.list = listStops;
+  return subwayStops;
+}
+
+//count stops
+const getStops = function (startStopIndex, endStopIndex, lineArray){
+  let stops;
+  if (startStopIndex < endStopIndex){
+    stops = forwardDirection(startStopIndex, endStopIndex, lineArray);
+  } else {
+    stops = reverseDirection(startStopIndex, endStopIndex, lineArray);
+  }
+  return stops;
+}
+
+const planTrip = function (startLine, startStop, endLine, endStop) {
   let getStartLine;
   let getEndLine;
-  let countStops = 0;
   let message;
   let listStops = [];
+  let totalStops = 0;
 
-  //Get which subway lines to use -> convert to function
+  //Get which subway lines to use
   getStartLine = getSubwayLines(startLine);
   getEndLine = getSubwayLines(endLine);
 
@@ -66,73 +105,99 @@ const planTrip = function(startLine, startStop, endLine, endStop) {
   getStartStopIndex = getStartLine.indexOf(startStop);
   getEndStopIndex = getEndLine.indexOf(endStop);
 
-  //determine if we need to change lines
+  // determine if we need to change lines
   let getUnionSqIndexStart;
   let getUnionSqIndexEnd;
-  if(getStartLine != getEndLine){ //-> move to check this first
-    //get index of union square (intersection)
+  let listOfSubwayStops;
+
+  // traversing one line only
+  if (getStartLine === getEndLine){
+    listOfSubwayStops = getStops(getStartStopIndex, getEndStopIndex, getStartLine);
+    message = `You must travel through the following stops on the ${startLine} line: ${listOfSubwayStops.list.join(', ')}.\nTotal Number of Stops: ${listOfSubwayStops.count}`;
+    // traversing 2 lines
+  } else {
     getUnionSqIndexStart = getStartLine.indexOf("Union Square");
     getUnionSqIndexEnd = getEndLine.indexOf("Union Square");
-    //start: count stops for start line
-    // check if start stop index is less than the union square index (forward direction)
-    if (getStartStopIndex < getUnionSqIndexStart){
-      // do not count start stop and add index count
-      for (let i = getStartStopIndex + 1; i <= getUnionSqIndexStart; i++)  {
-        countStops += 1;
-        listStops.push(getStartLine[i]);
-      }
-    } else { // reverse direction
-      // do not count start stop and subtract index count
-      for (let i = getStartStopIndex - 1; i >= getUnionSqIndexStart; i--) {
-        countStops += 1;
-        listStops.push(getStartLine[i]);
-      }
-    }
-    message = `You must travel through the following stops on the ${startLine} line: ${listStops.join(', ')}.\n Change at Union Square.`
-    //end: count stops for start line
-
-    //start: count stops for end line
-    //clear array for list of stops
-    listStops = [];
-    //check if end stop index is less than the union square index (reverse direction)
+    //start stop to Union Square
+    listOfSubwayStops = getStops(getStartStopIndex, getUnionSqIndexStart, getStartLine);
+    message = `You must travel through the following stops on the ${startLine} line: ${listOfSubwayStops.list.join(', ')}.\nChange on Union Square.`;
+    totalStops += listOfSubwayStops.count;
+    //Union Square to end stop
     if (getEndStopIndex < getUnionSqIndexEnd){
-      // do not count union square stop (this was already included in the start line) and subtract index count
-      for (let i = getUnionSqIndexEnd - 1; i >= getEndStopIndex; i--)  {
-        countStops += 1;
-        listStops.push(getEndLine[i]);
-      }
-    } else { //forward direction
-      // do not count union square stop (this was already included in start line) and add index count
-      for (let i = getUnionSqIndexEnd + 1; i <= getEndStopIndex; i++) {
-        countStops += 1;
-        listStops.push(getEndLine[i]);
-      }
+        listOfSubwayStops = reverseDirection(getUnionSqIndexEnd, getEndStopIndex, getEndLine);
+    } else {
+      listOfSubwayStops = forwardDirection(getUnionSqIndexEnd, getEndStopIndex, getEndLine);
     }
-    message = `${message}\n Your journey continues through the following stops: ${listStops.join(', ')}. \n Total Number of Stops: ${countStops}`
-    //end: count stops for end line
+    totalStops += listOfSubwayStops.count;
+    message = `${message}\nYour journey continues through the following stops on the ${endLine} line: ${listOfSubwayStops.list.join(', ')}.\nTotal Number of Stops: ${totalStops}`;
   }
-  //traversing one line ONLY
-  else{
-    //count number of stops -> probably convert to function
-    //check if start stop index is less than end stop index (forward direction)
-    if (getStartStopIndex < getEndStopIndex){
-      // do not count start stop and add index count
-      for (let i = getStartStopIndex + 1; i <= getEndStopIndex; i++)  {
-        countStops += 1;
-        listStops.push(getStartLine[i]);
-      }
-    } else { //reverse direction
-      // do not count start stop and subtract index count
-      for (let i = getStartStopIndex - 1; i >= getEndStopIndex; i--) {
-        countStops += 1;
-        listStops.push(getStartLine[i]);
-      }
-    }
-    message = `You must travel through the following stops on the ${startLine} line: ${listStops.join(', ')}.\n Total Number of Stops: ${countStops}`;
-  }
+
+
+  // if(getStartLine != getEndLine){
+  //   //get index of union square (intersection)
+  //   getUnionSqIndexStart = getStartLine.indexOf("Union Square");
+  //   getUnionSqIndexEnd = getEndLine.indexOf("Union Square");
+  //   //start: count stops for start line
+  //   // check if start stop index is less than the union square index (forward direction)
+  //   if (getStartStopIndex < getUnionSqIndexStart){
+  //     // do not count start stop and add index count
+  //     for (let i = getStartStopIndex + 1; i <= getUnionSqIndexStart; i++)  {
+  //       countStops += 1;
+  //       listStops.push(getStartLine[i]);
+  //     }
+  //   } else { // reverse direction
+  //     // do not count start stop and subtract index count
+  //     for (let i = getStartStopIndex - 1; i >= getUnionSqIndexStart; i--) {
+  //       countStops += 1;
+  //       listStops.push(getStartLine[i]);
+  //     }
+  //   }
+  //   message = `You must travel through the following stops on the ${startLine} line: ${listStops.join(', ')}.\n Change at Union Square.`
+  //   //end: count stops for start line
+  //
+  //   //start: count stops for end line
+  //   //clear array for list of stops
+  //   listStops = [];
+  //   //check if end stop index is less than the union square index (reverse direction)
+  //   if (getEndStopIndex < getUnionSqIndexEnd){
+  //     // do not count union square stop (this was already included in the start line) and subtract index count
+  //     for (let i = getUnionSqIndexEnd - 1; i >= getEndStopIndex; i--)  {
+  //       countStops += 1;
+  //       listStops.push(getEndLine[i]);
+  //     }
+  //   } else { //forward direction
+  //     // do not count union square stop (this was already included in start line) and add index count
+  //     for (let i = getUnionSqIndexEnd + 1; i <= getEndStopIndex; i++) {
+  //       countStops += 1;
+  //       listStops.push(getEndLine[i]);
+  //     }
+  //   }
+  //   message = `${message}\n Your journey continues through the following stops: ${listStops.join(', ')}. \n Total Number of Stops: ${countStops}`
+  //   //end: count stops for end line
+  // }
+  // //traversing one line ONLY
+  // else{
+  //   //count number of stops -> probably convert to function
+  //   // //check if start stop index is less than end stop index (forward direction)
+  //   // if (getStartStopIndex < getEndStopIndex){
+  //   //   // do not count start stop and add index count
+  //   //   for (let i = getStartStopIndex + 1; i <= getEndStopIndex; i++)  {
+  //   //     countStops += 1;
+  //   //     listStops.push(getStartLine[i]);
+  //   //   }
+  //   // } else { //reverse direction
+  //   //   // do not count start stop and subtract index count
+  //   //   for (let i = getStartStopIndex - 1; i >= getEndStopIndex; i--) {
+  //   //     countStops += 1;
+  //   //     listStops.push(getStartLine[i]);
+  //   //   }
+  //   }
+  //   message = `You must travel through the following stops on the ${startLine} line: ${listStops.join(', ')}.\n Total Number of Stops: ${countStops}`;
+  // }
 
   return message;
 }
+
 //traversing one line, forward and reverse directions
 console.log(planTrip("N","Times Square","N","8th"));
 console.log(planTrip("N","8th","N","34th"));

@@ -1,15 +1,45 @@
 // object trainNetwork
 const trainNetwork = {
 
+  // function to run the methods to plan the trip
+  planTrip: function() {
+    this.addTrip();
+    this.tripCount.trip = Object.keys(this.trips).length;
+    let count = this.tripCount.trip;
+    this.inputMessage(count);
+    if (!this.lineExists(count)) {
+      return;
+    };
+    // test if station provided exists
+    if (!this.stationExists(count)) {
+      return;
+    };
+    // test if both stations are the same line
+    if (this.compareLine(count)) {
+      this.tripSameLine(count);
+      this.tripSameLineMessage(count);
+      return;
+    };
+    // returns the stops on each line to catch
+    this.tripOne(count);
+    this.tripTwo(count);
+    this.tripMessage(count);
+  },
+
   // factory to add further lines
   addLine: function(name, stops) { // name is key, stops is array
     this.lines[name] = stops;
     console.log(`Added ${name} line: ${this.lines[name]}.`)
   },
 
-  // factory to add trip details
-  addTrip: function(lineFrom, start, lineTo, end) {
-    let tripNumber = Object.keys(this.trips).length+1;
+  // factory to add trip details once button is clicked
+  addTrip: function() {
+    let start = prompt('Whats station do you want to get on at?');
+    let lineFrom = prompt('On which line?');
+    let end = prompt('What station do you want to go to?');
+    let lineTo = prompt('On which line?')
+    let tripNumber = this.tripCount.trip + 1;
+    //let tripNumber = Object.keys(this.trips).length+1;
     this.trips[tripNumber] = {lineFrom: lineFrom, start: start, lineTo: lineTo, end: end};
   },
 
@@ -31,12 +61,17 @@ const trainNetwork = {
   },
 
   printTrips: function() {
+    console.log(`----- TRIPS -----`);
+    if (this.tripCount.trip === 0) {
+      console.log(`No trips have been planned.`);
+      return;
+    }
     for (const trip in this.trips) {
       if (this.trips[trip].lineExists === false || this.trips[trip].stationExists === false) {
-        console.log(`${trip}: ${this.trips[trip].start} (${this.trips[trip].lineFrom}) \
+        console.log(`Trip ${trip}: ${this.trips[trip].start} (${this.trips[trip].lineFrom}) \
 to ${this.trips[trip].end} (${this.trips[trip].lineTo}) could not be completed.`);
       } else {
-      console.log(`${trip}: ${this.trips[trip].start} (${this.trips[trip].lineFrom}) \
+      console.log(`Trip ${trip}: ${this.trips[trip].start} (${this.trips[trip].lineFrom}) \
 to ${this.trips[trip].end} (${this.trips[trip].lineTo}) with ${this.trips[trip].stops} stops.`);
       }
     }
@@ -47,31 +82,6 @@ to ${this.trips[trip].end} (${this.trips[trip].lineTo}) with ${this.trips[trip].
       let key = Object.keys(this.lines)[i];
       console.log(`${key}: ${this.lines[key].join(', ')}`);
     }
-  },
-
-  // function to run the methods to plan the trip
-  planTrip: function(lineFrom, start, lineTo, end) {
-    this.addTrip(lineFrom, start, lineTo, end);
-    this.tripCount.trip = Object.keys(this.trips).length;
-    let count = this.tripCount.trip;
-    this.inputMessage(count);
-    if (!this.lineExists(count)) {
-      return;
-    };
-    // test if station provided exists
-    if (!this.stationExists(count)) {
-      return;
-    };
-    // test if both stations are the same line
-    if (this.compareLine(count)) {
-      this.tripSameLine(count);
-      this.tripSameLineMessage(count);
-      return;
-    };
-    // returns the stops on each line to catch
-    this.tripOne(count);
-    this.tripTwo(count);
-    this.tripMessage(count);
   },
 
   lineExists: function(count) {
@@ -116,7 +126,7 @@ to ${this.trips[trip].end} (${this.trips[trip].lineTo}) with ${this.trips[trip].
         this.trips[count].tripSameLineArray.push(this.lines[this.trips[count].lineFrom][i]);
       }
     } else {
-      for (let i = firstStationIndex + 1; i >= lastStationIndex; i--) {
+      for (let i = firstStationIndex - 1; i >= lastStationIndex; i--) {
         this.trips[count].tripSameLineArray.push(this.lines[this.trips[count].lineFrom][i]);
       }
     }
@@ -182,7 +192,32 @@ ${this.trips[count].tripOneArray.join(', ')}.`);
   }
 };
 
-trainNetwork.planTrip('M', 'Times Square', '6', '33rd');
-trainNetwork.planTrip('L', '8th', '6', '33rd');
-trainNetwork.planTrip('L', '8th', 'L', '3rd');
-trainNetwork.planTrip('6', '9th', 'L', '3rd');
+const planTripButton = document.getElementById('planTripButton');
+planTripButton.addEventListener('click', addTripTrainNetwork, false);
+
+function addTripTrainNetwork() {
+  trainNetwork.planTrip();
+};
+
+const printTripButton = document.getElementById('printTripButton');
+printTripButton.addEventListener('click', printTripTrainNetwork, false);
+
+function printTripTrainNetwork() {
+  trainNetwork.printTrips();
+};
+
+const printLinesButton = document.getElementById('printLines');
+printLinesButton.addEventListener('click', printLinesTrainNetwork, false);
+
+function printLinesTrainNetwork() {
+  trainNetwork.printLines();
+};
+
+
+//document.getElementsByTagName('button').addEventListener('click', trainNetwork.planTrip);
+
+
+// trainNetwork.planTrip('M', 'Times Square', '6', '33rd');
+// trainNetwork.planTrip('L', '8th', '6', '33rd');
+// trainNetwork.planTrip('L', '8th', 'L', '3rd');
+// trainNetwork.planTrip('6', '9th', 'L', '3rd');

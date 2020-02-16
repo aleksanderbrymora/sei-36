@@ -25,8 +25,11 @@ Note that i and j have to be combined to fit in a 5x5 board on the original boar
 
 ## Task
 
-Write a program that encodes a given string using that cipher.
+Write a program that encodes a given string using that cipher with the 'Ours' table 
+Any characters that are not in the table should be ignored. 
 
+## Examples
 
+Ciphers are confusing! -> 31 42 14 32 51 34 44 11 34 51 31 53 43 12 15 44 42 43 22
 
 _Source: Codes, Ciphers & other Cryptic & Clandestine Communication by Fred B. Wrixon_

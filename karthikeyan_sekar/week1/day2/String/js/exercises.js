@@ -107,25 +107,26 @@ For example:
 ```
 */
 
+
+
 const notBad = function(string) {
   const firstPoint = string.indexOf('not');
-  const lastPoint = string.lastIndexOf('bad')+3;
-  if (firstPoint == -1 || lastPoint == -1) {
-    return string;
-  }
-  else if (firstPoint > lastPoint-3) {
+  const lastPoint = string.indexOf('bad');
+  const corPoint = lastPoint + 3;
+  if (firstPoint == -1) {
     return string;
   }
   else {
-    const searchFor = string.slice(firstPoint, lastPoint);
+    const searchFor = string.slice(firstPoint, corPoint);
     const replaceWith = 'good';
     const newString = string.replace(searchFor, replaceWith);
     return newString;
   };
 };
 
+
 console.log(notBad('This dinner is not that bad!'));
 console.log(notBad('This movie is not so bad!'));
 console.log(notBad('This dinner is bad!'));
-console.log(notBad('This dinner is badnot!'));
-console.log(notBad('This dinner is just dinner!'));
+//console.log(notBad('This dinner is badnot!'));
+//console.log(notBad('This dinner is just dinner!'));

@@ -185,7 +185,9 @@ const tripPlanner = function(s1, s2, l1 = null, l2 = null) {
           possibleTrips.push(
             `Number of stops are ${
               trip.length
-            }, change at Union Square. The stops are: ${trip.join(", ")}.`
+            }, change at Union Square for line ${line2}. The stops are: ${trip.join(
+              ", "
+            )}.`
           );
         }
       });
@@ -207,7 +209,9 @@ const tripPlanner = function(s1, s2, l1 = null, l2 = null) {
     stops = stops.concat(tripOnSameLine(l2, "Union Square", s2));
     return `Number of stops are ${
       stops.length
-    }, change at Union Square. The stops are: ${stops.join(", ")}.`;
+    }, change at Union Square for line ${l2}. The stops are: ${stops.join(
+      ", "
+    )}.`;
   }
 };
 

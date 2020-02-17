@@ -1,4 +1,4 @@
-
+// console.log('I am a great Programmer');
 // # Geometry Function Lab
 //
 // ### Part 1, Rectangle
@@ -84,32 +84,42 @@ const triangleD = {
   sideB: 4,
   sideC: 4
 };
+//(tri.sideA == tri.sideB && tri.sideA == tri.sideB)
+//((tri.sideC ** 2) < ((tri.sideA ** 2)+(tri.side ** 2)))
+//((tri.sideC ** 2) > ((tri.sideA ** 2)+(tri.side ** 2)))
+//-----------whats wrong with the following code?-------
+// const typeOfTri = function(tri){
+//   let type;
+//   if (((tri.sideA ** 2)+(tri.sideB ** 2))/2 === (tri.sideC ** 2)){
+//     type = 'Equilateral'
+//   console.log('its a ' + type + " triangle");
+//   return type;
+// }else if((tri.sideC ** 2) < ((tri.sideA ** 2)+(tri.side ** 2))){
+//   type = 'Acute'
+//  console.log('its a ' + type + " triangle");
+//  return type;
+// }else if ((tri.sideC ** 2) > ((tri.sideA ** 2)+(tri.side ** 2))){
+//   type = 'Obtuse';
+//  console.log('its a ' + type + " triangle");
+// }else{
+//   return
+// }
+// };
 
-const typeOfTri = function(tri){
-  let type;
-  if (((tri.sideA ** 2)+(tri.sideB ** 2))/2 === (tri.sideC ** 2)){
-    type = 'Equilateral'
-  console.log('its a ' + type + " triangle");
-  return type;
-}else if((tri.sideC ** 2) < ((tri.sideA ** 2)+(tri.sideB ** 2))){
-  type = 'Acute'
- console.log('its a ' + type + " triangle");
- return type;
-}else if ((tri.sideC ** 2) > ((tri.sideA ** 2)+(tri.sideB ** 2))){
-  type = 'Obtuse';
- console.log('its a ' + type + " triangle");
-}else{
-  return
-}
-};
+//------whats wrong with this one too???
 
+// const typeOfTri = function(tri){
+//   if (((tri.sideA ** 2)+(tri.sideB ** 2))/2 === (tri.sideC ** 2)){
+//     console.log("its a equilateral triangle");
+//   }else if((tri.sideC ** 2) < ((tri.sideA ** 2)+(tri.side ** 2))){
+//     console.log("its a Acute triangle");
+//   }else if ((tri.sideC ** 2) > ((tri.sideA ** 2)+(tri.side ** 2))){
+//     console.log("its a Obtuse triangle");
+//   }else{
+//     return
+//   }
+// };
 
-
-
-typeOfTri(triangleA);
-typeOfTri(triangleB);
-typeOfTri(triangleC);
-typeOfTri(triangleD);
 //-----isequal------
 const isEqui = function(tri){
   if (tri.sideA == tri.sideB && tri.sideA == tri.sideC){

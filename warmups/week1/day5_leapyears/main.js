@@ -1,4 +1,4 @@
-const isLeapYear = function(year) {
+const isLeapYear = function (year) {
 	if (year % 400 === 0) return true;
 	if (year % 100 === 0) return false;
 	if (year % 4 === 0) return true;
@@ -13,7 +13,7 @@ console.log(isLeapYear(2000));
 const button = document.querySelector('button');
 const input = document.querySelector('input');
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function () {
 	const year = parseInt(input.value);
 	console.log(year);
 	document.querySelector('p').innerText = isLeapYear(year);

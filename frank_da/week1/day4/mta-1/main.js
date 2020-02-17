@@ -1,7 +1,3 @@
-const lineN = ['Time Square', '34th', '28th', '23rd', 'Union Square', '8th'];
-const lineL = ['8th', '6th', 'Union Square', '3rd', '1st'];
-const line6 = ['Grand Central', '33rd', '28th', '23rd', 'Union Square', 'Astor Place'];
-
 const lines = {
     N: ['Time Square', '34th', '28th', '23rd', 'Union Square', '8th'],
     L: ['8th', '6th', 'Union Square', '3rd', '1st'],
@@ -13,13 +9,13 @@ const planTrip = function(line1, startStop, line2, endStop) {
     let totalStops = 0;
     let passingStops= [];
 
-    // get index of start stop
+    // get index of start/end stop
     let indexLine1UnionSquare = lines[line1].indexOf('Union Square');
     let indexLine2UnionSquare = lines[line2].indexOf('Union Square');
     let indexStartStop = lines[line1].indexOf(startStop);
     let indexEndStop = lines[line2].indexOf(endStop);
 
-    // passing stops
+    // route of passing stops
     // single line situation
     if (line1 === line2) {
         if (indexEndStop > indexStartStop) {

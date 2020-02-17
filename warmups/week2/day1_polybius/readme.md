@@ -23,13 +23,19 @@ Note that i and j have to be combined to fit in a 5x5 board on the original boar
 |  5   |  u  |  v  |  w  |  x  |  y  |
 |  6   |  z  |  ,  |  .  |  ?  |  !  |
 
+33 51 44 44 11 22 51
+
 ## Task
 
-Write a program that encodes a given string using that cipher with the 'Ours' table 
-Any characters that are not in the table should be ignored. 
+Write a program that encodes a given string using that cipher with the 'Ours' table
+Any characters that are not in the table should be ignored.
 
 ## Examples
 
-Ciphers are confusing! -> 31 42 14 32 51 34 44 11 34 51 31 53 43 12 15 44 42 43 22
+Ciphers are confusing! -> 31 42 13 32 51 33 44 11 33 51 31 53 43 11 14 44 42 43 22 55
+
+42 13 32 51 33 44 11 33 51 31 53 43 11 14 44 42 43 22 55
 
 _Source: Codes, Ciphers & other Cryptic & Clandestine Communication by Fred B. Wrixon_
+
+abcdefghijklmnopqrstuvwxyz,.?!

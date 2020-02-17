@@ -119,6 +119,7 @@ nav ul li a:hover{
     border-bottom: 1px solid white;
     border-right: 1px solid white;
     position: relative;
+    background: url(../images/bg_blurb.jpg) repeat-x;
 }
 
 #blurb p{

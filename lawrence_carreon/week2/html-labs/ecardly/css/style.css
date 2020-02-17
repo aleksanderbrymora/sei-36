@@ -28,22 +28,24 @@ header{
 #container{
      width: 940px;
      margin: 0 auto;
-     background-color: white;
+     box-sizing: border-box;
+     position: relative;
 }
 
 .ecardTitle{
      font-size: 20px;
-     padding: 30px 0 0 15px;
+     padding: 30px 0 0 0;
 }
 
-.ecard{
+.ecards{
      padding: 0 15px 30px 15px;
-     display: grid;
-     grid-template-columns: 630px 265px;
-     grid-column-gap: 10px;
+     background-color: white;
+     width: 620px;
+     display: inline-block;
+     margin-right: 20px;
 }
 
-.ecard img{
+.ecards img{
      width:100%;
 }
 
@@ -55,6 +57,41 @@ header{
 .link{
      color: #cc6633;
      text-decoration: none;
+}
+
+.post{
+     border-top: 1px solid lightgray;
+     border-bottom: 5px solid lightgray;
+     padding: 10px 0;
+}
+
+.sidebar{
+     display: inline-block;
+     width: 260px;
+     background-color: white;
+     position: absolute;
+     top: 0;
+     padding: 10px;
+     font-weight: bold;
+}
+
+.sidebar p{
+     margin: 0;
+     font-size: 16px;
+     padding: 20px 0 0 10px;
+}
+
+.sidebar ul{
+     list-style-type: none;
+     padding: 0 0 0 10px;
+     margin: 0 0 10px 0;
+     line-height: 1.4;
+}
+
+.sidebar img{
+     padding: 0 0 15px 10px;
+     cursor: pointer;
+     margin-bottom: 5px;
 }
 
 /* Clear fix hack */

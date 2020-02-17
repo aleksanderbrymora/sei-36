@@ -52,11 +52,11 @@ const testError = function(array) {
     return `valid: ${array.valid}, number: ${array.card}`;
   }
   return errorMessage(array);
-
 }
 
 const validateCreditCard = function(card) {
   // object to hold each validity test, 4 in total
+  // BONUS: change test names to something more meaningful i.e. `incorrect_length`
   const testArray = {
     card: card,
     test0: false,
@@ -85,6 +85,7 @@ const validateCreditCard = function(card) {
   for (let i = 1; i < card.length; i++) {
     if (card[0] !== card[i]) {
       testArray.test2 = true;
+      break;
     }
   }
 
@@ -99,10 +100,11 @@ const validateCreditCard = function(card) {
     sum += + card[i];
     if (sum > 16) {
       testArray.test4 = true;
+      break;
     }
   }
 
-  if (testArray.test1 && testArray.test2 && testArray.test3 && testArray.test4) {
+  if (testArray.test0 && testArray.test1 && testArray.test2 && testArray.test3 && testArray.test4) {
     testArray.valid = true;
   }
   return testError(testArray);

@@ -1,0 +1,44 @@
+/*
+    By Ali A.
+
+*/
+
+@import url(resets.css);
+@import url(typography.css);
+
+/* helper styles */
+
+.hi-light {
+  border: 1px groove lightgreen;
+}
+
+/*
+    Main styling
+*/
+
+header {
+  position: relative;
+  left: 220px;
+  width: 75%;
+  height: 20%;
+}
+
+#grad {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(128, 139, 150, 1) 100%
+  );
+}
+
+.extra2 {
+  background-image: url(/images/face2.png);
+  background-repeat: no-repeat;
+  /*background-position: left bottom;*/
+
+  height: 594px;
+  width: 239;
+  z-index: 2;
+}

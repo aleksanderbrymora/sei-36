@@ -7,9 +7,11 @@
 */
 
 @import url("https://fonts.googleapis.com/css?family=Marck+Script|Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap");
 
 body {
   font-size: 100%;
+  font-family: "Cormorant Garamond", serif;
 }
 
 header h1 {

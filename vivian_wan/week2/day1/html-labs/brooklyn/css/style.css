@@ -1,0 +1,55 @@
+/* 
+
+## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+title {
+	text-align: justify;
+}
+
+h3 {
+
+
+}
+
+h5 {
+color: cadetblue;
+
+}
+
+p {
+font-size: 12px;
+text-align: auto;
+line-height: 20px;
+font Family = "Times New Roman", serif
+
+}
+
+body {
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.adlogos {
+	border: 20px solid;
+}
+
+.pictures {
+	text-align: center;
+}
+.logo {
+	text-align: center;
+}

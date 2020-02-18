@@ -1,0 +1,59 @@
+body {
+	/* background: red; */
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+.top-nav {
+	background-color: black;
+	padding: 0px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 75px;
+}
+
+ul {
+	margin: 0px
+	width: 70%;
+  margin: auto;
+}
+
+.nav-item {
+	color: #fff;
+	text-decoration: none;
+	float: left;
+	padding-right: 50px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+	width: 960px;
+}
+
+.nav-contents {
+	display: inline-block;
+	padding-top: 27px;
+	margin: 0 auto;
+}
+
+ul li{
+  display: inline;
+	padding-right: 20px;
+}
+
+.hero-background {
+	background-color: #ede9e9;
+	height: 400px;
+}
+
+.social-icons {
+	float: right;
+}

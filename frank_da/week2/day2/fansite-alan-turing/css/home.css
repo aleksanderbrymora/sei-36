@@ -1,0 +1,77 @@
+.wrapper {
+    height: 100vh;
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 269px;
+    margin: 200px 0 10 0px
+}
+
+main > h1, main > h2 {
+    color: #dce2de;
+    display: block;
+    margin: 15px;
+}
+
+
+
+nav.info > a {
+    color: #fff;
+    margin: 0 50px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+nav.info > a:hover {
+    color: red;
+}
+
+/* toggler */
+
+.input-toggler {
+    display: none;
+}
+
+.input-toggler:checked ~ .control-toggler {
+    background-color: #27637a;
+}
+
+.input-toggler:checked ~ nav > a {
+    opacity: 100;
+}
+
+.control-toggler {
+    display: flex;
+    border-radius: 3em;
+    width: 285px;
+    height: 40px;
+    margin: 30px;
+    background-color: #56252b;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+.control-toggler:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.4em 0.7em rgba(0,0,0.2);
+}
+
+main > label > span {
+    color: #dce2de;
+}

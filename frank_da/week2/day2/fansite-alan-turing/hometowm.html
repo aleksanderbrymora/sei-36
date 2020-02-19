@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometown</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/hometown.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/Alan_Turing_Aged_16.jpg" alt="">
+            <h1>ALAN TURING</h1>
+        </header>
+        <main>
+            <article>
+                <h2>Hometown</h2>
+                <p>Turing was born in Maida Vale, London</p>
+            </article>
+            <div id="map"></div>
+        </main>
+    </div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 51.530142, lng: 0.186308};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIxhOf753ddBrcz-yMWOhTonp4QTQ6Ppc&callback=initMap">
+    </script>
+</body>
+</html>

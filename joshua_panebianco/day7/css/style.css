@@ -57,6 +57,7 @@ background-size: cover;
 
 .change-pic:hover {
   color: red;
+	text-shadow: #FC0 1px 0 10px;
 }
 
 image1 {

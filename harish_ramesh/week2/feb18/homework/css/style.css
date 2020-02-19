@@ -1,0 +1,52 @@
+
+body{
+  background-color: #222; /* equivalent to #222222*/
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+.container{
+  max-width:960px; /* lazy way to make a responsive conatainer*/
+  background-color: #ccc;
+  margin: auto;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+nav{
+  text-align: right;
+}
+/* desecendant selector*/
+nav a {
+  color: green;
+}
+
+h1{
+  text-align: center;
+  background-color: #222;
+  color:#ccc;
+  padding: 1em;
+}
+
+main{
+  display: inline-block;
+  width:75%;
+}
+
+main img{
+  display :block;
+  margin:auto;
+
+}
+
+aside{
+  display: inline-block;
+  width: 21%;
+  vertical-align: top;
+  background-color: #cfc;
+  padding:1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #333;
+  margin-top: 23px;/* now it pops*/
+}

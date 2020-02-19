@@ -9,27 +9,27 @@
 //   DrEvil(10): 10 dollars
 //   DrEvil(1000000): 1000000 dollars (pinky)
 // ```
-const drEvil = function(num){
-  if (num >= 1000000){
-    console.log(num + " " + "dollars " + "Pinky");
-  }else {
-    console.log(`${num} dollars.`);
-  }
-};
-
-drEvil(10000000);
-drEvil(100);
-
-
-
-// ## MixUp
-const mixUp = function(word1, word2){
-  const newString1 = word1.replace(word1[0],word2[0]);
-  const newString2 = word2.replace(word2[0],word1[0]);
-  const result = (newString1 + " " + newString2);
-  return result
-};
-console.log(mixUp('rambo','kumar'));
+// const drEvil = function(num){
+//   if (num >= 1000000){
+//     console.log(num + " " + "dollars " + "Pinky");
+//   }else {
+//     console.log(`${num} dollars.`);
+//   }
+// };
+//
+// drEvil(10000000);
+// drEvil(100);
+//
+//
+//
+// // ## MixUp
+// const mixUp = function(word1, word2){
+//   const newString1 = word1.replace(word1[0],word2[0]);
+//   const newString2 = word2.replace(word2[0],word1[0]);
+//   const result = (newString1 + " " + newString2);
+//   return result
+// };
+// console.log(mixUp('rambo','kumar'));
 
 
 
@@ -52,7 +52,33 @@ console.log(mixUp('rambo','kumar'));
 // ```
 // fixStart('babble'): 'ba**le'
 // ```
+// try using .includes for fixStart
+// const fixStart = function(stringy){
+//   let part2 = stringy.substring(1,stringy.length);
+//   let part1 = stringy[0];
+//   for (let i=0;i<part2.length;i++){
+//     if (part2[i] === part1){
+//       part2 = part2[i].replace(part1,'*');
+//     console.log(part1 + part2 );
+//   }
+//  }
+// };
 //
+//  fixStart('goggle');
+const fixStart = function(stringy){
+let part2 = stringy.substring(1,stringy.length);
+let part1 = stringy[0];
+for (let i=0; i>length)
+};
+fixStart('googgle');
+
+
+
+// let word = 'google'
+// const firstLetter = word[0].toLowerCase()
+//   console.log(word.match(firstLetter));
+//   console.log(word.search(firstLetter));
+//   console.log(word.replace(word[0],"*"));
 // ## Verbing
 //
 // Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its end, unless it already ends in 'ing', in which case it should add 'ly' instead. If the string length is less than 3, it should leave it unchanged. For example:
@@ -61,7 +87,29 @@ console.log(mixUp('rambo','kumar'));
 //   verbing('swimming'): 'swimmingly'
 //   verbing('go'): 'go'
 // ```
+
+
+
+// const verbing = function(str){
+//   if (str.length >= 3 && str.substring((str.length-3),(str.length)) !== 'ing'){
+//     console.log(str + 'ing')
+//   }else if (str.substring((str.length-3),(str.length)) === 'ing'){
+//     console.log(str + 'ly')
+//   }else{
+//     console.log(str);
+//   }
+// };
 //
+// (verbing('mar'));
+// (verbing('go'));
+// (verbing('swiming'));
+// (verbing('caring'));
+// (verbing('share'));
+// (verbing('re'));
+
+
+
+
 // ## Not Bad
 //
 // Create a function called notBad that takes a single argument, a string.

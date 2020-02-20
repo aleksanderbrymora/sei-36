@@ -32,14 +32,9 @@
 // i need a total of stops ()
 
 //cucd 
-const lines = {
-    lineN: ["Time Square", "34th", "28th", "23rd", "Union Square", "8th"],
-    lineL: ["8th", "6th", "Union Square", "3rd", "1st"],
-    line6: ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
-}
-let stops = [];
+const lineN = ["Time Square", "34", "28", "23", "Union Square", "8"];
+let numOfStops = [];
 
-/*
 const myTrip = function (getOnLine, getOnStation, getOffLine, getOffStation) {
     console.log (`You are catching this train on Line ${getOnLine} station ${getOnStation}.`)
     for (let i = lineN.indexOf(getOnStation)+1; i <= lineN.indexOf(getOffStation); ++i){
@@ -50,41 +45,6 @@ const myTrip = function (getOnLine, getOnStation, getOffLine, getOffStation) {
     console.log(`You have travelled a total of ${numOfStops.length} stops.`)
 }
 console.log (myTrip ("N", "Time Square", "N", "Union Square"))
-*/ 
-
-
-const myTrip = function (getOnLine, getOnStation, getOffLine, getOffStation)
-{
-    if (areGivenStopsOnSameLine(getOnLine, getOffLine)) {
-        return calcOnSameLine (getOnStation, getOffStation);
-
-    }
 
 
 
-}
-/**
- * checks if the 
- * @param {*} getOnLine 
- * @param {*} getOffLine 
- */
-const areGivenLinesSame = function(getOnLine, getOffLine) {
-    if (getOnLine === getOffLine) {
-        return true;
-    } else {
-        return false;
-    }
-
-}
-
-const calcOnSameLine = function (getOnStation, getOffStation) {
-    let stops = [];
-    
-    for (let i = lines.lineN.indexOf(getOnStation)+1; i <= lines.lineN.indexOf(getOffStation); ++i){
-        stops.push(lines.lineN[i]);        
-    }
-}
-
-console.log(myTrip('lineN', '34th', 'lineL', '3rd'));
-
-console.log(myTrip('lineN', '34th', 'lineN', '8th'));

@@ -1,5 +1,4 @@
 body {
-  background-color: grey;
   margin: 0 auto;
 }
 
@@ -77,6 +76,16 @@ nav {
   border: 1px solid black;
 }
 
+.para {
+  display: inline-block;
+}
+
 #blurb {
   float: right;
+}
+
+.column {
+  display: inline;
+  float: left;
+  width: 33%;
 }

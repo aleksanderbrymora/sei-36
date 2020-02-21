@@ -1,0 +1,52 @@
+/* 
+
+## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+body{
+	font-size: 12px;
+	line-height: 17px;
+	font-family: "Times New Roman", serif;
+	color: #656565;
+}
+
+#container{
+	margin: 10px auto;
+	width: 900px;
+}
+
+.homeImg{
+	width: 100%;
+}
+
+#dateTime, #link a{
+	color: lightskyblue;
+	text-decoration: none;
+}
+
+#link a:hover{
+	color: #20222a;
+}
+
+#pressBrands{
+	display: grid;
+	grid-template-columns: calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px);
+	grid-column-gap: 10px;
+	width: 900px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#pressBrands img{
+	width: 100%;
+	border: 5px solid slategray;
+	box-sizing: border-box;
+}

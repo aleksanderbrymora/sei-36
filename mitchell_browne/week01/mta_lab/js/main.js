@@ -1,3 +1,7 @@
+// add if start station is Union square, then readdress output to make sense
+// add drop-down like Leo's
+// see call, bind from Ali suggestion
+
 // object trainNetwork
 const trainNetwork = {
 
@@ -193,28 +197,21 @@ ${this.trips[count].tripOneArray.join(', ')}.`);
 };
 
 const planTripButton = document.getElementById('planTripButton');
-planTripButton.addEventListener('click', addTripTrainNetwork, false);
-
-function addTripTrainNetwork() {
+planTripButton.addEventListener('click', function() {
   trainNetwork.planTrip();
-};
+});
+// call, bind, apply -> to point 'this' to a particular object
+
 
 const printTripButton = document.getElementById('printTripButton');
-printTripButton.addEventListener('click', printTripTrainNetwork, false);
-
-function printTripTrainNetwork() {
+printTripButton.addEventListener('click', function() {
   trainNetwork.printTrips();
-};
+});
 
 const printLinesButton = document.getElementById('printLines');
-printLinesButton.addEventListener('click', printLinesTrainNetwork, false);
-
-function printLinesTrainNetwork() {
+printLinesButton.addEventListener('click', function() {
   trainNetwork.printLines();
-};
-
-
-//document.getElementsByTagName('button').addEventListener('click', trainNetwork.planTrip);
+});
 
 
 // trainNetwork.planTrip('M', 'Times Square', '6', '33rd');

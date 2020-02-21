@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url('../images/navy-pic.jpg');
+	/* Background image is centered vertically and horizontally at all times */
+background-position: center center;
+
+/* Background image doesn't tile */
+background-repeat: no-repeat;
+
+/* Background image is fixed in the viewport so that it doesn't move when
+	 the content's height is greater than the image's height */
+background-attachment: fixed;
+
+/* This is what makes the background image rescale based
+	 on the container's size */
+background-size: cover;
+}
+
+.container2 {
+	display: block;
+}
+
+.container {
+	max-width: 960px;
+	display: block;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	min-height: 100vh;
+
+}
+
+.text-block {
+	float: left;
+	width: 45%;
+}
+
+.grace-pic {
+	float: right;
+	width: 480px;
+	height: 600px;
+}
+
+.grace-pic:hover {
+	display: none;
+
+}
+
+.bill-pic {
+	/* display: none; */
+	float: right;
+	width: 480px;
+	height: 600px;
+}
+
+.change-pic:hover {
+  color: red;
+	text-shadow: #FC0 1px 0 10px;
+}
+
+image1 {
+    background: url('../images/Grace_Hopper.jpg');
+}
+image1:hover {
+    background: url('../images/bill-murray.jpg');
+}

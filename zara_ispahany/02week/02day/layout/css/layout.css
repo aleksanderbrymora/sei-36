@@ -1,0 +1,55 @@
+/* * {
+  border: 1px solid green;
+} this will put a border on everything so u can check*/
+
+body {
+  background-color: #222222; /* #222 is the same */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  background-color: #ccc;
+  margin: auto;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+nav {
+  text-align: right;
+}
+
+/* Descendent selector */
+nav a {
+  color: green;
+}
+
+h1 {
+  text-align: center;
+  background-color: #222;
+  color: #ccc;
+  padding: 1em;
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+main img {
+  display: block;
+  margin: auto;
+}
+
+aside {
+  display: inline-block;
+  width: 21%; /* cant do 100% due to padding so this is equivalent */
+  vertical-align: top;
+  background-color: #cfc;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #222;/* Now it pops */
+  margin-top: 14px;
+}

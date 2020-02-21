@@ -52,3 +52,9 @@ node_modules/
 /yarn-error.log
 
 .byebug_history
+
+# Ali's ignore stuff
+ali_alavi/NOT_FOR_MASTER/*
+
+# VScode
+.vscode/

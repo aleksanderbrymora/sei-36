@@ -12,7 +12,7 @@ const squareNumber = function(n) {
 /**
  * A function  that will take one argument (a number), divide it by 2, and return
  * a string with the result.
- * @param  {Number} n  Number to be halfed.
+ * @param  {Number} n  Number to be halved.
  * @return {string}
  */
 

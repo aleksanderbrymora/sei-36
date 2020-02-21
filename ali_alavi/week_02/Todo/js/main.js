@@ -35,37 +35,80 @@ const Todo = class {
     //increment list size
     this.listSize++;
   }
+
+  find(id) {
+    for (let i = 0; i < this.dataStore.length; ++i) {
+      if (this.dataStore[i].id == id) {
+        return i;
+      }
+    }
+    return -1;
+  }
+
+  remove(id) {
+    const foundAt = this.find(id);
+    // not using slice since it returns a shallow copy/mutates
+    if (foundAt > -1) {
+      this.dataStore.splice(foundAt, 1);
+      --this.listSize;
+      return true;
+    }
+    return false;
+  }
 };
 
 // Create a todos data type
 const todos = new Todo();
 
+// Testing stuff
+// todos.add("Make remove method.")
+// const x1=todos.dataStore[0].id
+// x1
+// const x2 = todos.find(x1)
+// x2
+// todos.remove(x1)
+// todos
+
 //
 let todoItem = function(todo, id) {
   return `<li class="list-group-item d-flex justify-content-between row col-md-auto" data-id="${id}">
           ${todo} 
-          <button class="btn btn-outline-secondary bg-light" type="button" id="done">Done
+          <button class="btn btn-outline-secondary bg-light new-item" type="button">Done
           </button>
           </li>`;
 };
 
 // JQ
 $("#todoForm").submit(function(e) {
-  event.preventDefault();
+  e.preventDefault();
   //store inputed value
-  const inputVal = $("#inputTodo").val();
+  let inputVal = $("#inputTodo").val();
 
   //clear
   $("#inputTodo").val("");
   // add todo instance after sanatize
-  if (isString(inputVal)) {
+  if (inputVal.length > 0 && isString(inputVal)) {
     todos.add(inputVal);
+    $("#todoList").prepend(
+      todoItem(
+        todos.dataStore[todos.listSize - 1].todo,
+        todos.dataStore[todos.listSize - 1].id
+      )
+    );
   }
-  //console.log(todos);
-  $("#todoList").prepend(
-    todoItem(
-      todos.dataStore[todos.listSize - 1].todo,
-      todos.dataStore[todos.listSize - 1].id
-    )
-  );
+});
+
+// Done/remove
+$("#todoList").on("click", ".new-item", function() {
+  //get data-id from parent li
+  const id = $(this)
+    .parent()
+    .attr("data-id");
+  // remove todo from store
+  todos.remove(id);
+
+  //remove dom element
+  $(this)
+    .parent()
+    .remove();
 });

@@ -1,0 +1,82 @@
+body {
+  background-color: grey;
+  margin: 0 auto;
+}
+
+/* navigation menu styling /////////////////////////////////////////////////////////////////////////////////////*/
+.navmenu a {
+  text-decoration:none;
+  color: white;
+}
+.navmenu li {
+  display: inline;
+  padding: 50px 30px;
+}
+nav {
+  background: black;
+  color: white;
+  padding: 15px 10%;
+}
+.navitem {
+  text-align: left;
+  position: relative;
+}
+
+.logo {
+  padding: 20px 0;
+}
+
+/* Social media logos /////////////////////////////////////////////////////////////////////////////////////////*/
+.socials {
+	float: right;
+}
+
+.socials ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+/* black&white social media icons /////////////////////////////////////////////////////////////////////////////*/
+.socials ul li.linkedIn {
+	background:url(../images/socialNav.png) 0 64px;
+}
+.socials ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+.socials ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+.socials ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+/* mouse over social media logos = colour ////////////////////////////////////////////////////////////////////*/
+.socials ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0 0;
+}
+.socials ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0;
+}
+.socials ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0;
+}
+.socials ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0;
+}
+
+#container {
+  width: 950px;
+  padding: 0px 16%;
+}
+
+.request-blurb {
+  width: 960px;
+  border: 1px solid black;
+}
+
+#blurb {
+  float: right;
+}

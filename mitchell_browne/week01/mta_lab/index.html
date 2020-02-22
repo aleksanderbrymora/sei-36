@@ -2,16 +2,20 @@
   <head>
     <meta charset="utf-8">
     <title>MTA Lab</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <h1>Metropolitan Transportation Authority</h1>
-    <h2>choo choo</h2>
-    <button type="button" id="planTripButton">Plan a trip</button>
-    <button type="button" id="printTripButton">Print your trips</button>
-    <button type="button" id="printLines">Print available lines</button>
-    <p>Check the Javascript console for program output.</p>
-    <img src="images/train_cartoon.jpg" alt="train cartoon"/>
+    <h1>Metropolitan Trainspotting Authority</h1>
+    <div class="buttons">
+      <button type="button" id="planTripButton">Plan a trip</button>
+      <button type="button" id="printTripButton">Print your trips</button>
+      <button type="button" id="printLines">Print available lines</button>
+      <div class="output" id="printLinesOutput">
+        <p>HELLO</p>
+      </div>
+    </div>
   </body>
   <script src="js/main.js"></script>
 </html>

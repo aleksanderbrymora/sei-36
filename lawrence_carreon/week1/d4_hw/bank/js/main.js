@@ -50,6 +50,21 @@ let bank =
     },
 
     transfer( giver, receiver, amount ){
+        if( this.account[giver] === undefined || this.account[receiver] === undefined){
+            return `MoneyGrubbers doesn't have one of the clients in this transfer!`;
+        };
+        if( this.account[giver] - amount < 0){
+            return `You broke bruh! You can only transfer $${this.account[giver]} or less`
+        };
+        if( isNaN(amount) ){
+            return `MoneyGrubbers can't make this transaction, please try again.`
+        };
+        this.account[giver] -= amount;
+        this.account[receiver] += amount;
+        return `Your transaction was completed!
+        Transferred amount: $${amount}
+        ${giver}'s new balance: $${this.account[giver]}
+        ${receiver}'s new balance: $${this.account[receiver]}`;
         console.log(this.withdraw(giver, amount));
         console.log(this.deposit(receiver, amount));
         return `The transfer from ${giver} to ${receiver} of $${amount} was completed!`;

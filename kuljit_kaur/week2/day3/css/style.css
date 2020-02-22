@@ -1,0 +1,34 @@
+
+/* .tuna {
+  /* use the timing function steps() to chunk the animation into 12 equal pieces */
+  /* background: url(http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png) 0 0 no-repeat;
+  height: 200px;
+  width: 400px;
+  margin: 100px auto 0;
+  animation: walk-cycle steps(11) infinite 1.5s;
+} */
+
+/* Don't forget: You'll need an @keyframes block to change the background image's position! */
+
+/* @keyframes walkCat {
+  0% { left:0px; right:0px; }
+  25% { left: 0px; right:100px; }
+  50% { left: 0px; right:200px; }
+  75% { left: 0px; right:300px; }
+  100% { left: 0px; right:400px;}
+}
+
+img {
+  /* background: url() 0 0 no-repeat; */
+  /* width: 400px;
+  height: 200px;
+  /* position: relative;
+  margin: 100px auto 0; */
+  /* background-color: red; */
+  /* animation-name: walkCat;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 11;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+} */ 

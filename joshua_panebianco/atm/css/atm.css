@@ -47,3 +47,12 @@
   background-color: #F52F4F;
   color: #FFF;
 }
+
+.status {
+  color: red;
+}
+
+/* CSS changes */
+.balance {
+  margin-bottom: 15px;
+}

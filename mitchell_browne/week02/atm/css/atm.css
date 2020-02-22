@@ -2,10 +2,21 @@
 @import url(http://fonts.googleapis.com/css?family=Ruluko);
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
+/* * {
+  border: 1px solid red;
+} */
+
 html, body {
   background-color: #F8EFE3;
   margin: 0;
   height: 100%;
+}
+
+#home_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #container {
@@ -15,7 +26,8 @@ html, body {
 }
 
 #nav {
-  margin: 50px 0px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .content {

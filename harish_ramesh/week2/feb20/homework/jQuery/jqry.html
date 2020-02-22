@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jQuery.js"></script>
+</head>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#box").animate({height: "500px"});
+  });
+  $("#btn2").click(function(){
+    $("#box").animate({height: "100px"});
+  });
+  $("#btn2").click(function(){
+  $('#image').animate({left: "900px"},4500);
+});
+});
+</script>
+
+<body>
+  <img id="image" src="giphy.gif" alt="koala" style="position:absolute;left:0;">
+
+<button id="btn1">Close</button>
+<button id="btn2">open</button>
+<style>
+  #btn1{
+    position:absolute;
+    top:400px;
+  }
+  #btn2{
+    position:absolute;
+    top:420px;
+  }
+  </style>
+<div id="box" style="position:absolute;background:black;left:400px;height:500px;width:50px;margin:6px;"></div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1{
+  /*background-color: #ffff00;*/
+  font-family: Roboto;
+}
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+nav { background: black; padding: 5px; font-family: sans-serif;}
+nav ul { list-style: none; }
+nav ul li { display: inline; margin-left: 15px; font-weight: bold; }
+nav ul li a { color: white; }
+nav ul li a:visited { color: white; }
+nav ul li a:hover { color: orange; }
+a { text-decoration: none; color: blue; }
+a:visited { color:purple; }
+a:hover { color: orange; }
+
+h1 span {
+  color: Red;
+  font-size: 50px;
+  font-weight: 20px;
+}
+.mainContainer {
+  padding : 1% 5%;
+  background-image:url("backgroundimage.jpg");
+  display:inline-block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.person {
+  text-align: center;
+  color: #888;
+}
+.detail{
+  float: left;
+  padding: 5px;
+  width: 48%;
+  font-size: 17px;
+}
+.detail p {
+  text-align: justify;
+}
+
+.clear {
+  clear: both;;
+}
+
+img{
+  /* display :block; */
+  width :350px;
+  height:400px;
+}
+
+img.journey{
+  width :350px;
+  height:300px;
+}
+footer{
+  background-color: #666;
+  padding: 1px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}

@@ -1,0 +1,14 @@
+body {
+	background-color: blueviolet;
+	display: flex;
+	width: 95vw;
+	height: 95vh;
+	box-sizing: border-box;
+	justify-content: flex-start;
+	align-items: center;
+	transform: translateX(-10vw);
+}
+
+.hand svg {
+	width: 100%;
+}

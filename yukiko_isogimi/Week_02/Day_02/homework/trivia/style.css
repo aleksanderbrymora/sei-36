@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Lacquer|Neuton|Roboto+Mono|Special+Elite|Ubuntu&display=swap');
+
+
+* {
+  margin:0;
+}
+body {
+  font-family: 'Neuton', serif;
+  margin:0;
+  padding:0;
+
+}
+
+nav {
+  background-color: black;
+  height:200px;
+}
+
+li {
+  list-style: none;
+}
+
+
+nav  a {
+  text-decoration: none;
+  color:white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+nav {
+  background-color: black;
+  height:83px;
+
+}
+
+nav ul {
+  text-align: right;
+  padding-right:20px;
+  line-height: 60px;
+  margin-right: 50px;
+  font-size:20px;
+}
+nav ul li {
+  color:white;
+  display:inline-block;
+  margin-right:70px;
+  margin-top:10px;
+}
+
+main h1 {
+  margin-left: 30px;
+  text-align: center;
+  margin-top:43px;
+}
+
+main img {
+  width:35%;
+  display:block;
+  float:right;
+  margin-right: 112px;
+  box-shadow: 0 0 15px;
+  margin-top:10px;
+
+}
+
+
+
+.container {
+  margin-left:30px;
+}
+
+aside {
+  margin-top:54px;
+  text-align:center;
+}
+
+aside ul {
+  margin-top:10px;
+}
+
+aside li {
+  font-size:20px;
+  color:gray;
+
+}
+
+aside h2 {
+
+}
+
+aside img {
+  width:6%;
+}
+
+
+
+footer {
+  margin-top:300px;
+}
+
+
+.footer {
+
+  background-color: black;
+  color:white;
+  height:100px;
+  padding:40px;
+
+
+
+
+}
+
+
+
+.footer-logo {
+  font-size:32px;
+  float:left;
+}
+
+.footer-list {
+  float:right;
+  text-decoration: none;
+  margin-right:47px;
+}
+
+
+.footer-list li{
+  padding-bottom:10px;
+  list-style: none;
+  font-size:20px;
+}

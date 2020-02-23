@@ -18,59 +18,51 @@
   </header>
 
   <div id="container">
+    <div id="checking_content" class="content">
+      <div class="title_holder">
+        <h1 class="title checking_title">CHECKING</h1>
+        <div class="balance checking_balance zero_balance" id="checking_balance">$0</div>
+      </div>
 
-  <div id="checking_content" class="content">
+      <div class="input_holder">
+        <input class="checking_input input_box" id="checking_amount" type="text" placeholder="$amount" autocomplete="off"/>
+      </div>
 
-    <div class="title_holder">
-      <h1 class="title checking_title">CHECKING</h1>
-      <div class="balance checking_balance zero_balance" id="checking_balance">$0</div>
+      <div class="input_message" id="checking_message">
+        insufficient funds
+      </div>
+
+      <div class="button_holder">
+        <input class="button deposit_button" id="checking_deposit" type="button" value="Deposit" />
+        <input class="button deposit_button" id="checking_withdraw" type="button" value="Withdraw" />
+      </div>
+
     </div>
 
-    <div class="input_holder">
-      <input class="checking_input input_box" id="checking_amount" type="text" placeholder="$amount" autocomplete="off"/>
+    <div id="savings_content" class="content">
+      <div class="title_holder">
+        <h1 class="title savings_title">SAVINGS</h1>
+        <div class="balance savings_balance zero_balance" id="savings_balance">$0</div>
+      </div>
+
+      <div class="input_holder">
+        <input class="savings_input input_box" id="savings_amount" type="text" placeholder="$amount" autocomplete="off"/>
+      </div>
+
+      <div class="input_message" id="savings_message">
+        insufficient funds
+      </div>
+
+      <div class="button_holder">
+        <input class="button savings_button" id="savings_deposit" type="button" value="Deposit"/>
+        <input class="button savings_button" id="savings_withdraw" type="button" value="Withdraw" />
+      </div>
+
     </div>
 
-    <div class="input_message" id="checking_message">
-      insufficient funds
-    </div>
-
-    <div class="button_holder">
-      <input class="button deposit_button" id="checking_deposit" type="button" value="Deposit" />
-      <input class="button deposit_button" id="checking_withdraw" type="button" value="Withdraw" />
-    </div>
+    <div class="line">i</div>
 
   </div>
-
-  <div id="savings_content" class="content">
-
-  <div class="title_holder">
-    <h1 class="title savings_title">SAVINGS</h1>
-    <div class="balance savings_balance zero_balance" id="savings_balance">$0</div>
-  </div>
-
-  <div class="input_holder">
-    <input class="savings_input input_box" id="savings_amount" type="text" placeholder="$amount" autocomplete="off"/>
-  </div>
-
-  <div class="input_message" id="savings_message">
-    insufficient funds
-  </div>
-
-    <div class="button_holder">
-      <input class="button savings_button" id="savings_deposit" type="button" value="Deposit"/>
-      <input class="button savings_button" id="savings_withdraw" type="button" value="Withdraw" />
-    </div>
-
-
-
-  </div>
-
-  <div class="line">
-    i
-  </div>
-
-  </div>
-
 
 </body>
 </html>

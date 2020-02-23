@@ -23,11 +23,33 @@ html, body {
   text-align: center;
   height: 100vh;
   display: flex;
+  overflow: hidden;
+  opacity: 0.3;
 }
 
 #nav {
   max-width: 960px;
   margin: 0 auto;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#bank_title {
+  font-family: 'Oleo Script';
+  text-align: center;
+}
+
+.line {
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  bottom: 0vh;
+  left: 50vw;
+  width: 6px;
+  opacity: 0;
 }
 
 .content {
@@ -61,6 +83,9 @@ html, body {
   font-size: 150px;
   letter-spacing: 15px;
   margin: auto;
+  text-shadow:
+  10px 10px 0 #000,
+   0px 0px 0 #000;
 }
 
 .checking_title {
@@ -73,8 +98,8 @@ html, body {
 
 .balance {
   order: 1;
-  flex-grow: 1;
-  box-shadow: 0 1mm 2mm grey;
+  flex-grow: 2;
+  box-shadow: 0mm 0mm 0 #000;
   background-color: none;
   border: 0px;
   font-family: 'Ruluko', sans-serif;
@@ -111,7 +136,7 @@ html, body {
   outline: none;
 
   box-shadow: none;
-  margin-top: 100px;
+  margin-top: 22vh;
   font-size: 30px;
   color: black;
   text-align: right;
@@ -119,6 +144,15 @@ html, body {
 
 .input_box_on {
   border-bottom: 9px;
+}
+
+.input_message {
+  flex-grow: 1;
+  margin-top: 2vh;
+  font-family: 'Ruluko', sans-serif;
+  opacity: 0.8;
+  font-size: 20px;
+  visibility: hidden;
 }
 
 .checking_input {
@@ -133,6 +167,7 @@ html, body {
   order: 4;
   display: flex;
   flex-direction: inline;
+  margin-bottom: 5vh;
 }
 
 .button {
@@ -145,7 +180,10 @@ html, body {
   letter-spacing: 20%;
   box-sizing: border-box;
   outline: none;
-  /* border: 3px solid #222222; */
+  box-shadow: 1mm 2mm 0mm black;
+  text-shadow:
+  2px 2px 0mm #000,
+   0px 0px 0 #000;
 }
 
 .deposit_button {
@@ -154,6 +192,10 @@ html, body {
 
 .savings_button {
   background-color: #C292A0;
+}
+
+.pressed_button {
+  box-shadow: 0.5mm 1.5mm 0mm black;
 }
 
 .clear {

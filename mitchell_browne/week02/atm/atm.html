@@ -11,8 +11,8 @@
 <body>
   <header id="home_container">
     <div id="nav">
-      <div id="logo"><img src="img/ga.png" alt="Bank of GA"/></div>
-      <div id="title">Bank of GA</div>
+      <div><img id="logo" src="img/ga_logo.png" alt="Bank of GA"/></div>
+      <div id="bank_title">Bank of GA</div>
     </div>
 
   </header>
@@ -28,6 +28,10 @@
 
     <div class="input_holder">
       <input class="checking_input input_box" id="checking_amount" type="text" placeholder="$amount" autocomplete="off"/>
+    </div>
+
+    <div class="input_message" id="checking_message">
+      insufficient funds
     </div>
 
     <div class="button_holder">
@@ -48,12 +52,23 @@
     <input class="savings_input input_box" id="savings_amount" type="text" placeholder="$amount" autocomplete="off"/>
   </div>
 
+  <div class="input_message" id="savings_message">
+    insufficient funds
+  </div>
+
     <div class="button_holder">
       <input class="button savings_button" id="savings_deposit" type="button" value="Deposit"/>
       <input class="button savings_button" id="savings_withdraw" type="button" value="Withdraw" />
     </div>
 
+
+
   </div>
+
+  <div class="line">
+    i
+  </div>
+
   </div>
 
 

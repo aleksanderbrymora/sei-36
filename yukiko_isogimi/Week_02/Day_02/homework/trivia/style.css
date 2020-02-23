@@ -53,10 +53,15 @@ nav ul li {
   margin-top:10px;
 }
 
+main {
+  text-align:center;
+}
+
 main h1 {
-  margin-left: 30px;
+
   text-align: center;
   margin-top:43px;
+  margin-bottom: 50px;
 }
 
 main img {

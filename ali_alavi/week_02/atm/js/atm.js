@@ -8,9 +8,6 @@ const getBalance = function(acct) {
   return filterValue($(`#${acct}-balance`).html());
 };
 
-let checkingBal = filterValue($("#checking-balance").html());
-let savingBal = filterValue($("#savings-balance").html());
-
 //
 $("input").click(function() {
   if (this.id === "checking-deposit") {
@@ -44,6 +41,7 @@ $("input").click(function() {
       )}`
     );
   } else if (this.id === "checking-withdraw") {
+    //debugger;
     $("#checking-balance").html(
       `$${Withdraw(
         $("#checking-amount").val(),
@@ -70,16 +68,18 @@ function Withdraw(val, acc) {
     if (getBalance("checking") - filterValue(val) >= 0) {
       return getBalance(acc) - filterValue(val);
     } else if (getBalance("checking") + getBalance("savings") >= val) {
+      checkingBal = Math.abs(checkingBal - filterValue(val));
+      $("#checking-balance").html(0);
       //debugger;
-      $("#checking-amount").val(0);
-      $("#checking-balance").html(`$0`);
       //alert("take from savings"); Math.abs(x)
-      $("#savings-balance").html(
-        `$${getBalance("savings") - Math.abs(checkingBal - filterValue(val))}`
-      );
+      $("#savings-balance").html(`$${getBalance("savings") - checkingBal}`);
       // set checking balance to zero
+      return getBalance(acc);
     } else {
+      $("#checking-balance").html(checkingBal);
+
       alert("not enough funds");
+      return getBalance(acc);
     }
   } else {
     // else

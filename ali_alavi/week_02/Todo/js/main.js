@@ -73,7 +73,7 @@ const todos = new Todo();
 let todoItem = function(todo, id) {
   return `<li class="list-group-item d-flex justify-content-between row col-md-auto" data-id="${id}">
           ${todo} 
-          <button class="btn btn-outline-secondary bg-light new-item" type="button">Done
+          <button class="btn btn-outline-secondary bg-light" type="button">Done
           </button>
           </li>`;
 };
@@ -99,7 +99,7 @@ $("#todoForm").submit(function(e) {
 });
 
 // Done/remove
-$("#todoList").on("click", ".new-item", function() {
+$("#todoList").on("click", "button.btn", function() {
   //get data-id from parent li
   const id = $(this)
     .parent()

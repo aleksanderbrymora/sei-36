@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+  background-color: #00001a
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  max-width:960px; /* lazy way to make a responsive conatainer*/
+  background-color: #f0f5f5;
+  margin: auto;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+nav{
+  text-align: right;
+}
+/* desecendant selector*/
+nav a {
+  color: green;
+}
+
+h1{
+  text-align: center;
+  background-color: #262626;
+  color:#ccc;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+main{
+  display: inline-block;
+  width:75%;
+}
+
+main img{
+  display :block;
+  margin:auto;
+
+}
+p{
+  text-align: justify;
+}
+
+aside{
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  background-color: #33334d;
+  padding:1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #333;
+  margin-top: 23px;
+  margin-left: 10px;
+}
+li a,h3, aside p{
+  color:white;
+  line-height: 1.2;
+}
+aside li{
+  list-style: none;
+}
+h4{
+  color:white;
+  font-weight: 300;
+}
+.quotes{
+  color:black;
+  line-height:2.4;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+.map{
+  background-color: black;
+  padding:5px;
+  width:590px;
+}
+.message{
+  line-height: 1.4;
+}

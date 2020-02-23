@@ -1,0 +1,36 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+body{
+  font-size : 12px;
+  line-height: 17px;
+  font-family: "Times New Roman", serif;
+  color :#656565;
+}
+
+#logo {
+		/* background: url(../images/press-logo_lucky.gif) no-repeat; */
+    margin: auto;
+		width: 275px;
+		height: 40px;
+  }
+
+img{
+  margin-top : 5px;
+}
+
+.middle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}

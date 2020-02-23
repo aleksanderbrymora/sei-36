@@ -1,0 +1,12 @@
+/*
+
+*/
+
+.preamble {
+  position: relative;
+  float: left;
+  left: 80px;
+  top: 60px;
+  width: 280px;
+  text-align: justify;
+}

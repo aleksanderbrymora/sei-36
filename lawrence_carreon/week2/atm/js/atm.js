@@ -39,8 +39,8 @@ const logic = {
 $(document).ready(function(){
     $("[type='button']").on("click", function(){
         ui.update($(this).val(), $(this).attr("account"));
-    });
+    }); //event handler for buttons
     $("[type='text']").on("click", function(){
         $(".clear").html("");
-    });
+    }); //event handler for text fields
 });

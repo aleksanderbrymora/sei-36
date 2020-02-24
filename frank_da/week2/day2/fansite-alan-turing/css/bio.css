@@ -1,6 +1,13 @@
 .wrapper {
     max-width: 960px;
     margin: auto;
+    animation-name: start;
+    animation-duration: 2s;
+}
+
+@keyframes start {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 header {
@@ -23,6 +30,10 @@ img {
     width: 300px;
     height: 407px;
     margin: 50px
+}
+
+.video {
+    margin-bottom: 50px;
 }
 
 h1, h2, li, p {

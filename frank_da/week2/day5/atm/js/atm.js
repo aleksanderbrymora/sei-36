@@ -4,33 +4,35 @@ const checkBalanceForBackground = function () {
         const balance = parseInt($balance.eq(i).text().slice(1));
         if (balance === 0) {
             $balance.eq(i).parent().css('background-color', 'red');
+        } else {
+            $balance.eq(i).parent().css('background-color', 'grey');
         }
     }
 }
 
 const deposit = function () {
     $('input[type="button"][value="Deposit"]').on('click', function () {
-        $input = $(this).prev();
-        $balance = $(this).prev().prev();
-        const increase = parseInt($balance.text().slice(1)) + parseInt($($input).val());
-        $balance.text('$' + increase);
-        if (parseInt($balance.text().slice(1)) > 0) {
-            $(this).parent().css('background-color', 'grey');
-        };
+        $input = $(this).prev();    // Deposit amount
+        $balance = $(this).prev().prev();   // Original balance amount
+        // const increase = parseInt($balance.text().slice(1)) + parseInt($($input).val());    // deposit + original
+        const increase = parseInt($balance.text().slice(1)) + $($input).val(parseInt);    // deposit + original
+
+        $balance.text('$' + increase);  // Add $ sign before the number
+
+        checkBalanceForBackground();
     });
 }
 
 const withdraw = function () {
     $('input[type="button"][value="Withdraw"]').on('click', function () {
-        const checkBalance = parseInt($('#checking-balance').text().slice(1));
-        const savingsBalance = parseInt($('#savings-balance').text().slice(1));        
-        const total = checkBalance + savingsBalance;
+        $input = $(this).prev().prev();     // Withdraw amount
+        $otherBalance = $('.balance').not($(this).prev().prev().prev());    // Another balance
+        $thisBalance = $(this).prev().prev().prev();    // Current balance
+        const total = parseInt($otherBalance.text().slice(1)) + parseInt($thisBalance.text().slice(1));
         const withdraw = parseInt($(this).prev().prev().val());
-        $input = $(this).prev().prev();
-        $otherBalance = $('.balance').not($(this).prev().prev().prev());
-        $thisBalance = $(this).prev().prev().prev();
         const thisBalance = parseInt($thisBalance.text().slice(1));
 
+        // Different situation
         if (thisBalance < withdraw && withdraw <= total) {            
             $thisBalance.text('$' + 0);
             $otherBalance.text('$' + (parseInt($otherBalance.text().slice(1)) - withdraw + thisBalance));

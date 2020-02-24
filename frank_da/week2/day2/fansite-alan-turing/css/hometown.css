@@ -5,6 +5,13 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  animation-name: start;
+  animation-duration: 2s;
+}
+
+@keyframes start {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 header > img {

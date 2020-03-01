@@ -37,6 +37,8 @@
 // * The key to the lab is finding the index positions of each stop. (hint: ```indexOf()```)
 // * Make sure the stops that are the same for different lines have different names (i.e. 23rd on the N and on the 6 need to be differentiated)
 
+// ***************BONUS ------ TRY CREATING A INTERACTIVE HTML PAGE FOR THE SAME --------***************//
+
 const lines = [
   { name: "L", stops: ["8th", "6th","Union Square", "3rd", "1st"] },
   { name: "N", stops: ["34th", "28th", "23rd", "Union Square", "8th"]},
@@ -55,8 +57,6 @@ const indexFinder = function(l,s){
 };
 
 
-// console.log(indexFinder("N","28th"));
-//
 const stopsCounter = function(sLine, origin, eLine, dest){
   let startIn = indexFinder(sLine, origin);
   let endIn = indexFinder(eLine, dest);
@@ -71,28 +71,48 @@ const stopsCounter = function(sLine, origin, eLine, dest){
     return noOfStops;
   }
 };
-// //
-// console.log(stopsCounter("L","8th","6","23rd"));
-// console.log(stopsCounter("N","34th","6","Grand Central"));
-// console.log(stopsCounter("6","Grand Central","N","28th"));
+
 // //-----------Ask how to create a array using "for" loop------//////
+
 const stopsLister = function(s, o, e, d){
   let startIn = indexFinder(s, o);
   let endIn = indexFinder(e, d);
   let sUsqIn = indexFinder(s, "Union Square");
   let eUsqIn = indexFinder(e, "Union Square");
   let listOfStops;
-  let stopsAfterChange = [];
-  if ( s === e ){
-    listOfStops = lines[startIn[0]].stops.slice((startIn[1]+1),(endIn[1]+1));
+  let stopsAfterChange;
+  if ( s === e && startIn[1] < endIn[1] ){
+    listOfStops = "Travel through following stops " + lines[startIn[0]].stops.slice((startIn[1]+1),(endIn[1]+1)) + "; Total no. of stops " + stopsCounter(s,o,e,d,);
     return listOfStops;
-  }else { // have to define (differentiate) logic for journey progresses forward and backwards for condition 1(at "if") and condition 2 (at "else" both for travel before and after "Union Square")
-    stopsAfterChange.push(lines[endIn[0]].stops.slice(endIn[1],(eUsqIn[1])));
+  }else if ( s === e && startIn[1] > endIn[1] ){
+    listOfStops = lines[startIn[0]].stops.slice((endIn[1]),(startIn[1]));
+    listOfStops = "Travel through following stops " + listOfStops.reverse() + "; Total no. of stops " + stopsCounter(s,o,e,d,);
+    return listOfStops;
+  }else if ( s !== e && startIn[1] < sUsqIn[1] && eUsqIn[1] < endIn[1] ){
+    stopsAfterChange = (lines[endIn[0]].stops.slice(eUsqIn[1]+1, endIn[1]+1));
     stopsAfterChange = stopsAfterChange.toString();
-    listOfStops = "Travel through following stops " + lines[startIn[0]].stops.slice((startIn[1]+1),(sUsqIn[1]+1)) + (". change at Union Square, journey continues through ") + stopsAfterChange + " Total no. of stops " + stopsCounter(s,o,e,d,);
+    listOfStops = "Travel through following stops " + lines[startIn[0]].stops.slice((startIn[1]+1),(sUsqIn[1]+1)) + (". change at Union Square, journey continues through ") + stopsAfterChange + "; Total no. of stops " + stopsCounter(s,o,e,d,);
+    return listOfStops;
+  }else if ( s !== e && startIn[1]<sUsqIn[1] && eUsqIn[1]>endIn[1] ){
+    stopsAfterChange = lines[endIn[0]].stops.slice(endIn[1], eUsqIn[1]);
+    stopsAfterChange = stopsAfterChange.reverse();
+    listOfStops = "Travel through following stops " + lines[startIn[0]].stops.slice((startIn[1]+1),(sUsqIn[1]+1)) + (". change at Union Square, journey continues through ") + stopsAfterChange + "; Total no. of stops " + stopsCounter(s,o,e,d,);
+    return listOfStops;
+  }else if ( s !== e && startIn[1]>sUsqIn[1] && eUsqIn[1]>endIn[1] ){
+    stopsAfterChange = lines[endIn[0]].stops.slice(endIn[1], eUsqIn[1]);
+    stopsAfterChange = stopsAfterChange.reverse();
+    listOfStops = "Travel through following stops " + (lines[startIn[0]].stops.slice(sUsqIn[1], startIn[1])).reverse() + (". change at Union Square, journey continues through ") + stopsAfterChange + "; Total no. of stops " + stopsCounter(s,o,e,d,);
+    return listOfStops;
+  }else if ( s !== e && startIn[1]>sUsqIn[1] && eUsqIn[1]<endIn[1] ){
+    stopsAfterChange = lines[endIn[0]].stops.slice(eUsqIn[1]+1, endIn[1]+1);
+    listOfStops = "Travel through following stops " + (lines[startIn[0]].stops.slice(sUsqIn[1], startIn[1])).reverse() + (". change at Union Square, journey continues through ") + stopsAfterChange + "; Total no. of stops " + stopsCounter(s,o,e,d,);
     return listOfStops;
   }
 };
 //
-console.log(stopsLister("N","8th","L","1st"));
-// .subarray(startIn[1],(endIn[1]+1)));
+console.log(stopsLister("L","8th","N","8th"));
+console.log(stopsLister("L","8th","6","Grand Central"));
+console.log(stopsLister("L","1st","6","Grand Central"));
+console.log(stopsLister("L","1st","6","Astor Place"));
+console.log(stopsLister("6","Grand Central","6","Astor Place"));
+console.log(stopsLister("6","Astor Place","6","Grand Central"));

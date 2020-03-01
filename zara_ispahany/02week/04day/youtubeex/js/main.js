@@ -14,6 +14,7 @@
 //   thumbnailify($link);
 // }
 
+
 const thumbnailify = function($l) {
   const href = $l.attr('href'); // Getter: 1 argument
 
@@ -37,3 +38,6 @@ for (let i = 0; i < $links.length; i++) {
   const $link = $links.eq( i );
   thumbnailify($link);
 }
+
+$('.page-header').funText(70, 'candy');
+$('a').funText(40, 'candy');

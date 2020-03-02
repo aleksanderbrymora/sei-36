@@ -1,0 +1,85 @@
+/*
+    By Ali A.
+
+*/
+
+@import url(resets.css);
+@import url(typography.css);
+@import url(layout.css);
+@import url(colors.css);
+
+/* helper styles */
+
+.hi-light {
+  border: 1px groove lightgreen;
+}
+
+/*
+    Main styling
+*/
+
+header {
+  position: relative;
+  left: 220px;
+  width: 75%;
+  height: 20%;
+}
+
+/* gradiant style */
+#grad {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(128, 139, 150, 1) 100%
+  );
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding-right: 20rem;
+}
+
+.extra2 {
+  background-image: url(/images/face2.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  height: 512px;
+  width: 227px;
+  z-index: 2;
+}
+
+.under-line {
+  position: absolute;
+  left: 225px;
+  top: 135px;
+  height: 2px;
+  width: 100%;
+}
+
+.summary {
+  position: absolute;
+  width: 100%;
+  left: 228px;
+  top: 125px;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  font: 1rem/1.5 Arial, Verdana, sans-serif;
+}
+
+.preamble > img {
+  position: absolute;
+  top: 90px;
+  left: 300px;
+  width: 475px;
+  height: 281px;
+  border: 2px groove #000;
+}
+
+footer {
+  height: 160px;
+  background-color: #444a4d;
+}

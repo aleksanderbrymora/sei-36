@@ -1,0 +1,106 @@
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: ivory;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  height: 6rem;
+  background-color: #000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-top: 2.5rem;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.logo {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.banner {
+}
+
+.blurb {
+  border: 2px groove grey;
+  margin: 1.5rem 0;
+}
+
+.blurb p {
+  padding-top: 3px;
+  padding-left: 3px;
+  text-align: left;
+}
+
+.blurb img {
+  float: right;
+  padding-top: 3px;
+  padding-right: 3px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.fcontainer {
+  display: flex;
+}
+
+.col-3 {
+  flex: 1; /*grow*/
+}
+
+.fcontainer img {
+  border: 5px groove lightgray;
+  margin-top: 1rem;
+}
+
+.fcontainer p {
+  margin-top: 1rem;
+  max-width: 274px;
+}
+
+.fcontainer a {
+  text-decoration: none;
+  color: deepskyblue;
+}
+
+footer {
+  margin-top: 1.5rem;
+  height: 12rem;
+  background-color: #000;
+}
+
+footer .col-3 {
+  margin-top: 1rem;
+}
+
+footer h2 {
+  font-size: 2rem;
+  color: #fff;
+}

@@ -3,10 +3,15 @@
 * {
   margin:0;
 }
+
+.container {
+  margin: 0 auto;
+}
 body {
   font-family: 'Neuton', serif;
   margin:0;
   padding:0;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vexels.com%2Fpng-svg%2Fpreview%2F166484%2Fruby-programming-language-flat&psig=AOvVaw0VH7Cq40a7lfuk8VucY8us&ust=1582370656981000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDR8JvE4ucCFQAAAAAdAAAAABAY");
 
 }
 
@@ -15,8 +20,23 @@ nav {
   height:200px;
 }
 
-li {
+ul {
   list-style: none;
+  color:white;
+}
+
+nav  a {
+  text-decoration: none;
+  color:white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+ul > li {
+  list-style: none;
+  color:white;
 }
 
 

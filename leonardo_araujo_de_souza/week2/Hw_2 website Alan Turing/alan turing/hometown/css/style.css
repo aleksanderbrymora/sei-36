@@ -1,0 +1,61 @@
+body {
+	margin: auto;
+	background-image:url(../images/wall.jpeg);
+	background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Great Vibes', cursive; 
+  
+
+}
+.top{
+  float:center;
+  font-family: 'Great Vibes', cursive; 
+}
+button.p{
+  font-family: sans-serif;
+  color: azure;
+  background-color: crimson;
+  
+}
+h1{
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  text-align: left;
+  background-color: crimson;
+}
+
+iframe{
+  display: inline;
+}
+
+.info {
+  width: 30%;
+  height: 500%;
+  line-height: 150%;
+  background: black;
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: small;
+  display: block;
+}
+
+button {
+  background: crimson;
+  font-size: xx-large bold;
+  color: aliceblue;
+  float:center;
+  font-size: xx-large bold;
+
+} 
+
+footer{
+  width: 100%;
+  height: 100%;
+float: left;
+  background-color: crimson;
+  color: azure;
+  text-align: center;
+  font-size: medium;
+  font-family: sans-serif;
+}

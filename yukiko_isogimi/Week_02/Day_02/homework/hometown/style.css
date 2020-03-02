@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Lacquer|Neuton|Roboto+Mono|Special+Elite|Ubuntu&display=swap');
+
+* {
+  margin:0;
+}
+
+.container {
+  margin: 0 auto;
+}
+body {
+  font-family: 'Neuton', serif;
+  margin:0;
+  padding:0;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vexels.com%2Fpng-svg%2Fpreview%2F166484%2Fruby-programming-language-flat&psig=AOvVaw0VH7Cq40a7lfuk8VucY8us&ust=1582370656981000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDR8JvE4ucCFQAAAAAdAAAAABAY");
+
+}
+
+nav {
+  background-color: black;
+  height:200px;
+}
+
+ul {
+  list-style: none;
+  color:white;
+}
+
+nav  a {
+  text-decoration: none;
+  color:white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+ul > li {
+  list-style: none;
+  color:white;
+}
+
+
+
+
+nav {
+  background-color: black;
+  height:83px;
+
+}
+
+nav ul {
+  text-align: right;
+  padding-right:20px;
+  line-height: 60px;
+  margin-right: 50px;
+  font-size:20px;
+}
+nav ul li {
+  color:white;
+  display:inline-block;
+  margin-right:70px;
+  margin-top:10px;
+}
+
+main {
+  text-align: center;
+}
+
+.container h1 {
+
+  margin:40px 0;
+}
+
+
+footer {
+  margin-top:300px;
+}
+
+
+
+footer {
+  margin-top:300px;
+}
+
+
+.footer {
+
+  background-color: black;
+  color:white;
+  height:100px;
+  padding:40px;
+
+
+}
+
+
+
+.footer-logo {
+  font-size:32px;
+  float:left;
+}
+
+.footer-list {
+  float:right;
+  text-decoration: none;
+  margin-right:47px;
+}
+
+
+.footer-list li{
+  padding-bottom:10px;
+  list-style: none;
+  font-size:20px;
+}

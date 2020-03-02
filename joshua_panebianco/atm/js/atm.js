@@ -1,5 +1,6 @@
 let checkingBalance = 0;
 let savingBalance = 0;
+let totalBalance = checkingBalance + savingBalance;
 
 $( document ).ready(function() {
     // Define two variables that store the balance of checking and savings

@@ -39,21 +39,23 @@ $(document).ready(function(){
     isSavings: true
   }, depositMoney);
 
-  //withdraw money
+  //determine account
   let currentAcctBalance, otherAcctBalance, currentAcct, otherAcct;
+  const determineAccount = function (acct1, acct2, bal1, bal2) {
+      currentAcctBalance = bal1;
+      otherAcctBalance = bal2;
+      currentAcct = acct1;
+      otherAcct = acct2;
+  }
+
+  //withdraw money
   const withdrawMoney = function(event){
     let amount = parseInt(event.data.amt.val()); //convert input to number
-    if (event.data.isChecking){ // checks if it's the checking account
-      currentAcctBalance = checkingMoney; // Checking Account balance
-      otherAcctBalance = savingsMoney; //Savings Account balance
-      currentAcct = event.data.checkingAcct;
-      otherAcct = event.data.savingsAcct;
-    }else { // savings account
-      currentAcctBalance = savingsMoney; //Savings Account balance
-      otherAcctBalance = checkingMoney; // Checking Account balance
-      currentAcct = event.data.savingsAcct;
-      otherAcct = event.data.checkingAcct;
-    }
+    if (event.data.isChecking){
+      determineAccount(event.data.checkingAcct, event.data.savingsAcct, checkingMoney, savingsMoney);
+    }else {
+      determineAccount(event.data.savingsAcct, event.data.checkingAcct, savingsMoney, checkingMoney);
+    };
     if (currentAcctBalance >= amount){ // first, check if the current balance is enough for withdrawal
       currentAcctBalance -= amount;
     }else if (currentAcctBalance + otherAcctBalance >= amount){  // check if there's enough money from two accounts for withdrawal
@@ -61,6 +63,8 @@ $(document).ready(function(){
       currentAcctBalance = 0;
       otherAcctBalance -= amount;
       otherAcct.html(`$ ${otherAcctBalance}`);
+    }else { // display not enough money to withdraw message
+      $('#message').show();
     }
     if (event.data.isChecking){ // update global checking and savings balance
       checkingMoney = currentAcctBalance;
@@ -92,7 +96,12 @@ $(document).ready(function(){
     amt: $savingsAmt,
     isSavings: true
   }, withdrawMoney);
+
+  $('#clear-button').on('click', function(){ // hide messages again
+    $('#message').hide();
+  });
 });
+
 
 //original code!
 // $(document).ready(function(){

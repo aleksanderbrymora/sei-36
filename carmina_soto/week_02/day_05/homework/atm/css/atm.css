@@ -47,3 +47,14 @@
   background-color: #F52F4F;
   color: #FFF;
 }
+
+#message {
+  font-family: 'Ruluko', sans-serif;
+  font-size: 2em;
+  display: none;
+}
+
+#message p {
+  padding: 20px 0 0 0;
+  margin: 0;
+}

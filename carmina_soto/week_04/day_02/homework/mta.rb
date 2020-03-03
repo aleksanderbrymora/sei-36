@@ -42,27 +42,12 @@ def plan_trip start_line, start_stop, end_line, end_stop
 
   if start_subway == end_subway
     stops = move_subway start_subway.index(start_stop), start_subway.index(end_stop), start_subway
-    # if start_subway.index(start_stop) > start_subway.index(end_stop)
-    #   stops = start_subway[start_subway.index(end_stop)..start_subway.index(start_stop) - 1].reverse
-    # else
-    #   stops = start_subway[start_subway.index(start_stop) + 1..start_subway.index(end_stop)]
-    # end
     no_of_stops = stops.count
     puts Rainbow("You must travel through the following stops on the #{start_line} line: #{stops.join(', ')}
     #{no_of_stops} stops in total").purple
   else
     start_stops = move_subway start_subway.index(start_stop), start_subway.index("Union Square"), start_subway
-    # if start_subway.index(start_stop) > start_subway.index("Union Square")
-    #   start_stops = start_subway[start_subway.index("Union Square")..start_subway.index(start_stop) - 1].reverse
-    # else
-    #   start_stops = start_subway[start_subway.index(start_stop) + 1..start_subway.index("Union Square")]
-    # end
     end_stops = move_subway end_subway.index("Union Square"), end_subway.index(end_stop), end_subway
-    # if end_subway.index("Union Square") > end_subway.index(end_stop)
-    #   end_stops = end_subway[end_subway.index(end_stop)..end_subway.index("Union Square") - 1].reverse
-    # else
-    #   end_stops = end_subway[end_subway.index("Union Square") + 1..end_subway.index(end_stop)]
-    # end
     stops = start_stops + end_stops
     no_of_stops = stops.count
     puts Rainbow("You must travel through the following stops on the #{start_line} line: #{start_stops.join(', ')}

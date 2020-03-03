@@ -32,8 +32,3 @@ def trip_planner
 end
 
 trip_planner
-
-find_in_route("34th", "N", "23rd", "N") # => ["28th", "23rd"]
-find_in_route("8th", "N", "Times Square", "N") # => ["Union Square", "23rd", "28th", "34th", "Times Square"]
-find_in_route("28th", "N", "3rd", "L") # => ["23rd", "Union Square", "3rd"]
-find_in_route("Astor Place", "6", "8th", "L") # => ["Union Square", "6th", "8th"]

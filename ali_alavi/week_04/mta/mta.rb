@@ -11,7 +11,7 @@ Lines ={ "N" => ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"],
         "6" => ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
 }
 
-def find_in_line(s, e, line)
+def along_same_line(s, e, line )
     if line.index(e) > line.index(s)
         return line[line.index(s)+1..line.index(e)]
     else 
@@ -19,5 +19,21 @@ def find_in_line(s, e, line)
     end
 end
 
-find_in_line("34th", "23rd", N) # => ["28th", "23rd"]
-find_in_line("8th", "Times Square", N) # => ["Union Square", "23rd", "28th", "34th", "Times Square"]
+def find_in_route(s, sLine, e, eLine)
+    #if the same line
+    if sLine == eLine
+        #save line
+        line = Lines[sLine]
+        return along_same_line(s, e, line)
+    else
+        #if different lines
+        trip1 = along_same_line(s, "Union Square", Lines[sLine])
+        trip2 = along_same_line("Union Square", e, Lines[eLine])
+        return trip1 + trip2
+    end
+end
+
+find_in_route("34th", "N", "23rd", "N") # => ["28th", "23rd"]
+find_in_route("8th", "N", "Times Square", "N") # => ["Union Square", "23rd", "28th", "34th", "Times Square"]
+find_in_route("28th", "N", "3rd", "L") # => ["23rd", "Union Square", "3rd"]
+find_in_route("Astor Place", "6", "8th", "L") # => ["Union Square", "6th", "8th"]

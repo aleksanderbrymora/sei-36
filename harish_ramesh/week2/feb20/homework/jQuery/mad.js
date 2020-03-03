@@ -13,11 +13,13 @@
 const $button = $("#lib-button");
 
 const makeMadeLib = function(){
-  const noun = $("#noun").html();
-  const adjective = $("#adjective").html();
-  const name = $("#person").html();
+  const noun = $("#noun").val();
+  const adjective = $("#adjective").val();
+  const name = $("#person").val();
   const story = `${name} really likes ${adjective} many ${noun}`;
-  $("#story").html(story);
+  $("#story").html(story);//can use .text also
 };
 
 $('button').click(makeMadeLib);
+
+// $('h1').funtext();

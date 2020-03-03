@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Lacquer|Neuton|Roboto+Mono|Special+Elite|Ubuntu&display=swap');
+
+
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Neuton', serif;
+  margin:0;
+
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.header {
+  background-color: black;
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: right;
+  padding: 33px 20px;
+}
+
+
+
+nav {
+text-align: center;
+display:block;
+margin:0 auto;
+
+
+}
+
+nav h1 {
+  font-size:48px;
+
+
+}
+
+
+.navigation {
+
+  height:90px;
+  border-top: white solid 1px;
+  color:white;
+  background-color:#cc0000
+}
+
+nav ul {
+  /* display:flex; */
+  text-align: right;
+  margin-top:6px;
+  margin-right:120px;
+  /* border:1px solid white; */
+  padding:2em 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right:20px;
+  margin-left: 20px;
+
+
+}
+
+nav  a {
+  text-decoration: none;
+  color:white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+nav img {
+  width:6%;
+  margin:0 auto;
+
+}
+
+main img {
+  display:inline-block;
+  border:gray 9px;
+
+}
+
+.image {
+
+
+  float:left;
+  padding:20px;
+
+  box-shadow: 0 0 15px;
+  margin-right:20px;
+  margin-left: 20px;
+  transform: scale(0.9);
+
+}
+
+main p {
+  line-height:2em;
+  padding-left:30px;
+  padding-top:20px;
+  padding-right:15px;
+
+  font-family: 'Roboto Mono', monospace;
+}
+
+main p strong {
+  text-transform: uppercase;
+  font-size:3em;
+  font-family: 'Special Elite', cursive;
+}
+
+
+.footer {
+
+  background-color: #cc0000;
+  color:white;
+  height:100px;
+  padding:40px;
+
+
+
+
+}
+
+
+
+.footer-logo {
+  font-size:32px;
+  float:left;
+}
+
+.footer-list {
+  float:right;
+  text-decoration: none;
+  margin-right:47px;
+}
+
+
+.footer-list li{
+  padding-bottom:10px;
+  list-style: none;
+  font-size:20px;
+}

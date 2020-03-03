@@ -1,3 +1,4 @@
+require
 require "colorize"
 
 @stations = {
@@ -21,8 +22,7 @@ def plan_trip start_line, start_station, end_line, end_station
 end
 
 def describe_trip line, start, destination, end_trip
-    index_of_boarding = @stations[line].index start
-    index_of_alight = @stations[line].index destination
+    index_of_boarding, index_of_alight = @stations[line].index(start), @stations[line].index(destination)
     puts "Travel on the #{line} line for the following stops:".green
     stops = index_of_boarding > index_of_alight ? @stations[line][index_of_alight..index_of_boarding - 1].reverse : @stations[line][index_of_boarding + 1..index_of_alight]
     puts stops
@@ -37,9 +37,6 @@ end
 
 loop do
     puts "Welcome to MTA!".light_green
-   start_line = user_inputs "line are you starting"
-   start_station = user_inputs "station are you starting"
-   end_line = user_inputs "line are you ending"
-   end_station = user_inputs "station are you departing"
+   start_line, start_station, end_line, end_station = user_inputs("line are you starting"), user_inputs("station are you starting"), user_inputs("line are you departing"), user_inputs("station are you departing")
    plan_trip start_line, start_station, end_line, end_station
 end

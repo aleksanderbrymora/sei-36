@@ -1,35 +1,21 @@
-#plan_trip 'N', 'Times Square', '6', '33rd' # This is only a suggested function name and signature.
-
-#  shows output similar to this:
-# "You must travel through the following stops on the N line: 34th, 28th, 23rd, Union Square."
-# "Change at Union Square."
-# "Your journey continues through the following stops: 23rd, 28th, 33rd."
-# "7 stops in total."
-
+#MTA trip planner by Ali A
 Lines ={ "N" => ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"],
         "L" => ["8th", "6th", "Union Square", "3rd", "1st"],
         "6" => ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
 }
 
 def along_same_line(s, e, line )
-    if line.index(e) > line.index(s)
-        return line[line.index(s)+1..line.index(e)]
-    else 
-        return line.reverse[line.reverse.index(s)+1..line.reverse.index(e)]
-    end
+    line.index(e) > line.index(s) ? line[line.index(s)+1..line.index(e)] : line.reverse[line.reverse.index(s)+1..line.reverse.index(e)]
 end
 
 def find_in_route(s, sLine, e, eLine)
     #if the same line
     if sLine == eLine
-        #save line
-        line = Lines[sLine]
-        return "You must travel through the following stops on the #{sLine} line: #{along_same_line(s, e, line).join(", ")}"
+        return "You must travel through the following stops on the #{Lines[sLine]} line: #{along_same_line(s, e, line).join(", ")}"
     else
         #if different lines
-        trip1 = along_same_line(s, "Union Square", Lines[sLine])
-        trip2 = along_same_line("Union Square", e, Lines[eLine])
-        return "You must travel through the following stops on the #{sLine} line: #{trip1.join(", ")}\nChange at Union Square and continue on line #{eLine}: #{trip2.join(", ")}"
+        trip1 = along_same_line(s, "Union Square", Lines[sLine]) << along_same_line("Union Square", e, Lines[eLine])
+        return "You must travel through the following stops on the #{sLine} line, changing at Union Square for Line #{eLine}: #{trip1.join(", ")}"
     end
 end
 

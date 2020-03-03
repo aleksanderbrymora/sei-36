@@ -45,6 +45,8 @@ const validateCreditCard = function (card) {
     // check sum of all digits
     for (let i = 0; i < pureCard.length; i ++) {
         sum = sum + parseInt(pureCard[i]);
+        // sum += + pureCard[i];
+        // sum += Number(pureCard[i]);
     }
     if (sum < 16) {
         result.valid = false;

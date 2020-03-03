@@ -10,7 +10,7 @@ end
 
 def rgb_to_hex rgb
 	hex = ''
-	rgb.each do |color|
+	rgb.map do |color|
 		hex += convert_num_to_hex color / 16
 		hex += convert_num_to_hex color % 16
 	end

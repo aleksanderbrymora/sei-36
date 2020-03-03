@@ -43,6 +43,12 @@ mathMania(4);
 //Dr. Evil
 const drEvil = function(number){
    return number === 1000000 ? `${number} dollars! (pinky)` : `${number} dollars`;
+//    same as
+    // if( number === 1000000 ){
+    //     return `${number} dollars! (pinky)`;
+    // }else{
+    //     return `${number} dollars`;
+    // };
 };
 
 console.log(drEvil(100));

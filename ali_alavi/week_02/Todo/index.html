@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TODO LIST</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-primary">
+    <h1 class="g-font display-1 text-white text-center pt-5">My Todo list</h1>
+    <!-- Form start -->
+    <form id="todoForm" class="container-fluid container mt-5">
+      <div class="form-group row col-md-auto">
+        <input
+          type="todo"
+          class="form-control"
+          id="inputTodo"
+          placeholder="What needs to get done?"
+          autofocus
+        />
+        <small id="todoHelp" class="form-text text-muted"></small>
+      </div>
+      <button type="submit" class="btn btn-secondary mb-5">
+        Submit
+      </button>
+    </form>
+    <!-- End form -->
+    <div class="container-fluid container">
+      <ul id="todoList" class="list-group"></ul>
+    </div>
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

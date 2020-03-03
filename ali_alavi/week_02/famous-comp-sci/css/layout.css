@@ -1,0 +1,31 @@
+/*
+  Layout styles
+*/
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.preamble {
+  position: relative;
+  float: left;
+  left: 80px;
+  top: 60px;
+  width: 280px;
+  text-align: justify;
+}
+
+/* flex */
+
+.fcontainer {
+  display: flex;
+}
+
+.col-3 {
+  flex: 1; /*grow*/
+}
+
+footer .container {
+  margin-left: 400px;
+}

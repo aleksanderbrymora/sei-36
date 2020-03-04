@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <h3>Book cover fetcher!</h3>
 
 <form action="/result">
@@ -9,23 +7,36 @@
     </label>
     <button>Get book cover!</button>
 </form>
-<p id="out"></p>
+<div>
+<img src="" alt="" srcset="" id="out">
+</div>
 <script>
 
-// $(function() {
-//   // Handler for .ready() called.
+$(function() {
+    //
+    var timeout
+    $('#bookInput').on('keyup',function(){
+        var book = $( "#bookInput" ).val()
+        //clear any timeouts
+        if(timeout){ clearTimeout(timeout);}
 
-//   var jqxhr = $.ajax( {type: "GET", url: "result", data: { bookname: ""}}  )
-//   .done(function(r) {
-//     alert( "success" );
-//     $("#out").html(r)
-//   })
-//   .fail(function() {
-//     alert( "error" );
-//   })
-//   .always(function() {
-//     alert( "complete" );
-//   });
-// });
+        //start new time, to perform ajax stuff in XXXms
+        timeout = setTimeout(function() {
+        //ajax stuff
+        var jqxhr = $.ajax( {type: "GET", url: "result", data: { bookname: book}}  )
+            .done(function(r) {
+            console.log( "success" );
+            //update dom
+            $("#out").attr("src", r.result)
+            })
+            .fail(function() {
+                console.log( "error" );
+            })
+            .always(function() {
+                console.log( "complete" );
+            });
+        },750);
+    })
+});
 
 </script>

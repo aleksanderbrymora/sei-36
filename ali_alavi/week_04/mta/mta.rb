@@ -30,5 +30,4 @@ def trip_planner
     end_line = gets.chomp
     print "#{find_in_route(start_station, start_line, end_station , end_line)}"
 end
-
 trip_planner

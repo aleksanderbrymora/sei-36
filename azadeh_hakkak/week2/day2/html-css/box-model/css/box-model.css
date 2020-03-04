@@ -1,0 +1,27 @@
+
+
+
+/*
+
+typically 
+* {
+  box-sizing: border-box;
+}
+*/
+
+
+.old {
+  width: 300px;
+  heigth: 300px;
+  background-color: lemonchiffon;
+  border: 1px solid black;
+  padding: 15px;
+}
+.new {
+  width: 300px;
+  heigth: 300px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  padding: 15px;
+  box-sizing: border-box;
+}

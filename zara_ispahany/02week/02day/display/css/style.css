@@ -1,0 +1,50 @@
+body {
+  background-color: pink;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 300px; /* budget vertical centering */
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.none {
+  display: none;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+/* .spooky {
+  transition: 2s all; any change it will transition so when mouse leaves
+} */
+
+.spooky span {
+  visibility: hidden;
+}
+
+/* Pseudoselector */
+.spooky:hover {
+  background-color: black;
+}
+
+.spooky:hover span {
+  color: yellow;
+  visibility: visible;
+  transition: 2s all;
+}

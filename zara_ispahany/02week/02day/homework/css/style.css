@@ -1,0 +1,99 @@
+/* * {
+  border: 1px solid black;
+} */
+@import url('https://fonts.googleapis.com/css?family=Play|Tomorrow:400,600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#9399ff;
+  background-image:
+  radial-gradient(circle at 100% 150%, #9399ff 24%, white 24%, white 28%, #9399ff 28%, #9399ff 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #9399ff 24%, white 24%, white 28%, #9399ff 28%, #9399ff 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, #9399ff 10%, #9399ff 23%, white 23%, white 30%, #9399ff 30%, #9399ff 43%, white 43%, white 50%, #9399ff 50%, #9399ff 63%, white 63%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, #9399ff 5%, #9399ff 15%, white 15%, white 20%, #9399ff 20%, #9399ff 29%, white 29%, white 34%, #9399ff 34%, #9399ff 44%, white 44%, white 49%, transparent 49%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, #9399ff 5%, #9399ff 15%, white 15%, white 20%, #9399ff 20%, #9399ff 29%, white 29%, white 34%, #9399ff 34%, #9399ff 44%, white 44%, white 49%, transparent 49%, transparent);
+  background-size: 100px 50px;
+  font-family: 'Play', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin:auto;
+  padding: 2em;
+  border-radius: 1em;
+  box-sizing: border-box;
+  min-height: 100vh;
+  border: 0.5em solid #ffd271;
+  background-color: white;
+}
+
+nav {
+  padding: 20px;
+  background-color: #40e0d0;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+nav a {
+  margin: 0.5em 1em;
+  padding: 0.5em 2em;
+  border-radius: 0.2em;
+  border: 0.2em solid white;
+  font-family: 'Tomorrow', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav a:hover {
+  border: 0.2em solid black;
+  background-color: white;
+  box-shadow: -2px 1px black;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5.5em;
+  margin: auto;
+  padding: 5px;
+  font-family: 'Tomorrow', sans-serif;
+  letter-spacing: 0.2em;
+}
+
+h2 {
+  font-family: 'Tomorrow', sans-serif;
+  text-align: center;
+}
+
+main img {
+  display: block;
+  margin: 3% 20%;
+  padding: 0;
+  border-radius: 1em;
+  border: 0.2em solid #f20091;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+.fourimg {
+  text-align: center;
+}
+
+.art {
+  width: 30%;
+  margin: 11px;
+  padding: 0;
+  border-radius: 0.5em;
+  border: 4px solid #262626;
+  display: inline;
+}
+
+.art:hover {
+  border: 4px solid black;
+  box-shadow: 1px 5px black;
+}

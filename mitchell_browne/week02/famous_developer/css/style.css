@@ -1,0 +1,211 @@
+/* ===================================
+IMPORTS
+===================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+* {
+  border: 1px solid transparent;
+}
+
+html {
+  scroll-behavior: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #266577;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Homemade Apple', cursive;
+  color: #222222;
+}
+
+a {
+  font-size: 25px;
+  font-family: 'Homemade Apple', cursive;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+.quote {
+  font-size: 25px;
+}
+
+/* ===================================
+CONTAINERS
+===================================== */
+
+.container {
+  margin-right: 300px;
+}
+
+main {
+  margin: 0 100px 0 100px;
+}
+
+.home_main {
+  margin: 0;
+}
+
+.content_container {
+  display: block;
+  padding: 20px;
+  background-color: #F1E37D;
+  /* background-image: radial-gradient(#F1E37D 90%, #F39869); */
+  box-shadow: 2mm 4mm 3mm #222222;
+  border-radius: 2em;
+  /* border-top-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em; */
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.content_last {
+  margin-bottom: 400px;
+}
+
+/* ===================================
+IMAGE
+===================================== */
+
+.home_img {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-right: 170px;
+  width: 500px;
+  padding: 100px 0 500px 0;
+}
+
+.home_img.animated {
+  animation-duration: 1.5s;
+}
+
+.home_img:hover {
+  animation: pulse 1s;
+}
+
+.small {
+  width: 350px;
+  border-radius: 5em;
+}
+
+.last {
+  padding-bottom: 210px;
+}
+
+.header_img {
+  position:fixed;
+  width: 100px;
+  top: 40px;
+  right: 40px;
+}
+
+.content_img {
+  display: block;
+  height: 270px;
+  margin: auto;
+  /* border: 3px solid #F39869:  */
+}
+
+.big {
+  height: 200px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.book_img {
+  display: inline-block;
+  height: 270px;
+  margin: auto;
+  padding-right: 6px;
+}
+
+.trivia_img {
+  display: inline-block;
+  height: 270px;
+  margin: auto;
+}
+
+.move_right {
+  margin-left: 200px;
+}
+
+/* ===================================
+NAV
+===================================== */
+
+
+
+.nav_bar {
+  position: fixed;
+  right: 40px;
+  top: 200px;
+}
+
+.nav_el {
+  display: block;
+  text-decoration: none;
+  color: #222222;
+  margin: 30px 0;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.nav_el:hover {
+    transform: scale(1.5) translate(-15%);
+}
+
+.current {
+  color: #F2E5D5;
+  transform: scale(1.5) translate(-15%);
+}
+
+/* ===================================
+SCROLL
+===================================== */
+
+.content_scroll_bar {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+}
+
+.content_scroll {
+  display: inline-block;
+  margin: 10px 15px;
+  text-decoration: none;
+  color: #222222;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ===================================
+FOOTER
+===================================== */
+
+footer {
+  display: block;
+  margin-top: 300px;
+  margin-bottom: 250px;
+}
+
+.footer_img {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-right: 170px;
+}

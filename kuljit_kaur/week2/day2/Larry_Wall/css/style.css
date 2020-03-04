@@ -1,5 +1,6 @@
-<style>
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 
 body {
   padding: 0px;
@@ -7,7 +8,6 @@ body {
 }
 
 h1{
-  /*background-color: #ffff00;*/
   font-family: Roboto;
 }
 header {
@@ -34,15 +34,15 @@ h1 span {
 }
 .mainContainer {
   padding : 1% 5%;
-  background-image:url("backgroundimage.jpg");
   display:inline-block;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: orange;
 }
 .person {
   text-align: center;
-  color: #888;
+  color: black;
 }
 .detail{
   float: left;
@@ -53,25 +53,69 @@ h1 span {
 .detail p {
   text-align: justify;
 }
-
-.clear {
-  clear: both;;
+.detail_full{
+  font-size: 17px;
 }
-
+.detail_full iframe {
+  display: inline-block;
+}
+.clear {
+  clear: both;
+}
+ul li{
+  font-family:'Roboto';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
 img{
   /* display :block; */
-  width :350px;
-  height:400px;
+  padding: 0px;
+  position: relative;
+  margin: 10% auto;
+  border: solid 10px dimgray;
+  padding: 0px;
 }
 
-img.journey{
+img.accomplish {
+margin: 0 10px 0 0;
+}
+
+img.journey {
   width :350px;
   height:300px;
 }
-footer{
-  background-color: #666;
-  padding: 1px;
-  text-align: center;
-  font-size: 16px;
-  color: white;
+
+space_accomplish {
+  margin : 5px 10px 5px 10px;
+}
+
+aside img{
+  width: 60%;
+  margin: 20px 15%;
+  border: solid 5px grey;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+  color: #666;
+}
+
+p.show {
+  position: relative;
+  color: blue;
+}
+
+.highlight {
+  font-size: 29px;
+    font-style: italic;
+    text-align: justify;
+    margin: 0px 15%;
+}
+.right {
+  margin: 23px 0px 0px 10px;
+}
+.right iframe {
+  margin: 50px 0px 0px 10px;
 }

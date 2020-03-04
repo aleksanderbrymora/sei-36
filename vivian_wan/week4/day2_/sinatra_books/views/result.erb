@@ -1,0 +1,18 @@
+<h3> This is the book cover of <%= @title %>! </h3>
+
+<img src="<%= @book_cover_image %>" alt="">
+
+<h4> <%= @book_price_currency %> $<%= @book_price %> </h4>
+
+<form action="/buy">
+
+    <label>
+        How many copies : 
+            <input type="number" placeholder="1" name="quantity" required>
+    </label>
+
+<button>Buy Now</button>
+
+</form>
+
+<h3> Total cost: book price $<%= @book_price %> X <%= params[:quantity].to_i%> copies </h3>

@@ -239,6 +239,7 @@ $(document).ready(function() {
     let shadow = (st / $w.height())*10;
     let box_shadow = (st / $w.height())*1;
     let rotate = (st / $w.height())*390;
+    console.log(rotate);
     lastScrollTop = st;
 
     // animate css properties to elements

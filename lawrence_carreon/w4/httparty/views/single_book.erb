@@ -1,0 +1,8 @@
+<div class="book_details">
+    <h2>Details for: <%= @book_info["volumeInfo"]["title"] %></h2>
+    <hr>
+    <img src="<%= @book_info.dig("volumeInfo","imageLinks","thumbnail") != nil ? @book_info["volumeInfo"]["imageLinks"]["thumbnail"] : "" %>" alt="Cover image for: <%= @book_info.dig("volumeInfo","title") != nil ? @book_info["volumeInfo"]["title"] : "" %>">
+    <p><strong>Publisher: </strong><%= @book_info["volumeInfo"]["publisher"] %></p>
+    <p><strong>Published on: </strong><%= @book_info["volumeInfo"]["publishedDate"] %></p>
+    <p><strong>Page Count: </strong><%= @book_info["volumeInfo"]["pageCount"] %></p>
+</div>

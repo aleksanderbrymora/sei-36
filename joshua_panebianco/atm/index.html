@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Atm Updated UI</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="font-a/all.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-light">
+	<div class="container">
+		<a class="navbar-brand logo" href="#">Piggy Bank</a>
+	</div> <!-- nav end -->
+	</nav>
+	<div class="header-background"></div> <!-- header background end -->
+  <div class="container content-area">
+  	<!-- <h1>The GA BANK</h1> -->
+		<div class="row">
+				<div class="col middle">
+					<div class="card total-card" style="width: 18rem;">
+					  <div class="card-body total-card">
+					    <h5 class="card-title">Total Balance</h5>
+					    <h3 class="card-text checking-balance-text" id="total-balance">0</h3>
+					  </div> <!-- card body -->
+					</div> <!-- card end -->
+				</div>
+
+			<div class="col middle">
+				<div class="card checking-card" style="width: 18rem;">
+				  <div class="card-body">
+				    <h5 class="card-title">Checking Account</h5>
+				    <h3 class="card-text checking-balance-text" id="checking-balance"><span>$</span>0</h3>
+						<div class="form-group">
+					    <input type="text" class="form-control" id="checking-amount" placeholder="Enter Amount">
+					  </div>
+				    <a href="#" class="btn btn-success" id="checking-deposit">Deposit</a>
+						<a href="#" class="btn btn-warning" id="checking-withdraw">Widthdraw</a>
+				  </div> <!-- card body -->
+				</div> <!-- card end -->
+			</div> <!-- col end -->
+
+			<div class="col middle">
+				<div class="card saving-card" style="width: 18rem;">
+ 				 <div class="card-body">
+ 					 <h5 class="card-title">Savings Account</h5>
+ 					 <h3 class="card-text checking-balance-text">$580</h3>
+					 <div class="form-group">
+						 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Amount">
+					 </div>
+					 <a href="#" class="btn btn-success">Deposit</a>
+					 <a href="#" class="btn btn-warning">Widthdraw</a>
+ 				 </div> <!-- card body -->
+ 			 </div> <!-- card end -->
+			</div>
+		</div> <!-- row end -->
+  </div>   <!-- container end -->
+  <script src="js/jquery-3.41.js"></script> <!-- jquery -->
+	<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script> <!-- bootstrap -->
+	<script src="js/atm.js"></script> <!-- atm js file -->
+</body>
+</html>

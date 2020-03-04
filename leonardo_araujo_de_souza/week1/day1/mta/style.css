@@ -1,0 +1,67 @@
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #DCCF7C;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 7vw;
+  }
+  
+  body {
+    background: #38A299;
+    border: #FFFFFF;
+    paddng: 0;
+    margin: 0;
+  }
+  
+  button {
+      margin: 20px auto;
+      width: 40%;
+      display: block;
+      border: none;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #38A299;
+      background-color: #DCCF7C;
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 3vw;
+      cursor: pointer;
+      text-align: center;
+      transition: background 250ms ease-in-out,
+                  transform 150ms ease;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+  
+  button:hover,
+  button:focus {
+      background: #38A299;
+      color: #DCCF7C;
+  }
+  
+  button:focus {
+      color: #38A299;
+      background-color: #DCCF7C;
+      outline: 0px solid #fff;
+      outline-offset: -4px;
+  }
+  
+  button:active {
+      transform: scale(0.99);
+  }
+  
+  .output {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: block;
+    border: 10px;
+    border-color: #DCCF7C;
+    padding: 1rem 2rem;
+    margin-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #DCCF7C;
+    background-color: #38A299;
+    font-family: 'Archivo Black', sans-serif;
+  }

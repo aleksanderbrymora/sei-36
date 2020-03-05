@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+    <!-- Project css -->
+    <link rel="stylesheet" href="public/main.css">
+</head>
+<body>
+  <nav class="uk-navbar uk-navbar-container uk-margin">
+    <div class="uk-navbar-right">
+        <a class="uk-navbar-toggle" uk-icon="uikit"  uk-tooltip="Uikit.com" href="https://getuikit.com"></a>
+    </div>
+  </nav>
+
+  <div class="uk-flex uk-flex-center uk-flex-middle">  
+
+    <%= yield %>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amiri|Roboto|Source+Sans+Pro|Squada+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #324041;
+}
+
+h1, h2 {
+    font-family: 'Source Sans Pro', cursive;
+    color: #dce2de;
+}
+
+p, a {
+    font-family: 'Amiri', serif;
+    color: #dce2de;
+}

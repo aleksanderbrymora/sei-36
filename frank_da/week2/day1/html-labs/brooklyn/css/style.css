@@ -1,0 +1,74 @@
+/* 
+
+## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+#container {
+	margin: 50px 100px;
+}
+
+h1, h2, p {
+	font-family: "Times New Roman", serif;
+}
+
+h1 {
+	color: grey;
+}
+
+p {
+	margin: 0 0 25px 0;
+	line-height: 1.5;
+	font-size: 13px;	/* is it correct to change font-size to change letter spacing? */
+}
+
+.timestamp {
+	color: blue;
+	margin: 0;
+}
+
+article {
+	width: 960px;
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo-area {
+	width: 960px;	/* why does this widht cannot fit container's width automatically */
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+li {
+	display: flex;
+	border: 5px solid rgb(194, 192, 192);
+}
+
+li img {
+	border: 1px solid white;
+}
+
+footer {
+	color: grey;
+}

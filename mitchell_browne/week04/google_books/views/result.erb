@@ -1,0 +1,13 @@
+<div class="result_container">
+
+  <h2><%= @book_title %></h2>
+  <h3><%= @author.first %></h3>
+  <img class="result_img" src="<%= @image %>" alt="Book Front Cover">
+
+  <p class="result_text"><%= @description %></p>
+  <div class="details_container">
+    <p class="result_text"><strong>Date</strong><br><%= @published %></br></p>
+    <p class="result_text"><strong>Category</strong><br><%= @category.first %></br></p>
+  </div>
+
+</div>

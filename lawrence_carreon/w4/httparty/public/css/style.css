@@ -1,0 +1,42 @@
+.container{
+    width: 800px;
+    margin: auto;
+}
+
+footer{
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.search_images{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+.search_images img{
+    max-width: 100px;
+    height: 150px;
+}
+
+.search_images img:hover{
+    transform: scale(1.25);
+    z-index: 10;
+    transition: transform 0.5s ease-out;
+}
+
+.book_details{
+    border: 1px solid white;
+    border-radius: 2em;
+    padding: 1em;
+    background-color: rgb(16, 23, 31);
+}
+
+.book_details img{
+    margin: auto;
+    display: block
+}

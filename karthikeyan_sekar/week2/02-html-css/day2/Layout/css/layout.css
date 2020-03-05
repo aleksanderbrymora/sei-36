@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer|Lato&display=swap');
+
+
+body {
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  width: 960px; /*Lazy way to a responsive container*/
+  background-color: #b7ab89eb;
+  margin: auto;
+  padding: 1em;
+  border-radius: 1em;
+  /*border-bottom-left-radius: 1em;*/
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: green;
+}
+
+main img {
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  background-color: #222;
+  color: #ccc;
+  padding: 1em;
+}
+
+main {
+  display: inline-block;
+  width: 75%;
+  font-family:'Lacquer', sans-serif;
+}
+
+aside {
+  margin-top: 25px;
+  display: inline-block;
+  width: 21%; /*75%+21% =100%*/
+  vertical-align: top;
+  background-color: #cfc;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #222;
+}

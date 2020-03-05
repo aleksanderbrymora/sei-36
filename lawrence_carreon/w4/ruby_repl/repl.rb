@@ -7,17 +7,17 @@ session_bind = binding # create a variable to store the information of the curre
 
 while input = Readline.readline("> ", true) # so the file doesn't crash on an invalid input
     # a basic error handling structure
-    history = Readline::HISTORY.to_a
+    history = puts Readline::HISTORY.to_a
     begin
         result = session_bind.eval input
     rescue StandardError => error
         puts "\e[31m #{error.class}:\e[0m #{error.message}" # using some unicode to color a certain part of the text, otherwise it is just a regular string utlilsiing stored variables
     else
         case input
-        when "history"
-            puts history # allows the user to read all typed inputs for the current session
-        else
-            puts CodeRay.encode(result.pretty_inspect, :ruby, :terminal)
+        when history
+            next
+        # allows the user to read all typed inputs for the current session
+        else puts CodeRay.encode(result.pretty_inspect, :ruby, :terminal)
         end
     end
 end

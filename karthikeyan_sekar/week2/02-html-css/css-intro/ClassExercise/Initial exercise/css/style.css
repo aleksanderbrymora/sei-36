@@ -1,0 +1,21 @@
+
+body {
+  background-color: #5ef3e5;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 35px;
+
+}
+
+img
+{
+  width: 50%;
+}
+
+a
+{
+  color: red;
+}

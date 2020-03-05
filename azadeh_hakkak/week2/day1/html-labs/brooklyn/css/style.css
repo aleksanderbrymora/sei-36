@@ -1,0 +1,73 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+#container {
+  display: block;
+  width: 900px;
+  margin: auto;
+  padding-top: 20px;
+  font-family: "Times New Roman", serif;
+  color: #656565;
+
+  /* width: 100%; */
+}
+
+.logo-image {
+  padding-bottom: 20px;
+
+}
+
+.hero-image {
+   width: 100%;
+
+}
+
+.main-magazine {
+  list-style-type: none;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  display: inline-block;
+}
+
+.mag-img {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #c5c5c5;
+  height: 140px;
+  width: 212px;
+
+
+}
+.magazine {
+float: left;
+padding-left: 2px;
+
+}
+
+h5 {
+  color: blue;
+  /* padding: o */
+  margin-bottom: 5px;
+}
+.first-p {
+  margin-top: 0px;
+}
+p {
+  line-height: 20px;
+}
+.read-more {
+  color: blue;
+}
+footer{
+  margin-bottom: 20px;
+}

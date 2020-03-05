@@ -5,15 +5,17 @@
             <th scope="col">Brand</th>
             <th scope="col">Model</th>
             <th scope="col">Img</th>
+            <th scope="col">Edit</th>
         </tr>
     </thead>
     <tbody>
-        <% @guitars.each do |guitar| %>
+        <% @guitars.each.with_index do |guitar, index| %>
             <tr>
-                <th scope="row"><a href="/guitars/<%= guitar["id"] %>"><%= guitar['id'] %></a></th>
+                <th scope="row"><a href="/guitars/<%= guitar["id"] %>"><%= index + 1 %></a></th>
                 <td><%= guitar["brand"] %></td>
                 <td><%= guitar["model"] %></td>
                 <td><%= guitar["image"] %></td>
+                <td><a href="/guitars/<%= guitar["id"] %>/edit" method="post" class="btn btn-outline-primary">Edit</a></td>
             </tr>
         <% end %>
     </tbody>

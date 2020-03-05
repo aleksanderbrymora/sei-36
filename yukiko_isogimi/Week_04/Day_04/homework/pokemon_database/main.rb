@@ -25,12 +25,14 @@ end
 
 
 
-#####Index###############
+#####Index############### 
 
 
 get '/pokemons' do
   @pokemons =query_db 'SELECT * FROM pokemons'
   erb :pokemons_index
+  # require'pry'
+  # binding.pry
   #Go to the index page
 end
 
@@ -59,8 +61,8 @@ end
 
 
 get '/pokemons/:id' do
-  @pokemon = query_db "SELECT * FROM pokemons WHERE id=#{ params[:id] }" # Array
-  @pokemon = @pokemon.first
+  @pokemon = query_db "SELECT * FROM pokemons WHERE id=#{ params[:id] }" # Array of hash
+  @pokemon = @pokemon.first #to access to object#
   erb :pokemons_show
 end
 
@@ -70,6 +72,8 @@ end
 
 get '/pokemons/:id/edit' do
   @pokemon = query_db "SELECT * FROM pokemons WHERE id=#{ params[:id] }"
+  # require "pry"
+  # binding.pry
   @pokemon = @pokemon.first
   erb :pokemons_edit
 end

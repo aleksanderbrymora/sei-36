@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <title>Pokedex</title>
 </head>
 <body>
@@ -13,11 +15,12 @@
       <a href="/">Home</a>
       <a href="/pokemons">Pokemons</a>
       <a href="/pokemons/new">New Pokemons</a>
+      <img src="/images/monster.png" class="flipOutY infinite bounce delay-2s">
     </nav>
+  </div>
 
   <%= yield %>
 
-  </div>
 
 </body>
 </html>

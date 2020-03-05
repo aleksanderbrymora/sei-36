@@ -1,0 +1,4 @@
+<h1><%= @command %></h1>
+<ul>
+    <li><a class="acknowledge" href="<%= @complete_route %>"><%= @command.include?("feature") ? "Continue" : "Done" %></a></li>
+</ul>

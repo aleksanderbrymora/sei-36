@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Img</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @guitars.each do |guitar| %>
+            <tr>
+                <th scope="row"><a href="/guitars/<%= guitar["id"] %>"><%= guitar['id'] %></a></th>
+                <td><%= guitar["brand"] %></td>
+                <td><%= guitar["model"] %></td>
+                <td><%= guitar["image"] %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

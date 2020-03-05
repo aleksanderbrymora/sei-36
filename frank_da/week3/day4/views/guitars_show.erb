@@ -1,0 +1,9 @@
+<h2><%= @guitar["brand"] %></h2>
+<div class="image-holder">
+    <% if !@guitar["image"] %>
+        <a href="">Upload</a>
+    <% else %>
+        <img src="<%= @guitar["image"] %>" class="d-block rounded mx-auto">
+    <% end %>
+</div>
+<p><%= @guitar["model"] %></p>

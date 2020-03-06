@@ -30,5 +30,5 @@ get "/result" do
 
     end
     @cover_url = @book_info["items"].first["volumeInfo"]["imageLinks"]["thumbnail"]
-    json :result => @cover_url #embeded ruby 
+    json :result => @cover_url #send Json
 end

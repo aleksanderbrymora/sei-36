@@ -2,15 +2,17 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sqlite3'
 require 'digest/sha2'
+require 'pry'
 
 get '/' do
+#   binding.pry
   erb :home
 end
 
-post '/home' do
-    @user = query_db "SELECT * FROM users WHERE username=#{ params[:username] }" # Array
+post '/' do
+    @user = query_db "SELECT * FROM users WHERE username='#{ params[:username] }'" # Array
     @user = @user.first
-    
+    puts "#{compute_hash(params[:password])}, #{@user["password"]}"
     if @user["password"] == compute_hash(params[:password])
         redirect to("/welcome") # GET request
     else
@@ -24,13 +26,9 @@ end
 
 # to store/fetch passwords
 def compute_hash(password)
-    salt = 'f1nd1ngn3m0'
-    digestor = Digest::SHA256.new
-    input = digestor.digest(salt + password)
-  
-    1000.times.inject(input) do |reply|
-      digestor.digest(reply)
-    end
+        salt = 'f1nd1ngn3m0'
+        input = Digest::SHA256.hexdigest (salt + password)
+        input
 end
 
 def query_db(sql_statement)

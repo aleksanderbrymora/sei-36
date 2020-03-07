@@ -1,0 +1,12 @@
+<h2>Fighters Collection</h2>
+<% @fighters.each do |fighter| %>
+  <p>
+    <div class="picture-top">
+    <a href="/fighters/<%= fighter.id %> ">
+      <img src="<%= fighter.image %>" alt="<%= fighter.name %>">
+    </div>
+
+
+    </a>
+  </p>
+<% end %>

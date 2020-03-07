@@ -1,0 +1,12 @@
+<h2>All the cool video games</h2>
+
+
+
+<% @video_games.each do |video_game| %>
+  <p>
+  	<a href="/video_games/<%= video_game["id"] %>">
+    <%= video_game["title"] %>
+		</a>
+  </p>
+
+<% end %>

@@ -18,6 +18,9 @@ ActiveRecord::Base.establish_connection(
 class User < ActiveRecord::Base
 end
 
+class Post < ActiveRecord::Base
+end
+
 get '/' do
 #   binding.pry
   erb :home
@@ -28,7 +31,7 @@ get '/register' do
       erb :register
 end
 
-
+# login
 post '/' do
     @user = User.find_by(username: params[:username])
     # puts "#{@user.username}"
@@ -40,7 +43,7 @@ post '/' do
     end
 end
 
-# CREATE
+# Register
 post '/register' do
     if params[:password1] == params[:password2]
         user = User.new
@@ -60,6 +63,24 @@ get '/blog' do
     else
         redirect to("/")
     end 
+end
+
+# add a blog post
+post '/blog' do
+    blog_post = Post.new
+    blog_post.title = params[:title]
+    blog_post.post = params[:newpost]
+    blog_post.userid = session["user_id"] 
+    blog_post.date = Time.now.to_s
+    blog_post.save
+    redirect to("/blog") # SHOW
+end
+
+# SHOW
+# INDEX
+get '/blog/:username' do
+    @blog_posts = Post.where(userid: session["user_id"])
+    erb :show_blogposts
 end
 
 get '/logout' do

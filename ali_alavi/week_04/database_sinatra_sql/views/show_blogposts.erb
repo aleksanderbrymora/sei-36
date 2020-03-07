@@ -1,0 +1,16 @@
+<div class="uk-section uk-section-default">
+    <div class="uk-container">
+
+        <h2>Blog posts by <%= params[:username] %></h2>
+
+        <% @blog_posts.each do |post| %>
+            <h3><%= post["title"]  %></h3>
+        <p><%= post["post"] %>
+        </p>
+        <small>Posted: <%= post["date"]  %></small>
+        <% end %>
+
+        
+    </div>
+    <div class="uk-container uk-margin-large-top"><a href="/blog">Return</a></div>
+</div>

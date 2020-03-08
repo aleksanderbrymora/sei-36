@@ -1,15 +1,23 @@
 require "sinatra"
 require "sinatra/reloader"
 require "sqlite3"
+require "active_record"
 require "pry"
 
-def connect_db sql_command
-    puts sql_command
-    database = SQLite3::Database.new "database.sqlite3"
-    database.results_as_hash = true
-    results = database.execute sql_command
-    database.close
-    results
+# Active record connection
+ActiveRecord::Base.establish_connection(
+    :adapter => "sqlite3",
+    :database => "database.sqlite3"
+)
+
+# SQL output
+ActiveRecord::Base.logger = Logger.new(STDERR)
+
+# Models
+class Fighter < ActiveRecord::Base
+end
+
+class Special < ActiveRecord::Base
 end
 
 # home
@@ -23,46 +31,107 @@ get "/fighters/new" do
 end
 
 post "/fighters" do
-    connect_db "INSERT INTO fighters (name, franchise, in_game, stock_image, image) VALUES ('#{params[:name]}','#{params[:franchise]}','#{params[:in_game]}', '#{params[:stock_image]}', '#{params[:image]}')"
+    fighter = Fighter.new
+    fighter.name = params[:name]
+    fighter.franchise = params[:franchise]
+    fighter.in_game = params[:in_game]
+    fighter.stock_image = params[:stock_image]
+    fighter.image = params[:image]
     redirect to "/fighters"
 end
 
 # read
 get "/fighters" do
-    @fighters = connect_db "SELECT * FROM fighters;"
+    @fighters = Fighter.all
     erb :fighters_index
 end
 
 get "/fighters/:id" do
-    @fighter = connect_db "SELECT * FROM fighters WHERE id=#{params[:id]};"
-    @fighter = @fighter.first
+    @fighter = Fighter.find params[:id]
     erb :fighters_show
 end
 
 # update
 get "/fighters/:id/edit" do
-    @fighter = connect_db "SELECT * FROM fighters WHERE id=#{ params[:id] }"
-    @fighter = @fighter.first
+    @fighter = Fighter.find params[:id]
     erb :fighters_edit
 end
 
 post "/fighters/:id" do
-    connect_db "UPDATE fighters SET name='#{params[:name]}', franchise='#{params[:franchise]}', in_game='#{params[:in_game]}', stock_image='#{params[:stock_image]}', image='#{params[:image]}' WHERE id=#{params[:id]}"
+    fighter = Fighter.find params[:id]
+    fighter.name = params[:name]
+    fighter.franchise = params[:franchise]
+    fighter.in_game = params[:in_game]
+    fighter.stock_image = params[:stock_image]
+    fighter.image = params[:image]
     redirect to "/fighters/#{params[:id]}"
 end
 
 # delete
 get "/fighters/:id/delete" do
-    connect_db "DELETE FROM fighters WHERE id=#{params[:id]}"
+    fighter = Fighter.find params[:id]
+    fighter.destroy
     redirect to "/fighters"
 end
 
-#search
+############### SPECIAL MOVES #####################
+
+# create
+get "/specials/new" do
+    erb :specials_new
+end
+
+post "/specials" do
+    special = special.new
+    special.name = params[:name]
+    special.franchise = params[:franchise]
+    special.in_game = params[:in_game]
+    special.stock_image = params[:stock_image]
+    special.image = params[:image]
+    redirect to "/specials"
+end
+
+# read
+get "/specials" do
+    @specials = Special.all
+    erb :specials_index
+end
+
+get "/specials/:id" do
+    @special = Special.find params[:id]
+    erb :specials_show
+end
+
+# update
+get "/specials/:id/edit" do
+    @special = Special.find params[:id]
+    erb :specials_edit
+end
+
+post "/specials/:id" do
+    special = Special.find params[:id]
+    special.name = params[:name]
+    special.franchise = params[:franchise]
+    special.in_game = params[:in_game]
+    special.stock_image = params[:stock_image]
+    special.image = params[:image]
+    redirect to "/specials/#{params[:id]}"
+end
+
+# delete
+get "/specials/:id/delete" do
+    special = Special.find params[:id]
+    special.destroy
+    redirect to "/specials"
+end
+
+# generic
+# search
 post "/fighters/bio/search" do 
-    fighter = connect_db "SELECT * FROM fighters WHERE name='#{params[:name].downcase.split(" ").map{ |word| word.capitalize}.join(" ")}'"
-    unless fighter.size == 0
-        fighter = fighter.first
-        redirect to "/fighters/#{fighter["id"]}"
+    search_id = Fighter.where("name like?","%#{params[:name].downcase.capitalize}%").pluck(:id)
+    unless search_id.size == 0
+        search_id = search_id.first
+        redirect to "/fighters/#{search_id}"
     else
         redirect to "/"
     end

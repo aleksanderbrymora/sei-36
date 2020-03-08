@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Labels & Artists</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <a class="header_title_link" href="/"><h1 class="header_title">LABELS <span class="header_span">and</span> ARTISTS</h1></a>
+      <nav>
+        <a class="nav_link" href="/">Home</a>
+        <a class="nav_link" href="/labels">Labels</a>
+        <a class="nav_link" href="/labels/new">New Label</a>
+        <a class="nav_link" href="/artists">Artists</a>
+        <a class="nav_link" href="/artists/new">New Artist</a>
+      </nav>
+    </div>
+
+    <div class="content">
+      <%= yield %>
+    </div>
+
+  </div>
+</body>
+</html>

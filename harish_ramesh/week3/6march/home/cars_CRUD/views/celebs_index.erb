@@ -1,0 +1,9 @@
+<h2>Celebrities List</h2>
+
+<% @celebrities.each do |x| %>
+  <p>
+    <a href="/celebs/<%= x["id"] %>">
+      <%= x["name"] %>
+    </a>
+  </p>
+<% end %>

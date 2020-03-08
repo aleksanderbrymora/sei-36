@@ -31,7 +31,7 @@ get '/result' do
 
         @book_url = "https://www.googleapis.com/books/v1/volumes?q=title:#{@title}"
         @book_info = HTTParty.get @book_url
-        puts @book_info["items"].first
+        
         @book_cover_image = @book_info["items"].first["volumeInfo"]["imageLinks"]["thumbnail"]
         @book_for_sale_link = @book_info["items"].first["saleInfo"]["buyLink"]
         @book_price_currency = @book_info["items"].first["saleInfo"]["retailPrice"]["currencyCode"]

@@ -1,0 +1,14 @@
+<h2> My name is <%= @possum.name %> </h2>
+
+<h3> I was born in <%= @possum.year %> ! </h3>
+
+<h4> - I weigh <%= @possum.weight %> kg - </h4>
+
+<% unless @possum.image.nil? || @possum.image.empty? %>
+    <img src="<%= @possum.image %>" alt="<%= @possum.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/possums/<%= @possum.id %>/delete">Delete my Possum</a>
+    <a href="/possums/<%= @possum.id %>/edit">Edit my Possum</a>
+</div>

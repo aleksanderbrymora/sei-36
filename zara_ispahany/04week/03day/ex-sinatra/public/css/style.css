@@ -1,0 +1,18 @@
+body {
+  background-color: seashell;
+}
+
+button, p {
+  background-color: teal;
+  color: white;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+input {
+  background-color: white;
+  border: 2px solid teal;
+}

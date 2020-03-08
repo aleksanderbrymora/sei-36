@@ -1,0 +1,1 @@
+ALTER TABLE clubs ADD COLUMN league_id INTEGER;

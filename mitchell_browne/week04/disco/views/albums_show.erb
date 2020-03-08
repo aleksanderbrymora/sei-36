@@ -1,0 +1,15 @@
+<div class="show_container">
+  <div class="show_details_container">
+    <p class="show_text show_album"><%= @album["album"] %></p>
+    <p class="show_text show_artist"><%= @album["artist"] %></p>
+    <p class="show_text show_year"><%= @album["year"] %></p>
+  </div>
+  <div class="show_image_container">
+    <img class="show_image" src="<%= @album["image"] %>" alt="<%= @album["album"] %>">
+  </div>
+</div>
+<div class="controls_container">
+  <a class="color4 controls_link" href="/albums">Back</a>
+  <a class="color2 controls_link" href="/albums/<%= @album["id"] %>/edit">Edit</a>
+  <a class="color3 controls_link" href="/albums/<%= @album["id"] %>/delete">Delete</a>
+</div>

@@ -1,0 +1,5 @@
+<H2><%= @book_title %></H2>
+<img src="<%= @book_info["items"].first["volumeInfo"]["imageLinks"]["thumbnail"] %>">
+<p>Written by: <%= @book_info["items"].first["volumeInfo"]["authors"].join(', ') %></p>
+<p>Published by: <%= @book_info["items"].first["volumeInfo"]["publisher"] %></p>
+<p class="result">Description: <%= @book_info["items"].first["volumeInfo"]["description"] %></p>

@@ -60,9 +60,14 @@ post '/register' do
 end
 
 # SHOW
+get '/blog/:username/:id' do
+    @blogpost = Post.find params[:id]
+    erb :show_blogpost
+end
+
 # INDEX
 get '/blog/:username' do
-    @blog_posts = User.joins(:posts).select("posts.*, users.*").where("users.id = #{User.find_by(username: params[:username]).id}")
+    @blog_posts = User.joins(:posts).select("posts.*").where("users.id = #{User.find_by(username: params[:username]).id}")
     erb :show_blogposts
 end
 
@@ -77,11 +82,29 @@ end
 
 # Delete
 get '/blog/:username/:id/delete' do
-    blogpost = Post.find params[:id]
-    blogpost.destroy
-    redirect to('/blog')
-  end
+    if session["user_id"] == User.find_by(username: params[:username]).id
+        blogpost = Post.find params[:id]
+        blogpost.destroy
+        redirect to('/blog')
+    else 
+        redirect to('/')
+    end
+end
 
+# EDIT
+get '/blog/:username/:id/edit' do
+    @blogpost = Post.find params[:id]
+    erb :edit_blogpost
+end
+
+# UPDATE
+post '/blog/:username/:id' do
+    blogpost = Post.find params[:id]
+    blogpost.title = params[:name]
+    blogpost.post = params[:family]
+    blogpost.save
+    redirect to("/blog") # GET request
+end
 
 # add a blog post
 post '/blog' do

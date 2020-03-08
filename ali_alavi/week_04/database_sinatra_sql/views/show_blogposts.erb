@@ -4,7 +4,7 @@
         <h2>Blog posts by <%= params[:username] %></h2>
 
         <% @blog_posts.each do |post| %>
-            <h3><%= post["title"]  %></h3>
+            <h3><a href="/blog/<%= params[:username] %>/<%= post.id %>"><%= post["title"]  %></a></h3>
         <p><%= post["post"] %>
         </p>
         <small>Posted: <%= post["date"]  %></small>

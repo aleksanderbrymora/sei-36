@@ -1,0 +1,12 @@
+<h2><%= @celebrity["name"] %></h2>
+<h3>Profession: <%= @celebrity["profession"] %></h3>
+<h3>Car: <%= @celebrity["car"] %></h3>
+
+<% unless @celebrity["image"].nil? || @celebrity["image"].empty? %>
+  <img src="<%= @celebrity["image"] %>" alt="<%= @celebrity["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/celebs/<%= @celebrity["id"] %>/edit">Edit</a>
+  <a href="/celebs/<%= @celebrity["id"] %>/delete">Delete</a>
+</div>

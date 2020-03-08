@@ -1,0 +1,37 @@
+body {
+  background-color: pink;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+  /* Budget way of vertical centering of text - for one line of text */
+  line-height: 300px;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block{
+  display: inline-block;
+}
+.none{
+  display: none;
+}
+.visibility-hidden {
+  visibility: hidden;
+}
+.spooky span {
+  visibility: hidden;
+}
+.spooky:hover {
+  background-color: black;
+}
+.spooky:hover span {
+  color: yellow;
+  visibility: visible;
+  transition: 2s all;
+}

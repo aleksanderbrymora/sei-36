@@ -93,17 +93,25 @@ end
 
 # EDIT
 get '/blog/:username/:id/edit' do
-    @blogpost = Post.find params[:id]
-    erb :edit_blogpost
+    if session["user_id"] == User.find_by(username: params[:username]).id
+        @blogpost = Post.find params[:id]
+        erb :edit_blogpost
+    else
+        redirect to("/")
+    end
 end
 
 # UPDATE
 post '/blog/:username/:id' do
-    blogpost = Post.find params[:id]
-    blogpost.title = params[:name]
-    blogpost.post = params[:family]
-    blogpost.save
-    redirect to("/blog") # GET request
+    if session["user_id"] == User.find_by(username: params[:username]).id
+        blogpost = Post.find params[:id]
+        blogpost.title = params[:title]
+        blogpost.post = params[:updatepost]
+        blogpost.save
+        redirect to("/blog") # GET request
+    else
+        redirect to("/")
+    end
 end
 
 # add a blog post

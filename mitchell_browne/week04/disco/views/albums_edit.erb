@@ -1,0 +1,26 @@
+<div class="form_container">
+  <form class="form" action="/albums/<%= @album["id"] %>" method="post">
+    <label class="label_color1">
+      Artist
+      <input class="input_border1" type="text" name="artist" placeholder="The Trammps" value="<%= @album["artist"] %>" autocomplete="off" required>
+    </label>
+    <label class="label_color2">
+      Album
+      <input class="input_border2" type="text" name="album" placeholder="Disco Inferno" value="<%= @album["album"] %>" autocomplete="off" required>
+    </label>
+    <label class="label_color3">
+      Year Released
+      <input class="input_border3" type="number" name="year" placeholder="1976" value="<%= @album["year"] %>" autocomplete="off">
+    </label>
+    <label class="label_color4">
+      Image
+      <input class="input_border4" type="text" name="image" placeholder="http://..." value="<%= @album["image"] %>" autocomplete="off" required>
+    </label>
+    <button class="create_button">Update</button>
+  </form>
+</div>
+
+<div class="controls_container">
+  <a class="color4 controls_link" href="/albums">Back</a>
+  <a class="color3 controls_link" href="/albums/<%= @album["id"] %>/delete">Delete</a>
+</div>

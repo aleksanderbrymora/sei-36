@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+main {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+h2 {
+  font-family: 'Alfa Slab One', cursive;
+  margin-top: 150px;
+  font-size: 2.6em;
+  margin-bottom: 50px;
+}
+a {
+  padding: 13px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  width: 50px;
+  height: 25px;
+  margin: 0 10px
+}
+a.yes {
+  background-color: #61C261;
+}
+a.no {
+  background-color: #CF443F;
+}
+a.done {
+  background-color: #007BCC;
+}

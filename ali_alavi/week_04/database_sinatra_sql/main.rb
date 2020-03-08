@@ -16,9 +16,11 @@ ActiveRecord::Base.establish_connection(
 
 # Model: class + a database table
 class User < ActiveRecord::Base
+    has_many :posts
 end
 
 class Post < ActiveRecord::Base
+    belongs_to :user
 end
 
 get '/' do
@@ -57,30 +59,39 @@ post '/register' do
     end
 end
 
+# SHOW
+# INDEX
+get '/blog/:username' do
+    @blog_posts = User.joins(:posts).select("posts.*, users.*").where("users.id = #{User.find_by(username: params[:username]).id}")
+    erb :show_blogposts
+end
+
 get '/blog' do
-    if session["user_id"] 
+    if session["user_id"]
+        @user = User.find_by(id: session["user_id"]) 
         erb:blog 
     else
         redirect to("/")
     end 
 end
 
+# Delete
+get '/blog/:username/:id/delete' do
+    blogpost = Post.find params[:id]
+    blogpost.destroy
+    redirect to('/blog')
+  end
+
+
 # add a blog post
 post '/blog' do
     blog_post = Post.new
     blog_post.title = params[:title]
     blog_post.post = params[:newpost]
-    blog_post.userid = session["user_id"] 
+    blog_post["user_id"] = session["user_id"] 
     blog_post.date = Time.now.to_s
     blog_post.save
     redirect to("/blog") # SHOW
-end
-
-# SHOW
-# INDEX
-get '/blog/:username' do
-    @blog_posts = Post.where(userid: session["user_id"])
-    erb :show_blogposts
 end
 
 get '/logout' do

@@ -1,6 +1,6 @@
 CREATE TABLE posts (
     id INTEGER PRIMARY KEY,
-    userid INTEGER,
+    user_id INTEGER,
     date TEXT,
     title TEXT,
     post BLOB

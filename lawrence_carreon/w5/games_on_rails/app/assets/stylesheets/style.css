@@ -26,7 +26,8 @@ header{
 nav a{
     text-decoration: none;
     padding: 10px 20px;
-    color: white;   
+    color: white;
+    font-size: 1.25em;   
 }
 
 nav a:hover{
@@ -51,22 +52,198 @@ footer{
     width: 100%;
 }
 
-.question_field{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1em;
-}
-
 input{
     padding: 1em;
     width: 50%;
     border-radius: 1em;
 }
 
-.question_field button{
-    width: 25%;
-    margin: auto;
+button{
     border-radius: 1em;
     padding: 10px;
     cursor: pointer;
+}
+
+button:hover, .choice:hover{
+    box-shadow: 0 0 10px 5px lightskyblue;
+    transition: box-shadow 0.5s ease-in-oute;
+}
+
+
+.question_field{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+.question_field button{
+    width: 25%;
+    margin: auto;
+}
+
+.conch_shell{
+    animation: shake 1.0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.scrt_nums{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 1em;
+    margin: 20px 0;
+}
+
+.choice{
+    padding: 15px 25px;
+    border: 1px solid lightslategray;
+    border-radius: 1em;
+    color: black;
+    text-decoration: none;
+    background: linear-gradient(lightslategray, white, lightslategray);
+}
+
+.overlay{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.centering_container{
+    color: white;
+}
+
+.wrong{
+    background-color: rgba(255,0,0,0.5);
+    animation: red_pulse 3.0s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.correct{
+    background-color: rgba(0,255,0,0.5);
+    animation: green_pulse 3.0s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes red_pulse{
+    0%,100%{
+        background-color: rgba(255,0,0,0.5);
+    }
+    10%{
+        background-color: rgba(255,0,0,0.4);
+    }
+    20%{
+        background-color: rgba(255,0,0,0.35);
+    }
+    30%{
+        background-color: rgba(255,0,0,0.3);
+    }
+    40%{
+        background-color: rgba(255,0,0,0.25);
+    }
+    50%{
+        background-color: rgba(255,0,0,0.35);
+    }
+    60%{
+        background-color: rgba(255,0,0,0.75);
+    }
+    70%{
+        background-color: rgba(255,0,0,0.9);
+    }
+    80%{
+        background-color: rgba(255,0,0,1.0);
+    }
+    90%{
+        background-color: rgba(255,0,0,1.0);
+    }
+}
+
+@keyframes green_pulse{
+    0%,100%{
+        background-color: rgba(0,255,0,0.5);
+    }
+    10%{
+        background-color: rgba(0,255,0,0.4);
+    }
+    20%{
+        background-color: rgba(0,255,0,0.35);
+    }
+    30%{
+        background-color: rgba(0,255,0,0.3);
+    }
+    40%{
+        background-color: rgba(0,255,0,0.25);
+    }
+    50%{
+        background-color: rgba(0,255,0,0.35);
+    }
+    60%{
+        background-color: rgba(0,255,0,0.75);
+    }
+    70%{
+        background-color: rgba(0,255,0,0.9);
+    }
+    80%{
+        background-color: rgba(0,255,0,1.0);
+    }
+    90%{
+        background-color: rgba(0,255,0,1.0);
+    }
+}
+
+.scrt_img{
+    display: block;
+}
+
+.rps{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.rps_choice img{
+    width: 160px;
+    height: 160px;
+}
+
+.small_container{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+}
+
+.small_container:hover{
+    background-color: limegreen;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.score_board{
+    width: 80%;
+    border-radius: 1em;
+    border: 2px solid black;
+    margin: 20px auto;
+    font-size: 1.5em;
 }

@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   get "/conch/answer" => "conch#answer"
 
   get "/secret_number" => "number#guess"
-  get "/secret_number/guess" => "number#guess"
+  get "/secret_number/attempt" => "number#attempt"
   get "/secret_number/wrong" => "number#wrong"
   get "/secret_number/correct" => "number#correct"
 
   get "/rps" => "rps#choose"
+  get "/rps/result/:choice" => "rps#result"
 end

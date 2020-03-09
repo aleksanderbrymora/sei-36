@@ -1,3 +1,58 @@
 nav a{
   margin-left: 10px;
+  color:red
+}
+a:hover{
+  color:yellow;
+  font-size: 25px;
+}
+nav{
+  background-color: black;
+  padding:5px;
+  opacity: 0.5;
+}
+#head{
+  background-color: #ff3333;
+  padding: 5px;
+  opacity: 0.5;
+}
+#menu{
+  background-color: #e60000;
+  padding: 5px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+body{
+  background-image: url(clown.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+p{
+  color: lime;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+label, #que,#num{
+  color:#CAFF33;
+  font-size: 20px;
+  text-align: left;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+button{
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px;
 }

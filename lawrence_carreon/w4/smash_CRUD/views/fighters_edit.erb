@@ -1,0 +1,26 @@
+<h2>Edit fighter bio for <%= @fighter["name"] %></h2>
+
+<form action="/fighters/<%= @fighter["id"]%>" method="post">
+    <label>
+        Name:
+        <input type="text" name="name" value="<%= @fighter["name"] %>" required>
+    </label>
+    <label>
+        Franchise:
+        <input type="text" name="franchise" value="<%= @fighter["franchise"] %>">
+    </label>
+    <label>
+        Included in the Following games:
+        <input type="text" name="in_game" value="<%= @fighter["in_game"] %>">
+    </label>
+    <label>
+        Stock Image:
+        <input type="url" name="stock_image" value="<%= @fighter["stock_image"] %>">
+    </label>
+    <label>
+        Character Image:
+        <input type="url" name="image" value="<%= @fighter["image"] %>">
+    </label>
+
+    <input type="submit" value="Commit Changes">
+</form>

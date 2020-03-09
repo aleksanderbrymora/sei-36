@@ -2,16 +2,6 @@
 <h3>Model: <%= @car["model"] %></h3>
 <h3>Style: <%= @car["style"] %></h3>
 
-<h3>
-  Associated Celebrities
-</h3>
-<ul>
-  <% @car.celebrities.each do |x| %>
-  <li>
-    <a href="/celebs/<%= x.id %>"></a>
-  </li>
-</ul>
-
 <% unless @car["image"].nil? || @car["image"].empty? %>
   <img src="<%= @car["image"] %>" alt="<%= @car["brand"] %>">
 <% end %>

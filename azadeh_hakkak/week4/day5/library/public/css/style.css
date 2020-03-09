@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+body {
+  background-color: #1b3c58;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  background-color: #a07a4b;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+p {
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', sans-serif;
+  padding: 50px 0;
+  margin: 0;
+}
+a {
+  color: pink;
+  display: flex;
+  align-content: space-around;
+  padding: 20px 0;
+}

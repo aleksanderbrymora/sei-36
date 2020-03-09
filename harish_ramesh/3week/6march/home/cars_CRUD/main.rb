@@ -10,11 +10,9 @@ ActiveRecord::Base.establish_connection(
 
 ActiveRecord::Base.logger = Logger.new(STDERR)
 class Car < ActiveRecord::Base
-  has_many :celebs
 end
 
 class Celeb < ActiveRecord::Base
-  belongs_to :car, :optional => true
 end
 
 get '/' do
@@ -92,7 +90,6 @@ post '/celebs' do
   celebrity.profession = params[:profession]
   celebrity.car = params[:car]
   celebrity.image = params[:image]
-  celebrity.car_id = params[:car_id]
   celebrity.save
   redirect to('/celebs')
 end

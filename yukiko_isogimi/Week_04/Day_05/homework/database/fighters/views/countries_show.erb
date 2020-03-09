@@ -1,0 +1,10 @@
+<h2 class="fighter"><%= @country.name %></h2>
+
+<% unless @country.image.nil? || @country.image.empty? %>
+<img src="<%= @country.image %>" alt="<%= @country.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/countries/<%= @country.id %>/edit">Edit</a>
+  <a href="/countries/<%= @country.id %>/delete">Delete</a>
+</div>

@@ -1,0 +1,11 @@
+<h1><a href="/rps">Rock Paper Scissors</a></h1>
+
+<div class="rps_result_container">
+  <img class="rps_image" src="<%= @choiceImage %>" alt="<%= @choiceThrow %> player choice">
+  <h2 style="color: forestgreen">VS</h2>
+  <img class="rps_image" src="<%= @randomImage %>" alt="<%= @randomThrow %> computer choice">
+</div>
+
+<h1 class="rps_title"><%= @result %></h1>
+
+<p><a class="rps_again" href="/rps">Play again. If you dare...</a></p>

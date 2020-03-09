@@ -1,0 +1,9 @@
+<h2>All BMW's</h2>
+<% @bmws.each do |bmw| %>
+  <p>
+    <a href="/bmw/<%= bmw["id"] %>">
+      <%= bmw["model"] %>
+    </a>
+  </p>
+<% end %>
+<hr>

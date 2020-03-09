@@ -1,0 +1,27 @@
+<h2> Edit Chinchillas </h2>
+
+<form action="/chinchillas/<%= @chinchin["id"] %>" method="post">
+
+<label>    
+    Name of your chinchilla:
+   <input type="text" name="petname" placeholder="Boss" required value="<%= @chinchin["name"] %>">
+</label>
+
+<label>    
+    Name of the owner:
+    <input type="text" name="ownername" placeholder="Harry Potter" value="<%= @chinchin["owner"] %>">
+</label>
+    
+ <label>
+    Birth year of your chinchilla:
+    <input type="integer" name="year_born" placeholder="1999" value="<%= @chinchin["year_born"] %>">
+</label>
+
+<label>
+    Image:
+    <input type="url" name="image" placeholder="URL-ink" value="<%= @chinchin["image"] %>">
+</label>
+    
+<button>Update My chinchilla</button>
+
+</form>

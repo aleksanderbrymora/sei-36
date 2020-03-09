@@ -82,7 +82,7 @@ footer p {
 
 }
 
-h1.swing {
+.fade-in {
   animation-duration: 3s;
   animation-delay: 2s;
   /* animation-iteration-count: infinite; */

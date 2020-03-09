@@ -1,0 +1,65 @@
+
+nav {
+padding: 1em;
+/* margin: 1em; */
+}
+
+h1 {
+    padding: 0.5em;
+    /* margin: 10px; */
+}
+body {
+
+background-color: burlywood ;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 2em;
+/* padding: 2em; */
+}
+
+.word {
+    color: #0076d1;
+}
+
+.word :hover {
+    color: purple;
+}
+
+p {
+    text-align: center;
+    /* border-style: ridge; */
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    border-bottom: ridge;
+}
+
+.story {
+    display:block;
+    width: 70%;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin: 10px;
+}
+
+h2 {
+    text-shadow: 7px 5px 4px wheat;
+}
+
+button {
+    background-color: wheat; 
+    color: black; 
+    border: 2px solid black;
+  }
+  
+button:hover {
+    background-color: rgb(0, 118, 209);
+    color: white;
+}

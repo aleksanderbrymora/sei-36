@@ -1,0 +1,27 @@
+<div class="fighter_bio">
+    <h2><%= @fighter["name"]%></h2>
+    <hr>
+    <div class="bio_content">
+        <img src="<%= @fighter["image"] %>" alt="character picture for <%= @fighter["name"]%>">
+        <div class="bio_text">
+            <p>
+                <strong>Franchise:</strong>
+                <br>
+                <%= @fighter["franchise"]%>
+            </p>
+            <p>
+                <strong>Smash games included in:</strong>
+                <br>
+                <%= @fighter["in_game"]%>
+            </p>
+            <p>
+                <strong>Stock symbol:</strong>
+                <br>
+                <img class="stock" src="<%= @fighter["stock_image"]%>">
+            </p>
+        </div>
+    </div>
+    <hr>
+    <a href="/fighters/<%= @fighter["id"] %>/edit">Edit Bio</a>
+    <a href="/fighters/<%= @fighter["id"] %>/delete">Delete Bio</a>
+</div>

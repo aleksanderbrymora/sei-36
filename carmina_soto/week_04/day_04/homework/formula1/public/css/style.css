@@ -69,10 +69,16 @@ p {
 }
 .profile, .profile p{
   text-align: center;
+<<<<<<< HEAD
   margin-top: 20px;
 }
 .profile a {
   padding: 10px;
+=======
+}
+.profile a {
+  padding: 20px;
+>>>>>>> 71e4864be61bfaaccdcacf39c18a15b67c88453c
 }
 .profile img {
   width: 50%;

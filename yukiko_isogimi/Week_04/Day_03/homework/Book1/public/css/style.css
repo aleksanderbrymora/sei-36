@@ -1,0 +1,30 @@
+* {
+  margin:0 auto;
+  psdding:0;
+  text-align: center;
+  line-height: 20px;
+}
+
+h1 {
+  padding-bottom:20px;
+  color:white;
+  margin-bottom:30px;
+  font-size:50px;
+  padding-top:100px;
+}
+
+body {
+  background-color: skyblue;
+  font-family: 'Trade Winds', cursive;
+
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  padding-right:93px;
+}

@@ -1,0 +1,26 @@
+<h3>Edit Client</h3>
+
+<form action="/clients/<%= @client["id"] %>" method="post">
+  <label>
+    first_name:
+    <input name="first_name" value="<%= @client["first_name"] %>">
+  </label>
+
+  <label>
+    last_name:
+    <input name="last_name" value="<%= @client["last_name"] %>">
+  </label>
+
+  <label>
+    contact_number:
+    <input name="contact_number" placeholder="Australia (+62)" value="<%= @client["contact_number"] %>">
+  </label>
+
+  <label>
+    photo:
+    <input type="url" name="image" placeholder="http://..." value="<%= @client["image"] %>">
+  </label>
+
+  <button>Save</button>
+
+</form>

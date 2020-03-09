@@ -69,9 +69,10 @@ p {
 }
 .profile, .profile p{
   text-align: center;
+  margin-top: 20px;
 }
 .profile a {
-  padding: 20px;
+  padding: 10px;
 }
 .profile img {
   width: 50%;

@@ -11,11 +11,14 @@ ActiveRecord::Base.establish_connection(
 ActiveRecord::Base.logger = Logger.new(STDERR)
 
 #Model: class + database table
-class Driver < ActiveRecord::Base
+class Team < ActiveRecord::Base
+  has_many :drivers
 end
 
-class Team < ActiveRecord::Base
+class Driver < ActiveRecord::Base
+  belongs_to :team
 end
+
 
 get '/' do
   erb :home

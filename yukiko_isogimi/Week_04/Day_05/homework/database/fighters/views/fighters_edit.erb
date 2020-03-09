@@ -1,0 +1,17 @@
+<h2>Lets Add New Fighter</h2>
+
+<form action="/fighters/<%= @fighter.id %>" method="post">
+
+  <label>
+    Name:
+    <input name="name" placeholder="Ken" required value="<%= @fighter.name %>" >
+  </label>
+
+  <label>
+    Image:
+    <input name="image" type="url" placeholder="http://...." value="<%= @fighter.image %>">
+  </label>
+
+  <button>Add New Fighter</button>
+
+</form>

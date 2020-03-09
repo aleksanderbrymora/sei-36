@@ -1,0 +1,29 @@
+    <div class="uk-section uk-section-default">
+    <div class="uk-container">
+    <form class="uk-form-stacked" action="/blog" method="post">
+        <legend class="uk-legend">New Blog Post</legend>
+
+        <div class="uk-margin">
+          <input class="uk-input" name="title" type="text" placeholder="Title of post" />
+        </div>
+
+        <div class="uk-margin">
+          <textarea class="uk-textarea" rows="5" name="newpost"></textarea>
+        </div>
+
+        <div class="uk-margin">
+          <button
+            class="uk-button uk-button-primary"
+          >
+            Post
+          </button>
+        </div>
+       </form>
+       <div class="uk-margin">
+        <a href="/logout" class="uk-button uk-button-danger">Logout</a>
+        </div>
+      <span class="uk-label"><a class="uk-link-text uk-text-bold" href="/blog/<%= @user["username"] %>">See blog posts</a>
+            </span>
+      </div>
+</div>
+   

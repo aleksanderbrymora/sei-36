@@ -1,0 +1,65 @@
+.extend{
+    width: 50%;
+}
+
+nav a{
+    color: white;
+    padding: 2vh;
+}
+
+hr{
+    margin: 30px 0;
+}
+
+.character_select{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1em;
+}
+
+.char_select{
+    opacity: 0.5;
+}
+
+.char_select:hover{
+    opacity: 1.0;
+    transform: scale(2.0);
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+}
+
+.fighter_bio{
+    border: 1px white solid;
+    padding: 0 1em 1em 1em;
+    border-radius: 1em;
+    background-color: rgb(15, 29, 44);
+}
+
+.fighter_bio a{
+    padding: 10px;
+    border-radius: 1em;
+    background-image: linear-gradient( #f5fcff, #92dff3);
+    color: #000
+}
+
+.fighter_bio a:hover{
+    background-image: linear-gradient( #7ad7f0, #b7e9f7);
+    color: #000
+}
+
+.bio_content{
+    width: 80%;
+    margin: auto;
+    font-size: 1.25em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.stock{
+    max-width: 80px;
+}

@@ -1,0 +1,7 @@
+<h3>Click on a character to view their data!</h3>
+
+<div class="character_select">
+    <% @fighters.each do |fighter| %>
+        <a href="/fighters/<%= fighter["id"] %>"><img class="stock char_select" src="<%= fighter["stock_image"] %>" title="<%= fighter["name"]%>"></a>
+    <% end %>
+</div>

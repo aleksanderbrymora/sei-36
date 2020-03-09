@@ -1,0 +1,22 @@
+<h2> <%= @author[:name] %> </h2>
+
+<% unless @author[:born].nil? %>
+<h3>Born: <%= @author[:born] %></h3>
+<% end %>
+
+<% unless @author[:died].nil? %>
+<h3>Died: <%= @author[:died] %></h3>
+<% end %>
+
+
+<h3>Genre: <%= @author[:genre] %></h3>
+
+
+<% unless @author[:image].nil? || @author[:image].empty? %>
+<img src="<%= @author[:image] %>" alt="<%= @author[:name] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/authors/<%= @author[:id] %>/edit">Edit</a>
+  <a href="/authors/<%= @author[:id] %>/delete">Delete</a>
+</div>

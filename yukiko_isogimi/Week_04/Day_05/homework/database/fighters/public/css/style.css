@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+.fighter {
+  font-family: 'Sen', sans-serif;
+}
+
+body {
+  /* background-image: url("https://streetfighter.com/wp-content/uploads/2019/07/featured-2019-summer-bundle-purchase.jpg");
+  background-repeat: no-repeat;
+  background-position: center; */
+
+
+
+  background-color:#000;
+  /* font-family:'Press Start 2P', cursive; */
+  color:white;
+}
+
+.message {
+  margin:0 auto;
+}
+
+.top-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.top  {
+  text-align: center;
+  margin-bottom: 40px;
+  display:flex;
+  justify-content: space-around;
+}
+
+ a {
+  font-family: 'Press Start 2P', cursive;
+  color:white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.picture-top {
+  display: flex;
+
+}
+
+.bottom {
+  display:flex;
+  align-items: flex-end;
+}
+
+.fighter {
+  transition:transform .2s;
+}
+
+.fighter:hover {
+  transform: scale(1.2);
+  opacity:0.5;
+}

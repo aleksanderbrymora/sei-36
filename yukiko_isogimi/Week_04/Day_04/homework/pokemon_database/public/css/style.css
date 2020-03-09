@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+
+body {
+  background-image: url(/images/pokemon2.jpg);
+  /* background-repeat: no-repeat; */
+  opacity: 0.5;
+  background-size: cover;
+  font-family: 'Concert One', cursive;
+
+  color: white;
+
+
+}
+
+
+
+
+
+h1 {
+  font-size: 80px;
+  opacity:1.0;
+  color:limegreen;
+
+
+}
+
+/* .container {
+  width:400px;
+  margin:20 auto;
+
+} */

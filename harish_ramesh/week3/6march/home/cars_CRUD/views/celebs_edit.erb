@@ -1,0 +1,25 @@
+<h2>Edit Cars</h2>
+
+<form action="/celebs/<%= @celebrity["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Jackie Chan" required value="<%= @celebrity["name"] %>">
+  </label>
+
+  <label>
+    profession:
+    <input name="profession" placeholder="Actor" value="<%= @celebrity["profession"] %>">
+  </label>
+
+  <label>
+    Car:
+    <input name="car" placeholder="Audi" value="<%= @celebrity["car"] %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @celebrity["image"] %>">
+  </label>
+
+  <button>Update Celebrity</button>
+</form>

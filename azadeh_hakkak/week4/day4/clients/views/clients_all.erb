@@ -1,0 +1,9 @@
+<h3>Clients History</h3>
+
+<% @clients.each do |client| %>
+<p>
+  <a href="/clients/<%= client["id"] %>">
+        <%= client["first_name"] %> <%= client["last_name"] %>
+      </a>
+</p>
+<% end %>

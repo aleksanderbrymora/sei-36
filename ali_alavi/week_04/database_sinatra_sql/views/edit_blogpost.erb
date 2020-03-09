@@ -1,0 +1,25 @@
+    <div class="uk-section uk-section-default">
+    <div class="uk-container">
+    <form class="uk-form-stacked" action="/blog/<%= params["username"] %>/<%= params["id"] %>" method="post">
+        <legend class="uk-legend">Edit Blog Post</legend>
+
+        <div class="uk-margin">
+          <input class="uk-input" name="title" type="text" placeholder="" value="<%= @blogpost["title"] %>">
+        </div>
+
+        <div class="uk-margin">
+          <textarea class="uk-textarea" rows="5" name="updatepost"><%= @blogpost["post"] %></textarea>
+        </div>
+
+        <div class="uk-margin">
+          <button
+            class="uk-button uk-button-primary"
+          >
+            Update
+          </button>
+        </div>
+       </form>
+      <span class="uk-label"><a class="uk-link-text uk-text-bold" href="/blog/<%= params[:username] %>">See blog posts</a>
+            </span>
+      </div>
+</div>

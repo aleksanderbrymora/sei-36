@@ -160,7 +160,7 @@ body {
   text-decoration: none;
   font-family: 'Muli', sans-serif;
   font-weight: 800;
-  color: #FF7700;
+  color: #FFFFFF;
   margin: 0 1vw;
 }
 
@@ -241,7 +241,11 @@ button {
   outline: none;
   border: none;
   background-color: #000000;
+<<<<<<< HEAD
+  color: #FFFFFF;
+=======
   color: #FF7700;
+>>>>>>> bf4d70f639620a6827525a296413a0e814d29b61
   margin-top: 5vh;
   text-align: center;
 }

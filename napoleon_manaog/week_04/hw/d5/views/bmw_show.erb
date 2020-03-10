@@ -1,0 +1,19 @@
+<h2><%= @bmw["model"] %></h2>
+
+<% unless @bmw.family.nil? %>
+  <h3>Family:
+    <a href="/family/<%= @bmw.family.id %>">
+      <%= @bmw.family.name %>
+    </a>
+  </h3>
+<% end %>
+
+<h3>Year:   <%= @bmw["year"] %></h3>
+<% unless @bmw["image"].nil? ||  @bmw["image"].empty? %>
+  <img src="<%= @bmw["image"] %>" alt="<%= @bmw["model"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/bmw/<%= @bmw["id"] %>/edit">Edit</a>
+  <a href="/bmw/<%= @bmw["id"] %>/delete">Delete</a>
+</div>

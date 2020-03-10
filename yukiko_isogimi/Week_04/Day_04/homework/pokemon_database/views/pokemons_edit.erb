@@ -1,0 +1,23 @@
+<h2>New Butterfly</h2>
+
+
+<form action="/pokemons/<%= @pokemon["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="pikachuu" required  value="<%= @pokemon["name"] %>">
+  </label>
+
+  <label>
+    Family:
+    <input name="name" placeholder="Electric" value="<%= @pokemon["family"] %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @pokemon["image"] %>">
+  </label>
+
+  <button>Add pokemon</button>
+
+
+</form>

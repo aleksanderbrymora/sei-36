@@ -1,0 +1,30 @@
+<h1 class="content_title">EDIT ARTIST</h1>
+
+<form class="form_container" action="/artists/<%= @artist.id %>" method="post">
+  <label>
+    Name
+    <input type="text" name="name" value="<%= @artist.name %>" autocomplete="off" required>
+  </label>
+  <label>
+    Genre
+    <input type="text" name="genre" value="<%= @artist.genre %>" autocomplete="off">
+  </label>
+  <label>
+    Location
+    <input type="text" name="location" value="<%= @artist.location %>" autocomplete="off">
+  </label>
+  <label>
+    Top Track
+    <input type="text" name="top_track" value="<%= @artist.top_track %>" autocomplete="off">
+  </label>
+  <label>
+    Label
+    <input type="text" name="label" value="<%= @artist.label %>" autocomplete="off">
+  </label>
+  <label>
+    Image
+    <input type="text" name="image" value="<%= @artist.image %>" autocomplete="off">
+  </label>
+
+  <button>Update</button>
+</form>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash DB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+    <link rel="stylesheet" href="/css/smash.css">
+</head>
+<body>
+    <h1>SMASH CRUD</h1>
+    <nav>
+        <a href="/">Home</a>
+        |
+        <a href="/fighters">The Cast</a>
+        |
+        <a href="/fighters/new">Add a Fighter</a>
+        |
+        <a href="/specials">Special Moves</a>
+        |
+        <a href="/specials/new">Add a Tech</a>
+        |
+    </nav>
+    <hr>
+    <%= yield%>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div class="show_container">
+  <div class="show_details_container">
+    <div class="details_container">
+      <h2 class="show_title"><%= @artist.name %></h2>
+      <p class="show_location"><%= @artist.location %></p>
+      <p>Genre: <%= @artist.genre %></p>
+      <!-- <p><%= @artist.top_track %></p> -->
+      <p>Label: <%= @artist.label %></p>
+      <div class="controls">
+        <a class="controls_link" href="/artists">Back</a> 
+        <a class="controls_link" href="/artists/<%= @artist.id %>/edit">Edit</a>
+        <a class="controls_link" href="/artists/<%= @artist.id %>/delete">Delete</a>
+      </div>
+    </div>
+
+  </div>
+<div class="show_image_container">
+  <img class="show_image" src="<%= @artist.image %>" alt="<%= @artist.name %> image">
+</div>
+</div>

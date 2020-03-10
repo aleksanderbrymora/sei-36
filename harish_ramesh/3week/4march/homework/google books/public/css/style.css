@@ -1,0 +1,18 @@
+body{
+  background-color: orange;
+}
+nav a:hover
+{
+color: white;
+}
+P{
+  font-size: 25px;
+}
+.addn_info{
+  max-width: 400px;
+  height:450px;
+  display:inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  padding: 10px;
+}

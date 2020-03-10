@@ -1,0 +1,20 @@
+<h2><%= @team["name"] %></h2>
+<h3>Favorites: <em><%= @team["favorite"] %></em></h3>
+
+<% unless @team.league.nil? %>
+  <h3>
+     League:
+    <a href="/leagues/<%= @team.league_id %>">
+      <%= @team.league.name %>
+    </a>
+  </h3>
+<% end %>
+
+<% unless @team["image"].nil? || @team["image"].empty? %>
+  <img class="feature" src="<%= @team["image"] %>" alt="<%= @team["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/clubs/<%= @team["id"] %>/edit">Edit</a>
+  <a href="/clubs/<%= @team["id"] %>/delete">Delete</a>
+</div>

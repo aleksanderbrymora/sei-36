@@ -1,0 +1,13 @@
+
+
+body {
+background-color: palegreen;
+}
+
+span {
+    color: white;
+}
+
+span:hover {
+    color: green;
+}

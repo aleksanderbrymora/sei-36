@@ -1,0 +1,12 @@
+<h2><%= @beach.name %></h2>
+<div class="controls">
+<%= link_to "Edit Beach", edit_beach_path(@beach.id) %>
+<%= button_to 'Delete Beach', beach_path(@beach.id), :method => 'delete' %>
+</div>
+
+<%= image_tag @beach.image, :class => 'feature' if @beach.image.present? %>
+<ul>
+  <li>Location: <%= @beach.location  %></li>
+  <li>Area: <%= @beach.area %></li>
+  <li>Tourists as of 2019: <%= @beach.tourists %></li>
+</ul>

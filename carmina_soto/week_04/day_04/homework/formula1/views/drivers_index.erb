@@ -1,0 +1,11 @@
+<h2>All Drivers</h2>
+<div class="container">
+<% @drivers.each do |driver| %>
+  <a href="/drivers/<%= driver["id"] %>">
+  <div class="driver">
+    <h3><%= driver["name"] %></h3>
+    <img src="<%= driver["image"] %>">
+  </div>
+  </a>
+<% end %>
+</div>

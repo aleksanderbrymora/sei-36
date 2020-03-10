@@ -1,0 +1,25 @@
+<h2>Edit Book</h2>
+
+<form action="/books/<%= @book[:id] %>" method="post">
+  <label>
+    Title:
+    <input name="name" placeholder="Ulysses" required value="<%= @book[:name] %>">
+  </label>
+
+  <label>
+    Author:
+    <input name="author" placeholder="James Joyce" required value="<%= @book[:author] %>">
+  </label>
+
+  <label>
+    Published_at:
+    <input type="number" name="published_at" placeholder="1922" required value="<%= @book[:published_at] %>">
+  </label>
+
+  <label>
+    Book cover:
+    <input type="url" name="image" placeholder="http://..." value="<%= @book[:image] %>">
+  </label>
+
+<button>Save</button>
+</form>

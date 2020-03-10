@@ -1,0 +1,7 @@
+<h3>Hover over a character to view their moves!</h3>
+
+<div class="character_select">
+    <% @specials.each do |special| %>
+        <a href="/fighters/<%= special.id %>"><%= special.name %></a>
+    <% end %>
+</div>

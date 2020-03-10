@@ -1,0 +1,1 @@
+ALTER TABLE celebs ADD COLUMN car_id INTEGER;

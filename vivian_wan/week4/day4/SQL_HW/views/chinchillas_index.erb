@@ -1,0 +1,8 @@
+<h2> Our Chinchillas Collection</h2>
+<% @chinchillas.each do |chinchin| %>
+    <p>
+        <a href="/chinchillas/<%= chinchin["id"] %>">
+            <%= chinchin["name"] %>
+        </a>
+    </p>
+<% end %>

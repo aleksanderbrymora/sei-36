@@ -1,0 +1,9 @@
+<h2>Update Driver Profile</h2>
+
+<form action="/drivers/<%= @driver["id"] %>" method ="post">
+  <label>Name: <input name="name" placeholder="Michael Schumacher" required value="<%= @driver["name"] %>"></label>
+  <!-- <label>Team: <input name="team" placeholder="Ferrari" value="<%= @driver["team"] %>"></label> -->
+  <label>Podium Wins: <input type="number" name="podiums" placeholder="155" value="<%= @driver["podiums"] %>"></label>
+  <label>Image: <input type="url" name="image" placeholder="http://www..." value="<%= @driver["image"] %>"></label>
+  <button>Update Driver</button>
+</form>

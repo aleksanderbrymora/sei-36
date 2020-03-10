@@ -1,6 +1,7 @@
 require "readline"  # allows the repl to cycle through previous inputs and have a prompt symbol display while the file is running
 require "coderay" # making our outputs look pretty
 require "pp" # formats outputs in a more presentable manner - required to apply pretty_inspect method on an object
+require "pry"
 
 session_bind = binding # create a variable to store the information of the current running session
 

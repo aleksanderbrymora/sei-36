@@ -1,0 +1,15 @@
+<h3>Add New BMW</h3>
+<form action="/bmw" method="post">
+  <label>Model:  <input name="model"  placeholder="M3" required></label>
+  <label>Family:
+    <select name="family_id">
+      <option></option>
+      <% Family.all.each do |family| %>
+        <option value="<%= family.id  %>"> <%= family.name %></option>
+      <% end %>
+    </select>
+  </label>
+  <label>Year:   <input name="year"   placeholder="2000" required></label>
+  <label>Image:  <input name="image"    placeholder="http://...." required></label>
+  <button>Create BMW</button>
+</form>

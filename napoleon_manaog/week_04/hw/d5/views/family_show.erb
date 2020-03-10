@@ -1,0 +1,19 @@
+<h2><%= @family.name %></h2>
+
+<h3>Associated BMWs</h3><hr>
+<% unless @family.bmws.empty? %>
+  <ul>
+    <% @family.bmws.each do |bmw| %>
+    <li>
+      <a href="/bmw/<%= bmw.id %>">
+        <%= bmw.model %>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<div class="controls">
+  <a href="/family/<%= @family["id"] %>/edit">Edit</a>
+  <a href="/family/<%= @family["id"] %>/delete">Delete</a>
+</div>

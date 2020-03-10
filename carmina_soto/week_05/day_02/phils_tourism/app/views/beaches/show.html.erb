@@ -7,6 +7,6 @@
 <%= image_tag @beach.image, :class => 'feature' if @beach.image.present? %>
 <ul>
   <li>Location: <%= @beach.location  %></li>
-  <li>Area: <%= @beach.area %></li>
-  <li>Tourists as of 2019: <%= @beach.tourists %></li>
+  <li>Area: <%= number_to_human @beach.area, units: {unit: 'm&sup2'.html_safe, thousand: 'km&sup2'.html_safe} %></li>
+  <li>Tourists as of 2019: <span title="<%= number_with_delimiter @beach.tourists %>"><%= number_to_human @beach.tourists %></span></li>
 </ul>

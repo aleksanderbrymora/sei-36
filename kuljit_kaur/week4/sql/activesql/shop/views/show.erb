@@ -1,0 +1,18 @@
+<div class="decor">
+  <h1>Nature's Beauty.....<span>Flowers</span></h1>
+</div>
+
+<% @flowers.each do |flower| %>
+<div>
+  
+    <a  href="/flowers/<%= flower["id"] %>">
+      <%= flower["name"] %>
+
+    <img src="<%= flower["image"] %>" class="small_size">
+    </a>
+</div>
+<% end %>
+
+<div>
+<a class="link_size" href="/flowers/Add">Add</a>
+</div>

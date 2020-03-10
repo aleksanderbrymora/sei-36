@@ -1,0 +1,57 @@
+body{
+    background-color: lightgoldenrodyellow;
+    /* background-image: url("/images/flower_new.png"); */
+}
+span{
+  font-style: italic;
+  color: red;
+  font-weight: bold;
+}
+
+h2{
+  color: purple;
+  text-align: center;
+}
+
+.decor{
+text-decoration: underline;
+text-align: center;
+}
+
+.full_img img{
+  width: 100%;
+  margin: 0px;
+  max-width: 100%
+}
+
+a{
+  padding: 10px;
+}
+
+.link_size{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top:;
+}
+.small_size{
+  display: inline-block;
+  width  : 76px;
+  height : 62px;
+  float  : left;
+}
+
+.button_size{
+  width :10%;
+  padding: 10px;
+}
+
+div{
+  display: grid;
+}
+
+.show_img{
+  display: inline-block;
+  width  : 20%;
+  height : 20%;
+}

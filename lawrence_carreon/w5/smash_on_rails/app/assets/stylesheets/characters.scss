@@ -1,0 +1,77 @@
+// Place all the styles related to the Characters controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button_to{
+    display: inline;
+    margin: 0;
+}
+
+.thumb {
+    max-width: 8em;
+    opacity: 0.5;
+}
+
+.thumb:hover {
+    opacity: 1.0;
+    transform: scale(1.5);
+    transition: all 0.5s ease-in;
+}
+
+.character_index {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.profile {
+    width: 100%;
+    border: 2px solid slategrey;
+    padding: 0 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.inner_profile {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.profile_thumb, .profile_preview {
+    max-width: 8em;
+}
+
+.profile_preview {
+    border-radius: 1em;
+}
+
+.profile_thumb {
+    max-height: 50px;
+}
+
+.profile_stock{
+    max-width: 4em;
+}
+
+.preview:hover {
+    box-shadow: 0.5em 0.5em 1em rgba($color: #000000, $alpha: 1);
+    transform: translate(-0.25em, -0.25em);
+    transition: all 0.5s ease-in;
+}

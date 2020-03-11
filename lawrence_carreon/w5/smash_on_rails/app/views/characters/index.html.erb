@@ -1,0 +1,7 @@
+<h2>All Fighters</h2>
+
+<div class="character_index">
+    <% @characters.each do |character| %>
+        <%= link_to image_tag(character.stock_symbol, :class => "thumb"), character %>
+    <% end %>
+</div>

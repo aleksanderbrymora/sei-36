@@ -1,0 +1,18 @@
+<div class="profile">
+    <h2><%= link_to @special.character.name, @special.character %> - <%= @special.name %></h2>
+    <hr>
+    <div class="inner_profile special_moves">
+        <ul>
+            <li><strong>Input Direction:</strong> <%= @special.input_direction %></li>
+            <li><strong>Attack Type:</strong> <%= @special.attack_type %></li>
+            <li><strong>Damage:</strong> <%= @special.damage_dealt %></li>
+        </ul>
+
+        <%= image_tag @special.preview, :class => "feature", :alt => @special.name %>
+    </div>
+</div>
+
+<div class="controls">
+    <%= button_to "Edit Move", edit_special_path(@special), :method => "get" %>
+    <%= button_to "Delete #{@special.name}", @special , :method => "delete", :data => { :confirm => "Are you sure?"} %>
+</div>

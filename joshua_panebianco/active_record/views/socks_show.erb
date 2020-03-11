@@ -1,0 +1,11 @@
+<h2><%= @socks.kind %></h2>
+
+<h3>Kind of socks: <%= @socks.kind %></h3>
+
+<h3>Color: <%= @socks.color %></h3>
+
+
+<div class="controls">
+	<a href="/socks/<%= @socks.id %>/edit">Edit</a>
+	<a href="/socks_delete/<%= @socks.id %>">Delete</a>
+</div>

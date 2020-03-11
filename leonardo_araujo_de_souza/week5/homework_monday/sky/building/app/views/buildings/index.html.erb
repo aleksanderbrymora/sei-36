@@ -1,0 +1,9 @@
+<h2>All Buildings</h2>
+
+<% @buildings.each do |building| %>
+  <p>
+    <%= link_to building.name, building_path(building.id) %>
+    has
+    <%= pluralize building.countrys, 'country' %>
+  </p>
+<% end %>

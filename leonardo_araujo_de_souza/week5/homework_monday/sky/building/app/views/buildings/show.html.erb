@@ -1,0 +1,14 @@
+<h2><%= @building.name %></h2>
+
+<%= image_tag @building.image, :class => 'feature' if @building.image.present? %>
+
+<ul>
+  <li>Name: <%= @building.name %></li>
+  <li>meters: <%= @building.meters %></li>
+  <li>country: <%= @planet.country %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit building', edit_building_path(@building.id) %>
+  <%= button_to 'Delete building', building_path(@building.id), :method => 'delete' %>
+</div>

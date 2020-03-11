@@ -1,0 +1,12 @@
+<h1>A Range of Mountains</h1>
+
+<div class="index_container">
+  <div class="grid_wrapper">
+    <% @mountains.each do |mountain| %>
+      <a class="index_link" href="<%= mountain_path(mountain.id) %>">
+        <%= image_tag mountain.image, :class => 'show_image' if mountain.image.present? %>
+        <p><%= mountain.name %></p>
+      </a>
+    <% end %>
+  </div>
+</div>

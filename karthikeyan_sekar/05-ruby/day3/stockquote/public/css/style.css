@@ -1,0 +1,7 @@
+body {
+  background-image: url("/images/game.jpg");
+}
+button {
+  background-color: green;
+  color: red;
+}

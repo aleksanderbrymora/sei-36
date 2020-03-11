@@ -1,0 +1,34 @@
+.wrapper {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  animation-name: start;
+  animation-duration: 2s;
+}
+
+@keyframes start {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+header > img {
+  border-radius: 50%;
+  width: 300px;
+  height: 407px;
+  margin: 50px
+}
+
+h1, h2, p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#map {
+    width: 960px;
+    height: 400px;
+    background-color: grey;
+    border-radius: 1em;
+  }

@@ -1,0 +1,18 @@
+<div class="decor">
+  <h1><span>shops</span></h1>
+</div>
+
+<% @shops.each do |shop| %>
+<div>
+
+    <a  href="/shops/<%= shop["id"] %>">
+      <%= shop["shop_name"] %>
+
+    <img src="<%= shop["website"] %>" >    #class="small_size"
+    </a>
+</div>
+<% end %>
+
+<div>
+<a class="link_size" href="/shops/Add">Add</a>
+</div>

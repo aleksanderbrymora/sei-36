@@ -1,0 +1,9 @@
+<h2>"<span><%= @shop["shop_name"] %></span>".....</h2>
+
+<h3>flower_name : <%= @shop["flower_name"] %></h3>
+<h3>Shop website: <%= @shop["website"] %></h3>
+
+<div class="controls">
+  <a class="link_size" href="/shops/<%= @shop["id"] %>/update">Update</a>
+  <a class="link_size" href="/shops/<%= @shop["id"] %>/delete">Delete</a>
+</div>

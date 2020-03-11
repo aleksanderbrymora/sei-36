@@ -1,3 +1,19 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search_results li{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}

@@ -1,17 +1,6 @@
 // Place all the styles related to the Characters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-nav {
-    text-align: center;
-}
-
-nav a {
-    color: #000;
-}
-
-h1 {
-    text-align: center;
-}
 
 .button_to{
     display: inline;
@@ -29,11 +18,41 @@ h1 {
     transition: all 0.5s ease-in;
 }
 
+.char_index{
+    position: relative;
+}
+
+.char_hover {
+    display: none;
+}
+
+.char_index:hover .char_hover {
+    display:block;
+    position: absolute;
+    top: -100%;
+    right: -150%;
+    z-index: 10;
+    padding: 0.25em;
+    background-color: slategrey;
+    border-top: 2px solid lightgray;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+
 .character_index {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-items: center;
+}
+
+.index_preview{
+    max-width: 16em;
+    border-radius: 1em;
 }
 
 .profile {

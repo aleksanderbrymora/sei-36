@@ -1,8 +1,8 @@
 <h2>Welcome to the Smash on Rails CRUD!</h2>
-<%= form_with :url => pages_search_path, :method => "get", :class => "search_field" do %>
+<%= form_tag pages_search_path, :method => "get", :class => "search_field" do %>
     <%= label_tag :search, "Enter a search word:" %>
     <%= text_field_tag :search %>
     <%= label_tag :category, "Search Category:" %>
-    <%= select "params", "category", options_for_select([["Fighters", "characters"], ["Special Moves", "specials"],["Games", "games"]]) %>
+    <%= select "searches", "category", options_for_select([["Fighters", "characters"], ["Special Moves", "specials"],["Games", "games"]]) %>
     <%= submit_tag "Search" %>
 <% end %>

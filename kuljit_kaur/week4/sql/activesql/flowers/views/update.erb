@@ -1,0 +1,30 @@
+<h2>Update Flower</h2>
+
+<form action="/flowers/<%= @flower["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" value="<%= @flower["name"] %>" required>
+  </label>
+
+  <label>
+    Sun Needs:
+    <input name="sun_needs" value="<%= @flower["sun_needs"] %>" >
+  </label>
+
+  <label>
+    Soil Needs:
+    <input name="soil_needs" value="<%= @flower["soil_needs"] %>" >
+  </label>
+
+  <label>
+    Blooms in:
+    <input name="bloom_in" value="<%= @flower["bloom_in"] %>" >
+  </label>
+
+  <label>
+      Image:
+      <input type="url" name="image" value="<%= @flower["image"] %>" >
+  </label>
+
+  <button>Update "<%= @flower["name"]  %>"</button>
+</form>

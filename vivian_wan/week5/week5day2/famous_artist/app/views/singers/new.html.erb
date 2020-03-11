@@ -1,0 +1,30 @@
+<h2>New Singer</h2>
+
+<form action="<%= singers_path %>" method="post">
+  <label>
+    Name:
+    <input name="name" required placeholder="Madonna"> 
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image">
+  </label>
+
+  <label>
+    Title:
+    <input type="text" name="title" placeholder="Rain">
+  </label>
+
+  <label>
+    Year of Release:
+    <input type="number" name="year_release" placeholder="1980">
+  </label>
+
+  <label>
+    Number of fans:
+    <input type="number" name="fans">
+  </label>
+
+  <button>I want to create my favourite singer</button>
+</form>

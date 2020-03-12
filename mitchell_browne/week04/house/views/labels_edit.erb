@@ -1,0 +1,21 @@
+<h1 class="content_title">EDIT LABEL</h1>
+
+<form class="form_container" action="/labels/<%= @label.id %>" method="post">
+  <label>
+    Name
+    <input type="text" name="name" value="<%= @label.name %>" placeholder="Lover Records" autocomplete="off" required>
+  </label>
+  <label>
+    Location
+    <input type="text" name="location" value="<%= @label.location %>" placeholder="New York" autocomplete="off">
+  </label>
+  <label>
+    Established
+    <input type="number" name="established" value="<%= @label.established %>" placeholder="1996" autocomplete="off">
+  </label>
+  <label>
+    Image
+    <input type="text" name="image" value="<%= @label.image %>" placeholder="http://..." autocomplete="off">
+  </label>
+  <button>Update</button>
+</form>

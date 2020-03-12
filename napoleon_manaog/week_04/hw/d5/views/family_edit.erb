@@ -1,0 +1,5 @@
+<h3>Edit Generation</h3>
+<form action="/family/<%= @family["id"] %>" method="post">
+  <label>Generation:  <input name="name"  placeholder="F30" value="<%= @family.name %>" required></label>
+  <button>Update Generation</button>
+</form>

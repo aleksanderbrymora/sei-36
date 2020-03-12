@@ -1,0 +1,14 @@
+<h2><%= @mountain.name %></h2>
+
+<%= image_tag @mountain.image, :class => 'show_image' if @mountain.image.present? %>
+<p><span class="show_span">Location:</span> <%= @mountain.location %></p>
+<p><span class="show_span">Elevation:</span> <%= @mountain.elevation %></p>
+<p><span class="show_span">Date of First Ascent:</span> <%= @mountain.first_ascent %></p>
+<p><span class="show_span">First Ascender:</span> <%= @mountain.first_ascender %></p>
+<p><span class="show_span">Google Rating:</span> <%= @mountain.google_rating %></p>
+
+<div class="controls">
+<%= link_to 'BACK', mountains_path, :class => 'show_link' %>
+<%= link_to 'EDIT', edit_mountain_path(@mountain.id), :class => 'show_link'%>
+<%= button_to 'DELETE', mountain_path(@mountain.id), :method => 'delete', :class => 'show_button'%>
+</div>

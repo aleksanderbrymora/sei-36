@@ -1,0 +1,7 @@
+<h1>Directors</h1>
+
+<div class="grid_wrapper">
+  <% @directors.each do |director| %>
+    <%= link_to image_tag(director.image, :class => 'grid_thumb', :alt => "#{director.name} image"), director_path(director) if director.image.present?%>
+  <% end %>
+</div>

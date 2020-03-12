@@ -1,0 +1,12 @@
+<h2><%= @shoes.brand %></h2>
+
+<h3>Kind of shoe: <%= @shoe.kind %></h3>
+
+<% unless @shoe.image.nil? || @shoe.image.empty? %>
+   <img src="<%= @shoe.image %>" alt="<%= @shoe.brand %>">
+<% end %>
+
+<div class="controls">
+	<a href="/shoes/<%= @shoe.id %>/edit">Edit</a>
+	<a href="/shoe_delete/<%= @shoe.id %>">Delete</a>
+</div>

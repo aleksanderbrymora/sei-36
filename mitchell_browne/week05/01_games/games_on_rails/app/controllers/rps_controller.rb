@@ -10,12 +10,7 @@ class RpsController < ApplicationController
     when 'scissors' then 'https://cdn.clipart.email/27a51dcf623e18678c88e1cd3853fc01_transparent-scissors-png-clipart-picture-gallery-yopriceville-_1349-1313.png'
     end
 
-
-    @randomThrow = case rand(0..2)
-      when 0 then 'rock'
-      when 1 then 'paper'
-      when 2 then 'scissors'
-      end
+    @randomThrow = ['rock','paper','scissors'].sample
 
     @randomImage = case @randomThrow
     when 'rock' then 'https://lh3.googleusercontent.com/proxy/3FvjZ6_dB4ADaqvJGSn1LbDy2QKep6l76sAcPPtOTv4UvOx-ftQ0lKOqNmL25l9RZrntJXhYRstJK270OgBgufLh'

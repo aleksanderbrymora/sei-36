@@ -1,0 +1,13 @@
+<div class="game_profile">
+    <%= image_tag @game.image, :class => "feature", :alt => @game.name %>
+    <ul>
+        <li><strong>Release Date:</strong> <%= @game.release_date.strftime "%A, %B %e, %Y" if @game.release_date.present? %></li>
+        <li><strong>Patch Version:</strong> <%= @game.patch_version %></li>
+        <li>
+            <strong>Fighters:</strong><br>
+            <% @game.characters.each do |character| %>
+                <%= link_to image_tag(character.stock_symbol, :class => "profile_thumb", :title => character.name), character %>
+            <% end %>
+        </li>
+    </ul>
+</div>

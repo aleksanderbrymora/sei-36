@@ -1,0 +1,11 @@
+<h2>All Shoes</h2>
+
+<% @shoes.each do |shoe|  %>
+
+<p>
+	<a href="/shoes/<%= shoe["id"] %>">
+   <%= shoe["brand"] %>
+	 </a>
+</p>
+
+<% end %>

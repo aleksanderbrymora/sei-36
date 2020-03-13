@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lilita+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #046D8B;
+  text-align: center;
+}
+header, footer{
+  background-color: #309292;
+}
+nav {
+  text-align: center;
+  padding: 20px;
+}
+nav ul li a{
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+h1, h2 {
+  font-family: 'Lilita One', cursive;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  letter-spacing: 8px;
+}
+h2 {
+  font-size: 3em;
+}
+main {
+  background-color: white;
+  /* height: 85vh; */
+}
+.wrapper{
+    padding: 10px 10px;
+}
+.controls form.button_to {
+  display: inline-block;
+  margin-left: 10px;
+}
+nav ul li,
+input[type="submit"],
+button{
+  transition-duration: 0.4s;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #2FB8AC;
+  color: white;
+  border: none;
+  margin-left: 20px;
+  font-size: 1em;
+}
+nav ul li:hover,
+input[type="submit"]:hover,
+button:hover,
+nav ul li a:hover{
+  color: #ffd84f;
+  /* box-shadow: 3px -3px #ECBE13; */
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  grid-gap: 20px;
+}
+.beach {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
+nav ul li:hover,
+input[type="submit"]:hover,
+button:hover,
+.beach:hover{
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
+}
+.wrapper ul li {
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #ECBE13;
+}
+.form-wrapper {
+  margin-top: 20px;
+  display: inline-block;
+}
+form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 5px
+}
+label{
+  text-align:right;
+}
+input{
+  padding: 10px 20px 10px 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border: 1px solid #ccc;
+}
+footer {
+  text-align: center;
+  color: white;
+  height: 40px;
+}
+footer p{
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.feature {
+  margin-top: 20px;
+  max-width: 100%;
+}

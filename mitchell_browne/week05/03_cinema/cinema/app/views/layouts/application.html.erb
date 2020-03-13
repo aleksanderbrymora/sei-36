@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cinema</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="body_container">
+      <nav>
+        <%= link_to 'Home', films_path %>
+        |
+        <%= link_to 'Directors', directors_path %>
+        <%= link_to 'New Director', new_director_path %>
+        |
+        <%= link_to 'Films', films_path %>
+        <%= link_to 'New Films', new_film_path %>
+      </nav>
+      <%= yield %>
+
+    </div>
+  </body>
+</html>

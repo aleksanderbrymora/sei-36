@@ -1,0 +1,35 @@
+<h2>Edit Buildding</h2>
+
+<form action="<%= building_path(@planet.id) %>" method="post">
+  <label>
+    Name:
+    <input name="name" required value="<%= @building.name %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @building.image %>">
+  </label>
+
+  <label>
+    Orbit:
+    <input type="number" name="orbit" value="<%= @building.orbit %>">
+  </label>
+
+  <label>
+    Diameter:
+    <input type="number" name="diameter" value="<%= @building.diameter %>">
+  </label>
+
+  <label>
+    Mass:
+    <input type="number" name="mass" value="<%= @building.mass %>">
+  </label>
+
+  <label>
+    Moons:
+    <input type="number" name="moons" value="<%= @builf.moons %>">
+  </label>
+
+  <button>Update building</button>
+</form>

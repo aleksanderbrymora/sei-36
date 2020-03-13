@@ -1,0 +1,31 @@
+
+
+<div class="profile">
+    <h2><%= @character.name %></h2>
+    <hr>
+    <div class="inner_profile">
+        <%= image_tag @character.image, :class => "feature", :alt => @character.name %>
+        <ul>
+            <li><strong>Franchise:</strong> <%= @character.franchise %></li>
+            <li><strong>Stock:</strong><br> <%= image_tag @character.stock_symbol, :class => "profile_stock" if @character.stock_symbol.present? %></li>
+            <li><strong>Availability:</strong> <%= @character.availability %></li>
+            <li>
+                <strong>Games:</strong><br>
+                <% @character.games.each do |game| %>
+                    <%= link_to image_tag(game.image, :class => "profile_thumb"), game if game.image.present? %>
+                <% end %>
+            </li>
+            <li><strong>Special Moves:</strong><br>
+                <% @character.specials.each do |special| %>
+                    <%= link_to image_tag(special.preview, :class => "profile_preview preview"), special if special.preview.present? %>
+                <% end %>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="controls">
+    <%= button_to "Edit Fighter", edit_character_path(@character), :method => "get" %>
+    <%= button_to "Delete #{@character.name}", @character , :method => "delete", :data => { :confirm => "Are you sure?"} %>
+</div>
+
+

@@ -1,6 +1,6 @@
 User.destroy_all
-u1 = User.create :email => 'jonesy@ga.co'
-u2 = User.create :email => 'bobby@ga.co'
+u1 = User.create :email => 'jonesy@ga.co', :password => 'chicken', :admin => true
+u2 = User.create :email => 'bobby@ga.co', :password => 'chicken'
 puts "#{ User.count } users created."
 
 Song.destroy_all

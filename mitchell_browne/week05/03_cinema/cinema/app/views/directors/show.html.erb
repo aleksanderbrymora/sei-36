@@ -1,0 +1,18 @@
+<h1><%= @director.name %></h1>
+
+<%= image_tag @director.image, :class => 'show_feature', :alt => "#{@director.name}" if @director.image.present? %>
+
+<ul>
+  <li>Nationality: <%= @director.nationality %></li>
+  <li>Date Of Birth: <%= @director.dob.strftime '%A, %B %e, %Y' if @director.dob.present? %></li>
+  <li>Oscars: <%= @director.oscars %></li>
+</ul>
+
+<% @director.films.each do |film| %>
+  <%= link_to image_tag(film.image, :class => 'thumb', :alt => "#{film.title}"), film %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit Director', edit_director_path(@director) %>
+  <%= link_to "Delete #{@director.name}", @director, :method => 'delete' %>
+</div>

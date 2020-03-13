@@ -1,0 +1,7 @@
+<h1>Films</h1>
+
+<div class="grid_wrapper">
+  <% @films.each do |film| %>
+    <%= link_to image_tag( film.image, :class => 'grid_thumb', :alt => "#{film.title}" ), film_path(film) if film.image.present? %>
+  <% end %>
+</div>

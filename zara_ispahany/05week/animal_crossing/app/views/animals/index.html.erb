@@ -1,0 +1,7 @@
+<h1>All Animals</h1>
+
+
+<% @animals.each do |animal| %>
+  <%= link_to (image_tag animal.image, :class => 'thumb' if animal.image.present?), animal %>
+
+<% end %>

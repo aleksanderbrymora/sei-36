@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tunr3</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+  </head>
+
+  <body>
+    <nav>
+      <%= link_to "Home", root_path %>
+      <% if @current_user.present? %>
+        <%= link_to "All Users", users_path if @current_user.admin? %>
+        <%= link_to "Create Mixtape", new_mixtape_path %>
+        <%= link_to "sign out", login_path, :method => 'delete' %>
+      <% else %>
+        <%= link_to "sign up", new_user_path %>
+        <%= link_to "sign in", login_path %>
+      <% end %>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

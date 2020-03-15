@@ -1,0 +1,12 @@
+
+<h3><%= @client["first_name"].capitalize %> <%= @client["last_name"].upcase %></h3>
+<h4>Contact Number: <%= @client["contact_number"] %></h4>
+
+<% unless @client["image"].nil? || @client["image"].empty? %>
+  <img src="<%= @client["image"] %>" alt="<%= @client["first_name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/clients/<%= @client["id"] %>/edit">Edit</a>
+  <a href="/clients/<%= @client["id"] %>/delete">Delete</a>
+</div>

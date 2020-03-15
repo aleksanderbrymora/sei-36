@@ -1,0 +1,18 @@
+// Place all the styles related to the Directors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.grid_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 3vw;
+}
+
+.grid_thumb {
+  width: 30vw;
+}
+
+.thumb {
+  width: 10vw;
+}

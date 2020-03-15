@@ -1,0 +1,42 @@
+<h3>Book cover fetcher!</h3>
+
+<form action="/result">
+    <label>
+    Enter the name of the book:
+    <input type="text" name="bookname" id="bookInput" placeholder="">
+    </label>
+    <button>Get book cover!</button>
+</form>
+<div>
+<img src="" alt="" srcset="" id="out">
+</div>
+<script>
+
+$(function() {
+    //
+    var timeout
+    $('#bookInput').on('keyup',function(){
+        var book = $( "#bookInput" ).val()
+        //clear any timeouts
+        if(timeout){ clearTimeout(timeout);}
+
+        //start new time, to perform ajax stuff in XXXms
+        timeout = setTimeout(function() {
+        //ajax stuff
+        var jqxhr = $.ajax( {type: "GET", url: "result", data: { bookname: book}}  )
+            .done(function(r) {
+            console.log( "success" );
+            //update dom
+            $("#out").attr("src", r.result)
+            })
+            .fail(function() {
+                console.log( "error" );
+            })
+            .always(function() {
+                console.log( "complete" );
+            });
+        },750);
+    })
+});
+
+</script>

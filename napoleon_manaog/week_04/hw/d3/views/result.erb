@@ -1,0 +1,8 @@
+<h2>Book Search Result</h2>
+<fieldset>
+  <strong>Title: </strong><label><%= @book_info["items"].first["volumeInfo"]["title"] %></label><br><br>
+  <strong>Author(s): </strong><label><%= @book_info["items"].first["volumeInfo"]["authors"].first %></label><br><br>
+  <strong>Descrption: </strong><label><%= @book_info["items"].first["volumeInfo"]["description"] %></label><br>
+  <hr>
+  <img src="<%= @book_info["items"].first["volumeInfo"]["imageLinks"]["thumbnail"] %>" alt="">
+</fieldset>

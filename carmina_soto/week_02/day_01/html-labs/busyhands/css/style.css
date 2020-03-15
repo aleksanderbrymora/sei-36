@@ -1,0 +1,133 @@
+body {
+  background-image: url("../images/bg_body.jpg");
+  font-family: Arial, sans-serif;
+}
+nav ul li{
+  display: inline-block;
+  padding: 35px 20px 20px 20px;
+}
+nav ul li:hover{
+  background-image: url("../images/bg_nav_rollover.png");
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+#wrapper{
+  background-image: url("../images/bg_wrapper.png");
+  background-repeat: repeat-x;
+  width: 100%;
+}
+#container{
+  margin: 0 auto;
+  width: 950px;
+}
+/* header */
+header div{
+  display: inline-block;
+  margin-top: 30px;
+}
+#logo {
+  background: url(../images/logo.png) no-repeat;
+  width: 282px;
+  height: 76px;
+}
+#logo h1 {
+  text-indent: -99999em;	/* hides the H1 tag from the page, while semantically keeping it present in your HTML */
+}
+#social-media {
+  float: right;
+}
+#social-media ul li {
+	 display:inline-block;
+   width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+#social-media ul li.linkedin {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#social-media ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+#social-media ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+#social-media ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+/* social media hover */
+#social-media ul li.linkedin:hover {
+	background:url(../images/socialNav.png) 0px 0px;
+}
+#social-media ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px;
+}
+#social-media ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px;
+}
+#social-media ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px;
+}
+/* body */
+.photobanner img{
+  box-shadow: 0 5px 5px 1px grey;
+}
+#blurb p, #blurb div{
+  display: inline-block;
+}
+#blurb p{
+  width: 70%;
+  padding: 20px 10px;
+}
+#blurb div{
+  float: right;
+  padding-top: 10px;
+}
+#blurb{
+  border: solid #999 1px;
+  margin: 30px 0;
+}
+/* search code for do not move 1st child */
+#home-boxes{
+  display:inline-flex;
+  margin: 25px 0;
+}
+.home-box {
+width: 278px;
+text-align: justify;
+padding-right: 65px;
+}
+h2 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+.img-border{
+  border: solid #999 2px;
+  margin-bottom: 10px;
+}
+/* footer */
+footer {
+  margin-top: 30px;
+}
+footer div{
+  display: inline-block;
+}
+.box-footer{
+  width: 30%;
+}
+.box-footer h2, .box-footer ul li{
+border-bottom: solid #999 1px;
+}
+.box-footer ul li {
+  padding: 10px 0;
+}
+.box-footer p{
+  padding-top: 20px;
+}
+#textwidget {
+  float: right;
+}

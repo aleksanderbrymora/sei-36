@@ -1,0 +1,10 @@
+body{
+  background-color: orange;
+}
+nav a:hover
+{
+color: white;
+}
+P{
+  font-size: 25px;
+}

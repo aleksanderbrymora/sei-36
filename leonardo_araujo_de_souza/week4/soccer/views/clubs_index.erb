@@ -1,0 +1,8 @@
+<h2>All Clubs</h2>
+<% @clubs.each do |team| %>
+  <p>
+    <a href="/clubs/<%= team["id"] %>">
+      <%= team["name"] %>
+    </a>
+  </p>
+<% end %>

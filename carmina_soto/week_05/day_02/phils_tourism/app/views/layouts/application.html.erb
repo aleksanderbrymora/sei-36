@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beaches in The Philippines</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>Hello, Beaches!</h1>
+      <nav>
+        <ul>
+          <li><%= link_to 'Home', root_path %></li>
+          <li><%= link_to 'Add Beach', beaches_new_path %></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper">
+    <%= yield %>
+    </main>
+    <footer>
+      <p>GA SEI 36 Ruby on Rails</p>
+    </footer>
+  </body>
+</html>

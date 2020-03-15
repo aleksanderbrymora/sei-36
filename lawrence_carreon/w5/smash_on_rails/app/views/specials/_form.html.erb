@@ -1,0 +1,16 @@
+<%= form_for @special do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true, :autofocus => true  %>
+    <%= f.label :input_direction %>
+    <%= f.text_field :input_direction %>
+    <%= f.label :attack_type %>
+    <%= f.text_field :attack_type, :placeholder => "Direction of the move..." %>
+    <%= f.label :damage_dealt %>
+    <%= f.text_field :damage_dealt %>
+    <%= f.label :preview %>
+    <%= f.url_field :preview, :placeholder => "A link to an exmaple of the move..."  %>
+    <%= f.label :character_id %>
+    <%= f.select :character_id, Character.pluck(:name, :id), :include_blank => true %>
+
+    <%= f.submit %>
+<% end %>

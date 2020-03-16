@@ -1,31 +1,4 @@
-require 'pry'
-show_menu
-def show_menu
-  puts "-=" * 40 # Budget way to make horizontal dividing line
-  puts "Calculator" # TODO: you could use .center here to make this look nicer...
-  puts "[d] - Division"
-  puts "[s] - Subtraction"
-  puts "[x] - Multiplication"
-  puts "[a] - Addition"
-  puts "[bmi] - BMI calculator"
-
-  puts "[e] - Exponent"
-  puts "[m] - Modulus"
-  puts "[mp] - Mortgage Repayment"
-  puts "[r] - Square Root"
-
-  puts "[t] - Trip Calculator"
-
-  puts "[q] - Quit"
-  # TODO: add other options here
-  print "Enter your choice: "
-
-
-def askFirstNumber()
-  print "Number: "
-  num = gets.to_f
-  return num
-end
+  	 	
 
 def askSecondNumber()
   print "First number: "

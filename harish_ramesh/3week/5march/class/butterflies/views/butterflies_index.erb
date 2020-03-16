@@ -1,0 +1,8 @@
+<h2>All butterflies</h2>
+<% @butterflies.each do |butter| %>
+<p>
+  <a href="/butterflies/<%= butterfly["id"] %>">
+  <%= butterfly["name"] %>
+  </a>
+</p>
+<% end %>

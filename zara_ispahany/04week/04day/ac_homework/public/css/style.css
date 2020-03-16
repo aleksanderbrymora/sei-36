@@ -1,0 +1,17 @@
+
+* {
+  border: 1px solid black;
+}
+
+body {
+  background-color: seashell;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 90%;
+}

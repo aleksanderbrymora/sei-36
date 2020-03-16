@@ -1,0 +1,26 @@
+<h2>New CLub</h2>
+
+<form action="/clubs" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Manchester United" required>
+  </label>
+
+  
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://...">
+  </label>
+
+  <label>
+    League:
+    <select name="league_id">
+      <option></option>
+      <% League.all.each do |league| %>
+        <option value="<%= league.id %>"><%= league.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>Create Team</button>
+</form>

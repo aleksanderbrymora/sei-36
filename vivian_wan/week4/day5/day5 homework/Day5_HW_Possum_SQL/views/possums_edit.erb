@@ -1,0 +1,27 @@
+<h2> Edit Your Possum </h2>
+
+<form action="/possums/<%= @possum.id %>" method="post">
+
+<label>    
+    What is the name of your possum:
+    <input type="text" name="name" placeholder="possum" required value="<%= @possum.name %>">
+</label>
+
+<label>
+    Which year was your possum born in:
+    <input type="number" name="year" placeholder="2010" value="<%= @possum.year %>">
+</label>
+
+<label>
+    How heavy is your possum (kg):
+    <input type="number" name="weight" placeholder="4" value="<%= @possum.weight %>">
+</label>
+
+<label>
+    Image:
+    <input type="url" name="image" placeholder="URL-ink" value="<%= @possum.image %>">
+</label>
+    
+<button>Update My Possum</button>
+
+</form>

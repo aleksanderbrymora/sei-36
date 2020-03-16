@@ -1,0 +1,25 @@
+<h1>Rock PaperScissors Outcome</h1>
+<p>You played: <%= params[:gameselect]%></p>
+<% if params[:gameselect] == 'Rock' && @result == 'Paper' %>
+  <p>Sorry you <span class="uk-label uk-label-danger">LOSE</span>
+   to <%= @result %>.</p>
+<% elsif params[:gameselect] == 'Rock' && @result == 'Scissors' %>
+  <p>You <span class="uk-label uk-label-success">WIN</span>
+  against <%= @result %>.</p>
+<% elsif params[:gameselect] == 'Paper' && @result == 'Scissors' %>
+  <p>Sorry you <span class="uk-label uk-label-danger">LOSE</span>
+   to <%= @result %>.</p>
+<% elsif params[:gameselect] == 'Paper' && @result == 'Rock' %>
+  <p>You <span class="uk-label uk-label-success">WIN</span>
+  against <%= @result %>.</p>
+<% elsif params[:gameselect] == 'Scissors' && @result == 'Paper' %>
+  <p>You <span class="uk-label uk-label-success">WIN</span>
+  against <%= @result %>.</p>
+<% elsif params[:gameselect] ==  @result %>
+  <p>You <span class="uk-label uk-label-success">WIN</span>
+  against <%= @result %>.</p>
+<% else %>
+  <p>Sorry you <span class="uk-label uk-label-danger">LOSE</span>
+   to <%= @result %>.</p>
+<% end %>
+<a href="/rock_paper_scissors">Play again.</a>

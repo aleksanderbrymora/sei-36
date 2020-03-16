@@ -1,0 +1,12 @@
+<h2> My name is <%= @chinchin["name"] %> ! </h2>
+
+<h3> I was born in <%= @chinchin["year_born"] %> ! </h3>
+
+<% unless @chinchin["image"].nil? || @chinchin ["image"].empty? %>
+    <img src="<%= @chinchin['image'] %>" alt="<%= @chinchin['name'] %>">
+<% end %>
+
+<div class="controls">
+    <a href="/chinchillas/<%= @chinchin["id"] %>/delete">Delete my chinchilla</a>
+    <a href="/chinchillas/<%= @chinchin["id"] %>/edit">Edit my chinchilla</a>
+</div>

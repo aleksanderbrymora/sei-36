@@ -1,0 +1,12 @@
+<h1 class="content_title">ARTISTS</h1>
+
+<div class="index_container">
+  <div class="grid_wrapper">
+    <% @artists.each do |artist| %>
+      <a class="grid_link" href="/artists/<%= artist.id %>">
+        <img class="grid_image" src="<%= artist.image %>" alt="<%= artist.name %> image">
+        <h3 class="grid_title"><%= artist.name %></h3>
+      </a>
+    <% end %>
+  </div>
+</div>

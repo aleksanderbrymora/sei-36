@@ -1,0 +1,26 @@
+<h2>Add a new fighter to the roster!</h2>
+
+<form action="/fighters" method="post">
+    <label>
+        Name:
+        <input type="text" name="name" placeholder="Character's name..." required>
+    </label>
+    <label>
+        Franchise:
+        <input type="text" name="franchise" placeholder="Mario Bros., LoZ etc...">
+    </label>
+    <label>
+        Included in the Following games:
+        <input type="text" name="in_game" placeholder="Smash 64, Melee etc...">
+    </label>
+    <label>
+        Stock Image:
+        <input type="url" name="stock_image" placeholder="https://...">
+    </label>
+    <label>
+        Character Image:
+        <input type="url" name="image" placeholder="https://...">
+    </label>
+
+    <input type="submit" value="Create Bio">
+</form>

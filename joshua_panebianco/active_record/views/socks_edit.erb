@@ -1,0 +1,13 @@
+<h1>Edit Socks</h1>
+
+<form action="/socks/<%= @sock.id %>/edit" method="post">
+	<label for="">
+		Kind:
+		<input name="kind" placeholder="Kind of sock" required value=" <%= @sock.kind %>">
+	</label>
+	<label for="">
+		Color:
+		<input name="color" placeholder="Color of sock" value=" <%= @sock.color %>">
+	</label>
+	<button>Edit Sock</button>
+</form>

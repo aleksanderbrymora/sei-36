@@ -1,0 +1,15 @@
+<h2>Edit League</h2>
+
+<form action="/leagues/<%= @league.id %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="favorite league" required value="<%= @league.name %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @league.image %>">
+  </label>
+
+  <button>Update League</button>
+</form>

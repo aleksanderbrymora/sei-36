@@ -1,0 +1,10 @@
+<h1>All Brands</h1>
+
+<% @brands.each do |brand| %>
+  <%= image_tag brand.image, :class => 'thumb' if brand.image.present? %>
+  <ul>
+    <li>Name: <%= link_to brand.name, brand %></li>
+    <li>Nation: <%= brand.nation %></li>
+    <li>Established: <%= brand.established if brand.established.present? %></li>
+  </ul>
+<% end %>

@@ -1,0 +1,16 @@
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+background-color: palegreen;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: yellow;
+}
+
+img {
+  margin: 200px auto;
+}

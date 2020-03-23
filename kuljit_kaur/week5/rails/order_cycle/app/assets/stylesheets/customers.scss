@@ -1,0 +1,21 @@
+// Place all the styles related to the Customers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  // background-color: #cdf;
+  background-image: url('../assets/image3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.thumb {
+  height: 10em;
+  width : 12em;
+}
+
+.feature {
+  margin-top: 2em;
+  max-height: 25em;
+  max-width: 22em;
+}

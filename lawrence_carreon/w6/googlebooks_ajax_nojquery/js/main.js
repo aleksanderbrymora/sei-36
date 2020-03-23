@@ -9,7 +9,7 @@ const singleBook = function() {
         const title = document.createElement("h1");
         title.innerHTML = data.volumeInfo.title;
         const img = document.createElement("img");
-        img.src = data.volumeInfo.imageLinks.thumbnail;
+        img.src = data.volumeInfo.imageLinks !== undefined ? data.volumeInfo.imageLinks.thumbnail : "";
         const descript = document.createElement("p")
         descript.innerHTML = `<strong>Description: </strong>${data.volumeInfo.description}`;
         const publisher = document.createElement("p");
@@ -37,7 +37,7 @@ const bookSearch = function() {
         if(xhr.readyState !== 4){return};
         const data = JSON.parse( xhr.responseText );
         data.items.forEach(book => {
-            const bookCover = book.volumeInfo.imageLinks.thumbnail;
+            const bookCover = book.volumeInfo.imageLinks !== undefined ? book.volumeInfo.imageLinks.thumbnail : "";
             const bookTitle = book.volumeInfo.title;
             const anchor = document.createElement("a");
             anchor.classList.add("single_book_click");
@@ -58,3 +58,9 @@ const bookSearch = function() {
 };
 
 document.getElementById("search_button").addEventListener('click', bookSearch);
+document.addEventListener('keyup', function(event){
+    if (event.keyCode === 13){
+        event.preventDefault();
+        bookSearch();
+    };
+});

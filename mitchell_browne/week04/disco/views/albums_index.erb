@@ -1,0 +1,11 @@
+<div class="index_container">
+  <div class="grid_wrapper">
+    <% @albums.each do |album| %>
+      <p>
+        <a href="/albums/<%= album["id"] %>">
+          <img class="grid_image" src="<%= album["image"] %>" alt="<%= album["album"] %>">
+        </a>
+      </p>
+    <% end %>
+  </div>
+</div>

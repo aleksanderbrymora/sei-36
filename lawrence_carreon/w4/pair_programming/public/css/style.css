@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+main{
+    text-align: center;
+    margin-top: 40vh;
+}
+
+h1, a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    border-radius: 10%;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.acknowledge{
+    background-image: linear-gradient(#0088cc,#0044cc);
+}
+
+.agree{
+    background-image: linear-gradient(#5bb75b, #51a351);
+}
+
+.disagree{
+    background-image: linear-gradient(#da4f49, #bd362f);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 2em 2em
+}

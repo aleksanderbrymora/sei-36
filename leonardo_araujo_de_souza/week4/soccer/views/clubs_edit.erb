@@ -1,0 +1,30 @@
+<h2>Edit Team</h2>
+
+<form action="/clubs/<%= @team["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Manchester United" required value="<%= @team["name"] %>">
+  </label>
+
+  <label>
+    Favorite:
+    <input name="favorite" placeholder="Arsenal" value="<%= @team["family"] %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @team["image"] %>">
+  </label>
+
+  <label>
+    League:
+    <select name="league_id">
+      <option></option>
+      <% League.all.each do |league| %>
+        <option value="<%= league.id %>" <%= "selected" if league.id == @team.league_id %>><%= league.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>Update team</button>
+</form>

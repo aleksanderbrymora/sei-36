@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GamesOnRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>Fun House on Rails!</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/conch">Consult the Conch</a>
+        <a href="/secret_number">Guess the Number</a>
+        <a href="/rps">Rock, Paper, Scissors</a>
+      </nav>
+      <hr>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <footer>
+      &copy; 2020 Unga Bunga Productions
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+body {
+	margin: auto;
+	background-image:url(../images/wall.jpeg);
+	background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  display: auto;
+
+}
+#top{
+  float:center;
+}
+h1{
+  width: 100%;
+  height: 100%;
+  font-family: 'Great Vibes', cursive;
+  line-height: 100%;
+  text-align: left;
+  background-color: crimson;
+}
+
+iframe{
+  display: inline;
+}
+
+.info {
+  width: 30%;
+  height: 500%;
+  line-height: 100%;
+  background: black;
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: x-large;
+  display: block;
+}
+
+button {
+  float:center;
+  background-color: crimson;
+
+} 
+
+footer{
+  background-color: crimson;
+  color: azure;
+  text-align: center;
+  font-size: medium;
+}
+p{
+  width: 30%;
+  height: 500%;
+  line-height: 100%;
+  background-color: black;
+  font-size: x-large;
+  color: azure;
+}

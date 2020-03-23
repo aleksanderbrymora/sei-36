@@ -1,0 +1,11 @@
+<h2>All Teams</h2>
+<div class="container">
+  <% @teams.each do |team| %>
+    <a href="/teams/<%= team["id"] %>">
+      <div class="team">
+        <h3><%= team["name"] %></h3>
+        <img src="<%= team["image"] %>">
+      </div>
+    </a>
+  <% end %>
+</div>

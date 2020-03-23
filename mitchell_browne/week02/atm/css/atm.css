@@ -1,0 +1,204 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=Ruluko);
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+html, body {
+  background-color: #F8EFE3;
+  margin: 0;
+  height: 100%;
+}
+
+#home_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#container {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  opacity: 0.3;
+}
+
+#nav {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#bank_title {
+  font-family: 'Oleo Script';
+  text-align: center;
+}
+
+.line {
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  bottom: 0vh;
+  left: 50vw;
+  width: 6px;
+  opacity: 0;
+}
+
+.content {
+  flex-grow: 1;
+  vertical-align: top;
+  margin: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F8EFE3;
+}
+
+.hidden_content {
+  opacity: 0.5;
+}
+
+.account {
+  background-color: #6C9A74;
+  border: 1px solid #295A33;
+  padding: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  flex-grow: 1;
+  font-family: 'Bebas Neue';
+  font-size: 150px;
+  letter-spacing: 15px;
+  margin: auto;
+  text-shadow:
+  10px 10px 0 #000,
+   0px 0px 0 #000;
+}
+
+.checking_title {
+  color: #97CEB6;
+}
+
+.savings_title {
+  color: #C292A0;
+}
+
+.balance {
+  order: 1;
+  flex-grow: 2;
+  box-shadow: 0mm 0mm 0 #000;
+  background-color: none;
+  border: 0px;
+  font-family: 'Ruluko', sans-serif;
+  font-size: 50px;
+  padding: 0;
+  margin: auto;
+  width: 50%;
+}
+
+.zero_balance {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.checking_balance {
+  border: 5px solid #97CEB6;
+}
+
+.savings_balance {
+  border: 5px solid #C292A0;
+}
+
+::placeholder {
+  color: #777777;
+  font-size: 30px;
+  text-align: right;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+.input_box {
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  outline: none;
+
+  box-shadow: none;
+  margin-top: 22vh;
+  font-size: 30px;
+  color: black;
+  text-align: right;
+}
+
+.input_box_on {
+  border-bottom: 9px;
+}
+
+.input_message {
+  flex-grow: 1;
+  margin-top: 2vh;
+  font-family: 'Ruluko', sans-serif;
+  opacity: 0.8;
+  font-size: 20px;
+  visibility: hidden;
+}
+
+.checking_input {
+  border-bottom: 5px solid #97CEB6;
+}
+
+.savings_input {
+  border-bottom: 5px solid #C292A0;
+}
+
+.button_holder {
+  order: 4;
+  display: flex;
+  flex-direction: inline;
+  margin-bottom: 5vh;
+}
+
+.button {
+  height: 150px;
+  width: 40%;
+  margin: 0 auto;
+  font-family: 'Bebas Neue';
+  font-size: 300%;
+  color: #F2E1CA;
+  letter-spacing: 20%;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 1mm 2mm 0mm black;
+  text-shadow:
+  2px 2px 0mm #000,
+   0px 0px 0 #000;
+}
+
+.deposit_button {
+  background-color: #97CEB6;
+}
+
+.savings_button {
+  background-color: #C292A0;
+}
+
+.pressed_button {
+  box-shadow: 0.5mm 1.5mm 0mm black;
+}
+
+.clear {
+  clear: both;
+}
+
+.zero {
+  background-color: #F52F4F;
+  color: #FFF;
+}

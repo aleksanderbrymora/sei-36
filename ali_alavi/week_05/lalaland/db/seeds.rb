@@ -1,0 +1,1 @@
+User.create(:username => 'admin', :email => 'admin@root.com', :password => 'root')

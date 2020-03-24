@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.left-tab {
+  height: 100vh;
+  background-color: #1b0b5f;
+  color: whitesmoke;
+}
+
+.right-tab {
+  width: 60%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+#temp {
+  position: relative;
+  top: 0vh;
+  left: 10vw;
+  opacity: 0;
+}
+
+#temp > h1 {
+  font-size: 4em;
+}
+
+#cond {
+  position: absolute;
+  bottom: 0vh;
+  right: 10vw;
+  opacity: 0;
+  height: 200px;
+  width: 200px;
+}
+/* 
+#temp,
+.active {
+  position: relative;
+  display: none;
+} */

@@ -1,0 +1,34 @@
+  
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    align-content: center;
+  }
+  
+  .feature {
+    max-width: 100%;
+    transition: all 7s ease-in-out;
+    position: relative;
+  }
+
+  h1, h2, nav, p.info, p.links {
+    text-align: center;
+  }
+
+  body {
+    background-image: url("https://as1.ftcdn.net/jpg/01/41/88/92/500_F_141889246_9FBBOeZRKJzXbAk3JMaM8Brv07k3qLvp.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50%;
+  }
+
+  a:hover {
+    background-color: rgb(235, 74, 74);
+    
+  }
+
+  h1 {
+    text-shadow: 5px 5px 6px #FF0000;
+  }
+  

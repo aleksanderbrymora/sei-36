@@ -1,43 +1,76 @@
-// const Each = function(arr, fn) {
-//   return arr.forEach(fn);
-// };
+// Imports
+const { path } = R;
+const { fromEvent } = rxjs;
 
-// const ajaxFetch = function(url, cb, method = "GET") {
-//   const xhr = new XMLHttpRequest(); // ready state 0
+// Partial application
+const temp = path(["main", "temp"]);
+const condition = path(["weather", 0, "main"]);
 
-//   xhr.onreadystatechange = function() {
-//     if (xhr.readyState !== 4) {
-//       return; // Nothing to do yet so exit the function.
-//     }
-//     cb(JSON.parse(xhr.response));
-//   };
+const source = fromEvent($("#app .btn"), "click");
 
-//   xhr.open(method, url); // ready state 1
-//   xhr.send(); // Asynchronous // ready state 2 and 3 and 4
-// };
+// stream
+source.subscribe(e => {
+  //resets+clear
+  $("#temp")
+    .css("top", "0vh")
+    .css("opacity", "0");
+  $("#cond")
+    .attr("src", "")
+    .css("bottom", "0vh")
+    .css("opacity", "0");
 
-// $("#submitBook").click(function(e) {
-//   $("#app").html("");
+  let wCondition = "";
 
-//   let gBooksUrl = `https://www.googleapis.com/books/v1/volumes?q=title:${$(
-//     "#book"
-//   ).val()}`;
+  e.preventDefault();
+  const city = $("#city").val();
 
-//   e.preventDefault();
+  $.ajax(
+    `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=d98e7b2d37fbd7b63a3ae50925548d3f`
+  ).done(res => {
+    $("#temp")
+      .html(`<h1 class="font-weight-lighter">${temp(res)}c</h1>`)
+      .animate(
+        {
+          top: "20vh",
+          opacity: 1
+        },
+        1000
+      );
+    //get weather icon
+    switch (condition(res)) {
+      case "Clouds":
+        wCondition = "hc";
+        break;
+      case "Clear":
+        wCondition = "c";
+        break;
+      case "Snow":
+        wCondition = "sn";
+        break;
+      case "Rain":
+        wCondition = "lr";
+        break;
+      case "Drizzle":
+        wCondition = "s";
+        break;
+      case "Thunderstorm":
+        wCondition = "t";
+        break;
+      default:
+        wCondition = "lc";
+    }
 
-//   ajaxFetch(gBooksUrl, function(res) {
-//     const books = res.items;
-//     //$("#app").html(JSON.stringify(books[0].volumeInfo.imageLinks.thumbnail));
-//     //console.log(res.items[0].volumeInfo.imageLinks.thumbnail);
-
-//     Each(books, x =>
-//       $("#app").append(`<img src="${x.volumeInfo.imageLinks.thumbnail}"></img>`)
-//     );
-//   });
-// });
-
-
-// d98e7b2d37fbd7b63a3ae50925548d3f
-// $.ajax('http://api.openweathermap.org/data/2.5/weather?q=sydney&APPID=d98e7b2d37fbd7b63a3ae50925548d3f')
-// http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=d98e7b2d37fbd7b63a3ae50925548d3f
-// https://openweathermap.org/current#data
+    $("#cond")
+      .attr(
+        "src",
+        `https://www.metaweather.com/static/img/weather/${wCondition}.svg`
+      )
+      .animate(
+        {
+          bottom: "40vh",
+          opacity: 1
+        },
+        1000
+      );
+  });
+});

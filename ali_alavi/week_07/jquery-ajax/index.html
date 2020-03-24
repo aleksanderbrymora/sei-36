@@ -9,27 +9,42 @@
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"
     ></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@reactivex/rxjs@6.5.4/dist/global/rxjs.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="d-flex" id="app">
       <div class="left-tab flex-grow-1">
         <div class="container">
-        <h1 class="font-weight-lighter pt-4">WTHR4U!</h1>
-        <form action="" class="pt-4">
-          <div class="form-group">
-            <label for="exampleInputEmail1"></label>
-            <input type="text" id="city" class="form-control" id="exampleInputEmail1" placeholder="Enter your city">
-            <small class="form-text text-muted"></small>
-          </div>
-          <button type="submit" class="btn btn-outline-light">Submit</button>
-        </form>
+          <h1 class="font-weight-lighter pt-4">WTHR4U!</h1>
+          <form action="" class="pt-4">
+            <div class="form-group">
+              <label for="exampleInputEmail1"></label>
+              <input
+                type="text"
+                id="city"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Enter your city"
+              />
+              <small class="form-text text-muted"></small>
+            </div>
+            <button type="submit" class="btn btn-outline-light">
+              Submit
+            </button>
+          </form>
         </div>
       </div>
       <div class="right-tab flex-grow-2">
-        <p>Hi</p>
+        <div id="temp"></div>
+        <img src="" alt="" srcset="" id="cond" />
       </div>
     </div>
     <script src="js/index.js"></script>

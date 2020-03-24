@@ -1,4 +1,15 @@
 const pokemon = {
+    maxHP: 216.00,
+    maxStat: 190.00,
+    statLine: {
+        "attack": 0,
+        "defense": 0,
+        "hp": 0,
+        "speed": 0,
+        "special-defense": 0,
+        "special-attack": 0
+    },
+    nature: "",
     names: [
         "Bulbasaur",
         "Ivysaur",

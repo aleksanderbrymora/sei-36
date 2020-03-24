@@ -58,5 +58,19 @@ main{
 .stats_bar {
     border-radius: 1em;
     transition: all 0.25s ease-in;
-    height: 1em;
+    height: 2em;
+}
+
+.poke_nature{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.nature_buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.natures{
+    display: block;
 }

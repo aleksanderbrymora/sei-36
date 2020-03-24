@@ -1,12 +1,20 @@
-const maxHP = 216.00;
-const maxStat = 190.00;
-
 const updateStats = function(){
-    const url = $(this).val();
-    debugger;
+    const url = $(this).attr("url");
+    const natureSet = $(this).attr("id");
+    if( pokemon.nature == natureSet){ return };
+    pokemon.nature = natureSet;
+    $("#nature_indicator h3 span").html(natureSet); 
     $.ajax(url).done(function (data){
-        console.log(data);
-        console.log("updated stats!");
+        Object.keys(pokemon.statLine).forEach( stat => {
+            $(`#${stat}`).css({"width":`${pokemon.statLine[stat] * 2}%`});
+        });
+        if( data.decreased_stat === null || data.increased_stat === null){return};
+        const newDecreaseWidth = $(`#${data.decreased_stat.name}`).width() * 0.80;
+        const newIncreaseWidth = $(`#${data.increased_stat.name}`).width() * 1.20;
+        $(`#${data.decreased_stat.name}`).width(newDecreaseWidth);
+        $(`#${data.increased_stat.name}`).width(newIncreaseWidth);
+    }).fail(function () {
+        alert('Could not retrieve data!');
     });
 };
 
@@ -36,14 +44,19 @@ const generatePokemon = function() {
             $moveTable.DataTable();
             // natures
             $.ajax("https://pokeapi.co/api/v2/nature?limit=30").done(function(data){
-                $('.poke_nature').append("<form class='natures'></form>");
-                const $natureForm = $('.natures');
+                $('.poke_nature').append(
+                    `<div id="nature_indicator">
+                        <h3>Current Nature: <span></span></h3>
+                    </div>
+                    <div class="nature_buttons"></div>`
+                );
                 data.results.forEach( nature => {
-                    $natureForm.append(
-                        `<input type='checkbox' id='${nature.name}' name='${nature.name}' value='${nature.url}'>
-                        <label for='${nature.name}'> ${nature.name} </label><br>`
+                    $('.nature_buttons').append(
+                        `<button class="natures" id='${nature.name}' url='${nature.url}'>${nature.name}</button>`
                     );
                 });
+            }).fail(function () {
+                alert('Could not retrieve data!');
             });
             // stats
             data.stats.forEach( el => {
@@ -51,8 +64,14 @@ const generatePokemon = function() {
                     `<p><strong>${el.stat.name}: (${el.base_stat})</strong></p>
                     <div id="${el.stat.name}" class="stats_bar"></div>`
                 );
-                const divisor = el.stat.name === "hp" ? maxHP : maxStat;
-                const barLength = (parseFloat(el.base_stat.toString()) / divisor) * 100.00;
+                const divisor = el.stat.name === "hp" ? pokemon.maxHP : pokemon.maxStat;
+                let barLength;
+                if (data.name === "shedinja" && el.stat.name === "hp"){
+                    barLength = 1;
+                }else{
+                    barLength = (parseFloat(el.base_stat.toString()) / divisor) * 100.00;
+                };
+                pokemon.statLine[el.stat.name] = barLength;
                 let color = "";
                 if ( barLength <= 5.00 ){
                     color = "red";
@@ -63,9 +82,10 @@ const generatePokemon = function() {
                 }else{
                     color = "green";
                 };
-                $(`#${el.stat.name}.stats_bar`).css({"width":`${barLength}%`, "background-color":`${color}`});
+                $(`#${el.stat.name}.stats_bar`).css({"width":`${barLength * 2}%`, "background-color":`${color}`}); //barLength is doubled for better user visibility of stat disparity
             });
             // post poke-setup
+            
             $('.generated_pokemon').fadeIn(500);
         }).fail(function () {
             alert('Could not retrieve data!');
@@ -80,7 +100,7 @@ $(document).ready(function () {
         $('#pokemon tbody').append(`<tr><td>${count}</td><td>${name}</td><td><button class="pokemon_select" id="${count}">Generate</button></td></tr>`);
         count++;
     });
-    $('.natures').on('click', 'input[type=checkbox]', updateStats);
+    $('.poke_nature').on('click', 'button', updateStats );
     $('#pokemon').on("click", "button", generatePokemon);
     $('#pokemon').DataTable();
 });

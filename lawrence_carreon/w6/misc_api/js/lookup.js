@@ -9,10 +9,31 @@ const updateStats = function(){
             $(`#${stat}`).css({"width":`${pokemon.statLine[stat] * 2}%`});
         });
         if( data.decreased_stat === null || data.increased_stat === null){return};
-        const newDecreaseWidth = $(`#${data.decreased_stat.name}`).width() * 0.80;
-        const newIncreaseWidth = $(`#${data.increased_stat.name}`).width() * 1.20;
-        $(`#${data.decreased_stat.name}`).width(newDecreaseWidth);
-        $(`#${data.increased_stat.name}`).width(newIncreaseWidth);
+        const newDecreaseWidth = pokemon.statLine[data.decreased_stat.name] * 1.6;
+        const newIncreaseWidth = pokemon.statLine[data.increased_stat.name] * 2.4;
+        $(`#${data.decreased_stat.name}`).css({"width":`${newDecreaseWidth}%`});
+        $(`#${data.increased_stat.name}`).css({"width":`${newIncreaseWidth}%`});
+    }).fail(function () {
+        alert('Could not retrieve data!');
+    });
+};
+
+const showMoveDetails = function() {
+    const url = $(this).attr('url');
+    $('#move_descript').empty();
+    $.ajax(url).done(function (data){
+        let description = data.effect_entries[0].effect;
+        if (description.includes("$effect_chance")){description = description.replace("$effect_chance", `${data.effect_chance}`)};
+        $('#move_descript').append(
+            `<h2>Move details for: ${data.name}</h2>
+            <p><strong>Power: </strong>${data.power}</p>
+            <p><strong>Accuracy: </strong>${data.accuracy}</p>
+            <p><strong>PP (Number of Uses): </strong>${data.pp}</p>
+            <p><strong>Priority: </strong>${data.priority}</p>
+            <p><strong>Move Typing: </strong>${data.type.name}</p>
+            <p><strong>Attack stat used: </strong>${data.damage_class.name}</p>
+            <p><strong>Description: </strong>${description}</p>`
+        );
     }).fail(function () {
         alert('Could not retrieve data!');
     });
@@ -26,16 +47,17 @@ const generatePokemon = function() {
         $.ajax(url).done(function (data) {
             // main profile
             $('.poke_profile').append(
-                `<h2>${data.name}</h2>
+                `<h1>${data.name}</h1>
                 <img src="${data.sprites.front_default}">
                 <img src="${data.sprites.front_shiny}">
                 <p><strong>Pokedex Entry: </strong> #${data.id}</p>
                 <p><strong>Typing: </strong> ${data.types.map( element => { return element.type.name }).sort().join(" / ")}</p>
-                <p><strong>Possible Abilities: </strong> ${data.abilities.map( element => { return element.is_hidden ? `${element.ability.name} (hidden)` : `${element.ability.name}` }).sort().join(" / ")}</p>`
+                <p><strong>Possible Abilities: </strong> ${data.abilities.map( element => { return element.is_hidden ? `${element.ability.name} (hidden)` : `${element.ability.name}` }).sort().join(" / ")}</p>
+                <div id="move_descript"></div>`
             );
             // move pool
-            const $moveTable = $('<table id="moves" class="list"><thead><tr><th>Move Name:</th></tr></thead><tbody></tbody></table>');
-            data.moves.forEach( el => { $moveTable.find("tbody").append(`<tr><td>${el.move.name}</td></tr>`) });
+            const $moveTable = $('<table id="moves" class="list"><thead><tr><th>Move Name:</th><th>Show?</th></tr></thead><tbody></tbody></table>');
+            data.moves.forEach( el => { $moveTable.find("tbody").append(`<tr><td>${el.move.name}</td><td><button url="${el.move.url}">Get Details</button></td></tr>`) });
             $('.poke_moves').append(
                 `<h2>${data.moves.length} move(s) in movepool:</h2>
                 <div class="poke_list"></div>`
@@ -73,9 +95,9 @@ const generatePokemon = function() {
                 };
                 pokemon.statLine[el.stat.name] = barLength;
                 let color = "";
-                if ( barLength <= 5.00 ){
+                if ( barLength <= 20.00 ){
                     color = "red";
-                }else if( barLength <= 25.00){
+                }else if( barLength <= 35.00){
                     color = "orange";
                 }else if( barLength <= 50.00){
                     color = "yellow";
@@ -97,10 +119,11 @@ const generatePokemon = function() {
 $(document).ready(function () {
     let count = 1;
     pokemon.names.forEach( name => {
-        $('#pokemon tbody').append(`<tr><td>${count}</td><td>${name}</td><td><button class="pokemon_select" id="${count}">Generate</button></td></tr>`);
+        $('#pokemon tbody').append(`<tr><td>${count}</td><td>${name}</td><td><button id="${count}">Generate</button></td></tr>`);
         count++;
     });
     $('.poke_nature').on('click', 'button', updateStats );
+    $('.poke_moves').on('click', 'button', showMoveDetails);
     $('#pokemon').on("click", "button", generatePokemon);
     $('#pokemon').DataTable();
 });

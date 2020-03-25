@@ -1,0 +1,9 @@
+<h2>Results for your search "<%= @search_string %>" in "<%= @category %>"</h2>
+
+<ul class="search_results">
+    <% @search_ids.each do |search_id| %>
+        <% @potential_results.each do |result| %>
+            <li><%= link_to result.name, result if search_id == result.id %></li>
+        <% end %>
+    <% end %>
+</ul>

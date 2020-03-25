@@ -1,0 +1,11 @@
+<h2>Update Beach</h2>
+<div class="form-wrapper">
+<form action="<%= beach_path(@beach.id) %>" method = "post">
+  <label>Name: <input name="name" value="<%= @beach.name %>" required></input></label>
+  <label>Location: <input name="location" value="<%= @beach.location %>"></input></label>
+  <label>Area: <input name="area" value="<%= @beach.area %>"></input></label>
+  <label>Tourists as of 2019: <input name="tourists" value="<%= @beach.tourists %>"></input></label>
+  <label>Image: <input name="image" value="<%= @beach.image %>"></input></label>
+  <button>Update Beach</button>
+</form>
+<div>

@@ -1,0 +1,9 @@
+<h1> MY FAVOURITE SINGERS </h1>
+
+<% @singers.each do |singer| %>
+
+    <p class="links">
+        <%= link_to singer.name, singer_path(singer.id) %>
+    </p>
+
+<% end %>

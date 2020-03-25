@@ -5,7 +5,7 @@ li{
   text-decoration: none;
 }
 body {
-  background-color: #13100cc7;
+  background-color: #2b0902c7;
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
@@ -14,7 +14,20 @@ body {
 .image {
   border-radius: 1em;
   width: 700px;
-  lenght: 386px;
+  height: 386px;
+}
+
+.aopl :hover {
+  font-size: 16px;
+  text-decoration:underline;
+  border-color: pink;
+
+}
+.images {
+  border-radius: 0.5em;
+  width: 700px;
+  height: 386px;
+  box-shadow: 0px 15px 15px #222;
 }
 .container {
   width: 960px;
@@ -95,7 +108,7 @@ h1 {
 
 h1:hover {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.5em;
   font-weight: bold;
 }
 

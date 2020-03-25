@@ -1,0 +1,12 @@
+<%= form_for @animal do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :personality %>
+  <%= f.text_field :personality %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image, :required => true %>
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,8 @@
+<div class= "container">
+<% @beaches.each do |beach| %>
+<div class= "beach">
+  <p><%= link_to beach.name, beach_path(beach.id) %></p>
+  <%= image_tag beach.image, :class => 'feature' if beach.image.present? %>
+</div>
+<% end %>
+</div>

@@ -1,0 +1,15 @@
+<h2><%= @singer.name %></h2>
+
+<%= image_tag @singer.image, :class => 'feature' if @singer.image.present? %>
+
+
+    <p class ="info"><strong> Name: </strong><%= @singer.name %> </p>
+    <p class ="info"><strong> Title: </strong><%= @singer.title %> </p>
+    <p class ="info"><strong> Year of Release: </strong><%= @singer.year_release %> </p>
+    <p class ="info"><strong> Fans: </strong><%= number_to_human @singer.fans %>
+
+
+<div class="controls">
+  <%= link_to 'Edit singer', edit_singer_path(@singer.id) %>
+  <%= button_to 'Delete singer', singer_path(@singer.id), :method => 'delete' %>
+</div>

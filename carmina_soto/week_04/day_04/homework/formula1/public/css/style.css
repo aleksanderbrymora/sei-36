@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+main, header {
+  max-width: 960px;
+  margin: 20px auto;
+}
+h1, h2, h3 {
+  font-family:'Righteous', cursive;
+  text-align: center;
+}
+h1 a{
+  text-decoration: none;
+}
+h3 {
+  margin-bottom: 20px;
+}
+nav {
+  text-align: center;
+  padding: 20px;
+  margin: 0 10px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a{
+  padding-right: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+img {
+  width: 100%;
+}
+p {
+  margin: 20px 0;
+  text-align: justify;
+}
+.container{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 5px;
+}
+.container a{
+  text-decoration: none;
+}
+.driver, .team {
+  margin-top: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.driver:hover, .team:hover{
+  border: 2px solid black;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+.driver h3, .team h3 {
+  text-align: center;
+  padding: 12px
+}
+.driver img, .team img {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding-bottom: 10px
+}
+.profile, .profile p{
+  text-align: center;
+}
+.profile a {
+  padding: 20px;
+}
+.profile img {
+  width: 50%;
+}
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+label{
+  display: block;
+  margin: 20px;
+}
+input{
+  padding: 12px 20px 12px 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border: 1px solid #ccc;
+}
+button{
+  transition-duration: 0.4s;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #008CBA;
+  border: none;
+  margin-left: 20px;
+  font-size: 1em;
+}
+button:hover{
+  background-color: #008CBA;
+  color: white;
+}

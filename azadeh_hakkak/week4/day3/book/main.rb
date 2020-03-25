@@ -16,6 +16,6 @@ begin
 rescue
   redirect to ('/')
 end
-  @cover = @book_info["items"].first["volumeInfo"]["imagelinks"]["thumbnail"]
+  @cover = @book_info["items"].first["volumeInfo"]["imageLinks"]["thumbnail"]
   erb :result
 end

@@ -1,0 +1,23 @@
+<h2><%= @league.name %></h2>
+
+<% unless @league.clubs.empty? %>
+  <h3>Associated clubs:</h3>
+  <ul>
+    <% @league.clubs.each do |team| %>
+      <li>
+        <a href="/clubs/<%= team.id %>">
+          <%= team.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @league.image.nil? || @league.image.empty? %>
+  <img class="feature" src="<%= @league.image %>" alt="<%= @league.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/leagues/<%= @league.id %>/edit">Edit</a>
+  <a href="/leagues/<%= @league.id %>/delete">Delete</a>
+</div>

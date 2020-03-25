@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="jQuery.js"></script>
+  <title>Test for Jquery</title>
+</head>
+<body>
+<div id="div">
+  <p>its me</p>
+</div>
+<button id="button">change</button>
+  <style>
+    div{
+      width:400px;
+      height:400px;
+      background:black;
+    }
+    p{
+      color:white;
+    }
+    </style>
+
+    <script>
+      $(document).ready(function(){
+        $("#button").click(function(){
+          $("#div").css("background-color", "red");
+        });
+    });
+    </script>
+</body>
+</html>

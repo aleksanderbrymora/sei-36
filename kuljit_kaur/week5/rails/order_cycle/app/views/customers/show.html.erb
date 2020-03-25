@@ -1,0 +1,25 @@
+<% if @customer.image.present? %>
+<%= image_tag @customer.image, :class => 'feature' %>
+<% else %>
+<%= image_tag 'https://image.shutterstock.com/image-vector/add-new-user-account-friend-260nw-274241615.jpg', :class => 'feature' %>
+<% end %>
+
+<ul>
+  <li>Name: <%= @customer.name %></li>
+  <li>Country: <%= @customer.country %> </li>
+  <li>City: <%= @customer.city %> </li>
+  <li>Postal Code: <%= @customer.postal_code %> </li>
+  <li>Street: <%= @customer.street%> </li>
+</ul>
+
+<p> Ordered For : </p>
+<ol>
+<% @customer.orders.each do |order| %>
+  <li> <%= link_to order.item, order %>
+<% end %>
+</ol>
+
+<div class="controls">
+  <%= link_to 'Edit customer', edit_customer_path(@customer) %>
+  <%= button_to "Delete #{ @customer.name }", @customer, :method => 'delete' %>
+</div>

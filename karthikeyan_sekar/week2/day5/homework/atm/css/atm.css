@@ -7,6 +7,10 @@
   width: 700px;
 }
 
+p
+{
+  background-color: orange;
+}
 #nav {
   margin: 50px 0px;
 }
@@ -55,3 +59,10 @@
   width:200px;
   height:200px;
 }
+
+/* .message {
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform:
+} */

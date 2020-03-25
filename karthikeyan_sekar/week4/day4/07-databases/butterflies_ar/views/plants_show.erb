@@ -1,0 +1,9 @@
+<h2><%= @plant.name %></h2>
+<h3>Family: <%= @plant["family"] %></h3>
+<% unless @plant["image"].nil? || @plant["image"].empty? %>
+<img src="<%= @plant["image"] %>" alt="<%= @plant["name"] %>">
+<% end %>
+<div class="controls">
+  <a href="/butterflies/<%= @plant["id"] %>/edit">Edit</a>
+  <a href="/butterflies/<%= @plant["id"] %>/delete">Delete</a>
+</div>

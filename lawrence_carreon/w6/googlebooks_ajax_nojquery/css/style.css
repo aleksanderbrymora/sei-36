@@ -1,0 +1,33 @@
+.book_holder{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#results {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-items: center;
+}
+
+#results img{
+    width:100px;
+    height: 125px;
+    transition: all 0.25s ease-in-out;
+}
+
+#results img:hover{
+    transform: scale(1.5);
+}
+
+#single_result {
+    text-align: center;
+}
+
+.page_breaker{
+    border: 1px solid #fff;
+    width: 100%;
+    margin: 2em 0;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Covid-19 Live Data by Country</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <h1>CORONAVIRUS COVID-19 BY COUNTRY</h1>
+  <form>
+    <label>Country:</label>
+    <input type="search" id="country">
+    <button id="search">Find</button>
+  </form>
+  <main>
+    <h2 id="country_header"></h2>
+    <p id="date"></p>
+    <div class="container">
+    <div class="box" id="confirmed">
+      <h3>Confirmed</h3>
+      <p class="cases_text" id="confirmed_text"></p>
+    </div>
+    <div class="box" id="recovered">
+      <h3>Recovered</h3>
+      <p class="cases_text" id="recovered_text"></p>
+    </div>
+    <div class="box" id="deaths">
+      <h3>Deaths</h3>
+      <p class="cases_text"id="deaths_text"></p>
+    </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<h2>Edit My Favorite Singer</h2>
+
+<form action="<%= singer_path(@singer.id) %>" method="post">
+  <label>
+    Name:
+    <input name="name" required value="<%= @singer.name %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @singer.image %>">
+  </label>
+
+  <label>
+    Title
+    <input type="text" name="title" value="<%= @singer.title %>">
+  </label>
+
+  <label>
+  Year of Release:
+    <input type="number" name="year_release" value="<%= @singer.year_release %>">
+  </label>
+
+  <label>
+    Number of Fans:
+    <input type="number" name="fans" value="<%= @singer.fans %>">
+  </label>
+
+  <button>Update my favorite singer</button>
+</form>

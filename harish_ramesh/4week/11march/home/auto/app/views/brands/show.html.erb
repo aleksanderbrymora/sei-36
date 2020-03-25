@@ -1,0 +1,18 @@
+<h1><%= @brand.name %></h1>
+
+<%= image_tag @brand.image, :class => 'feature' if @brand.image.present? %>
+<ul>
+  <li>Nation: <%= @brand.nation %></li>
+  <li>Established: <%= @brand.established if @brand.established.present? %></li>
+</ul>
+
+<% @brand.cars.each do |car| %>
+  <%= link_to image_tag(car.image, :class => 'thumb'), car %>
+<% end %>
+
+
+
+<div class="controls">
+  <%= link_to 'Edit Brand', edit_brand_path(@brand) %>
+  <%= link_to "Delete #{ @brand.name }", @brand, :method => 'delete' %>
+</div>

@@ -1,0 +1,10 @@
+<h1>Pages#welcome</h1>
+<p>Find me in app/views/pages/welcome.html.erb</p>
+
+<% if @current_user.present? %>
+<marquee>
+  <h1>
+    Welcome <%= @current_user.email %>
+  </h1>
+</marquee>
+<% end %>

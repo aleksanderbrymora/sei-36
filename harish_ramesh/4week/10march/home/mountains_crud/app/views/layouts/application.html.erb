@@ -10,10 +10,12 @@
   </head>
 
   <body>
-    <nav>
+    <div class="container">
+      <nav>
         <%= link_to "Home", root_path %>
         <%= link_to "New mountain", new_mountain_path %>
       </nav>
     <%= yield %>
+    </div>
   </body>
 </html>

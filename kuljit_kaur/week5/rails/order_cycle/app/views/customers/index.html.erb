@@ -1,0 +1,17 @@
+<h1>All Customers</h1>
+
+<% @customers.each do |customer| %>
+<% if customer.image  %>
+  <%= image_tag customer.image, :class =>'thumb' %>
+  <% else %>
+  <%= image_tag 'https://image.shutterstock.com/image-vector/add-new-user-account-friend-260nw-274241615.jpg', :class =>'thumb' %>
+  <% end %>
+
+  <ul>
+    <li>Name: <%= link_to customer.name, customer %></li>
+    <li>Country: <%= customer.country %> </li>
+    <li>City: <%= customer.city %> </li>
+    <li>Postal Code: <%= customer.postal_code %> </li>
+    <li>Street: <%= customer.street%> </li>
+  </ul>
+<% end %>

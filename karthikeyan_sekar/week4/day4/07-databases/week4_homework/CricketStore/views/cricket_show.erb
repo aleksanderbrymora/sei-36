@@ -1,0 +1,9 @@
+<h2><%= @cricket["brand"] %></h2>
+<h3>Cricket Brand: <%= @cricket["brand"] %></h3>
+<% unless @cricket["image"].nil? || @cricket["image"].empty? %>
+<img src="<%= @cricket["image"] %>" alt="<%= @cricket["brand"] %>">
+<% end %>
+<div class="controls">
+  <a href="/cricket/<%= @cricket["id"] %>/edit">Edit</a>
+  <a href="/cricket/<%= @cricket["id"] %>/delete">Delete</a>
+</div>

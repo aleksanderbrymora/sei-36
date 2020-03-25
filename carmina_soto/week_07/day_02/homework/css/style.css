@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|Ubuntu&display=swap');
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background: #000;
+  color: white;
+}
+h1, h2, h3 {
+  font-family: 'PT Mono', monospace;
+  text-align: center;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  margin-top: 150px;
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 3em;
+  margin-top: 50px;
+}
+h3 {
+  font-size: 2.5em;
+  margin-top: 50px;
+}
+form {
+  margin-top: 50px;
+  text-align: center;
+}
+label {
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+input {
+  padding: 6px 24px 6px 2px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+button{
+  padding: 8px 24px;
+  background-color:#008CBA;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.8em;
+}
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cases_text {
+  margin-top: 50px;
+  font-size: 2em;
+  text-align: center;
+}
+#confirmed h3 {
+  color: #ecbe13;
+}
+#recovered h3 {
+  color: #61c261;
+}
+#deaths h3 {
+  color: #dd3e3e;
+}
+#date {
+  font-size:1em;
+  text-align:center;
+}

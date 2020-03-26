@@ -1,0 +1,14 @@
+<%= form_for @order do |f| %>
+  <%= f.label :Item %>
+  <%= f.text_field :item %>
+  <%= f.label :Quantity %>
+  <%= f.text_field :quantity %>
+  <%= f.label :Order_Date %>
+  <%= f.text_field :order_date %>
+  <%= f.label :'Price $' %>
+  <%= f.text_field :price %>
+
+  <%= f.label :Customer %>
+  <%= f.select :customer_id, Customer.pluck(:name, :id), :include_blank => true %>
+  <%= f.submit %>
+<% end %>

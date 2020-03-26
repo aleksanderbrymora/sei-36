@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon builder</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/pokemon_names.js"></script>
+    <script src="js/lookup.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- DataTables jquery extension -->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Who's YOUR Pokemon?!</h1>
+        </header>
+        <hr>
+        <h2>Pokemon Pool:</h2>
+        <div class="poke_list">
+            <table id="pokemon" class="list">
+                <thead>
+                    <tr>
+                        <th>Pokedex Entry (#)</th>
+                        <th>Pokemon</th>
+                        <th>Select?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="generated_pokemon">
+            <h2>Your Pokemon:</h2>
+            <div class="poke_info">
+                <div class="poke_profile"></div>
+                <div class="poke_moves"></div>
+                <div class="poke_stats"></div>
+                <div class="poke_nature">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2020 Lawrence Carreon
+    </footer>
+</body>
+</html>

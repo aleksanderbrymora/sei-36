@@ -1,0 +1,9 @@
+<h2>All Families</h2>
+<% @families.each do |family| %>
+  <p>
+    <a href="/family/<%= family["id"] %>">
+      <%= family["name"] %>
+    </a>
+  </p>
+<% end %>
+<hr>

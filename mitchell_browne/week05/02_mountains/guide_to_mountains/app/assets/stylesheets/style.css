@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+body {
+  background-color: forestgreen;
+  margin: 0;
+}
+
+/* =====================
+LAYOUT PAGE
+===================== */
+
+.layout_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5vh;
+  background-color: white;
+  border-radius: 20%;
+  margin-top: 2vh;
+}
+
+.layout_link {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 5vw;
+}
+
+.layout_link:hover {
+  transform: scale(1.1);
+}
+
+.layout_container {
+  display: block;
+  margin: 0 auto;
+  max-width: 960px;
+  height: 100vh;
+  margin-bottom: 50vh;
+}
+
+/* =====================
+GENERAL STYLES
+===================== */
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-family: 'Comfortaa', cursive;
+}
+
+a {
+  font-family: 'Comfortaa', cursive;
+}
+
+label {
+  margin-top: 2vh;
+  font-family: 'Comfortaa', cursive;
+  display: inline-block;
+  width: 30vw;
+}
+
+input {
+  font-family: 'Comfortaa', cursive;
+  font-size: 0.8em;
+  display: inline-block;
+  text-align: right;
+  float: right;
+  width: 17vw;
+}
+
+button {
+  font-family: 'Comfortaa', cursive;
+}
+
+/* =====================
+INDEX PAGE
+===================== */
+
+.grid_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+}
+
+.index_link {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+/* =====================
+SHOW PAGE
+===================== */
+
+.show_image {
+  max-width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* background-color: #FFFFFF; */
+}
+
+.show_link {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 5vw;
+  font-size: 0.9em;
+}
+
+.show_link:hover {
+  text-decoration: underline;
+}
+
+.show_button {
+  font-family: 'Comfortaa', cursive;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-size: 0.9em;
+}
+
+.show_button:hover {
+  text-decoration: underline;
+}
+
+.show_span {
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+/* =====================
+EDIT PAGE
+===================== */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_button {
+  margin-top: 4vh;
+  font-size: 0.9em;
+  width: 10vw;
+}

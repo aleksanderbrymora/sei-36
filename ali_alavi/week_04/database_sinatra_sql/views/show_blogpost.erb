@@ -8,10 +8,18 @@
         <% if session["user_id"] %>
             <span class="uk-label uk-label-danger"><a class="uk-link-text uk-text-bold" href="/blog/<%= params[:username] %>/<%= @blogpost["id"] %>/delete" uk-tooltip="This can not be undone!">Delete</a>
             </span>
+<<<<<<< HEAD
+            <span class="uk-label"><a class="uk-link-text uk-text-bold" href="/blog/<%= params[:username] %>/<%= @blogpost["id"] %>/edit" uk-tooltip="">Edit</a>
+=======
             <span class="uk-label"><a class="uk-link-text uk-text-bold" href="#" uk-tooltip="">Edit</a>
+>>>>>>> 205fc082e1b96efa95c129e058e75fcb6e436436
             </span>
         <% end %>
         
     </div>
+<<<<<<< HEAD
+    <div class="uk-container uk-margin-large-top"><a href="/blog/<%= params[:username] %>">Return</a></div>
+=======
     <div class="uk-container uk-margin-large-top"><a href="/blog">Return</a></div>
+>>>>>>> 205fc082e1b96efa95c129e058e75fcb6e436436
 </div>

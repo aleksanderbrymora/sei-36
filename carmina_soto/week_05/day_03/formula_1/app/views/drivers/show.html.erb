@@ -1,0 +1,14 @@
+<h2><%= @driver.name %></h2>
+
+<div class="flex">
+  <%= image_tag @driver.image, :class => 'featured' %>
+  <div class="info">
+    <ul>
+      <li>Team: <%= link_to @driver.team.name, @driver.team if @driver.team.present? %></li>
+      <li>Country: <%= @driver.country %></li>
+      <li>Podium Wins: <%= @driver.podiums %></li>
+    </ul>
+    <%= link_to 'Edit Driver Profile', edit_driver_path %>
+    <%= button_to 'Delete Driver Profile', @driver, :method => 'delete', :data => { :confirm => "Are you sure?"}, :class => "btn-red" %>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<h1>All Cars</h1>
+
+<% @cars.each do |car| %>
+  <%= link_to image_tag(car.image, :class => 'thumb', :alt => car.name), car %>
+<% end %>

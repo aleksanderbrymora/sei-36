@@ -1,0 +1,15 @@
+<h2>"<span><%= @flower["name"] %></span>" flower wants.....</h2>
+
+<h3>Sun Needs : <%= @flower["sun_needs"] %></h3>
+<h3>Soil Needs: <%= @flower["soil_needs"] %></h3>
+<h3>Bloom in  : <%= @flower["bloom_in"] %></h3>
+
+
+<% unless @flower["image"].nil? || @flower["image"].empty? %>
+<img class="show_img" src="<%= @flower['image'] %>" alt="<%= @flower['name'] %>">
+<% end %>
+
+<div class="controls">
+  <a class="link_size" href="/flowers/<%= @flower["id"] %>/update">Update</a>
+  <a class="link_size" href="/flowers/<%= @flower["id"] %>/delete">Delete</a>
+</div>

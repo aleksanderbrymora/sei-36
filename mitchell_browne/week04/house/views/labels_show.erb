@@ -1,0 +1,18 @@
+<div class="show_container">
+  <div class="show_details_container">
+    <div class="details_container">
+      <h2 class="show_title"><%= @label.name  %></h2>
+      <p class="show_location"><%= @label.location %></p>
+      <p>Established: <%= @label.established %></p>
+      <div class="controls">
+        <a class="controls_link" href="/labels">Back</a>
+        <a class="controls_link" href="/labels/<%= @label.id %>/edit">Edit</a>
+        <a class="controls_link" href="/labels/<%= @label.id %>/delete">Delete</a>
+      </div>
+    </div>
+
+  </div>
+<div class="show_image_container">
+  <img class="show_image" src="<%= @label.image %>" alt="<%= @label.name %> image">
+</div>
+</div>

@@ -1,0 +1,28 @@
+<h2>New Butterfly</h2>
+
+<form action="/butterflies" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Red Admiral" required>
+  </label>
+
+  <label>
+    Family:
+    <input name="family" placeholder="Nymphalidae">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://...">
+  </label>
+
+<label>
+  Larval plant:
+  </label>
+  <select name="plant_id" id="">
+    <%= Plant.all.each do |plant| %>
+    <option value="<%= plant.id %>" <%= plant.name %> </option>
+  </select>
+
+  <button>Create butterfly</button>
+</form>

@@ -1,0 +1,28 @@
+#container{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 70%;
+  padding: 5px;
+  background-color: #d1e0e0;
+}
+#fetch{
+  margin: 5px auto;
+  display: block;
+}
+#image{
+  width:65%;
+  max-height: 200px;
+  margin: 5px auto;
+  display: block;
+}
+input{
+  width:300px;
+
+}
+img{
+  margin: 5px auto;
+  display: block;
+}
+body{
+  background-color: #ffeee6;
+}

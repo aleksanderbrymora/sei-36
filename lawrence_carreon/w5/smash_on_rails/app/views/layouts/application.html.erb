@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SmashOnRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag "https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css" %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <h1>Smash on Rails!</h1>
+    <hr>
+      <nav>
+        |
+        <%= link_to "Home", root_path %>
+        | 
+        <%= link_to "Fighters", characters_path %>
+        |
+        <%= link_to "Add a Fighter", new_character_path %>
+        |
+        <%= link_to "Special Moves", specials_path %>
+        |
+        <%= link_to "Add a Special Move", new_special_path %>
+        |
+        <%= link_to "View the Games", games_path %>
+        |
+      </nav>
+    <hr>
+    <%= yield %>
+  </body>
+</html>

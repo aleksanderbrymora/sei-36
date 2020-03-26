@@ -2,13 +2,19 @@
 var checking_balance = 0;
 var savings_balance = 0;
 
+function ClearFields() {
 
+     document.getElementById("checking-amount").value = "";
+     document.getElementById("savings-amount").value = "";
+
+}
 
      $(document).ready(function() {
    $("#checking-deposit").click(function () {
        checking_balance = Number(checking_balance) + Number($("#checking-amount").val());
           $("#checking-balance").text(`$${checking_balance}`);
-          $('#checking-balance').css('background-color','grey');
+          $('#checking-balance').css('background-color','grey'); //.addClass("balance")
+          ClearFields();
 
     });
 
@@ -20,14 +26,22 @@ var savings_balance = 0;
        {
       checking_balance = Number(checking_balance) - Number($("#checking-amount").val());
        $("#checking-balance").text(`$${checking_balance}`);
+       ClearFields();
      }else if (current_checking_withdraw_amount <= Number(total_balance)) {
         savings_balance = Number(savings_balance) - (current_checking_withdraw_amount-checking_balance);
     checking_balance = 0;
 
         $("#checking-balance").text(`$${checking_balance}`);
        $("#savings-balance").text(`$${savings_balance}`);
+ClearFields();
+     }
+     else {
 
-     } if (Number(checking_balance) == 0)
+       $("<p> you have insufficient balance to do any further withdrawals </p>").appendTo(".clear");
+       ClearFields();
+       //$('<p>').removeClass("clear");
+     }
+     if (Number(checking_balance) == 0)
       {
       $('#checking-balance').css('background-color','red');
       }
@@ -41,6 +55,7 @@ var savings_balance = 0;
       savings_balance = Number(savings_balance) + Number($("#savings-amount").val());
          $("#savings-balance").text(`$${savings_balance}`);
          $('#savings-balance').css('background-color','grey');
+         ClearFields();
      });
 
      $("#savings-withdraw").click(function () {
@@ -50,12 +65,19 @@ var savings_balance = 0;
       {
      savings_balance = Number(savings_balance) - current_savings_withdraw_amount;
       $("#savings-balance").text(`$${savings_balance}`);
+      ClearFields();
     }else if (current_savings_withdraw_amount <= Number(total_balance)) {
        checking_balance = Number(checking_balance) - (current_savings_withdraw_amount-savings_balance);
    savings_balance = 0;
 
        $("#checking-balance").text(`$${checking_balance}`);
       $("#savings-balance").text(`$${savings_balance}`);
+      ClearFields();
+    }
+    else {
+
+      $("<p> **you have insufficient balance to do any further withdrawals </p>").appendTo(".clear");
+      ClearFields();
     }
     if (Number(savings_balance) == 0)
      {

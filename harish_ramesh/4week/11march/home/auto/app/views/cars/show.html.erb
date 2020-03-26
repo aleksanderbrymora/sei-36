@@ -1,0 +1,18 @@
+<h1><%= @car.name %></h1>
+
+<%= image_tag @car.image, :class => 'feature', :alt => @car.name %>
+
+<ul>
+  <li>Name: <%= @car.name %></li>
+  <% if @car.brand.present? %>
+    <li>Brand: <%= link_to @car.brand.name, @car.brand %></li>
+  <% end %>
+  <li>Style: <%= @car.style %></li>
+  <li>Power: <%= @car.power %></li>
+
+</ul>
+
+<div class="controls">
+  <%= link_to "Edit car", edit_car_path(@car) %>
+  <%= link_to "Delete car", @car, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

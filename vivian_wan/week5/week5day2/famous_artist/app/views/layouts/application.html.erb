@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FamousArtist</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+
+  <body>
+  <%= audio_tag 'smw_power-up_appears.wav', :controls => true %>
+
+    <div class="container">
+      <nav>
+        <%= link_to "Home", root_path %>
+        <%= link_to "New singer", new_singer_path %>
+      </nav>
+    <%= yield %>
+  </body>
+</html>

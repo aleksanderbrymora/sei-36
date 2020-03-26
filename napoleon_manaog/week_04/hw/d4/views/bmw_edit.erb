@@ -1,0 +1,8 @@
+<h3>Edit BMW</h3>
+<form action="/bmw/<%= @bmw["id"] %>" method="post">
+  <label>Model:  <input name="model"   placeholder="M3" value="<%= @bmw["model"] %>"required></label>
+  <label>Family: <input name="family"  placeholder="G80" value="<%= @bmw["family"] %>" required></label>
+  <label>Year:  <input name="year"     placeholder="2020" value="<%= @bmw["year"] %>" required></label>
+  <label>Image:  <input name="image"    placeholder="http://...." value="<%= @bmw["image"] %>" required></label>
+  <button>Update BMW</button>
+</form>

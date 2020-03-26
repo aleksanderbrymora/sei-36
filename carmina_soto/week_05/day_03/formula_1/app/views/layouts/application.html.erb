@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formula 1</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+    <h1><a href="/">2020 Formula 1 World Championship</a></h1>
+    <nav>
+      <ul>
+        <li><%= link_to 'Drivers', drivers_path %></li>
+        <li><%= link_to 'Add Driver', new_driver_path %></li>
+        <li><%= link_to 'Teams', teams_path %></li>
+        <li><%= link_to 'Add Team', new_team_path %></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<h1 class="content_title">LABELS</h1>
+<div class="index_container">
+  <div class="grid_wrapper">
+    <% @labels.each do |label| %>
+      <a href="/labels/<%= label.id %>">
+        <img class="grid_image" src="<%= label.image %>" alt="<%= label.name %> logo">
+        <h3 class="grid_title"><%= label.name %></h3>
+      </a>
+    <% end %>
+  </div>
+</div>

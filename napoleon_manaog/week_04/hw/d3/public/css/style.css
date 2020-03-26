@@ -1,0 +1,14 @@
+body {
+	background-color: rgb(0, 154, 218);
+}
+
+hr {
+border: none;
+border-top: 3px solid #dbdbdb;
+}
+
+a {
+	color: #c52b30;
+	/* text-shadow:  1px 1px #c52b30; */
+	text-shadow: 0 0 2px #FF0000
+}

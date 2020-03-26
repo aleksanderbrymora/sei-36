@@ -1,0 +1,47 @@
+
+body {
+background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  font-family:monospace;
+}
+
+input {
+  margin:10px;
+}
+
+img {
+  transition:transform .2s;
+
+}
+
+img:hover {
+  transform: scale(1.2);
+  box-shadow: 10px 10px 15px -10px;
+}
+
+button {
+  background: skyblue;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: .3s;
+  padding:5px 10px;
+}
+
+button:hover {
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+p {
+  margin-bottom: 60px;
+  font-size:14px;
+  /* text-align:center; */
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+main, header {
+  max-width: 960px;
+  margin: 0 auto;
+  // border: 2px solid black;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+h1, h2, h3 {
+  font-family:'Righteous', cursive;
+  text-align: center;
+}
+h1 a{
+  text-decoration: none;
+}
+h2, h3 {
+  margin-bottom: 20px;
+}
+nav {
+  text-align: center;
+  padding-top: 20px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a{
+  padding-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+img {
+  width: 100%;
+}
+p {
+  margin: 20px 0;
+  text-align: justify;
+}
+.wrapper {
+  display: inline-block;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.container{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 5px;
+}
+.container a{
+  text-decoration: none;
+}
+.driver, .team {
+  margin-top: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.driver:hover, .team:hover{
+  border: 2px solid black;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+.driver h3, .team h3 {
+  text-align: center;
+  padding: 12px
+}
+.driver img, .team img {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding-bottom: 10px
+}
+.flex {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.featured, .info {
+  flex-basis: 300px;
+}
+.featured {
+  max-width: 40%;
+}
+.info a, .button_to{
+  display: inline-block;
+}
+.info ul li {
+  list-style-type: none;
+}
+.info a, .featured {
+  text-decoration: none;
+}
+.featured p {
+  text-align: center;
+}
+.info .button_to {
+  padding: 10px 10px;
+}
+.btn-red {
+  background-color: white;
+  color: #dd3e3e;
+  border: 2px solid #dd3e3e;
+  padding: 5px;
+}
+.btn-red:hover {
+  background-color: #dd3e3e;
+  color: white;
+  border: 2px solid #dd3e3e;
+  padding: 5px;
+}
+form {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 5px;
+}
+label{
+  text-align:right;
+}
+input{
+  padding: 10px 20px 10px 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border: 1px solid #ccc;
+}
+.btn-blue {
+  background-color: white;
+  color: #3a67c9;
+  border: 2px solid #3a67c9;
+  padding: 5px;
+}
+.btn-blue:hover {
+  background-color: #3a67c9;
+  color: white;
+  border: 2px solid #3a67c9;
+  padding: 5px;
+}

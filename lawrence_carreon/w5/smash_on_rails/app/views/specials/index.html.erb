@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Index of Special Moves:</h2>
+
+    <% @characters.each do |fighter| %>
+        <div class="inner_container">
+        <h3><%= fighter.name %>:</h3>
+        <% @specials.each do |special| %>
+            <%= link_to image_tag(special.preview, :class => "special_select"), special if special.preview.present? && special.character.id == fighter.id %>  
+        <% end %>
+        </div>
+    <% end %>
+    <div class="inner_container">
+        <h3>No character:</h3>
+        <% @specials.each do |special| %>
+            <%= link_to image_tag(special.preview, :class => "special_select"), special if special.preview.present? && special.character.present? == false %>  
+        <% end %>
+    </div>
+</div>

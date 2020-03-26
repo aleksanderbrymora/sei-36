@@ -1,0 +1,10 @@
+<h2> Our Collection of Possums </h2>
+<% @possums.each do |possum| %>
+    <p>
+        <i class="fas fa-cloud" style="font-size:18px;color:wheat;"></i>
+            <a href="/possums/<%= possum.id %>">
+            <%= possum.name %>
+        </a>
+        <i class="fas fa-cloud" style="font-size:18px;color:wheat;"></i>
+    </p>
+<% end %>

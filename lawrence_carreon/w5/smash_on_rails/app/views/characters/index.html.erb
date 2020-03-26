@@ -1,0 +1,13 @@
+<h2>All Fighters</h2>
+
+<div class="character_index">
+    <% @characters.each do |character| %>
+        <%= link_to(character, :class => "char_index" ) do %>
+            <%= image_tag(character.stock_symbol, :class => "thumb") %>
+            <div class="char_hover">
+                Special move Preview:
+                <%= image_tag character.specials.sample.preview, :class => "index_preview" %>
+            </div>
+        <% end %>
+    <% end %>
+</div>

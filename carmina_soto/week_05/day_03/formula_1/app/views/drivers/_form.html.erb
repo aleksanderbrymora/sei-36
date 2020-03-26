@@ -1,0 +1,16 @@
+<div class="wrapper">
+<%= form_for @driver do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true, :autofocus => true %>
+  <%= f.label :team_id, "Team" %>
+  <%= f.select :team_id, Team.pluck(:name, :id), :include_blank => true %>
+  <%= f.label :country %>
+  <%= f.text_field :country %>
+  <%= f.label :podiums, 'Podium Wins' %>
+  <%= f.number_field :podiums%>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.submit :class => "btn-blue"%>
+<% end %>
+</div>

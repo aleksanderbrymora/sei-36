@@ -1,0 +1,38 @@
+<h2>Update Cricket Bat Records</h2>
+
+<form action="/cricket/<%= @cricket["id"] %>" method="post">
+  <label>
+    brand:
+    <input name="brand" placeholder="SS" required value="<%= @cricket["brand"] %>">
+  </label>
+
+  <label>
+    price in $:
+    <input name="price" placeholder="200" value="<%= @cricket["price"] %>">
+  </label>
+
+  <label>
+      size:
+    <input name="size" placeholder="junior" value="<%= @cricket["size"] %>">
+    </label>
+    <!-- <label for="Types">Bat size</label>
+    <select id="size">
+      <option value="JL">Junior level</option>
+      <option value="SL">Senior level</option>
+      </select> -->
+    <!-- <label for="Types">Bat Type</label>
+  <select id="Type">
+    <option value="EW">English Willow</option>
+    <option value="KW">Kashmir Willow</option>
+    </select> -->
+    <label>
+      Type:
+      <input name="tyoe" placeholder="junior" value="<%= @cricket["type"] %>">
+      </label>
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @cricket["image"] %>">
+  </label>
+
+  <button>Update Bats</button>
+</form>

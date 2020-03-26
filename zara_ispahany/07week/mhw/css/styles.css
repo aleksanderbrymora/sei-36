@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  letter-spacing: 0.5px;
+}
+
+form {
+  border: 0.2em solid #ccc;
+  border-radius: 1em;
+  box-shadow: 0 0 10px #ccc;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#armor-name {
+  height: 30px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  text-align: center;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+#search {
+  width: 70px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#search:hover {
+  box-shadow: 0 0 3px #ccc;
+}
+
+#imgs {
+  display: grid;
+  grid-gap: 40px;
+  grid-auto-flow: column;
+}
+
+header {
+  background-color: purple;
+}

@@ -1,0 +1,14 @@
+<%= form_for @director do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, :required => true, :autofocus => true %>
+<%= f.label :nationality %>
+<%= f.text_field :nationality, :required => true %>
+<%= f.label :born %>
+<%= f.text_field :born %>
+<%= f.label :died %>
+<%= f.text_field :died %>
+<%= f.label :image %>
+<%= f.url_field :image %>
+
+<%= f.submit %>
+<% end %>

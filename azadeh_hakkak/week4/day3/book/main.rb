@@ -16,6 +16,10 @@ begin
 rescue
   redirect to ('/')
 end
+<<<<<<< HEAD
+  @cover = @book_info["items"].first["volumeInfo"]["imageLinks"]["thumbnail"]
+=======
   @cover = @book_info["items"].first["volumeInfo"]["imagelinks"]["thumbnail"]
+>>>>>>> 3f21afbe276b4de1e287ccd29cf524a09882d5cb
   erb :result
 end

@@ -1,0 +1,13 @@
+<h2>All Drivers</h2>
+<div class="wrapper">
+<div class="container">
+<% @drivers.each do |driver| %>
+  <%= link_to driver_path(driver) do %>
+  <div class="driver">
+    <h3><%= driver.name %></h3>
+    <%= image_tag driver.image %>
+  </div>
+  <% end %>
+<% end %>
+</div>
+</div>

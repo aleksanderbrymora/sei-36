@@ -1,0 +1,21 @@
+<h2><%= @team.name %></h2>
+<div class="flex">
+    <% @team.drivers.each do |driver| %>
+      <%= link_to driver_path(driver), :class => 'featured' do %>
+        <div>
+          <%= image_tag driver.image if driver.image.present?%>
+          <p><%= driver.name %></p>
+        </div>
+      <% end %>
+    <% end %>
+  <div class="info">
+    <ul>
+      <li><%= image_tag @team.image %></li>
+      <li>Base: <%= @team.base %></li>
+      <li>Team Chief: <%= @team.chief %></li>
+      <li>World Championship Wins: <%= @team.world_champs %></li>
+    </ul>
+    <%= link_to 'Edit Team Profile', edit_team_path %>
+    <%= button_to 'Delete Team Profile', @team, :method => 'delete', :data => { :confirm => "Are you sure?"}, :class => "btn-red" %>
+  </div>
+</div>

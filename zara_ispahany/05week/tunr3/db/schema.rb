@@ -23,10 +23,10 @@ ActiveRecord::Schema.define(version: 2020_03_12_234638) do
   end
 
   create_table "artists", force: :cascade do |t|
-    t.text "name"
     t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "name"
   end
 
   create_table "genres", force: :cascade do |t|

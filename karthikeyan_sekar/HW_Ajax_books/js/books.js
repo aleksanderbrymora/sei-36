@@ -15,11 +15,9 @@ const fetchFact = function () {
 
     const q = document.createElement('p');
     q.innerHTML = data.items[0].volumeInfo.description;
-
     const r = document.createElement('img');
     r.src = data.items[0].volumeInfo.imageLinks.thumbnail;
-
-
+    
     document.body.appendChild(p);
     document.body.appendChild(q);
     document.body.appendChild(r);

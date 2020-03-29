@@ -1,0 +1,8 @@
+<h2>All Cricket Bats</h2>
+<% @bats.each do |x| %>
+<p>
+  <a href="/cricket/<%= x["id"] %>">
+    <%= x["brand"] %>
+</a>
+  </p>
+<% end %>

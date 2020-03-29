@@ -1,0 +1,17 @@
+<h1>Edit Shoes</h1>
+
+<form action="/shoes/<%= @shoe.id %>" method="post">
+	<label for="">
+		Brand:
+		<input name="brand" placeholder="Shoe Brand" required value=" <%= @shoe.brand %>">
+	</label>
+	<label for="">
+		Type:
+		<input name="kind" placeholder="Type of shoe" value=" <%= @shoe.kind %>">
+	</label>
+	<label for="">
+		Image
+		<input name="image" placeholder="Image of shoe" value=" <%= @shoe.image %>">
+	</label>
+	<button>Edit Shoe</button>
+</form>

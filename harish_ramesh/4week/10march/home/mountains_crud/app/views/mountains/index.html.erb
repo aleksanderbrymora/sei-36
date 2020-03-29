@@ -1,0 +1,9 @@
+<h2>List of Mountains</h2>
+
+<% @mountains.each do |hill| %>
+  <p>
+    <%= link_to hill.name, mountain_path(hill.id) %>
+    is in
+    <%= hill.country %>
+  </p>
+<% end %>

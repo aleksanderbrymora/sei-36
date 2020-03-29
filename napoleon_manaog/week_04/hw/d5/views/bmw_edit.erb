@@ -1,0 +1,15 @@
+<h3>Edit BMW</h3>
+<form action="/bmw/<%= @bmw["id"] %>" method="post">
+  <label>Model:  <input name="model"   placeholder="M3" value="<%= @bmw["model"] %>"required></label>
+  <label>Family:
+    <select name="family_id">
+      <option></option>
+      <% Family.all.each do |family| %>
+        <option value="<%= family.id  %>" <%= "selected" if family.id == @bmw.family_id %>> <%= family.name %></option>
+      <% end %>
+    </select>
+  </label>
+  <label>Year:  <input name="year"     placeholder="2020" value="<%= @bmw["year"] %>" required></label>
+  <label>Image:  <input name="image"    placeholder="http://...." value="<%= @bmw["image"] %>" required></label>
+  <button>Update BMW</button>
+</form>

@@ -1,0 +1,16 @@
+<div class="wrapper">
+<%= form_for @team do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true, :autofocus => true %>
+  <%= f.label :base %>
+  <%= f.text_field :base %>
+  <%= f.label :chief, 'Team Chief' %>
+  <%= f.text_field :chief %>
+  <%= f.label :world_champs, 'World Championship Wins' %>
+  <%= f.number_field :world_champs%>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.submit :class => "btn-blue" %>
+<% end %>
+</div>

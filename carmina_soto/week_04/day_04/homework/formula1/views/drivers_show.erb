@@ -1,12 +1,9 @@
 <h2><%= @driver["name"] %></h2>
-<% unless @team.nil? || @team.empty? %>
-  <h3>Team: <a href="/teams/<%= @team["id"] %>"><%= @driver["team"] %></a></h3>
-<% else %>
-  <h3>Team: <%= @driver["team"] %></h3>
-<% end %>
+<h2>Team: <a href="/teams/<%= @driver.team.id %>"><%= @driver.team.name %></a></h2>
+
 <div class="profile">
 <a href="/drivers/<%= @driver["id"] %>/edit">Edit Profile</a> <a href="/drivers/<%= @driver["id"] %>/delete">Delete Profile</a>
-<p>Number of podium wins: <%= @driver["podiums"] %></p>
+<p>Number of podium wins: <%= @driver.podiums %></p>
 
 <% unless @driver["image"].nil? || @driver["image"].empty? %>
   <img src="<%= @driver["image"] %>" alt="<%= @driver["name"] %>">

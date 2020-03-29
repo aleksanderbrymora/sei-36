@@ -2,8 +2,3 @@
 <h3>Base: <%= @team["base"] %></h3>
 
 <p>World Championships: <%= @team["world_champ"] %></p>
-
-<p>Drivers:</p>
-<% @drivers.each do |driver| %>
-  <p><a href="/drivers/<%= driver["id"] %>"> <%= driver["name"] %></a></p>
-<% end %>

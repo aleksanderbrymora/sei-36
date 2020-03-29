@@ -1,0 +1,39 @@
+<h2>New Mountain</h2>
+
+<form class="form" action="<%= mountains_path %>" method="post">
+  <label>
+    Name
+    <input type="text" name="name" placeholder="Mount Kosciuszko" required>
+  </label>
+
+  <label>
+    Image
+    <input type="url" name="image" >
+  </label>
+
+  <label>
+    Location
+    <input type="text" name="location" >
+  </label>
+
+  <label>
+    Elevation
+    <input type="number" name="elevation" >
+  </label>
+
+  <label>
+    Year of First Ascent
+    <input type="number" name="first_ascent" >
+  </label>
+
+  <label>
+    First Ascender
+    <input type="text" name="first_ascender">
+  </label>
+
+  <label>
+    Google Rating
+    <input type="number" name="google_rating" >
+  </label>
+  <button class="form_button">Create Mountain</button>
+</form>

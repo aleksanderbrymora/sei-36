@@ -1,0 +1,23 @@
+<div class="uk-section uk-section-default">
+    <div class="uk-container">
+
+        <h2>Blog posts by <%= params[:username] %></h2>
+
+        <% @blog_posts.each do |post| %>
+            <h3><a href="/blog/<%= params[:username] %>/<%= post.id %>"><%= post["title"]  %></a></h3>
+        <p><%= post["post"] %>
+        </p>
+        <small>Posted: <%= post["date"]  %></small>
+
+        <% if session["user_id"] %>
+            <span class="uk-label uk-label-danger"><a class="uk-link-text uk-text-bold" href="/blog/<%= params[:username] %>/<%= post["id"] %>/delete" uk-tooltip="This can not be undone!">Delete</a>
+            </span>
+            <span class="uk-label"><a class="uk-link-text uk-text-bold" href="/blog/<%= params[:username] %>/<%= post["id"] %>/edit" uk-tooltip="">Edit</a>
+            </span>
+        <% end %>
+        
+        <% end %>
+        
+    </div>
+    <div class="uk-container uk-margin-large-top"><a href="/blog">Return</a></div>
+</div>

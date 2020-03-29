@@ -1,0 +1,11 @@
+<h2>All Socks</h2>
+
+<% @socks.each do |sock|  %>
+
+<p>
+	<a href="/socks/<%= sock.id %>">
+   <%= sock.kind %>
+	 </a>
+</p>
+
+<% end %>

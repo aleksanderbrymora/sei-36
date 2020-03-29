@@ -1,0 +1,30 @@
+<h2>Edit Author</h2>
+
+<form action="/authors/<%= @author[:id] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="James Joyes" required value="<%= @author[:name] %>">
+  </label>
+
+  <label>
+    Born:
+    <input name="born" type="number" placeholder="1933" value="<%= @author[:born] %>">
+  </label>
+
+  <label>
+    Died:
+    <input name="died" type="number" placeholder="1977" value="<%= @author[:died] %>">
+  </label>
+
+  <label>
+    Genre:
+    <input name="genre" placeholder="fiction" required value="<%= @author[:genre] %>">
+  </label>
+
+  <label>
+    Image:
+    <input name="image" type="url" placeholder="http://..." value="<%= @author[:image] %>">
+  </label>
+
+  <button>Save</button>
+</form>

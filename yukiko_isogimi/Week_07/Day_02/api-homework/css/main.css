@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,70");
+
+body {
+  font-family: 'Dosis';
+  margin:0;
+  padding:0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box1 {
+  background: linear-gradient(180deg, #ed4264, #ffedbc);
+  height:100%;
+
+}
+
+.box2 {
+
+  background: linear-gradient(180deg, #021b79, #0575e6);
+}
+
+.box3 {
+  background: linear-gradient(180deg, #be93c5, #7bc6cc);
+
+}

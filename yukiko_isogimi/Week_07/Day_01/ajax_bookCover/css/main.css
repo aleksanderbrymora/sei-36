@@ -3,6 +3,9 @@ body {
 background: #FC466B;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-shadow: 2px 0px 0px rgba(0, 188, 188, 0.75);
+color:floralwhite;
+
 
 }
 
@@ -13,6 +16,8 @@ background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, F
   align-items: center;
   min-height: 100vh;
   font-family:monospace;
+  text-align: center;
+  font-size: 20px;
 }
 
 input {
@@ -21,6 +26,7 @@ input {
 
 img {
   transition:transform .2s;
+  height:400px;
 
 }
 
@@ -42,6 +48,8 @@ button:hover {
 
 p {
   margin-bottom: 60px;
-  font-size:14px;
+  font-size:46px;
+  text-shadow: 2px 0px 0px rgba(0, 188, 188, 0.75);
+  color:floralwhite;
   /* text-align:center; */
 }

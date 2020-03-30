@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 #body_container {
@@ -21,19 +21,21 @@ h1 {
 
 #scroll_container {
   padding: 1em;
-  overflow-y: auto;
+  height: 60vh;
+  width: 90vw;
+  overflow-y: scroll;
   background-color: #FFFFFF;
   box-shadow: 0 0.2em 0.2em rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 #log_container {
   margin-bottom: 1em;
-  height: 55vh;
-  width: 90vw;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  overflow-y: auto;
+  justify-content: flex-end; */
 }
 
 #button_container {

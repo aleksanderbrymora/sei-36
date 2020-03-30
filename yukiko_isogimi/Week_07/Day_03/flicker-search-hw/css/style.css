@@ -1,0 +1,48 @@
+body > div#images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    width: 22%;
+    margin: 1rem;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 1rem;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5rem black;
+}
+
+#gotop{
+	display:block;
+	width:60px;
+	height:60px;
+	position:fixed;
+	bottom:50px;
+	right:40px;
+	border-radius:10px 10px 10px 10px;
+	text-decoration:none;
+	display:none;
+	background-color:#999999;
+}
+
+#gotop span{
+	display:block;
+	width:60px;
+    color:#dddddd;
+    font-size:40px;
+	text-align:center;
+	margin-top:4px;
+}
+
+#gotop span:hover{
+	color:#cccccc;
+}

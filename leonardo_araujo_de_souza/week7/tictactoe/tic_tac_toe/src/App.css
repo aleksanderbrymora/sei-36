@@ -1,0 +1,84 @@
+
+
+
+body {
+background-color: rgb(114, 254, 216);
+
+}
+.square {
+  
+  border: 1px solid rgb(138,43,226);
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  line-height: 80px;
+  height: 80px;
+  display: inline-block;
+    text-decoration: none;
+    color:rgb(50,205,50);
+    font-weight: bold;
+    background-color: rgb(138,43,226);
+    margin: 10px;
+    border: 1px solid #2d6898;
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(138,43,226))),
+        color-stop(1,  rgb(138,43,226)))
+    );
+    
+ 
+ }
+ .square:active {
+  background-image: linear-gradient(bottom,  rgb(138,43,226) 0%,  rgb(138,43,226) 100%);
+  background-image: -o-linear-gradient(bottom,  rgb(138,43,226) 0%,  rgb(138,43,226) 100%);
+  background-image: -moz-linear-gradient(bottom,  rgb(138,43,226) 0%,  rgb(138,43,226) 100%);
+  background-image: -webkit-linear-gradient(bottom,  rgb(138,43,226) 0%,  rgb(138,43,226) 100%);
+  
+ 
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(138,43,226)),
+      color-stop(1, rgb(90,150,199))
+  );
+ }
+ 
+ 
+ /* Board */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+  
+ }
+ /* Game */
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;  
+ }
+ /* Game Info */
+ul {
+  padding-left: 30px;
+ }
+ .game-info {
+  margin-left: 30px;
+  background-color: rgb(242, 215, 196);
+ }
+ .status {
+  margin-bottom: 10px;
+ }
+ 

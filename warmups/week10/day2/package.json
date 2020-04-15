@@ -1,0 +1,15 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "description": "1. Write a function to reverse a string. 1. Write function to print the odd numbers from 1 to 99. 1. Find the largest int value in an int array. 1. Write function to compute Nth fibonacci number.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}

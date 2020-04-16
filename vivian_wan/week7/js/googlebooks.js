@@ -16,14 +16,39 @@ const book = function () {
         t.innerHTML = booktitle;
         document.body.appendChild(t);
 
-        const img = document.createElement("img");
+        const img = document.createElement("img");$(document).ready(function () {
+  $('form').on('submit', function (event) {
+    event.preventDefault();
+
+    const bookTitle = $('#book_title').val();
+    const url = `https://www.googleapis.com/books/v1/volumes?q=title:${ bookTitle }`;
+    $.ajax(url).done(function (data) {
+      const cover = data.items[0].volumeInfo.imageLinks.thumbnail;
+      $('#cover').attr('src', cover);
+    }).fail(function () {
+      alert('Something bad happen');
+    })
+  });
+});
         img.src = bookStory;
         document.body.appendChild(img);
 
         const a = document.createElement('p');
         a.innerHTML = bookauthor;
         document.body.appendChild(a);
-        };
+        };const generateURL = function (p) {
+            return [
+              'http://farm',
+              p.farm,
+              '.static.flickr.com/',
+              p.server,
+              '/',
+              p.id,
+              '_',
+              p.secret,
+              '_q.jpg' // Change this to something else for different sizes (see docs)
+            ].join('');
+          }
     };
 
     document.getElementById('bookinfo').addEventListener('click', book);

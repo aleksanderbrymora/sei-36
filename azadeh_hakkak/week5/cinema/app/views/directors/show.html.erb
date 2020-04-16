@@ -1,0 +1,13 @@
+<h1><%= @director.name %></h1>
+
+<%= image_tag @director.image, :class => 'feature' if @director.image.present? %>
+<ul>
+  <li>Nationality: <%= @director.nationality %></li>
+  <li>Born: <%= @director.born if @director.born.present? %></li>
+  <li>Died: <%= @director.died if @director.died.present? %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to "Edit #{ @director.name }", @director %>
+  <%= button_to "Delete #{ @director.name }", @director, :method => 'delete' %>
+</div>

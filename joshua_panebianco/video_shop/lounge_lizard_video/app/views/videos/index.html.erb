@@ -1,0 +1,10 @@
+<h1>All Videos</h1>
+<!-- <p>Find me in app/views/videos/index.html.erb</p> -->
+
+<% @videos.each do |video| %>
+  <%= image_tag video.image, :class => 'thumb' if video.image.present?%>
+
+	<li>Title <%= link_to video.title, video %></li>
+	<li>Date <%= video.date %></li>
+	<li>Director <%= video.director %></li>
+<% end %>

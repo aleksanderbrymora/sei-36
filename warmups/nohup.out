@@ -1,0 +1,794 @@
+ZoomLauncher started.
+cmd line: 
+CreateReportChannel bp_server_fd=4
+$HOME = /home/aleks 
+export SSB_HOME=/home/aleks/.zoom; export QSG_INFO=1; export LD_LIBRARY_PATH=/opt/zoom; export BREAKPAD_CLIENT_FD=3; /opt/zoom/zoom "" 
+zoom started.
+[CZPClientLogMgr::LogClientEnvironment] [MacAddr: C0:25:E9:24:53:CC][client: Linux][OS: Ubuntu 18.04.4 LTS][Hardware: CPU Core:4 Frenquency:3.6 G Memory size:32077MB CPU Brand:Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz GPU Brand:][Req ID: ]
+Linux Client Version is 3.5.361976.0301
+QSG_RENDER_LOOP is 
+XDG_CURRENT_DESKTOP = KDE;   GDMSESSION = 
+
+(slack:11536): Gtk-WARNING **: 19:07:06.030: Theme parsing error: gtk.css:68:35: The style property GtkButton:child-displacement-x is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(slack:11536): Gtk-WARNING **: 19:07:06.030: Theme parsing error: gtk.css:69:35: The style property GtkButton:child-displacement-y is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(slack:11536): Gtk-WARNING **: 19:07:06.030: Theme parsing error: gtk.css:73:46: The style property GtkScrolledWindow:scrollbars-within-bevel is deprecated and shouldn't be used anymore. It will be removed in a future version
+Graphics Card Info:: 08:00.0 VGA compatible controller: NVIDIA Corporation GP106GL [Quadro P2000] (rev a1)
+Zoom package arch is 64bit, runing OS arch is x86_64
+Initializing local storage instance at path: /home/aleks/.config/Slack/local-settings.json
+qt.scenegraph.general: threaded render loop
+qt.scenegraph.general: Using sg animation driver
+qt.scenegraph.general: Animation Driver: using vsync: 16.95 ms
+qt.svg: link image0 hasn't been detected!
+Client: Breakpad is using Client-Server Mode! client fd = 3
+AppIconMgr::systemDesktopName log Desktop Name: plasma 
+Error: Send error, 22 Invalid argument
+Error: Send error, 22 Invalid argument
+Error: Send error, 22 Invalid argument
+qt.svg: :/images/wechat.svg:10:6: Could not resolve property: pattern0
+qt.scenegraph.general: Using sg animation driver
+qt.scenegraph.general: Animation Driver: using vsync: 16.95 ms
+Creating Slack Application
+qt.scenegraph.general: texture atlas dimensions: 1024x512
+qt.scenegraph.general: R/G/B/A Buffers:    8 8 8 8
+qt.scenegraph.general: Depth Buffer:       24
+qt.scenegraph.general: Stencil Buffer:     8
+qt.scenegraph.general: Samples:            -1
+qt.scenegraph.general: GL_VENDOR:          NVIDIA Corporation
+qt.scenegraph.general: GL_RENDERER:        Quadro P2000/PCIe/SSE2
+qt.scenegraph.general: GL_VERSION:         4.6.0 NVIDIA 435.21
+qt.scenegraph.general: GL_EXTENSIONS:      GL_NV_shader_atomic_float64 GL_ARB_gpu_shader5 GL_NV_fragment_program GL_ARB_tessellation_shader GL_ARB_texture_compression_rgtc GL_EXT_separate_shader_objects GL_ARB_texture_filter_anisotropic GL_ARB_texture_env_add GL_SGIX_depth_texture GL_NV_shader_atomic_counters GL_NV_stereo_view_rendering GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_fragment_shader_interlock GL_IBM_rasterpos_clip GL_ARB_transpose_matrix GL_NV_fragment_coverage_to_color GL_NV_geometry_shader4 GL_NV_viewport_array2 GL_KHR_shader_subgroup GL_NV_sample_locations GL_NV_query_resource GL_ARB_occlusion_query2 GL_ARB_fragment_program GL_ARB_shader_texture_image_samples GL_ARB_draw_elements_base_vertex GL_SUN_slice_accum GL_NV_texture_rectangle_compressed GL_EXT_multi_draw_arrays GL_ARB_stencil_texturing GL_ARB_clear_texture GL_NV_vertex_array_range GL_ARB_shader_image_load_store GL_NV_texture_shader3 GL_ARB_texture_border_clamp GL_ARB_cull_distance GL_EXT_secondary_color GL_ARB_transform_feedback_instanced GL_NV_fragment_program2 GL_ARB_direct_state_access GL_ARB_framebuffer_sRGB GL_ARB_shader_ballot GL_ARB_multi_bind GL_ARB_texture_query_levels GL_NV_shader_atomic_fp16_vector GL_EXT_packed_depth_stencil GL_ARB_vertex_type_2_10_10_10_rev GL_NV_float_buffer GL_NV_feature_query GL_ARB_draw_buffers_blend GL_EXT_framebuffer_sRGB GL_EXT_draw_instanced GL_ARB_transform_feedback2 GL_ARB_clear_buffer_object GL_NV_texture_multisample GL_ARB_texture_mirror_clamp_to_edge GL_ARB_derivative_control GL_NV_draw_texture GL_EXT_texture_array GL_ARB_shading_language_420pack GL_ARB_texture_swizzle GL_ARB_shader_storage_buffer_object GL_ARB_transform_feedback3 GL_ARB_half_float_pixel GL_ARB_copy_buffer GL_ARB_multitexture GL_EXT_bindable_uniform GL_EXT_memory_object_fd GL_NV_blend_square GL_ARB_texture_cube_map_array GL_ARB_ES3_2_compatibility GL_ARB_ES3_1_compatibility GL_EXT_separate_specular_color GL_ARB_spirv_extensions GL_NV_memory_attachment GL_EXT_texture_mirror_clamp GL_EXT_texture_cube_map GL_ARB_shader_atomic_counter_ops GL_ARB_compressed_texture_pixel_storage GL_NV_path_rendering_shared_edge GL_NV_texture_compression_vtc GL_ARB_shading_language_packing GL_NV_texture_shader GL_ARB_draw_instanced GL_ARB_texture_non_power_of_two GL_ARB_shader_group_vote GL_NV_vertex_program1_1 GL_ARB_occlusion_query GL_NV_gpu_program4_1 GL_ARB_bindless_texture GL_NV_framebuffer_multisample_coverage GL_ARB_sampler_objects GL_ARB_compute_variable_group_size GL_NV_vertex_buffer_unified_memory GL_EXT_shader_image_load_store GL_ARB_texture_rgb10_a2ui GL_NV_gpu_program_fp64 GL_ARB_blend_func_extended GL_NV_register_combiners GL_NV_parameter_buffer_object GL_NV_texture_env_combine4 GL_NV_texture_shader2 GL_EXT_texture_filter_minmax GL_ARB_post_depth_coverage GL_ARB_half_float_vertex GL_NV_shader_storage_buffer_object GL_NV_vertex_array_range2 GL_EXT_raster_multisample GL_ARB_geometry_shader4 GL_ARB_timer_query GL_NV_texture_rectangle GL_NV_half_float GL_ARB_shader_precision GL_NVX_nvenc_interop GL_EXT_framebuffer_multisample GL_NV_shader_thread_group GL_ARB_transform_feedback_overflow_query GL_ARB_texture_mirrored_repeat GL_ARB_ES2_compatibility GL_ARB_framebuffer_no_attachments GL_EXT_blend_subtract GL_EXT_rescale_normal GL_ARB_shader_viewport_layer_array GL_ARB_vertex_buffer_object GL_ARB_shadow GL_EXT_memory_object GL_NV_packed_depth_stencil GL_SGIS_texture_lod GL_ARB_robustness GL_NV_vdpau_interop GL_NV_fragment_program_option GL_EXT_Cg_shader GL_ARB_texture_storage_multisample GL_ARB_texture_env_dot3 GL_NV_framebuffer_mixed_samples GL_EXT_draw_range_elements GL_KHR_debug GL_NV_point_sprite GL_NV_transform_feedback2 GL_ARB_invalidate_subdata GL_AMD_vertex_shader_viewport_index GL_EXT_bgra GL_SGIX_shadow GL_ARB_vertex_attrib_binding GL_ARB_explicit_attrib_location GL_EXT_gpu_program_parameters GL_NV_texture_barrier GL_EXT_point_parameters GL_EXT_vertex_array GL_NV_gpu_multicast GL_KHR_no_error GL_NV_vdpau_interop2 GL_ARB_multi_draw_indirect GL_EXT_blend_func_separate GL_EXT_texture_env_dot3 GL_NV_bindless_multi_draw_indirect GL_ARB_polygon_offset_clamp GL_AMD_seamless_cubemap_per_texture GL_ARB_color_buffer_float GL_ARB_texture_float GL_KHR_parallel_shader_compile GL_S3_s3tc GL_ARB_internalformat_query2 GL_KHR_blend_equation_advanced GL_ARB_texture_buffer_object GL_EXT_sparse_texture2 GL_ARB_indirect_parameters GL_ARB_debug_output GL_NV_clip_space_w_scaling GL_NV_depth_buffer_float GL_EXT_vertex_array_bgra GL_NV_register_combiners2 GL_ARB_point_parameters GL_EXT_texture_sRGB_decode GL_EXT_multiview_timer_query GL_ARB_depth_texture GL_ARB_texture_stencil8 GL_ARB_texture_filter_minmax GL_ARB_vertex_array_bgra GL_EXT_compiled_vertex_array GL_NV_bindless_multi_draw_indirect_count GL_ARB_program_interface_query GL_NV_blend_minmax_factor GL_ARB_sync GL_EXT_packed_float GL_ARB_framebuffer_object GL_IBM_texture_mirrored_repeat GL_ARB_shading_language_include GL_ARB_depth_buffer_float GL_NVX_conditional_render GL_NVX_progress_fence GL_ARB_compatibility GL_ARB_get_program_binary GL_NV_shader_thread_shuffle GL_NV_explicit_multisample GL_EXT_texture_sRGB_R8 GL_ARB_pipeline_statistics_query GL_ARB_vertex_program GL_NV_command_list GL_NV_fill_rectangle GL_NV_gpu_program4 GL_ARB_shader_image_size GL_EXT_texture_integer GL_ARB_texture_storage GL_NV_parameter_buffer_object2 GL_EXT_texture_env_combine GL_NV_conservative_raster_dilate GL_NV_fragment_shader_interlock GL_EXT_window_rectangles GL_ARB_vertex_array_object GL_OVR_multiview GL_ARB_arrays_of_arrays GL_ARB_compute_shader GL_NV_viewport_swizzle GL_NV_copy_depth_to_color GL_ARB_texture_cube_map GL_EXT_transform_feedback2 GL_NV_vertex_program2_option GL_EXT_framebuffer_multisample_blit_scaled GL_NV_light_max_exponent GL_NV_conservative_raster_pre_snap_triangles GL_ARB_shader_subroutine GL_EXTX_framebuffer_mixed_formats GL_ARB_texture_compression GL_EXT_texture_swizzle GL_ARB_texture_buffer_object_rgb32 GL_ARB_shader_clock GL_EXT_abgr GL_NV_geometry_shader_passthrough GL_EXT_blend_color GL_ARB_texture_env_crossbar GL_NV_occlusion_query GL_NV_texgen_reflection GL_NV_conditional_render GL_NV_vertex_program GL_NV_transform_feedback GL_ARB_explicit_uniform_location GL_NV_vertex_program2 GL_NV_deep_texture3D GL_ARB_conditional_render_inverted GL_KHR_robust_buffer_access_behavior GL_ATI_texture_float GL_ARB_sparse_texture2 GL_ARB_sample_locations GL_ARB_pixel_buffer_object GL_EXT_import_sync_object GL_ARB_shader_objects GL_ARB_sample_shading GL_ARB_ES3_compatibility GL_NV_alpha_to_coverage_dither_control GL_KHR_robustness GL_ARB_cl_event GL_ARB_texture_query_lod GL_EXT_texture_storage GL_NV_copy_image GL_EXT_polygon_offset_clamp GL_EXT_texture_object GL_NV_shader_atomic_int64 GL_ARB_point_sprite GL_ARB_fragment_program_shadow GL_ARB_shader_texture_lod GL_NV_shader_subgroup_partitioned GL_NVX_gpu_memory_info GL_ARB_sparse_texture GL_NV_path_rendering GL_ARB_multisample GL_NV_fog_distance GL_ARB_imaging GL_EXT_provoking_vertex GL_EXT_texture_env_add GL_NV_gpu_shader5 GL_KTX_buffer_region GL_ARB_instanced_arrays GL_EXT_semaphore_fd GL_EXT_gpu_shader4 GL_EXT_texture_shared_exponent GL_EXT_fog_coord GL_NV_multisample_filter_hint GL_ARB_texture_view GL_ARB_separate_shader_objects GL_ARB_gpu_shader_int64 GL_EXT_shader_image_load_formatted GL_EXT_stencil_two_side GL_EXT_draw_buffers2 GL_NV_depth_clamp GL_NV_gpu_program5 GL_NV_sample_mask_override_coverage GL_ARB_texture_multisample GL_ARB_texture_env_combine GL_ARB_texture_rectangle GL_ATI_texture_mirror_once GL_ARB_map_buffer_range GL_ARB_viewport_array GL_NV_compute_program5 GL_EXT_pixel_buffer_object GL_ARB_sparse_buffer GL_ARB_fragment_coord_conventions GL_EXT_x11_sync_object GL_EXT_texture3D GL_ARB_conservative_depth GL_ATI_draw_buffers GL_ARB_draw_indirect GL_AMD_vertex_shader_layer GL_ARB_shader_atomic_counters GL_ARB_copy_image GL_NV_draw_vulkan_image GL_SGIS_generate_mipmap GL_ARB_parallel_shader_compile GL_ARB_vertex_attrib_64bit GL_ARB_provoking_vertex GL_EXT_texture_lod_bias GL_EXT_blend_minmax GL_ARB_sparse_texture_clamp GL_ARB_robust_buffer_access_behavior GL_KHR_blend_equation_advanced_coherent GL_ARB_gl_spirv GL_ARB_seamless_cubemap_per_texture GL_ARB_shader_bit_encoding GL_ARB_uniform_buffer_object GL_NV_robustness_video_memory_purge GL_NV_pixel_data_range GL_NV_blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_EXT_depth_bounds_test GL_ARB_query_buffer_object GL_EXT_texture_edge_clamp GL_EXT_blend_equation_separate GL_EXT_semaphore GL_NV_vertex_attrib_integer_64bit GL_ARB_shading_language_100 GL_ARB_gpu_shader_fp64 GL_EXT_stencil_wrap GL_ARB_window_pos GL_NV_gpu_program5_mem_extended GL_NV_uniform_buffer_unified_memory GL_ARB_seamless_cube_map GL_EXT_timer_query GL_ARB_map_buffer_alignment GL_EXT_texture_filter_anisotropic GL_ARB_texture_rg GL_NV_fence GL_ARB_get_texture_sub_image GL_NV_conservative_raster GL_ARB_internalformat_query GL_EXT_multiview_texture_multisample GL_ARB_texture_gather GL_EXT_texture_lod GL_EXT_vertex_attrib_64bit GL_EXT_shadow_funcs GL_ARB_clip_control GL_OVR_multiview2 GL_EXT_packed_pixels GL_EXT_framebuffer_object GL_EXT_shader_integer_mix GL_EXT_geometry_shader4 GL_KHR_context_flush_control GL_EXT_texture_compression_dxt1 GL_EXT_texture_sRGB GL_NV_vertex_program3 GL_EXT_framebuffer_blit GL_ARB_draw_buffers GL_NV_multisample_coverage GL_EXT_direct_state_access GL_NV_blend_equation_advanced GL_ARB_depth_clamp GL_ARB_base_instance GL_ARB_enhanced_layouts GL_EXT_texture_compression_rgtc GL_ARB_texture_barrier GL_ARB_fragment_layer_viewport GL_ARB_fragment_shader GL_ARB_vertex_shader GL_NV_primitive_restart GL_NV_query_resource_tag GL_EXT_multiview_tessellation_geometry_shader GL_ARB_shader_draw_parameters GL_EXT_post_depth_coverage GL_NV_shader_atomic_float GL_ARB_texture_buffer_range GL_EXT_texture_buffer_object GL_EXT_texture_compression_s3tc GL_NV_ES3_1_compatibility GL_NV_bindless_texture GL_EXT_texture_compression_latc GL_NV_ES1_1_compatibility GL_ARB_buffer_storage GL_NV_internalformat_sample_query GL_AMD_multi_draw_indirect GL_ARB_texture_compression_bptc GL_NV_shader_buffer_load
+qt.scenegraph.general: Max Texture Size:  32768
+qt.scenegraph.general: Debug context:     false
+(electron) 'setUserAgent function' is deprecated and will be removed. Please use 'userAgent property' instead.
+(electron) 'setAutoHideMenuBar function' is deprecated and will be removed. Please use 'autoHideMenuBar property' instead.
+(electron) 'setZoomLevel function' is deprecated and will be removed. Please use 'zoomLevel property' instead.
+qt.scenegraph.general: Using sg animation driver
+qt.scenegraph.general: Animation Driver: using vsync: 16.95 ms
+qt.scenegraph.general: texture atlas dimensions: 512x1024
+[04/18/20, 19:07:08:930] info: 
+╔════════════════════════════════════════════════════════════════════════════════╗
+║      Slack 4.4.2, linux 5.3.0-26-generic on x64 at 04/18/20, 19:07:08:930      ║
+╚════════════════════════════════════════════════════════════════════════════════╝ 
+[04/18/20, 19:07:08:930] info: Configured logger via 
+{
+  "identifierOverride": "webapp-console",
+  "logLevel": "info",
+  "numberOfInstances": 2
+}
+[04/18/20, 19:07:08:931] info: Predefined values for process 
+{
+  "NODE_ENV": "production",
+  "platform": "linux",
+  "type": "browser",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.4.2",
+  "PACKAGE_MANIFEST.commit": "f6f39f2",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[04/18/20, 19:07:08:931] info: toggleAutoSpellcheck:: desktop interface is not available 
+[04/18/20, 19:07:08:931] info: Current locale is same as new locale specified, skipping {
+  "locale": "en-US",
+  "current": "en-US"
+} 
+[04/18/20, 19:07:08:931] info: Creating desktop interface object 
+[04/18/20, 19:07:08:931] info: Exposing context bridge 
+[04/18/20, 19:07:08:932] info: Main window preload script finished {
+  "readyTime": 38.324627
+} 
+[04/18/20, 19:07:08:932] info: Store: UPSERT_WEB_CONTENTS {
+  "id": 1,
+  "state": "loaded"
+} 
+[04/18/20, 19:07:08:932] info: Store: MAIN_WINDOW_SHOWN  
+[04/18/20, 19:07:08:932] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 864,
+      "width": 1024,
+      "x": 2744,
+      "y": 218
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[04/18/20, 19:07:08:932] info: Store: CLEAR_NOTIFICATIONS  
+[04/18/20, 19:07:08:932] info: create: creating new instance of cld3 {
+  "minBufferLength": 140,
+  "maxBufferLength": 1000
+} 
+[04/18/20, 19:07:08:932] info: cld3::loadModule: loading cld3 wasm binary {
+  "initOptions": {}
+} 
+[04/18/20, 19:07:08:932] info: cld3Loader::loadModule: constructed module object for runtime 
+[04/18/20, 19:07:08:933] info: [METRICS] Starting timers for metrics collection 
+[04/18/20, 19:07:08:933] info: [PERF] setupGantry_w begin 444ms 
+[04/18/20, 19:07:08:933] info: [APP] client 
+[04/18/20, 19:07:08:933] info: [DATE/TIME] 1587200827220 "2020-04-18T09:07:07.220Z" 
+[04/18/20, 19:07:08:933] info: [VERSION] version_hash: 83f9c9fff76fb9fca2c534950ec7b0b145f978a5 
+[04/18/20, 19:07:08:933] info: [VERSION] version_ts: 1587165016 
+[04/18/20, 19:07:08:933] info: [VERSION] min_version_data_ts: 1581290339 
+[04/18/20, 19:07:08:933] info: [AUTH] authCookieChanged: started listening to the event 
+[04/18/20, 19:07:08:934] warn: [AUTH] lc cookie (NaN) is missing 
+[04/18/20, 19:07:08:934] info: [AUTH] Credentials are fresh (psc=1581761036, csc=NaN) 
+[04/18/20, 19:07:08:934] info: [LOCAL-CONFIG] ingestIncomingConfig(): no incoming payload to process; current teams: T03SZ17T9:URWH7PA03,TSWGAAF2R:USWGAAFMK,T0351JZQ0:UN7QVCXEC 
+[04/18/20, 19:07:08:934] info: [BOOT] Initial team ID: T0351JZQ0 
+[04/18/20, 19:07:08:934] info: [PERF] setupGantry_w took 25.59ms 
+[04/18/20, 19:07:08:934] info: [PERF] bootClient_w begin 472ms 
+[04/18/20, 19:07:08:934] info: [BOOT] (T0351JZQ0) Initializing boot 
+[04/18/20, 19:07:08:934] info: [BOOT] (T0351JZQ0) Minimum supported data version is 1581290339; currently on 1586905756 
+[04/18/20, 19:07:08:934] info: [PERSIST] (T0351JZQ0) Getting state from IndexedDB 
+[04/18/20, 19:07:08:935] info: cld3Loader::initializeRuntime: successfully initialized module 
+[04/18/20, 19:07:08:935] info: cld3Loader::loadModule: initialized wasm binary Runtime 
+[04/18/20, 19:07:08:935] info: cld3::cldLoader: cld3 wasm initialized with default values {
+  "unknownIdentifier": "und",
+  "minBytesDefault": 140,
+  "maxBytesDefault": 700,
+  "maxBytesInput": 10000,
+  "languageResultStructSize": 24
+} 
+[04/18/20, 19:07:08:935] info: [PERSIST] (T0351JZQ0) Successfully got state from IndexedDB 
+[04/18/20, 19:07:08:935] info: [BOOT] (T0351JZQ0) Booting with persisted store 
+[04/18/20, 19:07:08:935] info: [EMOJI_TRANSLATION] Emoji translations not needed for default locale, only adding keywords 
+[04/18/20, 19:07:08:935] info: [PERSIST] (T0351JZQ0) Checking for persistence method changes 
+[04/18/20, 19:07:08:935] info: [PERSIST] (T0351JZQ0) Preparing state for hydration 
+[04/18/20, 19:07:08:935] info: [PERSIST] (T0351JZQ0) State prepared for hydration 
+[04/18/20, 19:07:08:936] info: [PERSIST] (T0351JZQ0) Checking for required data 
+[04/18/20, 19:07:08:936] info: [EMOJI_TRANSLATION] Emoji translations not needed for default locale, only adding keywords 
+[04/18/20, 19:07:08:936] info: [BOOT] (T0351JZQ0) Booting warm 
+[04/18/20, 19:07:08:936] info: [DESKTOP-MIDDLEWARE] (T0351JZQ0) Forwarding redux payload to desktop ["theme","notificationPrefs","featureFlags","bootConfig","unreads","locale","version"] 
+[04/18/20, 19:07:08:936] info: [DESKTOP-SIDE-EFFECT] (T0351JZQ0) Team T0351JZQ0 booted, creating delegate 
+[04/18/20, 19:07:08:936] info: Exposing workspace desktop delegate for  T0351JZQ0 
+[04/18/20, 19:07:08:936] info: Setting global desktop delegate 
+[04/18/20, 19:07:08:936] info: [BOOT] (T0351JZQ0) Connecting to socket 
+[04/18/20, 19:07:08:936] info: [SOCKET-MANAGER] (T0351JZQ0) Changing from never_connected to prov_connect 
+[04/18/20, 19:07:08:936] info: [SOCKET-MANAGER] (T0351JZQ0) will stay in prov_connect state for up to 10000 ms 
+[04/18/20, 19:07:08:937] info: [SOCKET-MANAGER] (T0351JZQ0) Changing from prov_connect to prov_connecting 
+[04/18/20, 19:07:08:937] info: [SOCKET-MANAGER] (T0351JZQ0) will stay in prov_connecting state for up to 35000 ms 
+[04/18/20, 19:07:08:937] info: [BOOT] (T0351JZQ0) Fetching fresh boot data after booting with persisted store 
+[04/18/20, 19:07:08:937] info: [BOOT] (T0351JZQ0) Skipping persisted store if it exists because we're forcing fresh data fetch anyway 
+[04/18/20, 19:07:08:937] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.083 client.boot called with reason: deferred-data 
+[04/18/20, 19:07:08:937] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.083 client.boot is ENQUEUED 
+[04/18/20, 19:07:08:937] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.083 client.boot is ACTIVE 
+[04/18/20, 19:07:08:937] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.086 api.features called 
+[04/18/20, 19:07:08:937] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.086 api.features is ENQUEUED 
+[04/18/20, 19:07:08:938] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.087 experiments.getByUser called 
+[04/18/20, 19:07:08:938] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.087 experiments.getByUser is ENQUEUED 
+[04/18/20, 19:07:08:938] info: [BOOT] Booting into channel: G01232HTWCA 
+[04/18/20, 19:07:08:938] error: [DESKTOP] 'desktop.stats.performance.timeSpentInPreload' is missing or not a function 
+[04/18/20, 19:07:08:938] warn: TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[04/18/20, 19:07:08:938] info: [BOOT] (T0351JZQ0) (T0351JZQ0) Mounting client 
+[04/18/20, 19:07:08:938] info: [HISTORY-NAVIGATION] Adding route to the history stack 
+[04/18/20, 19:07:08:938] error: [DESKTOP] 'desktop.stats.performance.timeSpentInPreload' is missing or not a function 
+[04/18/20, 19:07:08:938] info: [DRAFTS] (T0351JZQ0) There are no channels with drafts 
+[04/18/20, 19:07:08:939] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.267 apps.getSidebarPrompts called with reason: initializeAppSuggestionLinksData 
+[04/18/20, 19:07:08:939] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.267 apps.getSidebarPrompts is ENQUEUED 
+[04/18/20, 19:07:08:939] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.267 apps.getSidebarPrompts is ACTIVE 
+[04/18/20, 19:07:08:939] info: [BOOT] (T0351JZQ0) Beaconed client boot mount success 
+[04/18/20, 19:07:08:939] error: [DESKTOP] 'desktop.stats.performance.timeToPageLoad' is missing or not a function 
+[04/18/20, 19:07:08:939] info: [PERF] (T0351JZQ0) Logged time to visible (TTV): 1637.934999999743 
+[04/18/20, 19:07:08:939] info: [PERF] (T0351JZQ0) First meaningful paint: 1490ms 
+[04/18/20, 19:07:08:939] info: [PERF] bootClient_w took 1340.37ms 
+[04/18/20, 19:07:08:939] info: [BOOT] Booting other teams: TSWGAAF2R,T03SZ17T9 
+[04/18/20, 19:07:08:939] info: [BOOT] (TSWGAAF2R) Initializing boot 
+[04/18/20, 19:07:08:940] info: [BOOT] (TSWGAAF2R) Minimum supported data version is 1581290339; currently on 1586905756 
+[04/18/20, 19:07:08:940] info: [PERSIST] (TSWGAAF2R) Getting state from IndexedDB 
+[04/18/20, 19:07:08:940] info: [WD] All assets have reported back; s: 10; f: 0 
+[04/18/20, 19:07:08:940] info: [FOCUS-EVENT] Client window blurred 
+[04/18/20, 19:07:08:940] info: Store: UPDATE_SETTINGS {
+  "userTheme": "dark"
+} 
+[04/18/20, 19:07:08:940] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["app","downloads","environment","windows","settings"] 
+[04/18/20, 19:07:08:940] info: Store: UPDATE_SETTINGS {
+  "systemThemeSyncEnabled": false
+} 
+[04/18/20, 19:07:08:940] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["settings"] 
+[04/18/20, 19:07:08:940] info: [CHECK-UNREADS] (T0351JZQ0) Checking unreads after workspace became focused 
+[04/18/20, 19:07:08:940] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because attention not on chat (window_not_focused) 
+[04/18/20, 19:07:08:941] info: [CHECK-UNREADS] (T0351JZQ0) Checking unreads after window became focused 
+[04/18/20, 19:07:08:941] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because attention not on chat (window_not_focused) 
+[04/18/20, 19:07:08:941] info: Store: SYNC (Empty) 
+[04/18/20, 19:07:08:941] info: Store: SELECTION_CHANGED T0351JZQ0 
+[04/18/20, 19:07:08:941] info: Store: UPDATE_SETTINGS {
+  "locale": "en-US"
+} 
+[04/18/20, 19:07:08:941] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["settings"] 
+[04/18/20, 19:07:08:941] info: Store: UPDATE_SETTINGS {
+  "locale": "en-US"
+} 
+[04/18/20, 19:07:08:941] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["settings"] 
+[04/18/20, 19:07:08:941] info: Store: REDUX_UPDATE_FROM_WEBAPP (T0351JZQ0) Changed keys [theme,notificationPrefs,featureFlags,bootConfig,unreads,locale,version] 
+[04/18/20, 19:07:08:941] info: Store: SYNC Synced 1 workspaces with IDs [T0351JZQ0] 
+[04/18/20, 19:07:08:942] info: Store: SELECTION_CHANGED T0351JZQ0 
+[04/18/20, 19:07:08:942] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:08:942] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 864,
+      "width": 1024,
+      "x": 2748,
+      "y": 247
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[04/18/20, 19:07:08:942] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["settings"] 
+[04/18/20, 19:07:08:942] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:08:942] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:08:942] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:08:942] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.764 promo.banner called with reason: fetch-megaphone-notification-data 
+[04/18/20, 19:07:08:942] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.764 promo.banner is ENQUEUED 
+[04/18/20, 19:07:08:943] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.764 promo.banner is ACTIVE 
+[04/18/20, 19:07:08:943] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.779 team.whatsNew called with reason: boot-team 
+[04/18/20, 19:07:08:943] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.779 team.whatsNew is ENQUEUED 
+[04/18/20, 19:07:08:943] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.779 team.whatsNew is ACTIVE 
+[04/18/20, 19:07:08:943] info: [UNKNOWN-FETCH-MANAGER] (T0351JZQ0) requesting _all_actions (1) 
+[04/18/20, 19:07:08:943] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.808 apps.actions.list called with reason: fetch-app-actions 
+[04/18/20, 19:07:08:943] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.808 apps.actions.list is ENQUEUED 
+[04/18/20, 19:07:08:943] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.808 apps.actions.list is ACTIVE 
+[04/18/20, 19:07:08:943] info: [PERSIST] (TSWGAAF2R) Successfully got state from IndexedDB 
+[04/18/20, 19:07:08:944] info: [BOOT] (TSWGAAF2R) Booting with persisted store 
+[04/18/20, 19:07:08:944] info: [PERSIST] (TSWGAAF2R) Checking for persistence method changes 
+[04/18/20, 19:07:08:944] info: [PERSIST] (TSWGAAF2R) Preparing state for hydration 
+[04/18/20, 19:07:08:944] info: [PERSIST] (TSWGAAF2R) State prepared for hydration 
+[04/18/20, 19:07:08:944] info: [PERSIST] (TSWGAAF2R) Checking for required data 
+[04/18/20, 19:07:08:944] info: [EMOJI_TRANSLATION] Emoji translations not needed for default locale, only adding keywords 
+[04/18/20, 19:07:08:944] info: [BOOT] (TSWGAAF2R) Booting warm 
+[04/18/20, 19:07:08:944] info: [DESKTOP-MIDDLEWARE] (TSWGAAF2R) Forwarding redux payload to desktop ["theme","notificationPrefs","featureFlags","bootConfig","unreads","locale","version"] 
+[04/18/20, 19:07:08:944] info: [DESKTOP-SIDE-EFFECT] (TSWGAAF2R) Team TSWGAAF2R booted, creating delegate 
+[04/18/20, 19:07:08:944] info: Exposing workspace desktop delegate for  TSWGAAF2R 
+[04/18/20, 19:07:08:945] info: [BOOT] (TSWGAAF2R) Connecting to socket 
+[04/18/20, 19:07:08:945] info: [SOCKET-MANAGER] (TSWGAAF2R) Changing from never_connected to prov_connect 
+[04/18/20, 19:07:08:945] info: [SOCKET-MANAGER] (TSWGAAF2R) will stay in prov_connect state for up to 10000 ms 
+[04/18/20, 19:07:08:945] info: [SOCKET-MANAGER] (TSWGAAF2R) Changing from prov_connect to prov_connecting 
+[04/18/20, 19:07:08:945] info: [SOCKET-MANAGER] (TSWGAAF2R) will stay in prov_connecting state for up to 35000 ms 
+[04/18/20, 19:07:08:945] info: [BOOT] (TSWGAAF2R) Fetching fresh boot data after booting with persisted store 
+[04/18/20, 19:07:08:945] info: [BOOT] (TSWGAAF2R) Skipping persisted store if it exists because we're forcing fresh data fetch anyway 
+[04/18/20, 19:07:08:945] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.866 client.boot called with reason: deferred-data 
+[04/18/20, 19:07:08:946] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.866 client.boot is ENQUEUED 
+[04/18/20, 19:07:08:946] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.866 client.boot is ACTIVE 
+[04/18/20, 19:07:08:946] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.867 api.features called 
+[04/18/20, 19:07:08:946] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.867 api.features is ENQUEUED 
+[04/18/20, 19:07:08:946] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.867 experiments.getByUser called 
+[04/18/20, 19:07:08:946] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.867 experiments.getByUser is ENQUEUED 
+[04/18/20, 19:07:08:946] info: [BOOT] Booting into channel: CSYN35RDL 
+[04/18/20, 19:07:08:946] info: [BOOT] (T03SZ17T9) Initializing boot 
+[04/18/20, 19:07:08:946] info: [BOOT] (T03SZ17T9) Minimum supported data version is 1581290339; currently on 1586905756 
+[04/18/20, 19:07:08:946] info: [PERSIST] (T03SZ17T9) Getting state from IndexedDB 
+[04/18/20, 19:07:08:947] info: Network status check {
+  "elapsed_time_ms": 1459,
+  "navigator_online": true,
+  "api_test": "online"
+} 
+[04/18/20, 19:07:08:947] info: [CHECK-UNREADS] (T0351JZQ0) Checking unreads after workspace became focused 
+[04/18/20, 19:07:08:947] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because attention not on chat (window_not_focused) 
+[04/18/20, 19:07:08:951] info: Store: REDUX_UPDATE_FROM_WEBAPP (TSWGAAF2R) Changed keys [theme,notificationPrefs,featureFlags,bootConfig,unreads,locale,version] 
+[04/18/20, 19:07:08:952] info: Store: SYNC Synced 2 workspaces with IDs [T0351JZQ0,TSWGAAF2R] 
+[04/18/20, 19:07:08:952] info: Store: SELECTION_CHANGED T0351JZQ0 
+[04/18/20, 19:07:08:953] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200828.931 promo.banner called with reason: fetch-megaphone-notification-data 
+[04/18/20, 19:07:08:953] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200828.931 promo.banner is ENQUEUED 
+[04/18/20, 19:07:08:953] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200828.931 promo.banner is ACTIVE 
+[04/18/20, 19:07:08:953] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200828.934 team.whatsNew called with reason: boot-team 
+[04/18/20, 19:07:08:953] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200828.934 team.whatsNew is ENQUEUED 
+[04/18/20, 19:07:08:953] info: Store: SET_NETWORK_STATUS online 
+[04/18/20, 19:07:08:954] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["app"] 
+[04/18/20, 19:07:08:954] info: [SOCKET-MANAGER] (T0351JZQ0) Changing from prov_connecting to prov_connected 
+[04/18/20, 19:07:08:954] info: [SOCKET-MANAGER] (T0351JZQ0) will stay in prov_connected state for up to 60000 ms 
+[04/18/20, 19:07:08:954] info: [SOCKET-MANAGER] (T0351JZQ0) Changing from prov_connected to prov_finalize 
+[04/18/20, 19:07:08:954] info: [SOCKET-MANAGER] (T0351JZQ0) will stay in prov_finalize state for up to 10000 ms 
+[04/18/20, 19:07:08:955] info: [SOCKET-MANAGER] (T0351JZQ0) Changing from prov_finalize to prov_finalizing 
+[04/18/20, 19:07:08:955] info: [SOCKET-MANAGER] (T0351JZQ0) will stay in prov_finalizing state for up to 10000 ms 
+[04/18/20, 19:07:08:955] info: [SOCKET-MANAGER] (T0351JZQ0) Changing from prov_finalizing to connected 
+[04/18/20, 19:07:08:955] info: [SOCKET-MANAGER] (T0351JZQ0) will stay in connected state for up to Infinity ms 
+[04/18/20, 19:07:08:956] info: [SOCKET-MANAGER] (T0351JZQ0) Connected to primary region 
+[04/18/20, 19:07:08:961] info: [EVENTLOG] (T0351JZQ0) fr=false, lc=false, lt=1587187683.132400 
+[04/18/20, 19:07:08:961] info: [EVENTLOG] (T0351JZQ0) fetching events since 1587187683.132400 (13146 seconds ago) 
+[04/18/20, 19:07:08:963] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.961 ublockworkaround.history called with reason: fetchEventLogHistoryImmediately 
+[04/18/20, 19:07:08:963] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.961 ublockworkaround.history is ENQUEUED 
+[04/18/20, 19:07:08:963] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.961 ublockworkaround.history is ACTIVE 
+[04/18/20, 19:07:08:965] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.963 ublockworkaround.history called with reason: fetchEventLogHistoryImmediately 
+[04/18/20, 19:07:08:965] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.963 ublockworkaround.history is ENQUEUED 
+[04/18/20, 19:07:08:966] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.963 ublockworkaround.history is ACTIVE 
+[04/18/20, 19:07:08:967] info: [MESSAGE-HISTORY] (T0351JZQ0) Resetting reachedEnd 
+[04/18/20, 19:07:08:975] info: [UNREAD-COUNTS] (T0351JZQ0) Fetching counts 
+[04/18/20, 19:07:08:977] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.975 client.counts called with reason: client-counts-api/fetchClientCounts 
+[04/18/20, 19:07:08:977] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.975 client.counts is ENQUEUED 
+[04/18/20, 19:07:08:977] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.975 client.counts is ACTIVE 
+[04/18/20, 19:07:08:991] info: [HISTORY-FETCH] (T0351JZQ0) Fetching history for message pane: G01232HTWCA oldest: 1587184480.004200 latest: null 
+[04/18/20, 19:07:08:992] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.992 conversations.history called with reason: message-pane/requestHistory 
+[04/18/20, 19:07:08:992] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.992 conversations.history is ENQUEUED 
+[04/18/20, 19:07:08:993] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.992 conversations.history is ACTIVE 
+[04/18/20, 19:07:08:995] info: [CHECK-UNREADS] (T0351JZQ0) unreadLineVisible updated: true -> false 
+[04/18/20, 19:07:09:013] info: Store: UPSERT_WEB_CONTENTS {
+  "history": "[REDACTED]",
+  "id": 1,
+  "type": "app"
+} 
+[04/18/20, 19:07:09:013] info: [UNKNOWN-FETCH-MANAGER] (TSWGAAF2R) requesting _all_actions (1) 
+[04/18/20, 19:07:09:016] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.013 apps.actions.list called with reason: fetch-app-actions 
+[04/18/20, 19:07:09:016] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.013 apps.actions.list is ENQUEUED 
+[04/18/20, 19:07:09:019] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:09:051] info: [PERSIST] (T03SZ17T9) Successfully got state from IndexedDB 
+[04/18/20, 19:07:09:051] info: [BOOT] (T03SZ17T9) Booting with persisted store 
+[04/18/20, 19:07:09:052] info: [PERSIST] (T03SZ17T9) Checking for persistence method changes 
+[04/18/20, 19:07:09:052] info: [PERSIST] (T03SZ17T9) Preparing state for hydration 
+[04/18/20, 19:07:09:058] info: [PERSIST] (T03SZ17T9) State prepared for hydration 
+[04/18/20, 19:07:09:058] info: [PERSIST] (T03SZ17T9) Checking for required data 
+[04/18/20, 19:07:09:069] info: [EMOJI_TRANSLATION] Emoji translations not needed for default locale, only adding keywords 
+[04/18/20, 19:07:09:069] info: [BOOT] (T03SZ17T9) Booting warm 
+[04/18/20, 19:07:09:076] info: [DESKTOP-MIDDLEWARE] (T03SZ17T9) Forwarding redux payload to desktop ["theme","notificationPrefs","featureFlags","bootConfig","unreads","locale","version"] 
+[04/18/20, 19:07:09:090] info: [DESKTOP-SIDE-EFFECT] (T03SZ17T9) Team T03SZ17T9 booted, creating delegate 
+[04/18/20, 19:07:09:091] info: Exposing workspace desktop delegate for  T03SZ17T9 
+[04/18/20, 19:07:09:091] info: [DESKTOP-SIDE-EFFECT] (T0351JZQ0) Attempted boot for all workspaces, signaling desktop 
+[04/18/20, 19:07:09:093] info: postLoadTaskSetup: loading spellchecker 
+[04/18/20, 19:07:09:093] info: [BOOT] (T03SZ17T9) Connecting to socket 
+[04/18/20, 19:07:09:093] info: [SOCKET-MANAGER] (T03SZ17T9) Changing from never_connected to prov_connect 
+[04/18/20, 19:07:09:093] info: [SOCKET-MANAGER] (T03SZ17T9) will stay in prov_connect state for up to 10000 ms 
+[04/18/20, 19:07:09:094] info: [SOCKET-MANAGER] (T03SZ17T9) Changing from prov_connect to prov_connecting 
+[04/18/20, 19:07:09:094] info: [SOCKET-MANAGER] (T03SZ17T9) will stay in prov_connecting state for up to 35000 ms 
+[04/18/20, 19:07:09:094] info: [BOOT] (T03SZ17T9) Fetching fresh boot data after booting with persisted store 
+[04/18/20, 19:07:09:094] info: [BOOT] (T03SZ17T9) Skipping persisted store if it exists because we're forcing fresh data fetch anyway 
+[04/18/20, 19:07:09:094] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 client.boot called with reason: deferred-data 
+[04/18/20, 19:07:09:094] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 client.boot is ENQUEUED 
+[04/18/20, 19:07:09:095] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 client.boot is ACTIVE 
+[04/18/20, 19:07:09:095] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 api.features called 
+[04/18/20, 19:07:09:095] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 api.features is ENQUEUED 
+[04/18/20, 19:07:09:095] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 experiments.getByUser called 
+[04/18/20, 19:07:09:095] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 experiments.getByUser is ENQUEUED 
+[04/18/20, 19:07:09:095] info: [BOOT] Booting into channel: C011JSQ3BNC 
+[04/18/20, 19:07:09:096] info: [PERSIST] Purging persisted models, except for the following teamIds ["TSWGAAF2R","T03SZ17T9","T0351JZQ0"] 
+[04/18/20, 19:07:09:096] info: [DND] (T0351JZQ0) Preparing to fetch DND times for the following members: UN7QVCXEC,USNETGJP6,UQ7UCMQCB,USNM2GGM9,UT6B16VPE,URZAGT58U,U03AJSEKC,U0K4A5PT2,UTHJYDYJJ,USC7UMBE2,URAMXHDEU,UJC267N7Q,UT1DW4K44,URNA5C69H 
+[04/18/20, 19:07:09:098] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.096 dnd.info called with reason: getDndTimesForSubscribedMembers 
+[04/18/20, 19:07:09:098] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.096 dnd.info is ENQUEUED 
+[04/18/20, 19:07:09:098] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.096 dnd.info is ACTIVE 
+[04/18/20, 19:07:09:101] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.099 dnd.teamInfo called with reason: getDndTimesForSubscribedMembers:self 
+[04/18/20, 19:07:09:102] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.099 dnd.teamInfo is ENQUEUED 
+[04/18/20, 19:07:09:102] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.099 dnd.teamInfo is ACTIVE 
+[04/18/20, 19:07:09:103] info: Store: REDUX_UPDATE_FROM_WEBAPP (T03SZ17T9) Changed keys [theme,notificationPrefs,featureFlags,bootConfig,unreads,locale,version] 
+[04/18/20, 19:07:09:104] info: Store: SYNC Synced 3 workspaces with IDs [T0351JZQ0,TSWGAAF2R,T03SZ17T9] 
+[04/18/20, 19:07:09:123] info: [CHECK-UNREADS] (T0351JZQ0) Checking unreads after workspace became focused 
+[04/18/20, 19:07:09:124] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because attention not on chat (window_not_focused) 
+[04/18/20, 19:07:09:126] info: Store: SELECTION_CHANGED T0351JZQ0 
+[04/18/20, 19:07:09:126] info: Store: UPSERT_WEB_CONTENTS {
+  "id": 1,
+  "state": "webapp-loaded"
+} 
+[04/18/20, 19:07:09:127] info: [SERVICE-WORKER] registration success {} 
+[04/18/20, 19:07:09:127] info: [SERVICE-WORKER-STATE] initial activated 
+[04/18/20, 19:07:09:129] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.128 promo.banner called with reason: fetch-megaphone-notification-data 
+[04/18/20, 19:07:09:129] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.128 promo.banner is ENQUEUED 
+[04/18/20, 19:07:09:130] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.128 promo.banner is ACTIVE 
+[04/18/20, 19:07:09:131] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.130 team.whatsNew called with reason: boot-team 
+[04/18/20, 19:07:09:132] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.130 team.whatsNew is ENQUEUED 
+[04/18/20, 19:07:09:133] info: loadAsmModule: loading hunspell-asm module 
+[04/18/20, 19:07:09:133] info: hunspell::loadModule: loading hunspell wasm binary {
+  "initOptions": {}
+} 
+[04/18/20, 19:07:09:133] info: hunspellLoader::loadModule: constructed module object for runtime 
+[04/18/20, 19:07:09:133] info: Store: STORE_ENTERPRISE_ID_PAIR {
+  "enterpriseId": null
+} 
+[04/18/20, 19:07:09:134] info: [UNKNOWN-FETCH-MANAGER] (T03SZ17T9) requesting _all_actions (1) 
+[04/18/20, 19:07:09:135] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.134 apps.actions.list called with reason: fetch-app-actions 
+[04/18/20, 19:07:09:135] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.134 apps.actions.list is ENQUEUED 
+[04/18/20, 19:07:09:137] info: [PERSIST] Purged persisted models [] 
+[04/18/20, 19:07:09:139] info: [MIN-VERSION] Starting client min-version poll. 
+[04/18/20, 19:07:09:166] info: hunspellLoader::initializeRuntime: successfully initialized module 
+[04/18/20, 19:07:09:166] info: hunspellLoader::loadModule: initialized wasm binary Runtime 
+[04/18/20, 19:07:09:166] info: hunspell::hunspellLoader: mount path for bufferFile created at /7d6fT_oBFmtH-jMtrFfkMW9FcAvDvQfP8LDi0GC-SOrEn 
+[04/18/20, 19:07:09:166] info: loadAsmModule: asm module loaded successfully 
+[04/18/20, 19:07:09:166] info: toggleAutoSpellcheck: run spellchecker with language detector 
+[04/18/20, 19:07:09:167] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector 
+[04/18/20, 19:07:09:167] info: SpellChecker::spellgetLanguageRegionCode: found region supported language {
+  "code": "en"
+} 
+[04/18/20, 19:07:09:167] info: SpellChecker::getLanguageRegionCode: Intl returned locale {
+  "locale": "en-GB"
+} 
+[04/18/20, 19:07:09:167] info: SpellChecker::getLanguageRegionCode: return language code with region {
+  "code": "en-gb"
+} 
+[04/18/20, 19:07:09:167] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language en 
+[04/18/20, 19:07:09:168] info: switchDictionary: trying to switch spellchecker {
+  "language": "en"
+} 
+[04/18/20, 19:07:09:170] info: SpellChecker::spellgetLanguageRegionCode: found region supported language {
+  "code": "en"
+} 
+[04/18/20, 19:07:09:171] info: SpellChecker::getLanguageRegionCode: Intl returned locale {
+  "locale": "en-GB"
+} 
+[04/18/20, 19:07:09:172] info: SpellChecker::getLanguageRegionCode: return language code with region {
+  "code": "en-gb"
+} 
+[04/18/20, 19:07:09:173] info: download: downloading dictionary for 'en-gb' 
+[04/18/20, 19:07:09:174] info: fetchResourceAsBuffer: downloading {
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-gb/3/en-gb.aff",
+  "cachePolicy": "default"
+} 
+[04/18/20, 19:07:09:218] info: fetchResourceAsBuffer: successfully downloaded {
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-gb/3/en-gb.aff",
+  "status": 200,
+  "ok": true,
+  "redirected": false,
+  "statusText": "",
+  "url": "https://spellcheck.slack-edge.com/dictionaries/en-gb/3/en-gb.aff",
+  "type": "cors"
+} 
+[04/18/20, 19:07:09:219] info: fetchResourceAsBuffer: returning arrayBuffer 
+[04/18/20, 19:07:09:219] info: fetchResourceAsBuffer: downloading {
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-gb/3/en-gb.dic",
+  "cachePolicy": "default"
+} 
+[04/18/20, 19:07:09:223] info: fetchResourceAsBuffer: successfully downloaded {
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-gb/3/en-gb.dic",
+  "status": 200,
+  "ok": true,
+  "redirected": false,
+  "statusText": "",
+  "url": "https://spellcheck.slack-edge.com/dictionaries/en-gb/3/en-gb.dic",
+  "type": "cors"
+} 
+[04/18/20, 19:07:09:231] info: fetchResourceAsBuffer: returning arrayBuffer 
+[04/18/20, 19:07:09:231] info: dictionaryDownloader: verifying hash 
+[04/18/20, 19:07:09:313] info: SpellChecker::downloadDictionary: Dictionary is ready for  {
+  "language": "en"
+} 
+[04/18/20, 19:07:09:314] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.779 team.whatsNew is RESOLVED 
+[04/18/20, 19:07:09:316] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.808 apps.actions.list is RESOLVED 
+[04/18/20, 19:07:09:322] info: [API-Q] (T0351JZQ0) noversion-1587200829.320 Flannel users/info called with reason: flannel-call:users/info 
+[04/18/20, 19:07:09:322] info: [API-Q] (T0351JZQ0) noversion-1587200829.320 Flannel users/info is ENQUEUED 
+[04/18/20, 19:07:09:322] info: [API-Q] (T0351JZQ0) noversion-1587200829.320 Flannel users/info is ACTIVE 
+[04/18/20, 19:07:09:324] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.322 team.info called with reason: conditional-fetching 
+[04/18/20, 19:07:09:324] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.322 team.info is ENQUEUED 
+[04/18/20, 19:07:09:324] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.322 team.info is ACTIVE 
+[04/18/20, 19:07:09:327] info: [API-Q] (T0351JZQ0) noversion-1587200829.325 Flannel channels/info called with reason: flannel-call:channels/info 
+[04/18/20, 19:07:09:327] info: [API-Q] (T0351JZQ0) noversion-1587200829.325 Flannel channels/info is ENQUEUED 
+[04/18/20, 19:07:09:328] info: [API-Q] (T0351JZQ0) noversion-1587200829.327 Flannel users/counts called with reason: flannel-call:users/counts 
+[04/18/20, 19:07:09:329] info: [API-Q] (T0351JZQ0) noversion-1587200829.327 Flannel users/counts is ENQUEUED 
+[04/18/20, 19:07:09:330] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.329 help.issues.list called with reason: fetchAndUpsertHelpIssues 
+[04/18/20, 19:07:09:330] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.329 help.issues.list is ENQUEUED 
+[04/18/20, 19:07:09:332] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.331 users.channelSections.list called with reason: conditional-fetch-manager 
+[04/18/20, 19:07:09:333] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.331 users.channelSections.list is ENQUEUED 
+[04/18/20, 19:07:09:334] info: [HISTORY-CFM] (T0351JZQ0) Re-fetching G01232HTWCA 1587181561.000300 - 1587184480.004200 
+[04/18/20, 19:07:09:335] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.334 conversations.history called with reason: channel-history-store.CFM.fetch 
+[04/18/20, 19:07:09:336] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.334 conversations.history is ENQUEUED 
+[04/18/20, 19:07:09:336] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.267 apps.getSidebarPrompts is RESOLVED 
+[04/18/20, 19:07:09:336] info: [API-Q] (T0351JZQ0) noversion-1587200829.327 Flannel users/counts is ACTIVE 
+[04/18/20, 19:07:09:339] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.764 promo.banner is RESOLVED 
+[04/18/20, 19:07:09:340] info: [API-Q] (T0351JZQ0) noversion-1587200829.325 Flannel channels/info is ACTIVE 
+[04/18/20, 19:07:09:379] info: [UNKNOWN-FETCH-MANAGER] (T0351JZQ0) received _all_actions (1) 
+[04/18/20, 19:07:09:383] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.083 client.boot is RESOLVED 
+[04/18/20, 19:07:09:384] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.086 api.features is ACTIVE 
+[04/18/20, 19:07:09:389] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.963 ublockworkaround.history is RESOLVED 
+[04/18/20, 19:07:09:390] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.329 help.issues.list is ACTIVE 
+[04/18/20, 19:07:09:392] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.961 ublockworkaround.history is RESOLVED 
+[04/18/20, 19:07:09:392] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.331 users.channelSections.list is ACTIVE 
+[04/18/20, 19:07:09:394] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.975 client.counts is RESOLVED 
+[04/18/20, 19:07:09:394] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.334 conversations.history is ACTIVE 
+[04/18/20, 19:07:09:435] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.099 dnd.teamInfo is RESOLVED 
+[04/18/20, 19:07:09:457] info: [API-Q] (T0351JZQ0) 4c952f39-1587200828.992 conversations.history is RESOLVED 
+[04/18/20, 19:07:09:459] info: [EVENTLOG] (T0351JZQ0) processing 4 events out of a total set of 4 
+[04/18/20, 19:07:09:461] info: [EVENTLOG] (T0351JZQ0) processing 1 events out of a total set of 1 
+[04/18/20, 19:07:09:461] info: [EVENTLOG] (T0351JZQ0) fetched finish (cancelled? false) 
+[04/18/20, 19:07:09:462] info: [EVENTLOG] (T0351JZQ0) dispatching signal and clearing timestamp 
+[04/18/20, 19:07:09:520] info: [COUNTS] (T0351JZQ0) Applying counts to channels 
+[04/18/20, 19:07:09:528] info: [COUNTS] (T0351JZQ0) Threads has_unreads:false mention_count:0 
+[04/18/20, 19:07:09:528] info: [DESKTOP-MIDDLEWARE] (T0351JZQ0) Forwarding redux payload to desktop ["unreads"] 
+[04/18/20, 19:07:09:530] info: [COUNTS] (T0351JZQ0) Completed counts processing 
+[04/18/20, 19:07:09:532] info: [SOCKET-MANAGER] (TSWGAAF2R) Changing from prov_connecting to prov_connected 
+[04/18/20, 19:07:09:532] info: [SOCKET-MANAGER] (TSWGAAF2R) will stay in prov_connected state for up to 60000 ms 
+[04/18/20, 19:07:09:534] info: [SOCKET-MANAGER] (TSWGAAF2R) Changing from prov_connected to prov_finalize 
+[04/18/20, 19:07:09:534] info: [SOCKET-MANAGER] (TSWGAAF2R) will stay in prov_finalize state for up to 10000 ms 
+[04/18/20, 19:07:09:535] info: [SOCKET-MANAGER] (TSWGAAF2R) Changing from prov_finalize to prov_finalizing 
+[04/18/20, 19:07:09:535] info: [SOCKET-MANAGER] (TSWGAAF2R) will stay in prov_finalizing state for up to 10000 ms 
+[04/18/20, 19:07:09:536] info: [SOCKET-MANAGER] (TSWGAAF2R) Changing from prov_finalizing to connected 
+[04/18/20, 19:07:09:536] info: [SOCKET-MANAGER] (TSWGAAF2R) will stay in connected state for up to Infinity ms 
+[04/18/20, 19:07:09:537] info: [SOCKET-MANAGER] (TSWGAAF2R) Connected to primary region 
+[04/18/20, 19:07:09:539] info: [EVENTLOG] (TSWGAAF2R) fr=false, lc=false, lt=1587176849.172000 
+[04/18/20, 19:07:09:539] info: [EVENTLOG] (TSWGAAF2R) fetching events since 1587176849.172000 (23981 seconds ago) 
+[04/18/20, 19:07:09:540] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.539 ublockworkaround.history called with reason: fetchEventLogHistoryImmediately 
+[04/18/20, 19:07:09:541] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.539 ublockworkaround.history is ENQUEUED 
+[04/18/20, 19:07:09:542] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.541 ublockworkaround.history called with reason: fetchEventLogHistoryImmediately 
+[04/18/20, 19:07:09:542] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.541 ublockworkaround.history is ENQUEUED 
+[04/18/20, 19:07:09:543] info: [MESSAGE-HISTORY] (TSWGAAF2R) Resetting reachedEnd 
+[04/18/20, 19:07:09:544] info: [UNREAD-COUNTS] (TSWGAAF2R) Fetching counts 
+[04/18/20, 19:07:09:546] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.544 client.counts called with reason: client-counts-api/fetchClientCounts 
+[04/18/20, 19:07:09:546] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.544 client.counts is ENQUEUED 
+[04/18/20, 19:07:09:547] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.866 client.boot is RESOLVED 
+[04/18/20, 19:07:09:547] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.867 api.features is ACTIVE 
+[04/18/20, 19:07:09:596] info: [DND] (T0351JZQ0) Fetched DND info for the following members: USNETGJP6,UQ7UCMQCB,USNM2GGM9,UT6B16VPE,URZAGT58U,U03AJSEKC,U0K4A5PT2,UTHJYDYJJ,USC7UMBE2,URAMXHDEU,UJC267N7Q,UT1DW4K44,URNA5C69H 
+[04/18/20, 19:07:09:599] info: [DND] (T0351JZQ0) Checking for changes in DND status for the following members: USNETGJP6,UQ7UCMQCB,USNM2GGM9,UT6B16VPE,URZAGT58U,U03AJSEKC,U0K4A5PT2,UTHJYDYJJ,USC7UMBE2,URAMXHDEU,UJC267N7Q,UT1DW4K44,URNA5C69H 
+[04/18/20, 19:07:09:616] info: [DND] (T0351JZQ0) Will check for changes in DND status again in 5 minutes 
+[04/18/20, 19:07:09:616] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200828.931 promo.banner is RESOLVED 
+[04/18/20, 19:07:09:616] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.541 ublockworkaround.history is ACTIVE 
+[04/18/20, 19:07:09:618] info: assignSpellchecker: spellCheckerTable added new checker for 'en' 
+[04/18/20, 19:07:09:618] info: SpellChecker::prepareDictionary: Dictionary buffer for 'en' is loaded into spellchecker 
+[04/18/20, 19:07:09:624] info: [PLATFORM-CHANNEL-ACTI] (T0351JZQ0) Not updating count for channel G01232HTWCA, as count was already set to 0 
+[04/18/20, 19:07:09:630] info: [UNREAD-COUNTS] (T0351JZQ0) Counting unreads in G01232HTWCA because (1) timestamps added 
+[04/18/20, 19:07:09:630] info: [UNREAD-COUNTS] (T0351JZQ0) Checking unreads in G01232HTWCA after a new message 
+[04/18/20, 19:07:09:631] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because attention not on chat (window_not_focused) 
+[04/18/20, 19:07:09:632] info: Store: REDUX_UPDATE_FROM_WEBAPP (T0351JZQ0) Changed keys [unreads] 
+[04/18/20, 19:07:09:634] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 client.boot is RESOLVED 
+[04/18/20, 19:07:09:635] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 api.features is ACTIVE 
+[04/18/20, 19:07:09:637] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.128 promo.banner is RESOLVED 
+[04/18/20, 19:07:09:637] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.130 team.whatsNew is ACTIVE 
+[04/18/20, 19:07:09:639] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.096 dnd.info is RESOLVED 
+[04/18/20, 19:07:09:641] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.640 team.info called with reason: conditional-fetching 
+[04/18/20, 19:07:09:641] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.640 team.info is ENQUEUED 
+[04/18/20, 19:07:09:644] info: [API-Q] (TSWGAAF2R) noversion-1587200829.642 Flannel users/info called with reason: flannel-call:users/info 
+[04/18/20, 19:07:09:644] info: [API-Q] (TSWGAAF2R) noversion-1587200829.642 Flannel users/info is ENQUEUED 
+[04/18/20, 19:07:09:673] info: [MESSAGE-LIST] (T0351JZQ0) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 10 
+[04/18/20, 19:07:09:678] info: [CHECK-UNREADS] (T0351JZQ0) unreadLineVisible updated: false -> true 
+[04/18/20, 19:07:09:698] info: switchDictionary: switching dictionary to check spell from 'null' to 'en' 
+[04/18/20, 19:07:09:699] info: SpellChecker::switchDictionary: SpellChecker enabled for language {
+  "language": "en"
+} 
+[04/18/20, 19:07:09:699] info: SpellChecker::enableSpellCheckerLanguageDetector: spellchecker dictionary switched 
+[04/18/20, 19:07:09:700] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.086 api.features is RESOLVED 
+[04/18/20, 19:07:09:700] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.087 experiments.getByUser is ACTIVE 
+[04/18/20, 19:07:09:706] info: [DND] (T0351JZQ0) Fetched DND info for the following member: UN7QVCXEC 
+[04/18/20, 19:07:09:708] info: [DND] (T0351JZQ0) Checking for changes in DND status for the following members: USNETGJP6,UQ7UCMQCB,USNM2GGM9,UT6B16VPE,URZAGT58U,U03AJSEKC,U0K4A5PT2,UTHJYDYJJ,USC7UMBE2,URAMXHDEU,UJC267N7Q,UT1DW4K44,URNA5C69H,UN7QVCXEC 
+[04/18/20, 19:07:09:709] info: [DND] (T0351JZQ0) Will check for changes in DND status again in 5 minutes 
+[04/18/20, 19:07:09:710] info: [SOCKET-MANAGER] (T03SZ17T9) Changing from prov_connecting to prov_connected 
+[04/18/20, 19:07:09:710] info: [SOCKET-MANAGER] (T03SZ17T9) will stay in prov_connected state for up to 60000 ms 
+[04/18/20, 19:07:09:711] info: [SOCKET-MANAGER] (T03SZ17T9) Changing from prov_connected to prov_finalize 
+[04/18/20, 19:07:09:711] info: [SOCKET-MANAGER] (T03SZ17T9) will stay in prov_finalize state for up to 10000 ms 
+[04/18/20, 19:07:09:712] info: [SOCKET-MANAGER] (T03SZ17T9) Changing from prov_finalize to prov_finalizing 
+[04/18/20, 19:07:09:712] info: [SOCKET-MANAGER] (T03SZ17T9) will stay in prov_finalizing state for up to 10000 ms 
+[04/18/20, 19:07:09:713] info: [SOCKET-MANAGER] (T03SZ17T9) Changing from prov_finalizing to connected 
+[04/18/20, 19:07:09:713] info: [SOCKET-MANAGER] (T03SZ17T9) will stay in connected state for up to Infinity ms 
+[04/18/20, 19:07:09:713] info: [SOCKET-MANAGER] (T03SZ17T9) Connected to primary region 
+[04/18/20, 19:07:09:716] info: [EVENTLOG] (T03SZ17T9) fr=false, lc=false, lt=1587185078.054000 
+[04/18/20, 19:07:09:716] info: [EVENTLOG] (T03SZ17T9) fetching events since 1587185078.054000 (15752 seconds ago) 
+[04/18/20, 19:07:09:717] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.716 ublockworkaround.history called with reason: fetchEventLogHistoryImmediately 
+[04/18/20, 19:07:09:717] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.716 ublockworkaround.history is ENQUEUED 
+[04/18/20, 19:07:09:717] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.717 ublockworkaround.history called with reason: fetchEventLogHistoryImmediately 
+[04/18/20, 19:07:09:718] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.717 ublockworkaround.history is ENQUEUED 
+[04/18/20, 19:07:09:718] info: [MESSAGE-HISTORY] (T03SZ17T9) Resetting reachedEnd 
+[04/18/20, 19:07:09:720] info: [UNREAD-COUNTS] (T03SZ17T9) Fetching counts 
+[04/18/20, 19:07:09:722] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.720 client.counts called with reason: client-counts-api/fetchClientCounts 
+[04/18/20, 19:07:09:722] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.720 client.counts is ENQUEUED 
+[04/18/20, 19:07:09:754] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.753 team.info called with reason: conditional-fetching 
+[04/18/20, 19:07:09:754] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.753 team.info is ENQUEUED 
+[04/18/20, 19:07:09:755] info: [API-Q] (T03SZ17T9) noversion-1587200829.754 Flannel users/info called with reason: flannel-call:users/info 
+[04/18/20, 19:07:09:755] info: [API-Q] (T03SZ17T9) noversion-1587200829.754 Flannel users/info is ENQUEUED 
+[04/18/20, 19:07:09:800] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.322 team.info is RESOLVED 
+[04/18/20, 19:07:09:838] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.867 api.features is RESOLVED 
+[04/18/20, 19:07:09:838] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.867 experiments.getByUser is ACTIVE 
+[04/18/20, 19:07:09:839] info: [PERSIST] (T0351JZQ0) Successfully persisted state 
+[04/18/20, 19:07:09:847] info: [PERSIST] (TSWGAAF2R) Successfully persisted state 
+[04/18/20, 19:07:09:886] info: [PERSIST] (T03SZ17T9) Successfully persisted state 
+[04/18/20, 19:07:09:891] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 api.features is RESOLVED 
+[04/18/20, 19:07:09:892] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 experiments.getByUser is ACTIVE 
+[04/18/20, 19:07:09:941] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.329 help.issues.list is RESOLVED 
+[04/18/20, 19:07:09:968] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.331 users.channelSections.list is RESOLVED 
+[04/18/20, 19:07:09:969] info: [BOOT-QUEUE] T0351JZQ0 noversion-1587200828.087 experiments.getByUser is RESOLVED 
+[04/18/20, 19:07:09:970] info: [API-Q] (T0351JZQ0) 4c952f39-1587200829.334 conversations.history is RESOLVED 
+[04/18/20, 19:07:10:010] info: [PLATFORM-CHANNEL-ACTI] (T0351JZQ0) Not updating count for channel G01232HTWCA, as count was already set to 0 
+[04/18/20, 19:07:10:015] info: [UNREAD-COUNTS] (T0351JZQ0) Counting unreads in G01232HTWCA because (10) timestamps added 
+[04/18/20, 19:07:10:015] info: [UNREAD-COUNTS] (T0351JZQ0) Checking unreads in G01232HTWCA after a new message 
+[04/18/20, 19:07:10:016] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because attention not on chat (window_not_focused) 
+[04/18/20, 19:07:10:056] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.130 team.whatsNew is RESOLVED 
+[04/18/20, 19:07:10:056] info: [API-Q] (T03SZ17T9) noversion-1587200829.754 Flannel users/info is ACTIVE 
+[04/18/20, 19:07:10:057] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.541 ublockworkaround.history is RESOLVED 
+[04/18/20, 19:07:10:057] info: [API-Q] (TSWGAAF2R) noversion-1587200829.642 Flannel users/info is ACTIVE 
+[04/18/20, 19:07:10:058] info: [API-Q] (T0351JZQ0) noversion-1587200829.320 Flannel users/info is RESOLVED 
+[04/18/20, 19:07:10:058] info: [API-Q] (T0351JZQ0) noversion-1587200829.327 Flannel users/counts is RESOLVED 
+[04/18/20, 19:07:10:059] info: [API-Q] (T0351JZQ0) noversion-1587200829.325 Flannel channels/info is RESOLVED 
+[04/18/20, 19:07:10:059] info: [CHECK-UNREADS] (T0351JZQ0) Checking unreads after unread line became visible 
+[04/18/20, 19:07:10:059] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because attention not on chat (window_not_focused) 
+[04/18/20, 19:07:10:073] info: [API-Q] (T0351JZQ0) 4c952f39-1587200830.072 conversations.genericInfo called with reason: fallback:fetchAndUpsertChannelsById 
+[04/18/20, 19:07:10:074] info: [API-Q] (T0351JZQ0) 4c952f39-1587200830.072 conversations.genericInfo is ENQUEUED 
+[04/18/20, 19:07:10:074] info: [API-Q] (T0351JZQ0) 4c952f39-1587200830.072 conversations.genericInfo is ACTIVE 
+[04/18/20, 19:07:10:100] info: [BOOT-QUEUE] TSWGAAF2R noversion-1587200828.867 experiments.getByUser is RESOLVED 
+[04/18/20, 19:07:10:147] info: [BOOT-QUEUE] T03SZ17T9 noversion-1587200829.091 experiments.getByUser is RESOLVED 
+[04/18/20, 19:07:10:339] info: [BOOT] (T0351JZQ0) Dispatching boot data 
+[04/18/20, 19:07:10:342] info: [DESKTOP-MIDDLEWARE] (T0351JZQ0) Forwarding redux payload to desktop ["version"] 
+[04/18/20, 19:07:10:396] info: [PLATFORM-CHANNEL-ACTI] (T0351JZQ0) Not updating count for channel G01232HTWCA, as count was already set to 0 
+[04/18/20, 19:07:10:398] info: [UNREAD-COUNTS] (T0351JZQ0) Counting unreads in G01232HTWCA because (10) timestamps added 
+[04/18/20, 19:07:10:398] info: [UNREAD-COUNTS] (T0351JZQ0) Checking unreads in G01232HTWCA after a new message 
+[04/18/20, 19:07:10:398] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because attention not on chat (window_not_focused) 
+[04/18/20, 19:07:10:400] info: [BOOT] (T0351JZQ0) Boot complete 
+[04/18/20, 19:07:10:403] info: [DESKTOP-SIDE-EFFECT] (T0351JZQ0) Reacting to  {"type":"[32] Set a value that represents whether we are currently in the boot phase","payload":false,"error":false} 
+[04/18/20, 19:07:10:403] info: [AUTH] Installing incremental auth handler 
+[04/18/20, 19:07:10:465] info: Store: REDUX_UPDATE_FROM_WEBAPP (T0351JZQ0) Changed keys [version] 
+[04/18/20, 19:07:10:465] info: [API-Q] (T03SZ17T9) noversion-1587200829.754 Flannel users/info is RESOLVED 
+[04/18/20, 19:07:10:466] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.753 team.info is ACTIVE 
+[04/18/20, 19:07:10:466] info: [API-Q] (TSWGAAF2R) noversion-1587200829.642 Flannel users/info is RESOLVED 
+[04/18/20, 19:07:10:467] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.640 team.info is ACTIVE 
+[04/18/20, 19:07:10:470] info: [API-Q] (T0351JZQ0) noversion-1587200830.468 Flannel users/info called with reason: flannel-call:users/info 
+[04/18/20, 19:07:10:470] info: [API-Q] (T0351JZQ0) noversion-1587200830.468 Flannel users/info is ENQUEUED 
+[04/18/20, 19:07:10:471] info: [API-Q] (T0351JZQ0) noversion-1587200830.468 Flannel users/info is ACTIVE 
+[04/18/20, 19:07:10:472] info: [BOOT] (TSWGAAF2R) Dispatching boot data 
+[04/18/20, 19:07:10:475] info: [DESKTOP-MIDDLEWARE] (TSWGAAF2R) Forwarding redux payload to desktop ["version"] 
+[04/18/20, 19:07:10:498] info: [PLATFORM-CHANNEL-ACTI] (TSWGAAF2R) Not updating count for channel CSYN35RDL, as count was already set to 0 
+[04/18/20, 19:07:10:499] info: [UNREAD-COUNTS] (TSWGAAF2R) Counting unreads in CSYN35RDL because (42) timestamps added 
+[04/18/20, 19:07:10:499] info: [UNREAD-COUNTS] (TSWGAAF2R) Checking unreads in CSYN35RDL after a new message 
+[04/18/20, 19:07:10:499] info: [CHECK-UNREADS] (TSWGAAF2R) Not marking CSYN35RDL because attention not on chat (workspace_not_focused) 
+[04/18/20, 19:07:10:500] info: [BOOT] (TSWGAAF2R) Boot complete 
+[04/18/20, 19:07:10:501] info: [DESKTOP-SIDE-EFFECT] (TSWGAAF2R) Reacting to  {"type":"[32] Set a value that represents whether we are currently in the boot phase","payload":false,"error":false} 
+[04/18/20, 19:07:10:504] info: [BOOT] (T03SZ17T9) Dispatching boot data 
+[04/18/20, 19:07:10:506] info: [DESKTOP-MIDDLEWARE] (T03SZ17T9) Forwarding redux payload to desktop ["version"] 
+[04/18/20, 19:07:10:530] info: [PLATFORM-CHANNEL-ACTI] (T03SZ17T9) Not updating count for channel C011JSQ3BNC, as count was already set to 0 
+[04/18/20, 19:07:10:531] info: [UNREAD-COUNTS] (T03SZ17T9) Counting unreads in C011JSQ3BNC because (42) timestamps added 
+[04/18/20, 19:07:10:532] info: [UNREAD-COUNTS] (T03SZ17T9) Checking unreads in C011JSQ3BNC after a new message 
+[04/18/20, 19:07:10:532] info: [CHECK-UNREADS] (T03SZ17T9) Not marking C011JSQ3BNC because attention not on chat (workspace_not_focused) 
+[04/18/20, 19:07:10:532] info: [BOOT] (T03SZ17T9) Boot complete 
+[04/18/20, 19:07:10:533] info: [DESKTOP-SIDE-EFFECT] (T03SZ17T9) Reacting to  {"type":"[32] Set a value that represents whether we are currently in the boot phase","payload":false,"error":false} 
+[04/18/20, 19:07:10:562] info: Store: REDUX_UPDATE_FROM_WEBAPP (TSWGAAF2R) Changed keys [version] 
+[04/18/20, 19:07:10:563] info: Store: REDUX_UPDATE_FROM_WEBAPP (T03SZ17T9) Changed keys [version] 
+[04/18/20, 19:07:10:563] info: [API-Q] (T0351JZQ0) 4c952f39-1587200830.072 conversations.genericInfo is RESOLVED 
+[04/18/20, 19:07:10:622] info: [API-Q] (T0351JZQ0) noversion-1587200830.468 Flannel users/info is RESOLVED 
+[04/18/20, 19:07:10:625] info: [API-Q] (T0351JZQ0) noversion-1587200830.623 Flannel channels/info called with reason: flannel-call:channels/info 
+[04/18/20, 19:07:10:625] info: [API-Q] (T0351JZQ0) noversion-1587200830.623 Flannel channels/info is ENQUEUED 
+[04/18/20, 19:07:10:626] info: [API-Q] (T0351JZQ0) noversion-1587200830.623 Flannel channels/info is ACTIVE 
+[04/18/20, 19:07:10:660] info: [API-Q] (TSWGAAF2R) noversion-1587200830.659 Flannel users/info called with reason: flannel-call:users/info 
+[04/18/20, 19:07:10:660] info: [API-Q] (TSWGAAF2R) noversion-1587200830.659 Flannel users/info is ENQUEUED 
+[04/18/20, 19:07:10:662] info: [API-Q] (T0351JZQ0) noversion-1587200830.623 Flannel channels/info is RESOLVED 
+[04/18/20, 19:07:10:769] info: [API-Q] (T03SZ17T9) noversion-1587200830.767 Flannel users/info called with reason: flannel-call:users/info 
+[04/18/20, 19:07:10:769] info: [API-Q] (T03SZ17T9) noversion-1587200830.767 Flannel users/info is ENQUEUED 
+[04/18/20, 19:07:10:804] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.753 team.info is RESOLVED 
+[04/18/20, 19:07:10:805] info: [API-Q] (T03SZ17T9) noversion-1587200830.767 Flannel users/info is ACTIVE 
+[04/18/20, 19:07:10:813] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.640 team.info is RESOLVED 
+[04/18/20, 19:07:10:813] info: [API-Q] (TSWGAAF2R) noversion-1587200830.659 Flannel users/info is ACTIVE 
+[04/18/20, 19:07:10:834] info: [API-Q] (T03SZ17T9) noversion-1587200830.767 Flannel users/info is RESOLVED 
+[04/18/20, 19:07:10:835] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.717 ublockworkaround.history is ACTIVE 
+[04/18/20, 19:07:10:842] info: [API-Q] (TSWGAAF2R) noversion-1587200830.659 Flannel users/info is RESOLVED 
+[04/18/20, 19:07:10:842] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.539 ublockworkaround.history is ACTIVE 
+[04/18/20, 19:07:11:107] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.539 ublockworkaround.history is RESOLVED 
+[04/18/20, 19:07:11:107] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200828.934 team.whatsNew is ACTIVE 
+[04/18/20, 19:07:11:108] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.717 ublockworkaround.history is RESOLVED 
+[04/18/20, 19:07:11:109] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.716 ublockworkaround.history is ACTIVE 
+[04/18/20, 19:07:11:109] info: [EVENTLOG] (TSWGAAF2R) nothing to process 
+[04/18/20, 19:07:11:110] info: [EVENTLOG] (TSWGAAF2R) nothing to process 
+[04/18/20, 19:07:11:110] info: [EVENTLOG] (TSWGAAF2R) fetched finish (cancelled? false) 
+[04/18/20, 19:07:11:111] info: [EVENTLOG] (TSWGAAF2R) dispatching signal and clearing timestamp 
+[04/18/20, 19:07:11:363] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.716 ublockworkaround.history is RESOLVED 
+[04/18/20, 19:07:11:364] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.134 apps.actions.list is ACTIVE 
+[04/18/20, 19:07:11:366] info: [EVENTLOG] (T03SZ17T9) nothing to process 
+[04/18/20, 19:07:11:368] info: [EVENTLOG] (T03SZ17T9) nothing to process 
+[04/18/20, 19:07:11:368] info: [EVENTLOG] (T03SZ17T9) fetched finish (cancelled? false) 
+[04/18/20, 19:07:11:369] info: [EVENTLOG] (T03SZ17T9) dispatching signal and clearing timestamp 
+[04/18/20, 19:07:11:372] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200828.934 team.whatsNew is RESOLVED 
+[04/18/20, 19:07:11:373] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.013 apps.actions.list is ACTIVE 
+[04/18/20, 19:07:11:626] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.134 apps.actions.list is RESOLVED 
+[04/18/20, 19:07:11:628] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.720 client.counts is ACTIVE 
+[04/18/20, 19:07:11:630] info: [UNKNOWN-FETCH-MANAGER] (T03SZ17T9) received _all_actions (1) 
+[04/18/20, 19:07:11:638] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.013 apps.actions.list is RESOLVED 
+[04/18/20, 19:07:11:639] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.544 client.counts is ACTIVE 
+[04/18/20, 19:07:11:641] info: [UNKNOWN-FETCH-MANAGER] (TSWGAAF2R) received _all_actions (1) 
+[04/18/20, 19:07:11:901] info: [API-Q] (T03SZ17T9) 4c952f39-1587200829.720 client.counts is RESOLVED 
+[04/18/20, 19:07:11:910] info: [COUNTS] (T03SZ17T9) Applying counts to channels 
+[04/18/20, 19:07:11:922] info: [COUNTS] (T03SZ17T9) Recounted C011JSQ3BNC; initial: {"unreadCnt":1,"unreadHighlightCnt":0}; after: {"unreadCnt":1,"unreadHighlightCnt":0} 
+[04/18/20, 19:07:11:923] info: [COUNTS] (T03SZ17T9) Threads has_unreads:false mention_count:0 
+[04/18/20, 19:07:11:925] info: [COUNTS] (T03SZ17T9) Completed counts processing 
+[04/18/20, 19:07:11:928] info: [API-Q] (TSWGAAF2R) 4c952f39-1587200829.544 client.counts is RESOLVED 
+[04/18/20, 19:07:11:932] info: [COUNTS] (TSWGAAF2R) Applying counts to channels 
+[04/18/20, 19:07:11:936] info: [COUNTS] (TSWGAAF2R) Recounted CSYN35RDL; initial: {"unreadCnt":0,"unreadHighlightCnt":0}; after: {"unreadCnt":0,"unreadHighlightCnt":0} 
+[04/18/20, 19:07:11:937] info: [COUNTS] (TSWGAAF2R) Threads has_unreads:false mention_count:0 
+[04/18/20, 19:07:11:937] info: [COUNTS] (TSWGAAF2R) Completed counts processing 
+[04/18/20, 19:07:20:980] info: [FOCUS-EVENT] Client window focused 
+[04/18/20, 19:07:21:054] info: [CHECK-UNREADS] (T0351JZQ0) Checking unreads after window became focused 
+[04/18/20, 19:07:21:055] info: [CHECK-UNREADS] (T0351JZQ0) Not marking G01232HTWCA because last_read >= latest && channel is read 
+[04/18/20, 19:07:21:060] info: [ACTION:CHANNEL-SIDEBAR] Selected CRD8MTJ3V 
+[04/18/20, 19:07:21:060] info: [CHANNEL-SIDEBAR] (T0351JZQ0) onItemSelect CRD8MTJ3V 
+[04/18/20, 19:07:21:068] info: [SWITCH-TO-CHANNEL] (T0351JZQ0) Switching to CRD8MTJ3V at end 
+[04/18/20, 19:07:21:081] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:21:106] info: [MESSAGE-LIST] (T0351JZQ0) Switching channels: CRD8MTJ3V timestamps: 0 
+[04/18/20, 19:07:21:107] info: [MESSAGE-LIST] (T0351JZQ0) requestAround channelId: CRD8MTJ3V isLoading: false timestamps: 0 reachedStart: false reachedEnd: false 
+[04/18/20, 19:07:21:107] info: [HISTORY-FETCH] (T0351JZQ0) Fetching history for message pane: CRD8MTJ3V oldest: null latest: null 
+[04/18/20, 19:07:21:107] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200841.107 conversations.history called with reason: message-pane/requestHistory 
+[04/18/20, 19:07:21:108] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200841.107 conversations.history is ENQUEUED 
+[04/18/20, 19:07:21:108] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200841.107 conversations.history is ACTIVE 
+[04/18/20, 19:07:21:114] info: [HISTORY-NAVIGATION] Adding route to the history stack 
+[04/18/20, 19:07:21:115] info: [MESSAGE-LIST] (T0351JZQ0) requestAround channelId: CRD8MTJ3V isLoading: false timestamps: 0 reachedStart: false reachedEnd: false 
+[04/18/20, 19:07:21:115] info: [MESSAGE-LIST] (T0351JZQ0) requestAround channelId: CRD8MTJ3V isLoading: false timestamps: 0 reachedStart: false reachedEnd: false 
+[04/18/20, 19:07:21:149] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:21:154] info: [API-Q] (T0351JZQ0) noversion-1587200841.152 Flannel users/counts called with reason: flannel-call:users/counts 
+[04/18/20, 19:07:21:155] info: [API-Q] (T0351JZQ0) noversion-1587200841.152 Flannel users/counts is ENQUEUED 
+[04/18/20, 19:07:21:155] info: [API-Q] (T0351JZQ0) noversion-1587200841.152 Flannel users/counts is ACTIVE 
+[04/18/20, 19:07:21:160] info: [MESSAGE-LIST] (T0351JZQ0) requestAround channelId: CRD8MTJ3V isLoading: false timestamps: 0 reachedStart: false reachedEnd: false 
+[04/18/20, 19:07:21:171] info: [MESSAGE-LIST] (T0351JZQ0) componentWillReceiveProps isLoading: true isLoadingOlder: false timestamps: 0 
+[04/18/20, 19:07:21:240] info: [API-Q] (T0351JZQ0) noversion-1587200841.152 Flannel users/counts is RESOLVED 
+[04/18/20, 19:07:21:486] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200841.107 conversations.history is RESOLVED 
+[04/18/20, 19:07:21:517] info: [PLATFORM-CHANNEL-ACTI] (T0351JZQ0) Not updating count for channel CRD8MTJ3V, as count was already set to 0 
+[04/18/20, 19:07:21:526] info: [UNREAD-COUNTS] (T0351JZQ0) Counting unreads in CRD8MTJ3V because (42) timestamps added 
+[04/18/20, 19:07:21:526] info: [UNREAD-COUNTS] (T0351JZQ0) Checking unreads in CRD8MTJ3V after a new message 
+[04/18/20, 19:07:21:526] info: [CHECK-UNREADS] (T0351JZQ0) Not marking CRD8MTJ3V, clearing ghost last_read 
+[04/18/20, 19:07:21:545] info: [MESSAGE-LIST] (T0351JZQ0) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 397 
+[04/18/20, 19:07:21:676] info: [CHECK-UNREADS] (T0351JZQ0) unreadLineVisible updated: false -> true 
+[04/18/20, 19:07:22:048] info: [CHECK-UNREADS] (T0351JZQ0) Checking unreads after unread line became visible 
+[04/18/20, 19:07:22:049] info: [CHECK-UNREADS] (T0351JZQ0) Marking CRD8MTJ3V because unread line is visible 
+[04/18/20, 19:07:22:050] info: [SET-LAST-READ] (T0351JZQ0) markLastRead CRD8MTJ3V:1587195633.134700, immediate: undefined 
+[04/18/20, 19:07:22:067] info: [SET-LAST-READ] (T0351JZQ0) delaying CRD8MTJ3V mark by 1923.5453922397128ms 
+[04/18/20, 19:07:22:072] info: [UNREAD-COUNTS] (T0351JZQ0) Counting unreads in CRD8MTJ3V because last_read changed to 1587195633.134700 
+[04/18/20, 19:07:23:857] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:23:917] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 864,
+      "width": 1024,
+      "x": 3311,
+      "y": 327
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[04/18/20, 19:07:23:917] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["settings"] 
+[04/18/20, 19:07:23:989] info: [SET-LAST-READ] (T0351JZQ0) delay resolved, marking CRD8MTJ3V with API 
+[04/18/20, 19:07:23:995] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200843.992 conversations.mark called with reason: viewed 
+[04/18/20, 19:07:23:995] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200843.992 conversations.mark is ENQUEUED 
+[04/18/20, 19:07:23:995] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200843.992 conversations.mark is ACTIVE 
+[04/18/20, 19:07:24:313] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200843.992 conversations.mark is RESOLVED 
+[04/18/20, 19:07:28:225] info: [FOCUS-EVENT] Client window blurred 
+[04/18/20, 19:07:28:304] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:07:28:311] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:08:01:405] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200881.394 channels.suggestions called with reason: channels-suggestions 
+[04/18/20, 19:08:01:406] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200881.394 channels.suggestions is ENQUEUED 
+[04/18/20, 19:08:01:407] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200881.394 channels.suggestions is ACTIVE 
+[04/18/20, 19:08:01:687] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200881.394 channels.suggestions is RESOLVED 
+[04/18/20, 19:08:09:395] info: [CHECK-FOR-OLD-IMS] (T0351JZQ0) Over by 7 
+[04/18/20, 19:08:10:393] info: [CHECK-FOR-OLD-IMS] (TSWGAAF2R) Within limit: 6 
+[04/18/20, 19:08:10:402] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200890.394 client.counts called with reason: client-counts-api/fetchClientCounts 
+[04/18/20, 19:08:10:402] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200890.394 client.counts is ENQUEUED 
+[04/18/20, 19:08:10:403] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200890.394 client.counts is ACTIVE 
+[04/18/20, 19:08:10:404] info: [CHECK-FOR-OLD-IMS] (T03SZ17T9) Within limit: 8 
+[04/18/20, 19:08:10:671] info: [API-Q] (T0351JZQ0) 83f9c9ff-1587200890.394 client.counts is RESOLVED 
+[04/18/20, 19:08:11:405] info: [COUNTS] (T0351JZQ0) Applying counts to channels 
+[04/18/20, 19:08:11:435] info: [COUNTS] (T0351JZQ0) Recounted CRD8MTJ3V; initial: {"unreadCnt":0,"unreadHighlightCnt":0}; after: {"unreadCnt":0,"unreadHighlightCnt":0} 
+[04/18/20, 19:08:11:435] info: [COUNTS] (T0351JZQ0) Recounted G01232HTWCA; initial: {"unreadCnt":0,"unreadHighlightCnt":0}; after: {"unreadCnt":0,"unreadHighlightCnt":0} 
+[04/18/20, 19:08:11:435] info: [COUNTS] (T0351JZQ0) Threads has_unreads:false mention_count:0 
+[04/18/20, 19:08:11:438] info: [COUNTS] (T0351JZQ0) Completed counts processing 
+[04/18/20, 19:08:14:399] info: [API-Q] (T03SZ17T9) 83f9c9ff-1587200894.393 client.counts called with reason: client-counts-api/fetchClientCounts 
+[04/18/20, 19:08:14:399] info: [API-Q] (T03SZ17T9) 83f9c9ff-1587200894.393 client.counts is ENQUEUED 
+[04/18/20, 19:08:14:399] info: [API-Q] (T03SZ17T9) 83f9c9ff-1587200894.393 client.counts is ACTIVE 
+[04/18/20, 19:08:14:672] info: [API-Q] (T03SZ17T9) 83f9c9ff-1587200894.393 client.counts is RESOLVED 
+[04/18/20, 19:08:15:400] info: [COUNTS] (T03SZ17T9) Applying counts to channels 
+[04/18/20, 19:08:15:411] info: [COUNTS] (T03SZ17T9) Recounted C011JSQ3BNC; initial: {"unreadCnt":1,"unreadHighlightCnt":0}; after: {"unreadCnt":1,"unreadHighlightCnt":0} 
+[04/18/20, 19:08:15:412] info: [COUNTS] (T03SZ17T9) Threads has_unreads:false mention_count:0 
+[04/18/20, 19:08:15:416] info: [COUNTS] (T03SZ17T9) Completed counts processing 
+[04/18/20, 19:08:19:401] info: [API-Q] (TSWGAAF2R) 83f9c9ff-1587200899.394 client.counts called with reason: client-counts-api/fetchClientCounts 
+[04/18/20, 19:08:19:403] info: [API-Q] (TSWGAAF2R) 83f9c9ff-1587200899.394 client.counts is ENQUEUED 
+[04/18/20, 19:08:19:404] info: [API-Q] (TSWGAAF2R) 83f9c9ff-1587200899.394 client.counts is ACTIVE 
+[04/18/20, 19:08:19:698] info: [API-Q] (TSWGAAF2R) 83f9c9ff-1587200899.394 client.counts is RESOLVED 
+[04/18/20, 19:08:20:401] info: [COUNTS] (TSWGAAF2R) Applying counts to channels 
+[04/18/20, 19:08:20:407] info: [COUNTS] (TSWGAAF2R) Recounted CSYN35RDL; initial: {"unreadCnt":0,"unreadHighlightCnt":0}; after: {"unreadCnt":0,"unreadHighlightCnt":0} 
+[04/18/20, 19:08:20:408] info: [COUNTS] (TSWGAAF2R) Threads has_unreads:false mention_count:0 
+[04/18/20, 19:08:20:411] info: [COUNTS] (TSWGAAF2R) Completed counts processing 
+[04/18/20, 19:09:01:797] info: Store: FOREGROUND_APP  
+[04/18/20, 19:09:01:882] info: [FOCUS-EVENT] Client window focused 
+[04/18/20, 19:09:01:903] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:01:908] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:01:914] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:01:920] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:01:924] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:01:930] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:01:958] info: [CHECK-UNREADS] (T0351JZQ0) Checking unreads after window became focused 
+[04/18/20, 19:09:01:958] info: [CHECK-UNREADS] (T0351JZQ0) Not marking CRD8MTJ3V because last_read >= latest && channel is read 
+[04/18/20, 19:09:01:961] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:01:968] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:02:199] info: [FOCUS-EVENT] Client window blurred 
+[04/18/20, 19:09:02:211] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:02:818] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["windows"] 
+[04/18/20, 19:09:02:881] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "bounds": {
+      "height": 864,
+      "width": 1024,
+      "x": 3311,
+      "y": 327
+    },
+    "fullScreen": false,
+    "maximized": false
+  }
+} 
+[04/18/20, 19:09:02:893] info: [DESKTOP-SIDE-EFFECT] Update from desktop for keys  ["settings"] 
+WorkerBase::loop() normal exit, fds[0].revents & POLLIN = trueWorkerBase::loop() normal exit, fds[0].revents & POLLIN = trueWorkerBase::loop() normal exit, fds[0].revents & POLLIN = trueWorkerBase::loop() normal exit, fds[0].revents & POLLIN = trueWorkerBase::loop() normal exit, fds[0].revents & POLLIN = trueWorkerBase::loop() normal exit, fds[0].revents & POLLIN = truesuccess to create child process,status is 0.
+zoom exited normally.
+run zoom successfully,exit code is 0.
+ZoomLauncher exit.

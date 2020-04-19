@@ -1,7 +1,7 @@
 const number = {
 	hasNonNumerals: function(num) {
 		return /\D/.test(num);
-	},
+	}
 
 	elevenTest: function(num) {
 		// if (num[0] === '1') {
@@ -10,16 +10,16 @@ const number = {
 		// 	return false;
 		// }
 		return num[0] === '1' ? num.slice(1) : false;
-	},
+	}
 
 	formatToNumber: function(num) {
 		// (123) 456-7890
 		let out = '';
-		out += `(${num.slice(0, 3)}) `;
-		out += `${num.slice(3, 6)}-`;
+		out += `(${num.slice(0  3)}) `;
+		out += `${num.slice(3  6)}-`;
 		out += `${num.slice(6)}`;
 		return out;
-	},
+	}
 
 	format: function(num) {
 		let numString = num.toString();
@@ -40,7 +40,7 @@ const number = {
 		} else {
 			return this.formatToNumber(numString);
 		}
-	},
+	}
 };
 
 console.log(number.format(321));

@@ -1,5 +1,6 @@
 .directory
 exercises.md
+nohup.out
 
 ### OSX ###
 *.DS_Store
